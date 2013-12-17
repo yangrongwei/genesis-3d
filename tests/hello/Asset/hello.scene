@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AppXMLFileTag>
+    <AppXMLFileHeaderTag AppXMLFileVersionTag="1" />
+    <AppObjectTag AppObjectFourCCTag="SCEN" AppObjectVersionTag="9">
+        <AppAttributeTag SceneName="asset:hello.scene" />
+        <AppAttributeTag eGShaderVecAmbientColor="0.198000,0.198000,0.198000,1.000000" />
+        <AppAttributeTag eGShaderVecFogColor="0.500000,0.500000,0.500000,0.000000" />
+        <AppAttributeTag eGShaderVecFogParam="0.000000,2000.000000,0.000000,-1.000000" />
+        <AppAttributeTag eGShaderVecShaowParam="0.300000,1.000000,0.000000,0.000000" />
+        <AppAttributeTag eGShaderVecShadowStrength="0.000000,0.000000,0.000000,1.000000" />
+        <AppAttributeTag phyxLayerFilterIntArray_0="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_1="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_2="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_3="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_4="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_5="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_6="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_7="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_8="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_9="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_10="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_11="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_12="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_13="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_14="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_15="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_16="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_17="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_18="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_19="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_20="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_21="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_22="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_23="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_24="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_25="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_26="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_27="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_28="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_29="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_30="-1" />
+        <AppAttributeTag phyxLayerFilterIntArray_31="-1" />
+        <AppAttributeTag phyxGravity="0.000000,-9.810000,0.000000" />
+        <AppAttributeTag phyxSkinWidth="0.025000" />
+        <AppAttributeTag phyxSleepVelocity="0.500000" />
+        <AppAttributeTag phyxMaxAngularVelocity="7.000000" />
+        <AppAttributeTag phyxDefaultMaterial="" />
+        <AppObjectTag AppObjectFourCCTag="LMIN" AppObjectVersionTag="1">
+            <AppAttributeTag IndexMapCounts="0" />
+        </AppObjectTag>
+        <AppAttributeTag ChildActorCount="5" />
+        <AppObjectTag AppObjectFourCCTag="GACT" AppObjectVersionTag="7">
+            <AppAttributeTag ActorTemplateName="" />
+            <AppAttributeTag ActorName="Camera" />
+            <AppAttributeTag ActorTemplateLink="false" />
+            <AppAttributeTag ActorLayerID="0" />
+            <AppAttributeTag ActorTagID="1" />
+            <AppAttributeTag ActorEditorStaticFlag="0" />
+            <AppAttributeTag ActorVisable="true" />
+            <AppAttributeTag ActorPosition="0.000000,3.354125,24.703857,0.000000" />
+            <AppAttributeTag ActorRotation="-0.047044,-0.500745,0.020605,0.864070" />
+            <AppAttributeTag ActorScale="1.000000,1.000001,1.000001,0.000000" />
+            <AppAttributeTag ActorActive="true" />
+            <AppAttributeTag ActorGUID="e004f3f2-1d6f-4b53-af2e-94a8a8198e8b" />
+            <AppAttributeTag ActorResourcePriority="-1" />
+            <AppAttributeTag ActorComponentCount="1" />
+            <AppObjectTag AppObjectFourCCTag="CAMP" AppObjectVersionTag="6">
+                <AppObjectSuperTag AppObjectSuperNameTag="GCOM" AppObjectVersionTag="1" />
+                <AppAttributeTag CameraOrder="13" />
+                <AppAttributeTag UseSkyBox="false" />
+                <AppAttributeTag TexCubeRes="" />
+                <AppAttributeTag CameraFov="0.785398" />
+                <AppAttributeTag CameraZNear="1.000000" />
+                <AppAttributeTag CameraZFar="1000.000000" />
+                <AppAttributeTag CullMark="1073741777" />
+                <AppAttributeTag ViewType="1" />
+                <AppAttributeTag s_RenderMode="0" />
+                <AppAttributeTag ShadowDistance="1000.000000" />
+                <AppAttributeTag RenderDepth="true" />
+            </AppObjectTag>
+            <AppAttributeTag ActorChildActorCount="0" />
+        </AppObjectTag>
+        <AppObjectTag AppObjectFourCCTag="GACT" AppObjectVersionTag="7">
+            <AppAttributeTag ActorTemplateName="" />
+            <AppAttributeTag ActorName="Light" />
+            <AppAttributeTag ActorTemplateLink="false" />
+            <AppAttributeTag ActorLayerID="0" />
+            <AppAttributeTag ActorTagID="1" />
+            <AppAttributeTag ActorEditorStaticFlag="0" />
+            <AppAttributeTag ActorVisable="false" />
+            <AppAttributeTag ActorPosition="0.000000,0.000000,0.000000,0.000000" />
+            <AppAttributeTag ActorRotation="-0.382683,0.000000,0.000000,0.923880" />
+            <AppAttributeTag ActorScale="1.000000,1.000000,1.000000,0.000000" />
+            <AppAttributeTag ActorActive="true" />
+            <AppAttributeTag ActorGUID="a10d6208-e08c-4a5a-b0c6-0d3af045bdd5" />
+            <AppAttributeTag ActorResourcePriority="-1" />
+            <AppAttributeTag ActorComponentCount="1" />
+            <AppObjectTag AppObjectFourCCTag="LIPR" AppObjectVersionTag="8">
+                <AppObjectSuperTag AppObjectSuperNameTag="GCOM" AppObjectVersionTag="1" />
+                <AppAttributeTag LightType="0" />
+                <AppAttributeTag LightColor="-1376513" />
+                <AppAttributeTag LightIntensity="1.000000" />
+                <AppAttributeTag LightRange="10.000000" />
+                <AppAttributeTag ConstantAttenuation="1.000000" />
+                <AppAttributeTag LinearAttenuation="0.800000" />
+                <AppAttributeTag QuadraticAttenuation="0.000000" />
+                <AppAttributeTag CostCutOff="0.923880" />
+                <AppAttributeTag Exponent="1.000000" />
+                <AppAttributeTag DepthBias="3.000000" />
+                <AppAttributeTag SceneMax="2500.000000" />
+                <AppAttributeTag EnableShadow="false" />
+                <AppAttributeTag ShadowDistance="100.000000" />
+                <AppAttributeTag ShadowMapQuality="1" />
+                <AppAttributeTag ShadowSplitCount="4" />
+                <AppAttributeTag ShadowProjection="0" />
+                <AppAttributeTag ShadowSplitDistance0="0.333333" />
+                <AppAttributeTag ShadowSplitDistance1="0.100000" />
+                <AppAttributeTag ShadowSplitDistance2="0.200000" />
+                <AppAttributeTag ShadowSplitDistance3="0.466667" />
+                <AppAttributeTag LightMaping="1" />
+                <AppAttributeTag ShadowStrength="1.000000" />
+                <AppAttributeTag LightEnable="true" />
+                <AppAttributeTag Falloff="1.000000" />
+                <AppAttributeTag CosHalfOuterAngle="0.923880" />
+                <AppAttributeTag CosHalfInnerAngle="0.939693" />
+            </AppObjectTag>
+            <AppAttributeTag ActorChildActorCount="0" />
+        </AppObjectTag>
+        <AppObjectTag AppObjectFourCCTag="GACT" AppObjectVersionTag="7">
+            <AppAttributeTag ActorTemplateName="" />
+            <AppAttributeTag ActorName="Cube1" />
+            <AppAttributeTag ActorTemplateLink="false" />
+            <AppAttributeTag ActorLayerID="0" />
+            <AppAttributeTag ActorTagID="1" />
+            <AppAttributeTag ActorEditorStaticFlag="0" />
+            <AppAttributeTag ActorVisable="true" />
+            <AppAttributeTag ActorPosition="9.474900,5.467025,19.247879,0.000000" />
+            <AppAttributeTag ActorRotation="0.000000,0.000000,0.000000,1.000000" />
+            <AppAttributeTag ActorScale="1.000000,1.000000,1.000000,0.000000" />
+            <AppAttributeTag ActorActive="true" />
+            <AppAttributeTag ActorGUID="2d36dcb3-22d4-4c82-8a06-3c0e13423bab" />
+            <AppAttributeTag ActorResourcePriority="-1" />
+            <AppAttributeTag ActorComponentCount="1" />
+            <AppObjectTag AppObjectFourCCTag="MRCT" AppObjectVersionTag="4">
+                <AppObjectSuperTag AppObjectSuperNameTag="RCAP" AppObjectVersionTag="6">
+                    <AppObjectSuperTag AppObjectSuperNameTag="GCOM" AppObjectVersionTag="1" />
+                    <AppAttributeTag MaterialCount="1" />
+                    <AppAttributeTag MaterialID="sys:meshRenderDefault.material" />
+                    <AppAttributeTag ReceiveShadow="true" />
+                    <AppAttributeTag CastShadow="true" />
+                </AppObjectSuperTag>
+                <AppAttributeTag LoadingPriority="1" />
+                <AppAttributeTag Mesh="sys:box.mesh" />
+                <AppAttributeTag LightmapID="65535" />
+                <AppAttributeTag LightmapST="1.000000,1.000000,0.000000,0.000000" />
+                <AppAttributeTag LightmapScale="1.000000" />
+            </AppObjectTag>
+            <AppAttributeTag ActorChildActorCount="0" />
+        </AppObjectTag>
+        <AppObjectTag AppObjectFourCCTag="GACT" AppObjectVersionTag="7">
+            <AppAttributeTag ActorTemplateName="" />
+            <AppAttributeTag ActorName="PointLight" />
+            <AppAttributeTag ActorTemplateLink="false" />
+            <AppAttributeTag ActorLayerID="0" />
+            <AppAttributeTag ActorTagID="1" />
+            <AppAttributeTag ActorEditorStaticFlag="0" />
+            <AppAttributeTag ActorVisable="true" />
+            <AppAttributeTag ActorPosition="1.530999,1.676059,18.602573,0.000000" />
+            <AppAttributeTag ActorRotation="0.000000,0.000000,0.000000,1.000000" />
+            <AppAttributeTag ActorScale="1.000000,1.000000,1.000000,0.000000" />
+            <AppAttributeTag ActorActive="true" />
+            <AppAttributeTag ActorGUID="477f9b6e-b633-44c5-8af6-831fc7e00e37" />
+            <AppAttributeTag ActorResourcePriority="-1" />
+            <AppAttributeTag ActorComponentCount="1" />
+            <AppObjectTag AppObjectFourCCTag="LIPR" AppObjectVersionTag="8">
+                <AppObjectSuperTag AppObjectSuperNameTag="GCOM" AppObjectVersionTag="1" />
+                <AppAttributeTag LightType="2" />
+                <AppAttributeTag LightColor="-8355712" />
+                <AppAttributeTag LightIntensity="2.000000" />
+                <AppAttributeTag LightRange="10.000000" />
+                <AppAttributeTag ConstantAttenuation="1.000000" />
+                <AppAttributeTag LinearAttenuation="0.800000" />
+                <AppAttributeTag QuadraticAttenuation="0.000000" />
+                <AppAttributeTag CostCutOff="0.923880" />
+                <AppAttributeTag Exponent="2.000000" />
+                <AppAttributeTag DepthBias="2.500000" />
+                <AppAttributeTag SceneMax="2500.000000" />
+                <AppAttributeTag EnableShadow="false" />
+                <AppAttributeTag ShadowDistance="100.000000" />
+                <AppAttributeTag ShadowMapQuality="1" />
+                <AppAttributeTag ShadowSplitCount="4" />
+                <AppAttributeTag ShadowProjection="0" />
+                <AppAttributeTag ShadowSplitDistance0="0.333333" />
+                <AppAttributeTag ShadowSplitDistance1="0.100000" />
+                <AppAttributeTag ShadowSplitDistance2="0.200000" />
+                <AppAttributeTag ShadowSplitDistance3="0.466667" />
+                <AppAttributeTag LightMaping="1" />
+                <AppAttributeTag ShadowStrength="1.000000" />
+                <AppAttributeTag LightEnable="true" />
+                <AppAttributeTag Falloff="1.000000" />
+                <AppAttributeTag CosHalfOuterAngle="0.923880" />
+                <AppAttributeTag CosHalfInnerAngle="0.939693" />
+            </AppObjectTag>
+            <AppAttributeTag ActorChildActorCount="0" />
+        </AppObjectTag>
+        <AppObjectTag AppObjectFourCCTag="GACT" AppObjectVersionTag="7">
+            <AppAttributeTag ActorTemplateName="" />
+            <AppAttributeTag ActorName="Cube2" />
+            <AppAttributeTag ActorTemplateLink="false" />
+            <AppAttributeTag ActorLayerID="0" />
+            <AppAttributeTag ActorTagID="1" />
+            <AppAttributeTag ActorEditorStaticFlag="0" />
+            <AppAttributeTag ActorVisable="true" />
+            <AppAttributeTag ActorPosition="21.765026,-2.659187,11.573738,0.000000" />
+            <AppAttributeTag ActorRotation="0.000000,0.000000,0.000000,1.000000" />
+            <AppAttributeTag ActorScale="1.000000,1.000000,1.000000,0.000000" />
+            <AppAttributeTag ActorActive="true" />
+            <AppAttributeTag ActorGUID="b5e355fa-78b1-436c-8918-050477643fa4" />
+            <AppAttributeTag ActorResourcePriority="-1" />
+            <AppAttributeTag ActorComponentCount="2" />
+            <AppObjectTag AppObjectFourCCTag="MRCT" AppObjectVersionTag="4">
+                <AppObjectSuperTag AppObjectSuperNameTag="RCAP" AppObjectVersionTag="6">
+                    <AppObjectSuperTag AppObjectSuperNameTag="GCOM" AppObjectVersionTag="1" />
+                    <AppAttributeTag MaterialCount="1" />
+                    <AppAttributeTag MaterialID="sys:meshRenderDefault.material" />
+                    <AppAttributeTag ReceiveShadow="true" />
+                    <AppAttributeTag CastShadow="true" />
+                </AppObjectSuperTag>
+                <AppAttributeTag LoadingPriority="1" />
+                <AppAttributeTag Mesh="sys:box.mesh" />
+                <AppAttributeTag LightmapID="65535" />
+                <AppAttributeTag LightmapST="1.000000,1.000000,0.000000,0.000000" />
+                <AppAttributeTag LightmapScale="1.000000" />
+            </AppObjectTag>
+            <AppObjectTag AppObjectFourCCTag="SCRC" AppObjectVersionTag="2">
+                <AppAttributeTag ClassName="NewScript " />
+                <AppAttributeTag NameSpace="ScriptRuntime " />
+                <AppAttributeTag AssemblyName="UserDefCSharp.dll " />
+                <AppAttributeTag InstanceCount="1" />
+                <AppAttributeTag FieldCount="0" />
+            </AppObjectTag>
+            <AppAttributeTag ActorChildActorCount="0" />
+        </AppObjectTag>
+    </AppObjectTag>
+</AppXMLFileTag>

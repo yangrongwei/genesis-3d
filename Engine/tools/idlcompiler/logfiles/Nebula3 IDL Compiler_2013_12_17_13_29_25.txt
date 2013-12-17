@@ -1,0 +1,1 @@
+Compiling 'file:///E:/GenesisSource/genesis-3d_src/Engine/rendersystem/RenderMessageProtocol.nidl'

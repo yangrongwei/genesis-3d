@@ -1,9 +1,0 @@
-﻿Build started 2013/6/17 14:15:18.
-     1>Project "E:\tools\thirdlib\hlsl2glslfork\tests\hlsl2glsltest\hlsl2glsltest.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "build/Release\hlsl2glsltest.lastbuildstate".
-     1>Done Building Project "E:\tools\thirdlib\hlsl2glslfork\tests\hlsl2glsltest\hlsl2glsltest.vcxproj" (clean target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.01

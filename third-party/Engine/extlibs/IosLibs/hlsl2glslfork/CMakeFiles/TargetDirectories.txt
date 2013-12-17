@@ -1,3 +1,0 @@
-/Volumes/MacDisk2/thirdlib/hlsl2glslfork/CMakeFiles/ALL_BUILD.dir
-/Volumes/MacDisk2/thirdlib/hlsl2glslfork/CMakeFiles/hlsl2glsl.dir
-/Volumes/MacDisk2/thirdlib/hlsl2glslfork/CMakeFiles/hlsl2glsltest.dir

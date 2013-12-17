@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0.1</Version>
+  <ProjectName>hello</ProjectName>
+  <MonoDevelopPath />
+  <BuildInfo>
+    <WebPlayer>
+      <GameWndWidth>1024</GameWndWidth>
+      <GameWndHeight>768</GameWndHeight>
+      <GameExe>Genesis.exe</GameExe>
+      <DebugMode>false</DebugMode>
+      <ProfileMode>false</ProfileMode>
+      <DecelopMode>false</DecelopMode>
+      <BuildResFilter />
+      <Streamed>false</Streamed>
+    </WebPlayer>
+    <WebjetLoader>
+      <GameWndWidth>800</GameWndWidth>
+      <GameWndHeight>600</GameWndHeight>
+      <GameExe>oo.exe</GameExe>
+      <DebugMode>true</DebugMode>
+      <ProfileMode>true</ProfileMode>
+      <DecelopMode>true</DecelopMode>
+      <BuildResFilter />
+      <Streamed>false</Streamed>
+    </WebjetLoader>
+    <MicroPort>
+      <GameWndWidth>1024</GameWndWidth>
+      <GameWndHeight>768</GameWndHeight>
+      <GameExe>Genesis.exe</GameExe>
+      <DebugMode>false</DebugMode>
+      <ProfileMode>false</ProfileMode>
+      <DecelopMode>false</DecelopMode>
+      <BuildResFilter />
+      <Streamed>false</Streamed>
+    </MicroPort>
+    <Android>
+      <GameWndWidth>1024</GameWndWidth>
+      <GameWndHeight>768</GameWndHeight>
+      <GameExe>Genesis.exe</GameExe>
+      <DebugMode>false</DebugMode>
+      <ProfileMode>false</ProfileMode>
+      <DecelopMode>false</DecelopMode>
+      <BuildResFilter />
+      <Streamed>false</Streamed>
+    </Android>
+    <Ios>
+      <GameWndWidth>1024</GameWndWidth>
+      <GameWndHeight>768</GameWndHeight>
+      <GameExe>Genesis.exe</GameExe>
+      <DebugMode>false</DebugMode>
+      <ProfileMode>false</ProfileMode>
+      <DecelopMode>false</DecelopMode>
+      <BuildResFilter />
+      <Streamed>false</Streamed>
+    </Ios>
+    <BuildRun>false</BuildRun>
+  </BuildInfo>
+  <EditorCameraParams>
+    <EditorCameraParam>
+      <SceneName>hello</SceneName>
+      <Position>-9.671158,11.37018,29.78636</Position>
+      <Rotation>-0.2024289,-0.5300169,-0.1319977,0.812823</Rotation>
+    </EditorCameraParam>
+  </EditorCameraParams>
+  <tagLayerInfo>
+    <Layers>
+      <Layer>
+        <RenderLayer>64</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>128</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>256</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>512</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>1024</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>2048</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>4096</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>8192</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>16384</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>32768</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>65536</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>131072</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>262144</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>524288</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>1048576</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>2097152</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>4194304</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>8388608</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>16777216</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>33554432</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>67108864</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>134217728</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>268435456</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+      <Layer>
+        <RenderLayer>536870912</RenderLayer>
+        <LayerName />
+        <CanEdit>true</CanEdit>
+      </Layer>
+    </Layers>
+    <Tags />
+  </tagLayerInfo>
+  <PhysicsManagerInfo />
+  <LastOpenedScene>asset:hello.scene</LastOpenedScene>
+</ProjectInfo>

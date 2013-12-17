@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>9.0.21022</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{A62800BE-1EF1-4c06-A5AD-199D3E345854}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace>UserDefCSharp</RootNamespace>
+	<AssemblyName>UserDefCSharp</AssemblyName>
+	<TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>..\Script\</OutputPath>
+	<DefineConstants>DEBUG;</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<ConsolePause>false</ConsolePause>
+	<CustomCommands>
+	<CustomCommands>
+	<Command type="AfterBuild" command="&quot;C:\Program Files (x86)\GenesisEditor\bin\..\editorasset\Script\Bin\pdb2mdb.exe&quot; &quot;E:\GenesisSource\GenesisProjects\hello\Script\UserDefCSharp.dll&quot;" workingdir="E:\GenesisSource\GenesisProjects\hello\Script\" externalConsole="true"/> 
+	<Command type="Execute" command="&quot;C:\Program Files (x86)\GenesisEditor\bin\..\editorasset\Build\Genesis.exe&quot; --gamedir &quot;E:\GenesisSource\GenesisProjects\hello&quot; --sysdir &quot;C:\Program Files (x86)\GenesisEditor\bin\..\DefaultAssets\System&quot; --shddir &quot;C:\Program Files (x86)\GenesisEditor\bin\..\DefaultAssets\Shader&quot; --scenename &quot;asset:hello.scene&quot; --debugscript &quot;true&quot;" workingdir="E:\GenesisSource\GenesisProjects\hello" externalConsole="true"/> 
+	</CustomCommands>
+	</CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>none</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>..\Script\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+	<Reference Include="System.Xml" />
+  <Reference Include="Mono.Security"><HintPath>..\Script\Mono.Security.dll</HintPath>
+</Reference>
+<Reference Include="ScriptFrameworkLibrary"><HintPath>..\Script\ScriptFrameworkLibrary.dll</HintPath>
+</Reference>
+<Reference Include="ScriptGUILibrary"><HintPath>..\Script\ScriptGUILibrary.dll</HintPath>
+</Reference>
+<Reference Include="ScriptRuntimeLibrary"><HintPath>..\Script\ScriptRuntimeLibrary.dll</HintPath>
+</Reference>
+<Reference Include="System.Configuration"><HintPath>..\Script\System.Configuration.dll</HintPath>
+</Reference>
+<Reference Include="System.Security"><HintPath>..\Script\System.Security.dll</HintPath>
+</Reference>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Asset\NewScript.cs">
+        <Link>NewScript.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  </Project>

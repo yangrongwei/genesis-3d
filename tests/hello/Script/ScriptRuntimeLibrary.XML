@@ -1,0 +1,2952 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScriptRuntimeLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:ScriptRuntime.Actor">
+            <summary>
+            Actor对象,游戏中所有的对象的基本单位
+            组件等都是挂接在Actor上的
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.Base">
+            <summary>
+            C#脚本的基类,此类会与引擎底层的C++类关联  
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Actor.#ctor">
+            <summary>
+            Actor的构造函数
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Actor.#ctor(System.String)">
+            <summary>
+            Actor的构造函数
+            </summary>
+            <param name="name">Actor的名字</param>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = new Actor("test");
+                    actor.Active();
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Actor.GetTemplateName">
+            <summary>
+            获取模板的名字
+            </summary>
+            <returns>返回模板名</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        string sTemp = actor.GetTemplateName();
+                    }
+                    @endcode
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.Active" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.ActiveWithChildren" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.ActiveWithoutChildren" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.Deactive" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.DeactiveWithChildren" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.DeactiveWithoutChildren" -->
+        <member name="M:ScriptRuntime.Actor.GetChildCount">
+            <summary>
+            得到当前Actor的所有子Actor的数量
+            </summary>
+            <returns>返回子Actor的数量</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        int iCount = actor.GetChildCount();
+                    }
+                    @endcode
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.GetChild(System.Int32)" -->
+        <member name="M:ScriptRuntime.Actor.FindChild(System.UInt32)">
+            <summary>
+            使用子Actor的FastID来获取当前Actor的子Actor
+            </summary>
+            <param name="fastId">子Actor的FastID</param>
+            <returns>返回对应fastID的子Actor</returns>
+        </member>
+        <member name="M:ScriptRuntime.Actor.FindChildIndex(System.UInt32)">
+            <summary>
+            通过子Actor的FastID来获取这个子Actor的索引
+            </summary>
+            <param name="fastId">子Actor的FastID</param>
+            <returns>子Actor所对应的索引</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.AddChild(ScriptRuntime.Actor)" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.RemoveChild(System.Int32)" -->
+        <member name="M:ScriptRuntime.Actor.Roll(System.Single)">
+            <summary>
+            以z轴旋转Actor
+            </summary>
+            <param name="angle">z轴的旋转弧度</param>
+        </member>
+        <member name="M:ScriptRuntime.Actor.Pitch(System.Single)">
+            <summary>
+            以x轴旋转Actor
+            </summary>
+            <param name="angle">x轴的旋转弧度</param>
+        </member>
+        <member name="M:ScriptRuntime.Actor.Yaw(System.Single)">
+            <summary>
+            以y轴旋转Actor
+            </summary>
+            <param name="angle">y轴的旋转弧度</param>
+        </member>
+        <member name="M:ScriptRuntime.Actor.Rotate(System.Single,System.Single,System.Single)">
+            <summary>
+            转换Actor,以z,x,y欧拉角
+            </summary>
+            <param name="roll">z轴的旋转弧度</param>
+            <param name="pitch">x轴的旋转弧度</param>
+            <param name="yaw">y轴的旋转弧度</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.AddComponent``1" -->
+        <member name="M:ScriptRuntime.Actor.AddComponent(System.String)">
+            <summary>
+            使用组件的字符串名称为Actor添加组件
+            </summary>
+            <param name="sName">要添加的组件的字符串名称</param>
+            <returns>返回想要添加的组件</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.RemoveComponent(ScriptRuntime.Component)" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Actor.GetComponent``1" -->
+        <member name="M:ScriptRuntime.Actor.GetComponent(System.String)">
+            <summary>
+            通过组件的字符串名称来获取当前Actor的组件实例
+            </summary>
+            <param name="sName">组件的字符串名称</param>
+            <returns>返回组件的实例,如果组件不存在返回NULL</returns>
+        </member>
+        <member name="M:ScriptRuntime.Actor.IsAllResourcePrepared">
+            <summary>
+            判断是否Actor所加载的资源是否加载完毕
+            </summary>
+            <returns>加载成果返回true,加载失败返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Actor.GetRefCount">
+            <summary>
+            引用计数
+            </summary>
+            <returns>次数</returns>
+        </member>
+        <member name="P:ScriptRuntime.Actor.Name">
+            <summary>
+            设置与返回Actor的名字
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = new Actor();
+                    actor.Name = "Test";
+                    string sTemp = actor.Name;
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.UserData">
+            <summary>
+            设置或返回用户数据
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.LayerID">
+            <summary>
+            获取和设置layerID,layerID的范围是0到31
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.IsLinkTemplate">
+            <summary>
+            获取或设置与模板关联的状态
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.GroupID">
+            <summary>
+            获取与设置GroupID
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.Guid">
+            <summary>
+            获取Actor的Guid
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        Guid guid = actor.Guid;
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.FastID">
+            <summary>
+            得到Actor的FastID
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        UInt32 fastID = actor.FastID;
+                    }
+                    @endcode
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.Actor.IsActive" -->
+        <member name="P:ScriptRuntime.Actor.ActiveControl">
+            <summary>
+            判断Actor的激活控制。ActiveControl决定了当前actor在父actor激活的时候，会不会跟着被激活。
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.Actor.Parent" -->
+        <member name="P:ScriptRuntime.Actor.LocalPosition">
+            <summary>
+            获取与设置本地坐标系的位置
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        if (0 != actor.LocalPosition.X)
+                        {
+                            actor.LocalPosition = new Vector3(0, 0, 0);
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.LocalRotation">
+            <summary>
+            获取与设置本地坐标系的四元数旋转
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.LocalScale">
+            <summary>
+            获取与设置本地坐标系的缩放
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.LocalTransform">
+            <summary>
+            获取与设置本地坐标系的变换矩阵
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.WorldTransform">
+            <summary>
+            获取与设置世界坐标系下的变换矩阵
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.WorldRotation">
+            <summary>
+            获取与设置世界坐标系下的旋转四元数
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.WorldPosition">
+            <summary>
+            获取与设置世界坐标
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        if (0 != actor.WorldPosition.X)
+                        {
+                            actor.WorldPosition = new Vector3(0, 0, 0);
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.WorldScale">
+            <summary>
+            获取与设置缩放
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.WorldBoundingBox">
+            <summary>
+            返回当前Actor的世界坐标系下的包围盒
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.WorldBoundingBoxWithChildren">
+            <summary>
+            返回世界坐标系下Actor及其子Actor的包围盒
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.LocalBoundingBox">
+            <summary>
+            设置和返回本地坐标系下的包围盒
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.Priority">
+            <summary>
+            设置与返回Actor加载的优先级
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.Animation">
+            <summary>
+            获取到动画组件
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        AnimationComponent animationComp = actor.Animation;
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.Camera">
+            <summary>
+            获取到摄像机组件
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        CameraComponent cameraComp= actor.Camera;
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.ProjectorRender">
+            <summary>
+            获取到投影体组件
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Actor.MeshRender">
+            <summary>
+            获取到Mesh组件
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        MeshRenderComponent meshRenderComp= actor.MeshRender;
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.SpriteRender">
+            <summary>
+            获取到精灵组件
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        SpriteRenderComponent spriteRenderComp = actor.SpriteRender;
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.ParticleRender">
+            <summary>
+            获取到粒子组件
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ParticleRenderComponent particleRenderComp = actor.ParticleRender;
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.Actor.Script">
+            <summary>
+            获取到脚本组件
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ScriptComponent scriptComp = actor.Script;
+                    }
+                    @endcode
+        </member>
+        <member name="T:ScriptRuntime.ActorManager">
+            <summary>
+            一个管理游戏中所有Actor的类。
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.ActorManager.CreateFromTemplate(System.String,System.Boolean)">
+            <summary>
+            通过Template创建一个Actor.
+            </summary>
+            <param name="name">Template的路径.</param>
+            <param name="bCopy">是否拷贝Template，默认为False.</param>
+            <returns>创建出来的Actor.</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.ActorManager.GetActiveActor(System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.ActorManager.GetActiveActorCount" -->
+        <member name="M:ScriptRuntime.ActorManager.FindActiveActor(System.UInt32)">
+            <summary>
+            通过ActorID获取Actor.
+            </summary>
+            <param name="fastID">Actor的ActorID.</param>
+            <returns>被找到的Actor.</returns>
+        </member>
+        <member name="M:ScriptRuntime.ActorManager.FindActiveActorInGroup(System.UInt32)">
+            <summary>
+            通过标签找到标签为tagID的第一个Actor.
+            </summary>
+            <param name="GroupID">标签ID.</param>
+            <returns>被找到的第一个Actor.</returns>
+        </member>
+        <member name="M:ScriptRuntime.ActorManager.FindActiveActorsInGroup(System.UInt32)">
+            <summary>
+            通过标签找到所有标签为tagID的Actor.
+            </summary>
+            <param name="GroupID">标签ID.</param>
+            <returns>被找到的所有Actor.</returns>
+        </member>
+        <member name="M:ScriptRuntime.ActorManager.FindActiveActor(System.Guid)">
+            <summary>
+            通过GUID找Actor.
+            </summary>
+            <param name="guid">GUID</param>
+            <returns>被找到的Actor.</returns>
+        </member>
+        <member name="M:ScriptRuntime.ActorManager.FindActiveActor(System.String)">
+            <summary>
+            通过名字查找Actor.
+            </summary>
+            <param name="name">名字</param>
+            <returns>被找到的Actor.</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ScriptRuntime.Debug.Printf("ActorManager.FindActiveActor");
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.ActorManager.MainCameraActor">
+            <summary>
+            获取主摄像机.
+            </summary>
+            <returns>主摄像机的Actor.</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.MainCameraActor;
+                    @endcode
+        </member>
+        <member name="T:ScriptRuntime.AnimationComponent">
+            <summary>
+            动画组件类
+            设置动画的播放状态，进行动画挂接
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.Component">
+            <summary>
+            组件类，可以挂接到游戏对象上
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Component.Owner">
+            <summary>
+            游戏组件类型，获得持有该组件的游戏对象
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Component.Active">
+            <summary>
+            布尔值，标示组件是否被激活，被激活为true,未被激活为false
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.SetAnimationID(System.String)">
+            <summary>
+            设置动画路径
+            </summary>
+            <param name="id">动画路径</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.CrossFading(System.String,ScriptRuntime.PlayMode,System.Single)">
+            <summary>
+            过渡至目标动画
+            </summary>
+            <param name="name">需要要过渡的动画路径</param>
+            <param name="type">动画播放模式</param>
+            <param name="time">过渡时间长度</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.CrossFading(System.String)">
+            <summary>
+            过渡至目标动画
+            </summary>
+            <param name="name">需要要过渡的动画路径</param>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        actor.Animation.PlayAnimation("first");
+                        actor.Animation.CrossFading("second");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.CrossFading(System.String,System.Single)">
+            <summary>
+            过渡至目标动画
+            </summary>
+            <param name="name">需要要过渡的动画路径</param>
+            <param name="time">过渡时间长度</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.PlayAnimation(System.String)">
+            <summary>
+            播放动画
+            </summary>
+            <param name="name">需要播放的动画路径</param>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        actor.Animation.PlayAnimation("first");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.StopAnimation(System.String)">
+            <summary>
+            停止播放动画
+            </summary>
+            <param name="name">要停止播放的动画路径</param>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        if (actor.Animation.IsAnimationPlaying("first"))
+                        {
+                            actor.Animation.StopAnimation("first");
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.BlendingAnimation(System.String,System.Single,System.Single)">
+            <summary>
+            与当前正在播放的动画进行混合
+            </summary>
+            <param name="name">想要混合的动画路径</param>
+            <param name="weight">混合的权重</param>
+            <param name="time">混合到目标权重所需时间</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.BlendingAnimation(System.String,System.Single)">
+            <summary>
+            与当前正在播放的动画进行混合
+            </summary>
+            <param name="name">想要混合的动画路径</param>
+            <param name="weight">混合的权重</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.SetAnimationSpeed(System.String,System.Single)">
+            <summary>
+            设置动画播放速度
+            </summary>
+            <param name="name">要设置的动画路径</param>
+            <param name="speed">速度</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.SetWrapMode(System.String,ScriptRuntime.WrapMode)">
+            <summary>
+            设置动画播放模式
+            </summary>
+            <param name="name">要设置的动画路径</param>
+            <param name="wrapMode">播放模式</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.SetLayer(System.String,System.Int32)">
+            <summary>
+            设置动画层级
+            </summary>
+            <param name="name">要设置的动画路径</param>
+            <param name="layer">动画层级</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.AddAffectedNodes(System.String,System.String,System.Boolean)">
+            <summary>
+            添加会影响动画骨骼节点
+            </summary>
+            <param name="animName">要影响的动画路径</param>
+            <param name="nodeName">骨骼节点名称</param>
+            <param name="recursive">是否包括所有子节点</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.AddAffectedNodes(System.String,System.String)">
+            <summary>
+            添加会影响动画骨骼节点
+            </summary>
+            <param name="animName">要影响的动画路径</param>
+            <param name="nodeName">骨骼节点名称</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.RemoveAffectedNodes(System.String,System.String)">
+            <summary>
+            移除会影响动画骨骼节点
+            </summary>
+            <param name="animName">要影响的动画路径</param>
+            <param name="nodeName">骨骼节点名称</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.RemoveAffectedNodes(System.String,System.String,System.Boolean)">
+            <summary>
+            移除会影响动画骨骼节点
+            </summary>
+            <param name="animName">要影响的动画路径</param>
+            <param name="nodeName">骨骼节点名称</param>
+            <param name="recursive">是否包括所有子节点</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.AddAttachedActor(ScriptRuntime.Actor,System.String)">
+            <summary>
+            添加挂接物体
+            </summary>
+            <param name="actor">需要挂接上去的Actor</param>
+            <param name="skelName">挂接目标骨骼</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.RemoveAttachedActor(ScriptRuntime.Actor)">
+            <summary>
+            移除挂接物体
+            </summary>
+            <param name="actor">想要移除的Actor</param>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.IsAnimationPlaying(System.String)">
+            <summary>
+            检测动画是否在播放
+            </summary>
+            <param name="name">所检测的动画路径</param>
+            <returns>返回是否在播放</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        if (actor.Animation.IsAnimationPlaying("first"))
+                        {
+                            actor.Animation.StopAnimation("first");
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.GetCurrentFrame(System.String)">
+            <summary>
+            根据名称获取动画播放到了第几帧
+            </summary>
+            <returns>返回当前帧数</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        if (actor.Animation.IsAnimationPlaying("first"))
+                        {
+                            float frame = actor.Animation.GetCurrentFrame("first");
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.GetCurrentFrame">
+            <summary>
+            获取当前动画播放到了第几帧
+            </summary>
+            <returns>返回当前帧数</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        float frame = actor.Animation.GetCurrentFrame();
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.GetAnimFrameCount(System.String)">
+            <summary>
+            根据名称获取动画的总帧数
+            </summary>
+            <param name="name">动画名称</param>
+            <returns>总帧数</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        float frame = actor.Animation.GetAnimFrameCount("first");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.GetCurrentAnimFrameCount">
+            <summary>
+            获取当前播放的动画的总帧数
+            </summary>
+            <returns>总帧数</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        float frame = actor.Animation.GetCurrentAnimFrameCount();
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.GetCurrentAnimation">
+            <summary>
+            获取当前播放的动画名称
+            </summary>
+            <returns>动画名称</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        string sName = actor.Animation.GetCurrentAnimation();
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.GetNodeTransform(System.String,ScriptRuntime.Matrix44@)">
+            <summary>
+            获取骨骼节点的变换矩阵
+            </summary>
+            <param name="name">查找的骨骼节点名称</param>
+            <param name="trans">输出的矩阵</param>
+            <returns>返回是否查找到节点</returns>
+        </member>
+        <member name="M:ScriptRuntime.AnimationComponent.GetWrapMode(System.String)">
+            <summary>
+            根据名称获取动画的播放模式
+            </summary>
+            <param name="name">动画名称</param>
+            <returns>播放模式</returns>
+        </member>
+        <member name="T:ScriptRuntime.Application">
+            <summary>
+            游戏程序类，整个游戏程序相关的基本操作
+            如打开、关闭场景，退出等
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Application.OpenScene(System.String)">
+            <summary>
+            打开场景
+            </summary>
+            <param name="sceneResID">场景资源名字</param>
+            <returns>打开成功返回true，否则返回false</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    bool bRet = ScriptRuntime.Application.OpenScene("scene");
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Application.CloseScene(System.String)">
+            <summary>
+            关闭场景
+            </summary>
+            <param name="sceneResID">场景资源名字</param>
+            <returns>关闭成功返回true，否则返回false</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    bool bRet = ScriptRuntime.Application.CloseScene("scene");
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Application.Quit">
+            <summary>
+            退出应用程序
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Application.GetAssetPath">
+            <summary>
+            获取资源路径
+            </summary>
+            <returns>得到的资源路径作为字符串返回</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    string sAssetPath = ScriptRuntime.Application.GetAssetPath();
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Application.GetAppDicOnMobile">
+            <summary>
+            获取移动应用程序的路径
+            </summary>
+            <returns>得到的路径作为字符串返回</returns>
+        </member>
+        <member name="M:ScriptRuntime.Application.GetDPIHeight">
+            <summary>
+            获取移动显示设备高度
+            </summary>
+            <returns>得到的高度作为字符串返回</returns>
+        </member>
+        <member name="M:ScriptRuntime.Application.GetDPIWidth">
+            <summary>
+            获取移动显示设备宽度
+            </summary>
+            <returns>得到的宽度作为字符串返回</returns>
+        </member>
+        <member name="P:ScriptRuntime.Application.CurrentScene">
+            <summary>
+            当前场景
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.AssetPath">
+            <summary>
+            资源路径,这个类型可反射到编辑器脚本反射面板
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.Camera">
+            <summary>
+            摄像机组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Camera.#ctor">
+            <summary>
+            创建一个透视摄影摄像机
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Camera.SetRenderTarget(ScriptRuntime.RenderToTexture)">
+            <summary>
+            设置渲染到纹理
+            </summary>
+            <param name="rtt">指定渲染到纹理的目标</param>
+        </member>
+        <member name="M:ScriptRuntime.Camera.SetLightLitTexture(ScriptRuntime.RenderToTexture)">
+            <summary>
+            设置光照渲染纹理
+            </summary>
+            <param name="rtt">指定光照纹理的目标</param>
+        </member>
+        <member name="M:ScriptRuntime.Camera.SetupPerspectiveFovRH(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            为摄像机创建透视投影
+            </summary>
+            <param name="fov">纵向视角</param>
+            <param name="aspect">横纵比</param>
+            <param name="zNear">近裁剪面</param>
+            <param name="zFar">远裁剪面</param>
+        </member>
+        <member name="M:ScriptRuntime.Camera.SetupPerspectiveFovRHEx(System.Single,System.Single,System.Single,System.Single,ScriptRuntime.Vector4@,System.Boolean)">
+            <summary>
+            创建一个用于水面反射与折射的投影矩阵
+            </summary>
+            <param name="fov">纵向视角</param>
+            <param name="aspect">横纵比</param>
+            <param name="zNear">近裁剪面</param>
+            <param name="zFar">远裁剪面</param>
+            <param name="clipPlane">反射与折射的平面</param>
+            <param name="reflect">是否为反射</param>
+        </member>
+        <member name="M:ScriptRuntime.Camera.converViewType(System.Int32)">
+            <summary>
+            从整型转为摄像机类型枚举
+            </summary>
+            <param name="viewType">要转换的整型</param>
+            <returns>返回整型对应的摄像机枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.Camera.converViewType(ScriptRuntime.ViewType)">
+            <summary>
+            从摄像机类型枚举转为整型
+            </summary>
+            <param name="viewType">摄像机枚举类型</param>
+            <returns>返回摄像机枚举类型对应的整型</returns>
+        </member>
+        <member name="P:ScriptRuntime.Camera.Fov">
+            <summary>
+            获取或设置视野范围
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.Aspect">
+            <summary>
+            获取方向参数
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.RenderDepth">
+            <summary>
+            获取与设置是否渲染深度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.RenderNormal">
+            <summary>
+            获取与设置是否正常渲染
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.ViewTransform">
+            <summary>
+            获取与设置摄像机的变换矩阵
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.RenderCustomised">
+            <summary>
+            获取与设置用户自定义渲染
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.CullMask">
+            <summary>
+            获取与设置摄像机的剔除标记位
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.CullMaskUINT">
+            <summary>
+            获取与设置摄像机的剔除标记位
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.UseBeforeDrawEvent">
+            <summary>
+            设置是否使用前置渲染事件
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Camera.RenderShadowMap">
+            <summary>
+            设置是否渲染阴影
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.CameraComponent">
+            <summary>
+            摄像机组件
+            指定渲染与视口相关的属性
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.CameraComponent.#ctor">
+            <summary>
+            摄像机组件构造函数
+            默认创建一个透视投影的摄像机
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.CameraComponent.SetupOrthogonal(System.Single,System.Single,System.Single)">
+            <summary>
+            创建正交投影
+            </summary>
+            <param name="height">正交投影的高度</param>
+            <param name="zNear">指定正交投影的近裁剪面</param>
+            <param name="zFar">指定正交投影的远裁剪面</param>
+        </member>
+        <member name="M:ScriptRuntime.CameraComponent.SetupPerspectiveFovRH(System.Single,System.Single,System.Single)">
+            <summary>
+            创建透视投影
+            </summary>
+            <param name="fov">摄像机的纵向视角(角度)</param>
+            <param name="zNear">指定透视投影的近裁剪面</param>
+            <param name="zFar">指定透视投影的远裁剪面</param>
+        </member>
+        <member name="M:ScriptRuntime.CameraComponent.SetRenderTarget(ScriptRuntime.RenderToTexture)">
+            <summary>
+            设置渲染到纹理
+            </summary>
+            <param name="rtt">指定渲染到纹理的目标</param>
+        </member>
+        <member name="M:ScriptRuntime.CameraComponent.SetLightLitTexture(ScriptRuntime.RenderToTexture)">
+            <summary>
+            设置光照纹理
+            </summary>
+            <param name="rtt">指定光照纹理的目标</param>
+        </member>
+        <member name="M:ScriptRuntime.CameraComponent.SetupPerspectiveFovRH(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            为摄像机创建透视投影
+            </summary>
+            <param name="fov">纵向视角的角度</param>
+            <param name="aspect">横纵比</param>
+            <param name="zNear">近裁剪面距离</param>
+            <param name="zFar">远裁剪面距离</param>
+        </member>
+        <member name="M:ScriptRuntime.CameraComponent.SetupPerspectiveFovRHEx(System.Single,System.Single,System.Single,System.Single,ScriptRuntime.Vector4@,System.Boolean)">
+            <summary>
+            创建一个用于水面反射与折射的投影矩阵
+            </summary>
+            <param name="fov">纵向视角的角度</param>
+            <param name="aspect">横纵比</param>
+            <param name="zNear">近裁剪面距离</param>
+            <param name="zFar">远裁剪面距离</param>
+            <param name="clipPlane">反射与折射的平面</param>
+            <param name="reflect">设置是否为反射</param>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.ViewType">
+            <summary>
+            获取摄像机类型
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.IsPerspective">
+            <summary>
+            判断摄像机是否为透视投影
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.Fov">
+            <summary>
+            获取摄像机的纵向视角(角度)
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.Aspect">
+            <summary>
+            获取摄像机的横纵比
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.NearClipPlane">
+            <summary>
+            获取与设置近裁剪面的距离
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.FarClipPlane">
+            <summary>
+            获取与设置远裁剪面的距离
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.FarWidth">
+            <summary>
+            获取远裁剪面的宽度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.FarHeight">
+            <summary>
+            获取远裁剪面的高度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.NearWidth">
+            <summary>
+            获取近裁剪面的宽度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.NearHeight">
+            <summary>
+            获取近裁剪面的高度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.ShadowDistance">
+            <summary>
+            获取与设置阴影的距离
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.View">
+            <summary>
+            获取摄像机的相机变换矩阵
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.Proj">
+            <summary>
+            获取摄像机的透视投影矩阵
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.ViewProj">
+            <summary>
+            获取摄像机的变换矩阵
+            透视投影矩阵乘以相机变换矩阵(OpenGL)
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.RenderDepth">
+            <summary>
+            获取与设置是否渲染深度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.RenderNormal">
+            <summary>
+            获取与设置是否正常渲染
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.ViewTransform">
+            <summary>
+            获取摄像机变换矩阵
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.RenderCustomised">
+            <summary>
+            设置与获取用户自定义渲染
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.CullMask">
+            <summary>
+            获取与设置摄像机的剔除标记位
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.CullMaskUINT">
+            <summary>
+            获取与设置摄像机的剔除标记位
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.UseBeforeDrawEvent">
+            <summary>
+            设置是否使用前置渲染事件
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.CameraComponent.RenderShadowMap">
+            <summary>
+            设置是否渲染阴影
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.Debug">
+            <summary>
+            调试类，处理调试信息的输出
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Debug.Printf(System.String)">
+            <summary>
+            输出参数内容至控制台窗口或日志文件
+            </summary>
+            <param name="str">待输出的字符串</param>
+            <return>返回值为空类型</return>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    ScriptRuntime.Debug.Printf("ScriptRuntime.Debug.Printf");
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Debug.Dbgout(System.String)">
+            <summary>
+            输出参数内容至调试（debug）窗口
+            </summary>
+            <param name="str">待输出的字符串</param>
+            <return>返回值为空类型</return>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    ScriptRuntime.Debug.Dbgout("ScriptRuntime.Debug.Dbgout");
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Debug.Warning(System.String)">
+            <summary>
+            输出警告（warning）信息至控制台窗口
+            </summary>
+            <param name="str">存储警告信息的字符串</param>
+            <return>返回值为空类型</return>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    ScriptRuntime.Debug.Warning("ScriptRuntime.Debug.Warning");
+                    @endcode
+        </member>
+        <member name="T:ScriptRuntime.ExceptionConverter">
+            <summary>
+            异常转换类，主要是负责将
+            异常信息输出至字符串中
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.ExceptionConverter.#ctor">
+            <summary>
+            类ExceptionConverter的无参数构造函数
+            </summary>
+            <return>无返回值</return>
+        </member>
+        <member name="M:ScriptRuntime.ExceptionConverter.ExceptionToString(System.Exception,System.String@)">
+            <summary>
+            将异常信息输出至字符串中
+            </summary>
+            <param name="exception">类Exception的实例，包含具体的异常信息</param>
+            <param name="exc">out类型，存储转换后的字符串</param>
+            <return>返回值为空类型</return>
+        </member>
+        <member name="T:ScriptRuntime.GraphicSystem">
+            <summary>
+            图形系统类，包括与图形相关的操作，
+            如相机、视口、材质等
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.GraphicSystem.GetSceneCamera">
+            <summary>
+            获取场景中的主相机
+            </summary>
+            <returns>相机组件</returns>
+        </member>
+        <member name="M:ScriptRuntime.GraphicSystem.RenderCamera(ScriptRuntime.Camera)">
+            <summary>
+            以相机作为参数，渲染场景
+            </summary>
+            <param name="cam">摄像机</param>
+        </member>
+        <member name="M:ScriptRuntime.GraphicSystem.SetRenderTarget(ScriptRuntime.RenderToTexture,System.Int32)">
+            <summary>
+            利用RenderToTexture和缓冲区清理标志位，设置渲染目标
+            </summary>
+            <param name="target">RenderToTexture，输入参数</param>
+            <param name="index">渲染目标的缓冲区清理标志位</param>
+        </member>
+        <member name="M:ScriptRuntime.GraphicSystem.GetWidth">
+            <summary>
+            获得视口的宽度
+            </summary>
+            <returns>视口宽度</returns>
+        </member>
+        <member name="M:ScriptRuntime.GraphicSystem.GetHeight">
+            <summary>
+            获得视口的高度
+            </summary>
+            <returns>视口高度</returns>
+        </member>
+        <member name="M:ScriptRuntime.GraphicSystem.GetCameraRenderToTextureByCameraType(System.Int32)">
+            <summary>
+            根据相机类型获得相机的RenderToTexture
+            </summary>
+            <param name="type">相机类型参数，值可选:eCO_InvalidCamera,eCO_Shadow,eCO_Main,eCO_PuppetMain</param>
+            <returns>返回RenderToTexture</returns>
+        </member>
+        <member name="M:ScriptRuntime.GraphicSystem.CreateMaterial(System.String)">
+            <summary>
+            根据资源ID创建材质实例
+            </summary>
+            <param name="resID">资源ID</param>
+            <returns>返回材质实例</returns>
+        </member>
+        <member name="M:ScriptRuntime.GraphicSystem.BlitImage(ScriptRuntime.Texture,ScriptRuntime.RenderToTexture,ScriptRuntime.MaterialInstance,System.Int32)">
+            <summary>
+            利用材质实例的特定通道，将指定纹理渲染至目标RenderToTexture
+            </summary>
+            <param name="source">指定的纹理</param>
+            <param name="destination">目标RenderToTexture</param>
+            <param name="material">材质实例</param>
+            <param name="passIndex">材质实例的通道</param>
+        </member>
+        <member name="T:ScriptRuntime.ImagePath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.KeyEvent">
+            <summary>
+            按键事件
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.MouseEvent">
+            <summary>
+            鼠标事件
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.TouchEvent">
+            <summary>
+            触控事件
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.InAppPurchase">
+            <summary>
+            应用程序购买类
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.InAppPurchase.RequestProductInfo(System.String)">
+            <summary>
+            请求产品信息
+            </summary>
+            <param name="valStr">产品信息指示</param>
+        </member>
+        <member name="M:ScriptRuntime.InAppPurchase.BuyProduct(System.String)">
+            <summary>
+            购买产品操作
+            </summary>
+            <param name="valStr">产品信息指示</param>
+        </member>
+        <member name="T:ScriptRuntime.LightComponent">
+            <summary>
+            灯光组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.LightComponent.#ctor">
+            <summary>
+            创建一个光源组件,默认为电光源
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.LightType">
+            <summary>
+            获取与改变光源类型
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.Position">
+            <summary>
+            获取与设置光源位置
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.Direction">
+            <summary>
+            获取与设置光源方向
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.Color">
+            <summary>
+            获取与设置灯光颜色
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.Intensity">
+            <summary>
+            获取与设置灯光强度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.Range">
+            <summary>
+            获取与设置灯光的光照范围
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.DistanceFallOff">
+            <summary>
+            光源随距离的衰减
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.SpotInnerAngle">
+            <summary>
+            聚光灯的内角
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.SpotOuterAngle">
+            <summary>
+            聚光灯的外角
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.LightComponent.RadialFallOff">
+            <summary>
+            聚光灯的半径衰减
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.MaterialInstance">
+            <summary>
+            材质实例
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.MaterialInstance.SetTexture(System.String,ScriptRuntime.Texture)">
+            <summary>
+            为材质中的纹理参数设置纹理
+            </summary>
+            <param name="paramName">材质中的纹理参数名称</param>
+            <param name="texture">要设置的纹理</param>
+        </member>
+        <member name="M:ScriptRuntime.MaterialInstance.SetTexture(System.String,System.String,System.Int32)">
+            <summary>
+            为材质中的纹理参数设置纹理资源路径
+            </summary>
+            <param name="paramName">材质中的纹理参数名称</param>
+            <param name="id">要设置的纹理资源路径</param>
+            <param name="priority">默认的0表示同步加载,1表示异步加载</param>
+        </member>
+        <member name="M:ScriptRuntime.MaterialInstance.SetValue(System.String,System.Single)">
+            <summary>
+            为材质中的浮点参数设值 
+            </summary>
+            <param name="paramName">材质中的浮点参数名称</param>
+            <param name="value">要设置的浮点数值</param>
+        </member>
+        <member name="M:ScriptRuntime.MaterialInstance.SetValue(System.String,ScriptRuntime.Vector4)">
+            <summary>
+            为材质中的向量参数设置向量值
+            </summary>
+            <param name="paramName">材质的向量参数名称</param>
+            <param name="value">要设置的向量参数值</param>
+        </member>
+        <member name="M:ScriptRuntime.MaterialInstance.SetValue(System.String,ScriptRuntime.Matrix44@)">
+            <summary>
+            为材质中的矩阵参数设置矩阵值
+            </summary>
+            <param name="paramName">材质中的矩阵参数名称</param>
+            <param name="value">要设置的矩阵参数值</param>
+        </member>
+        <member name="M:ScriptRuntime.MaterialInstance.SetGlobalValue(ScriptRuntime.GlobalShaderMatrix,ScriptRuntime.Matrix44@)">
+            <summary>
+            设置着色器中的全局矩阵参数,比如摄像机变换矩阵
+            </summary>
+            <param name="index">着色器中的全局矩阵参数类型</param>
+            <param name="value">要设置的矩阵的值</param>
+        </member>
+        <member name="M:ScriptRuntime.MaterialInstance.SetGlobalValue(ScriptRuntime.GlobalShaderVector,ScriptRuntime.Vector4@)">
+            <summary>
+            设置着色器中的全局向量参数,比如环境光
+            </summary>
+            <param name="index">着色器中的全局向量参数类型</param>
+            <param name="value">要设置的向量的值</param>
+        </member>
+        <member name="T:ScriptRuntime.Input">
+            <summary>
+            输入类,包括键盘,鼠标,触控的输入
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Input.KeyDown(ScriptRuntime.Code)">
+            <summary>
+            按键是否被按下
+            </summary>
+            <param name="_keyCode">键的枚举值</param>
+            <returns>true：按键被按下； false：按键没有被按下</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    if (ScriptRuntime.Input.KeyDown(Code.Space))
+                    {
+                        ScriptRuntime.Debug.Printf("Code.Space is Down");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Input.KeyUp(ScriptRuntime.Code)">
+            <summary>
+            按键是否弹起
+            </summary>
+            <param name="_keyCode">键的枚举值</param>
+            <returns>true：按键弹起； false：按键没有弹起</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    if (ScriptRuntime.Input.KeyUp(Code.Space))
+                    {
+                        ScriptRuntime.Debug.Printf("Code.Space is Up");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Input.KeyPressed(ScriptRuntime.Code)">
+            <summary>
+            按键是否是持续按下状态
+            </summary>
+            <param name="_keyCode">键的枚举值</param>
+            <returns>true：按键是持续按下状态； false：按键不是持续按下状态</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    if (ScriptRuntime.Input.KeyPressed(Code.Space))
+                    {
+                        ScriptRuntime.Debug.Printf("Code.Space is Pressed");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Input.MouseButtonDown(ScriptRuntime.MouseCode)">
+            <summary>
+            鼠标按钮是否被按下
+            </summary>
+            <param name="_mouseCode">鼠标按钮枚举值</param>
+            <returns>true：鼠标按钮被按下；false：鼠标按钮没有被按下</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    if (ScriptRuntime.Input.MouseButtonDown(MouseCode.LeftButton))
+                    {
+                        ScriptRuntime.Debug.Printf("MouseCode.LeftButton is Down");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Input.MouseWheelForward">
+            <summary>
+            鼠标滚轮是否向前滚动
+            </summary>
+            <returns>true：鼠标滚轮向前滚动；false：鼠标滚轮没有向前滚动</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    if (ScriptRuntime.Input.MouseWheelForward())
+                    {
+                        ScriptRuntime.Debug.Printf("Mouse Wheel Forward");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Input.MouseWheelBack">
+            <summary>
+            鼠标滚轮是否向后滚动
+            </summary>
+            <returns>true：鼠标滚轮向后滚动；false：鼠标滚轮没有向后滚动</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    if (ScriptRuntime.Input.MouseWheelBack())
+                    {
+                        ScriptRuntime.Debug.Printf("Mouse Wheel Back");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Input.MouseButtonPressed(ScriptRuntime.MouseCode)">
+            <summary>
+            鼠标按钮是否是被按下状态
+            </summary>
+            <param name="_mouseCode">鼠标按钮枚举值</param>
+            <returns>true：鼠标按钮是持续按下状态；false：鼠标按钮不是持续按下状态</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    if (ScriptRuntime.Input.MouseButtonPressed(MouseCode.LeftButton))
+                    {
+                        ScriptRuntime.Debug.Printf("MouseCode.LeftButton is Pressed");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Input.MouseButtonUp(ScriptRuntime.MouseCode)">
+            <summary>
+            鼠标按钮是否弹起
+            </summary>
+            <param name="_mouseCode">鼠标按钮枚举值</param>
+            <returns>true：鼠标按钮弹起；false：鼠标按钮没有弹起</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    if (ScriptRuntime.Input.MouseButtonUp(MouseCode.LeftButton))
+                    {
+                        ScriptRuntime.Debug.Printf("MouseCode.LeftButton is Up");
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Input.GetScreenPosition(ScriptRuntime.Vector2@)">
+            <summary>
+            得到鼠标光标在屏幕上的位置
+            </summary>
+            <param name="outFloat2">鼠标光标在屏幕上的位置</param>
+        </member>
+        <member name="M:ScriptRuntime.Input.MouseGetMovement(ScriptRuntime.Vector2@)">
+            <summary>
+            得到鼠标光标在屏幕上的移动距离
+            </summary>
+            <param name="outFloat2">鼠标光标在屏幕上的移动距离</param>
+        </member>
+        <member name="M:ScriptRuntime.Input.GetScreenTouchCount">
+            <summary>
+            得到屏幕上的触点个数，windows平台没实现
+            </summary>
+            <returns>触点个数</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.GetScreenTouchID(System.Int32)">
+            <summary>
+            得到屏幕上触点ID
+            </summary>
+            <param name="index">触点索引</param>
+            <returns>屏幕上触点ID</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.IsFingerDown(System.Int32)">
+            <summary>
+            手指是否按下
+            </summary>
+            <param name="id">触点索引</param>
+            <returns>true：手指按下；false：手指没有按下</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.IsFingerPressing(System.Int32)">
+            <summary>
+            手指是否是按下状态
+            </summary>
+            <param name="id">触点索引</param>
+            <returns>true：手指是按下状态；false：手指不是按下状态</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.IsFingerUp(System.Int32)">
+            <summary>
+            手指是否弹起
+            </summary>
+            <param name="id">触点索引</param>
+            <returns>true：手指是弹起；false：手指不是弹起</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.GetScreenTouchMovement(System.Int32)">
+            <summary>
+            得到手指在屏幕上的移动距离
+            </summary>
+            <param name="id">触点索引</param>
+            <returns>手指在屏幕上的移动距离</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.GetScreenTouchScreenPosition(System.Int32)">
+            <summary>
+            得到触点在屏幕的位置，为相对位置，范围：0-1
+            </summary>
+            <param name="id">触点索引</param>
+            <returns>屏幕的位置</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.GetScreenTouchPixelPosition(System.Int32)">
+            <summary>
+            得到在触点在屏幕上的像素位置
+            </summary>
+            <param name="id">触点索引</param>
+            <returns>屏幕上的像素位置</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.GetCurrentKeyEvents">
+            <summary>
+            得到当前按键的事件
+            </summary>
+            <returns>按键事件数组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.GetCurrentMouseEvents">
+            <summary>
+            得到当前鼠标事件
+            </summary>
+            <returns>当前鼠标事件数组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Input.GetCurrentTouchEvents">
+            <summary>
+            得到当前触点事件
+            </summary>
+            <returns>当前触点数组</returns>
+        </member>
+        <member name="T:ScriptRuntime.IntersectWorld">
+            <summary>
+            射线检测相关算法的集合
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.IntersectWorld.IntersectWorld_ComputeRay(ScriptRuntime.Vector2@,ScriptRuntime.Ray@)">
+            <summary>
+            构造一条从当前默认相机发出的射线
+            </summary>
+            <param name="screenPos">射线起点的位置，取值范围：[0,1]</param>
+            <param name="outRay">返回值（构造出的射线）</param>
+        </member>
+        <member name="M:ScriptRuntime.IntersectWorld.IntersectActor(ScriptRuntime.Actor,ScriptRuntime.Ray@,ScriptRuntime.LayerID,ScriptRuntime.Vector3@)">
+            <summary>
+            射线检测指定的Actor
+            </summary>
+            <param name="act">要检测的Actor</param>
+            <param name="ray">射线</param>
+            <param name="layerid">参与检测的层</param>
+            <param name="pos">射线打到Actor上的点的坐标</param>
+            <returns>是否检测到Actor</returns>
+        </member>
+        <member name="M:ScriptRuntime.IntersectWorld.IntersectWorld_Actor(ScriptRuntime.Ray@,ScriptRuntime.LayerID)">
+            <summary>
+            射线检测Actor
+            </summary>
+            <param name="ray">指定的射线</param>
+            <param name="layerid">参与检测的层</param>
+            <returns>射线检测到Actor（射线从起点发出，第一个检测到的Actor），若没有检测到任何Actor，返回NULL</returns>
+        </member>
+        <member name="M:ScriptRuntime.IntersectWorld.IntersectWorld_Point(ScriptRuntime.Ray@,ScriptRuntime.LayerID,ScriptRuntime.Vector3@)">
+            <summary>
+            获取射线检测到场景里(网格)Actor的第一个点的坐标
+            </summary>
+            <param name="ray">指定的射线</param>
+            <param name="layerid">参与检测的层</param>
+            <param name="outPoint">返回值（检测到的第一个点的坐标）</param>
+        </member>
+        <member name="M:ScriptRuntime.IntersectWorld.IntersectActor(ScriptRuntime.Actor,ScriptRuntime.Ray@,ScriptRuntime.LayerMark,ScriptRuntime.Vector3@)">
+            <summary>
+            获取射线与指定(网格)Actor的交点
+            </summary>
+            <param name="act">要检测的Actor</param>
+            <param name="ray">要检测的射线</param>
+            <param name="mark">Actor的过滤层(只有这个层的Actor参与射线检测)</param>
+            <param name="pos">射线与Actor的焦点</param>
+            <returns>射线与Actor是否有交点</returns>
+        </member>
+        <member name="M:ScriptRuntime.IntersectWorld.IntersectWorld_Actor(ScriptRuntime.Ray@,ScriptRuntime.LayerMark)">
+            <summary>
+            获取射线打中的第一个(网格)Actor
+            </summary>
+            <param name="ray">指定的射线</param>
+            <param name="mark">Actor的过滤层(只有这个层的Actor参与射线检测)</param>
+            <returns></returns>
+        </member>
+        <member name="M:ScriptRuntime.IntersectWorld.IntersectWorld_Point(ScriptRuntime.Ray@,ScriptRuntime.LayerMark,ScriptRuntime.Vector3@)">
+            <summary>
+            获取射线打中的第一个(网格)Actor的交点
+            </summary>
+            <param name="ray">指定的射线</param>
+            <param name="mark">Actor的过滤层(只有这个层的Actor参与射线检测)</param>
+            <param name="outPoint">射线与第一个Actor的交点</param>
+        </member>
+        <member name="M:ScriptRuntime.IntersectWorld.IntersectWorld_Triangle(ScriptRuntime.Ray@,ScriptRuntime.LayerMark,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            获取射线打中的第一个网格上的三角形的三个点
+            </summary>
+            <param name="ray">指定的射线</param>
+            <param name="mark">Actor的过滤层(只有这个层的Actor参与射线检测)</param>
+            <param name="outPoint1">三角形的第一个点</param>
+            <param name="outPoint2">三角形的第二个点</param>
+            <param name="outPoint3">三角形的第三个点</param>
+        </member>
+        <member name="T:ScriptRuntime.SimpleSkyComponent">
+            <summary>
+            简单天空渲染组件类
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.MeshRenderComponent">
+            <summary>
+            网格渲染组件类
+            </summary>
+            <summary>
+            网格渲染组件类
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.RenderComponent">
+            <summary>
+            渲染相关的组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.GetMaterialID(System.Int32)">
+            <summary>
+            获得渲染相关组件的第i个材质的资源名
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <returns>返回的资源名称</returns>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.GetMaterialInstance(System.Int32)">
+            <summary>
+            获得渲染相关组件的第i个材质的材质实例
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <returns>返回的材质实例</returns>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.SetMaterialID(System.Int32,System.String,System.Boolean)">
+            <summary>
+            设置材质资源到指定的材质索引
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <param name="pMonoStr">要设置的资源路径</param>
+            <param name="bCopy">是否要拷贝材质,默认是使用内存中的同一份材质</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.SetMaterialInstance(System.Int32,ScriptRuntime.MaterialInstance,System.Boolean)">
+            <summary>
+            设置材质实例到指定的材质索引
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <param name="pMonoObj">要设置的材质实例</param>
+            <param name="bCopy">是否要拷贝材质,默认是使用内存中的同一份材质</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.GetShaderID(System.Int32)">
+            <summary>
+            获得渲染相关组件的第i个材质的着色器名称
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <returns>返回相应材质的着色器名称</returns>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.SetShaderID(System.Int32,System.String)">
+            <summary>
+            设置渲染相关组件的第i个材质的着色器
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <param name="sSharderId">要设置的着色器名称</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.SetTexture(System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            设置渲染相关组件的第i个材质的指定贴图参数的资源路径
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <param name="sParamName">材质的贴图参数名称</param>
+            <param name="sTexId">要设置的贴图资源路径</param>
+            <param name="iPriority">默认的0表示同步加载,1表示异步加载</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.SetTexture(System.Int32,System.String,ScriptRuntime.RenderToTexture)">
+            <summary>
+            设置渲染相关组件的第i个材质的指定渲染到纹理参数的参数实例
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <param name="sParamName">材质的渲染到纹理参数名称</param>
+            <param name="rtt">要设置的渲染到纹理实例</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.SetShaderConstantParam(System.Int32,System.String,System.Single)">
+            <summary>
+            设置渲染相关组件的第i个材质的指定浮点参数的值
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <param name="sParamName">材质的浮点参数名称</param>
+            <param name="val">要设置的浮点数参数值</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.SetShaderConstantParam(System.Int32,System.String,ScriptRuntime.Vector4@)">
+            <summary>
+            设置渲染相关组件的第i个材质的指定向量参数的向量值
+            </summary>
+            <param name="index">渲染相关组件的材质索引</param>
+            <param name="sParamName">材质的向量参数名称</param>
+            <param name="val">要设置的向量参数值</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.GetShaderCount">
+            <summary>
+            获得渲染相关组件的着色器数量
+            </summary>
+            <returns>返回组件的着色器数量</returns>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.GetMaterialCount">
+            <summary>
+            获得渲染相关组件的材质数量
+            </summary>
+            <returns>返回组件的材质数量</returns>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.GetSubMeshCount">
+            <summary>
+            获得渲染相关组件的子网格个数
+            </summary>
+            <returns>返回子网格的个数</returns>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.SetVisible(System.Boolean)">
+            <summary>
+            设置渲染相关组件是否可见
+            </summary>
+            <param name="bVis">设置是否可见</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.IsVisible">
+            <summary>
+            获取渲染相关组件是否可见
+            </summary>
+            <returns>返回true则可见,反之</returns>
+        </member>
+        <member name="M:ScriptRuntime.RenderComponent.StandaloneRender(ScriptRuntime.MaterialInstance)">
+            <summary>
+            单独渲染组件
+            </summary>
+            <param name="customMaterial">单独渲染组件使用的材质</param>
+        </member>
+        <member name="M:ScriptRuntime.MeshRenderComponent.SetMeshID(System.String,System.Int32)">
+            <summary>
+            为网格组件设置模型资源
+            </summary>
+            <param name="sMeshId">模型资源路径</param>
+            <param name="priority">加载的方式,0为同步加载,1为异步加载</param>
+        </member>
+        <member name="M:ScriptRuntime.MeshRenderComponent.GetMeshID">
+            <summary>
+            获取网格组件ID
+            </summary>
+            <returns>ID</returns>
+        </member>
+        <member name="M:ScriptRuntime.MeshRenderComponent.SetDrawDepth(System.Boolean)">
+            <summary>
+            设置绘制深度
+            </summary>
+            <param name="bDraw"></param>
+        </member>
+        <member name="M:ScriptRuntime.MeshRenderComponent.GetTriangleCount">
+            <summary>
+            获得网格组件中模型的三角面数
+            </summary>
+            <returns>返回三角面总数</returns>
+        </member>
+        <member name="M:ScriptRuntime.MeshRenderComponent.GetVertexCount">
+            <summary>
+            获得网格组件中模型的顶点数
+            </summary>
+            <returns>返回顶点总数</returns>
+        </member>
+        <member name="T:ScriptRuntime.ParticleSystem">
+            <summary>
+            粒子系统，控制粒子系统的运行。
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.ParticleSystem.#ctor">
+            <summary>
+            粒子系统构造函数
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.ParticleSystem.Play">
+            <summary>
+             播放粒子.
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ParticleSystem partial = actor.ParticleRender.GetParticleSystem();
+                        if (null != partial)
+                        {
+                            partial.Play();
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.ParticleSystem.Pause">
+            <summary>
+             暂停粒子.
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ParticleSystem partial = actor.ParticleRender.GetParticleSystem();
+                        if (null != partial)
+                        {
+                            partial.Pause();
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.ParticleSystem.Stop">
+            <summary>
+             停止粒子.
+            </summary>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ParticleSystem partial = actor.ParticleRender.GetParticleSystem();
+                        if (null != partial)
+                        {
+                            partial.Stop();
+                        }
+                    }
+                    @endcode
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.ParticleSystem.Name" -->
+        <member name="P:ScriptRuntime.ParticleSystem.IsPlaying">
+            <summary>
+             当前粒子系统是否在播放.
+            </summary>
+            <returns>粒子系统播放与否.</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ParticleSystem partial = actor.ParticleRender.GetParticleSystem();
+                        if (null != partial)
+                        {
+                            bool bIsPlaying = partial.IsPlaying;
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.ParticleSystem.IsPaused">
+            <summary>
+             当前粒子系统是否在暂停.
+            </summary>
+            <returns>粒子系统暂停与否.</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ParticleSystem partial = actor.ParticleRender.GetParticleSystem();
+                        if (null != partial)
+                        {
+                            bool bIsPaused = partial.IsPaused;
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.ParticleSystem.IsStop">
+            <summary>
+             当前粒子系统是否在停止.
+            </summary>
+            <returns>粒子系统停止与否.</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ParticleSystem partial = actor.ParticleRender.GetParticleSystem();
+                        if (null != partial)
+                        {
+                            bool bIsStop = partial.IsStop;
+                        }
+                    }
+                    @endcode
+        </member>
+        <member name="P:ScriptRuntime.ParticleSystem.PlayRateScale">
+            <summary>
+             粒子系统的播放速率.
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ParticleSystem.ParticleQuato">
+            <summary>
+            获取与设置粒子系统中的粒子数量
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.ParticleRenderComponent">
+            <summary>
+            粒子系统的组件。
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.ParticleRenderComponent.InitParticleSystem">
+            <summary>
+            初始化粒子系统.
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.ParticleRenderComponent.GetParticleSystem">
+            <summary>
+            获取当前粒子系统.
+            </summary>
+            <returns>当前粒子系统.</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    Actor actor = ActorManager.FindActiveActor("test");
+                    if (null != actor)
+                    {
+                        ParticleSystem partial = actor.ParticleRender.GetParticleSystem();
+                    }
+                    @endcode
+        </member>
+        <member name="T:ScriptRuntime.PhysicsBodyComponent">
+            <summary>
+            物理体组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.MovePosition(ScriptRuntime.Vector3@)">
+            <summary>
+            按照给的距离移动物理体或者角色控制器
+            </summary>
+            <param name="f3Pos">移动的距离</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.MoveToPosition(ScriptRuntime.Vector3@)">
+            <summary>
+            移动物理体到指定位置
+            </summary>
+            <param name="f3Pos">移动到的目标位置</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.RotationRotation(ScriptRuntime.Quaternion@)">
+            <summary>
+            按照给定的角度选择物理体
+            </summary>
+            <param name="rot">旋转角</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.RotationToRotation(ScriptRuntime.Quaternion@)">
+            <summary>
+            旋转到指定的角度
+            </summary>
+            <param name="rot">旋转到的目标角度</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.AddForce(ScriptRuntime.Vector3,ScriptRuntime.ForceType,System.Boolean)">
+            <summary>
+            添加力
+            </summary>
+            <param name="force">力</param>
+            <param name="forcetype">力的类型</param>
+            <param name="bWakeUp">是否唤醒Actor</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.AddForceAtPos(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.ForceType,System.Boolean)">
+            <summary>
+            在世界位置添加力
+            </summary>
+            <param name="force">力</param>
+            <param name="pos">力的施加位置</param>
+            <param name="forcetype">力的类型</param>
+            <param name="bWakeUp">是否唤醒Actor</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.AddLocalForceAtPos(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.ForceType,System.Boolean)">
+            <summary>
+            在世界位置添加本地力
+            </summary>
+            <param name="force">力</param>
+            <param name="pos">力的施加位置</param>
+            <param name="forcetype">力的类型</param>
+            <param name="bWakeUp">是否唤醒Actor</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.AddForceAtLocalPos(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.ForceType,System.Boolean)">
+            <summary>
+            在本地位置添加力
+            </summary>
+            <param name="force">力</param>
+            <param name="pos">力的施加位置</param>
+            <param name="forcetype">力的类型</param>
+            <param name="bWakeUp">是否唤醒Actor</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.AddLocalForceAtLocalPos(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.ForceType,System.Boolean)">
+            <summary>
+            在本地位置添加本地力
+            </summary>
+            <param name="force">力</param>
+            <param name="pos">力的施加位置</param>
+            <param name="forcetype">力的类型</param>
+            <param name="bWakeUp">是否唤醒Actor</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.CreateShape(ScriptRuntime.PhyXShapeType)">
+            <summary>
+            添加物理形状
+            </summary>
+            <param name="type">形状类型</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.RemoveShapeAt(System.Int32)">
+            <summary>
+            删除指定为位置的物理形状
+            </summary>
+            <param name="index">指定位置</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.ReplaceShape(System.Int32,ScriptRuntime.PhyXShapeType)">
+            <summary>
+            替换指定位置物理形状
+            </summary>
+            <param name="index">指定位置</param>
+            <param name="type">替换为的物理形状类型</param>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.GetShapeAt(System.Int32)">
+            <summary>
+            获取指定位置物理形状
+            </summary>
+            <param name="index">指定位置</param>
+            <returns>物理形状指针</returns>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsBodyComponent.GetShapeCount">
+            <summary>
+            获取物理形状个数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.LinearVelocity">
+            <summary>
+            读写属性：物理体瞬时速度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.AngularVelocity">
+            <summary>
+            读写属性：物理体瞬时角速度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.LinearDamping">
+            <summary>
+            读写属性：物理体线性阻尼
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.AngularDamping">
+            <summary>
+            读写属性:物理体角度阻尼
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.Mass">
+            <summary>
+            只读属性：获取物理体总质量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.Dynamic">
+            <summary>
+            读写属性：设置为静态或者动态物理体
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.Kinematic">
+            <summary>
+            读写属性:设置为动力学物理体
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.UseGravity">
+            <summary>
+            读写属性：是否开启重力
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.Collision">
+            <summary>
+            读写属性：是否发生碰撞检测
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.ConstForce">
+            <summary>
+            读写属性：给物理体添加恒力
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.ConstTorque">
+            <summary>
+            读写属性：给物理体添加恒定转矩
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.IsOnGround">
+            <summary>
+            只读属性：角色控制器是否接触地面
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.IsFreeFloat">
+            <summary>
+            只读属性：角色控制器是否悬空
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.IsTouchCeil">
+            <summary>
+            只读属性：角色控制器是否接触天花板
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.IsTouchSides">
+            <summary>
+            只读属性：角色控制器是否接触物体边缘
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.SlopeLimit">
+            <summary>
+            可读写属性：斜坡高度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.StepOffset">
+            <summary>
+            可读写属性：可跨越的障碍物最大高度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.Radius">
+            <summary>
+            读写属性：角色控制器胶囊体半径
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.Height">
+            <summary>
+            读写属性：角色控制器胶囊体高度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBodyComponent.LocalCenter">
+            <summary>
+            读写属性：角色控制器胶囊体高度
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.PhysicsBoxShape">
+            <summary>
+            物理盒子类
+            默认根据Actor的包围盒来生成物理体
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.PhysicsShape">
+            <summary>
+            物理形状类
+            设置物理性状后,可以根据设置的形状进行碰撞等物理模拟
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsShape.Center">
+            <summary>
+            读写属性：物理形状的相对中心位置
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsShape.Roation">
+            <summary>
+            读写属性：物理形状的相对旋转角度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsShape.MaterialID">
+            <summary>
+            读写属性：物理形状的材质文件
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsShape.UserData">
+            <summary>
+            读写属性：物理形状的UserData数据
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsShape.Group">
+            <summary>
+            读写属性：物理形状碰撞分组
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsShape.Density">
+            <summary>
+            读写属性：设置物理碰撞体密度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsBoxShape.Size">
+            <summary>
+            读写属性:物理盒子的维度
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.PhysicsCapsuleShape">
+            <summary>
+            胶囊体物理体
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsCapsuleShape.Radius">
+            <summary>
+            读写属性：胶囊体半径
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsCapsuleShape.Height">
+            <summary>
+            读写属性：胶囊体高度
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.PhysicsScene">
+            <summary>
+            物理场景类，设置场景全局量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.PhysicsScene.SetPVDEnable(System.Boolean)">
+            <summary>
+            开启PVD调试
+            </summary>
+            <param name="value">是否开始调试</param>
+        </member>
+        <member name="T:ScriptRuntime.PhysicsSphere">
+            <summary>
+            球形物理体
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.PhysicsSphere.Radius">
+            <summary>
+            读写属性：球形物理形状半径
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.PhysicsTerrain">
+            <summary>
+            物理地形碰撞体
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.ProjectorRenderComponent">
+            <summary>
+            投影体组件类
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.ViewType">
+            <summary>
+            获取投影体类型
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.Fov">
+            <summary>
+            获取投影体的透视投影下的纵向视角(角度)
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.Aspect">
+            <summary>
+            获取投影体的横纵比
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.NearClipPlane">
+            <summary>
+            获取与设置近裁剪面的距离
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.FarClipPlane">
+            <summary>
+            获取与设置远裁剪面的距离
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.ViewSize">
+            <summary>
+            获取与设置正交投影的高度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.IgnoreLayers">
+            <summary>
+            获取与设置正交投影的忽略层
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.IgnoreLayersUINT">
+            <summary>
+            获取与设置正交投影的忽略层
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ProjectorRenderComponent.EnableProjector">
+            <summary>
+            控制投影体更新接口
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.RenderToTexture">
+            <summary>
+            渲染到纹理
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.RenderToTexture.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.RenderToTexture.Setup(System.Int32,System.Int32,ScriptRuntime.PixelFormat,ScriptRuntime.ClearFlag,ScriptRuntime.Vector4@,System.Boolean,System.Single)">
+            <summary>
+            创建一个用户自定义的渲染到纹理
+            </summary>
+            <param name="width">渲染到纹理的宽度</param>
+            <param name="height">渲染到纹理的高度</param>
+            <param name="format">渲染到纹理的格式</param>
+            <param name="flag">渲染到纹理的渲染标志</param>
+            <param name="color">渲染到纹理的颜色</param>
+            <param name="useDepth">渲染到纹理是否使用深度</param>
+            <param name="screenRatio">渲染到纹理的纵横比</param>
+        </member>
+        <member name="M:ScriptRuntime.RenderToTexture.Setup(System.Int32,System.Int32,ScriptRuntime.PixelFormat,ScriptRuntime.ClearFlag,ScriptRuntime.Vector4@,System.Boolean)">
+            <summary>
+            创建一个用户自定义的渲染到纹理
+            </summary>
+            <param name="width">渲染到纹理的宽度</param>
+            <param name="height">渲染到纹理的高度</param>
+            <param name="format">渲染到纹理的格式</param>
+            <param name="flag">渲染到纹理的渲染标志</param>
+            <param name="color">渲染到纹理的颜色</param>
+            <param name="useDepth">渲染到纹理是否使用深度</param>
+        </member>
+        <member name="T:ScriptRuntime.RuntimeInAppPurchaseInstance">
+            <summary>
+            运行时应用程序购买实例类
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.RuntimeInAppPurchaseInstance.OnSKGetProductInfo(System.String,System.String)">
+            <summary>
+            获取产品信息虚方法
+            </summary>
+            <param name="pid">产品编号</param>
+            <param name="price">产品价格</param>
+        </member>
+        <member name="M:ScriptRuntime.RuntimeInAppPurchaseInstance.OnSKPurchaseSucc(System.String,System.String,System.String)">
+            <summary>
+            成功购买虚方法
+            </summary>
+            <param name="pid">产品编号</param>
+            <param name="tid">产品价格</param>
+            <param name="receipt">成功信息</param>
+        </member>
+        <member name="M:ScriptRuntime.RuntimeInAppPurchaseInstance.OnSKPruchaseFailed(System.String,System.String,ScriptRuntime.RuntimeInAppPurchaseInstance.SKErrorType,System.String)">
+            <summary>
+            失败购买虚方法
+            </summary>
+            <param name="pid">产品编号</param>
+            <param name="tid">产品价格</param>
+            <param name="errorType">错误类型</param>
+            <param name="error">错误内容</param>
+        </member>
+        <member name="M:ScriptRuntime.RuntimeInAppPurchaseInstance.OnSKValidateFailed(System.String)">
+            <summary>
+            验证失败虚方法
+            </summary>
+            <param name="pid">产品编号</param>
+        </member>
+        <member name="T:ScriptRuntime.Scene">
+            <summary>
+            场景类
+            主要用户查找当前场景Actor等功能
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Scene.GetActor(System.Int32)">
+            <summary>
+            根据Actor列表的索引,返回对应的Actor
+            </summary>
+            <param name="index">Actor列表中的索引</param>
+            <returns>返回对应Actor</returns>
+        </member>
+        <member name="M:ScriptRuntime.Scene.FindActor(System.UInt32)">
+            <summary>
+            根据fastID返回场景中其对应的Actor
+            </summary>
+            <param name="fastID">fastID的值</param>
+            <returns>返回对应Actor</returns>
+        </member>
+        <member name="M:ScriptRuntime.Scene.FindActorInGroup(System.UInt32)">
+            <summary>
+            根据tagID返回场景中其对应的Actor
+            </summary>
+            <param name="tagID">tagID的值</param>
+            <returns>返回对应Actor</returns>
+        </member>
+        <member name="M:ScriptRuntime.Scene.FindActorsInGroup(System.UInt32)">
+            <summary>
+            根据GroupID返回场景中其对应Actor列表
+            </summary>
+            <param name="GroupID">GroupID的值</param>
+            <returns>返回对应的Actor列表</returns>
+        </member>
+        <member name="M:ScriptRuntime.Scene.FindActor(System.Guid)">
+            <summary>
+            根据guid返回场景中其对应的Actor
+            </summary>
+            <param name="guid">guid的值</param>
+            <returns>返回对应Actor</returns>
+        </member>
+        <member name="M:ScriptRuntime.Scene.FindActor(System.String)">
+            <summary>
+            根据Actor的名字返回对应Actor
+            </summary>
+            <param name="name">Actor的名字</param>
+            <returns>返回对应的Actor</returns>
+        </member>
+        <member name="M:ScriptRuntime.Scene.AddActor(ScriptRuntime.Actor)">
+            <summary>
+            给场景添加一个Actor
+            </summary>
+            <param name="obj">要添加的Actor实例</param>
+            <returns>添加成功返回true,反之返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Scene.RemoveActor(ScriptRuntime.Actor)">
+            <summary>
+            移除场景中对应的Actor实例
+            </summary>
+            <param name="obj">要移除的Actor实例</param>
+            <returns>移除成功返回true,反之返回false</returns>
+        </member>
+        <member name="P:ScriptRuntime.Scene.ActorCount">
+            <summary>
+            获取场景中Actor的数量
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.UserReportPair">
+            <summary>
+            脚本回调返回结构
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.UserReportPair.SetValue(ScriptRuntime.PhysicsBodyComponent,ScriptRuntime.PhysicsBodyComponent)">
+            <summary>
+            设置脚本回调返回结构的值
+            </summary>
+            <param name="body1">脚本回调的对象</param>
+            <param name="body2">脚本回调的对象</param>
+        </member>
+        <member name="F:ScriptRuntime.UserReportPair.self">
+            <summary>
+            自身脚本回调的对象
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.UserReportPair.other">
+            <summary>
+            其他脚本回调的对象
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.ScriptableClass">
+            <summary>
+            挂接脚本入口的基类
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ScriptableClass.Name">
+            <summary>
+            获取与设置脚本实例的名称
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.ScriptableClass.Owner">
+            <summary>
+            获取挂接脚本Actor的实例
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.ScriptComponent">
+            <summary>
+            脚本组件
+            控制用户逻辑的核心组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.ScriptComponent.GetScriptByName(System.String)">
+            <summary>
+            通过脚本实例名称来获取脚本实例
+            </summary>
+            <param name="name">脚本实例名称</param>
+            <returns>返回脚本实例</returns>
+        </member>
+        <member name="T:ScriptRuntime.SkeletonComponent">
+            <summary>
+            骨骼组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SkeletonComponent.SetSkeletonID(System.String,System.Int32)">
+            <summary>
+            设置骨骼ID
+            </summary>
+            <param name="sSkeletonId">设置骨骼ID</param>
+            <param name="priority">设置优先级</param>
+        </member>
+        <member name="T:ScriptRuntime.SkinnedMeshRenderComponent">
+            <summary>
+            蒙皮网格渲染组件类
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.SoundEchoFilterComponent">
+            <summary>
+            回声过滤器组件
+            主要用于声音特效
+            要使过滤器生效,必须有声音组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SoundEchoFilterComponent.#ctor">
+            <summary>
+            回声过滤器组件的构造函数
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SoundEchoFilterComponent.Delay">
+            <summary>
+            获取与设置声音延迟间隔
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SoundEchoFilterComponent.LRDelay">
+            <summary>
+            获取与设置回声延迟间隔
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SoundEchoFilterComponent.Damping">
+            <summary>
+            获取与设置回声阻尼
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SoundEchoFilterComponent.FeedBack">
+            <summary>
+            获取与设置回声反馈强度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SoundEchoFilterComponent.Spread">
+            <summary>
+            获取与设置回声传播强度
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.SoundLowPassFilterComponent">
+            <summary>
+            低通过滤器组件
+            主要用于声音特效
+            要使过滤器生效,必须有声音组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SoundLowPassFilterComponent.#ctor">
+            <summary>
+            低通过滤器组件的构造函数
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SoundLowPassFilterComponent.Gain">
+            <summary>
+            获取与设置低通过滤器的增益属性
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SoundLowPassFilterComponent.GainHF">
+            <summary>
+            获取与设置低通过滤器的高频增益属性
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.SoundReverbFilterComponent">
+            <summary>
+            混音过滤器组件
+            主要用于声音特效
+            要使过滤器生效,必须有声音组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SoundReverbFilterComponent.#ctor">
+            <summary>
+            混音过滤器组件构造函数
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.SoundReverbFilterComponent.Attach" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.SoundReverbFilterComponent.Detach" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.ReverbMode" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.Density" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.Diffusion" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.Gain" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.GainHF" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.DecayTime" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.DecayHFRatio" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.DecayLFRatio" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.ReflectionsGain" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.ReflectionsDelay" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.ReverbGain" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.ReverbDelay" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.EchoTime" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.EchoDepth" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.ModulationTime" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.ModulationDepth" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.AirGainHF" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.HFReference" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.LFReference" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.RoomRolloff" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundReverbFilterComponent.DecayHFLimit" -->
+        <member name="T:ScriptRuntime.SoundSource">
+            <summary>
+            声音组件类，继承自组件类
+            可以挂接到游戏对象上，控制对声音的操作
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.SoundSource.thisType">
+            <summary>
+            音源组件的组件类型
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.SoundSource.Play" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.SoundSource.Stop" -->
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.SoundSource.Pause" -->
+        <member name="M:ScriptRuntime.SoundSource.GetSoundResID">
+             <summary>
+            获得声音名字
+             </summary>
+             <returns>声音名字</returns>
+        </member>
+        <member name="M:ScriptRuntime.SoundSource.SetSoundResID(System.String,System.Int32)">
+            <summary>
+            重载函数，设置声音名字
+            </summary>
+            <param name="name">声音名字</param>
+            <param name="loadpriority">优先级</param>
+        </member>
+        <member name="M:ScriptRuntime.SoundSource.SetSoundResID(System.String)">
+            <summary>
+            重载函数，设置声音名字
+            </summary>
+            <param name="name">声音名字</param>
+        </member>
+        <member name="M:ScriptRuntime.SoundSource.GetLoadPriority">
+            <summary>
+             获得声音资源的优先级
+            </summary>
+            <returns>声音资源优先级，整型</returns>
+        </member>
+        <member name="M:ScriptRuntime.SoundSource.IsAllLoaded">
+            <summary>
+            判断声音资源是否被加载成功
+            </summary>
+            <returns>布尔值，true表示加载成功，false表示加载失败</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundSource.IsPlaying" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundSource.Loop" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundSource.Volume" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundSource.RollOffMode" -->
+        <member name="P:ScriptRuntime.SoundSource.Pitch">
+            <summary>
+            浮点值，音调
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundSource.Is3D" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundSource.MinDistance" -->
+        <!-- Badly formed XML comment ignored for member "P:ScriptRuntime.SoundSource.MaxDistance" -->
+        <member name="T:ScriptRuntime.NetworkStreamReader">
+            <summary>
+            网络流读取类
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.#ctor">
+            <summary>
+            网络流读取构造函数
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.Length">
+            <summary>
+            获取网络流长度
+            </summary>
+            <returns>长度信息</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.Offset">
+            <summary>
+            获取偏移量
+            </summary>
+            <returns>偏移量</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.Seek(System.UInt32)">
+            <summary>
+            设置偏移量
+            </summary>
+            <param name="dwOffset">偏移量</param>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadInt8">
+            <summary>
+            从网络流中读取带符号的8位数据
+            </summary>
+            <returns>带符号的8位数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadUint8">
+            <summary>
+            从网络流中读取无符号的8位数据
+            </summary>
+            <returns>无符号的8位数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadInt16">
+            <summary>
+            从网络流中读取带符号的16位数据
+            </summary>
+            <returns>带符号的16位数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadUint16">
+            <summary>
+            从网络流中读取无符号的16位数据
+            </summary>
+            <returns>无符号的16位数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadInt32">
+            <summary>
+            从网络流中读取带符号的32位数据
+            </summary>
+            <returns>带符号的32位数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadUint32">
+            <summary>
+            从网络流中读取无符号的32位数据
+            </summary>
+            <returns>无符号的32位数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadInt64">
+            <summary>
+            从网络流中读取带符号的64位数据
+            </summary>
+            <returns>带符号的64位数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadUint64">
+            <summary>
+            从网络流中读取无符号的64位数据
+            </summary>
+            <returns>无符号的64位数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadReal32">
+            <summary>
+            从网络流中读取32位浮点数数据
+            </summary>
+            <returns>32位浮点数数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadReal64">
+            <summary>
+            从网络流中读取64位浮点数数据
+            </summary>
+            <returns>64位浮点数数据</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamReader.ReadString">
+            <summary>
+            从网络流中读取字符串
+            </summary>
+            <returns>字符串</returns>
+        </member>
+        <member name="T:ScriptRuntime.NetworkStreamWriter">
+            <summary>
+            网络流写入类
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.#ctor">
+            <summary>
+            网络流写入构造函数
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.Reset">
+            <summary>
+            重置偏移量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.Length">
+            <summary>
+            获取网络流长度
+            </summary>
+            <returns>长度信息</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.RealLength">
+            <summary>
+            获取网络流实际长度
+            </summary>
+            <returns>实际长度</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.Offset">
+            <summary>
+            获取偏移量
+            </summary>
+            <returns>偏移量</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.Seek(System.UInt32)">
+            <summary>
+            设置偏移量
+            </summary>
+            <param name="dwOffset">偏移量</param>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteInt8(System.SByte)">
+            <summary>
+            向网络流中写入带符号的8位数据
+            </summary>
+            <param name="val">带符号的8位数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteUint8(System.Byte)">
+            <summary>
+            向网络流中写入无符号的8位数据
+            </summary>
+            <param name="val">无符号的8位数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteInt16(System.Int16)">
+            <summary>
+            向网络流中写入带符号的16位数据
+            </summary>
+            <param name="val">带符号的16位数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteUint16(System.UInt16)">
+            <summary>
+            向网络流中写入无符号的16位数据
+            </summary>
+            <param name="val">无符号的16位数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteInt32(System.Int32)">
+            <summary>
+            向网络流中写入带符号的32位数据
+            </summary>
+            <param name="val">向网络流中写入带符号的32位数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteUint32(System.UInt32)">
+            <summary>
+            向网络流中写入无符号的32位数据
+            </summary>
+            <param name="val">无符号的32位数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteInt64(System.Int64)">
+            <summary>
+            向网络流中写入带符号的64位数据
+            </summary>
+            <param name="val">带符号的64位数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteUint64(System.UInt64)">
+            <summary>
+            向网络流中写入无符号的64位数据
+            </summary>
+            <param name="val">无符号的64位数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteReal32(System.Single)">
+            <summary>
+            向网络流中写入32位浮点数数据
+            </summary>
+            <param name="val">32位浮点数数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteReal64(System.Double)">
+            <summary>
+            向网络流中写入64位浮点数数据
+            </summary>
+            <param name="val">64位浮点数数据</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.NetworkStreamWriter.WriteString(System.String)">
+            <summary>
+            向网络流中写入字符串
+            </summary>
+            <param name="val">字符串</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="T:ScriptRuntime.SpriteRenderComponent">
+            <summary>
+            精灵渲染组件
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.#ctor">
+            <summary>
+            创建一个精灵
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.Setup(System.String)">
+            <summary>
+            通过资源包ID装载组件
+            </summary>
+            <param name="packID">资源包ID</param>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.SetBlock(System.String)">
+            <summary>
+            设置图块
+            </summary>
+            <param name="name">T图块名称</param>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.SetAnimation(System.String)">
+            <summary>
+            设置动画
+            </summary>
+            <param name="name">动画名</param>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.RemoveBlock">
+            <summary>
+            移除图块的设置
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.RemoveAnimation">
+            <summary>
+            移除动画的设置
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.SetAnimation(System.String,System.Int32,System.Single,System.Boolean)">
+            <summary>
+            设置动画
+            </summary>
+            <param name="name">动画名</param>
+            <param name="loops">播放循环</param>
+            <param name="speed">动画速度，默认为1.0f.</param>
+            <param name="play">是否现在播放</param>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.Play">
+            <summary>
+            播放动画
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.Replay">
+            <summary>
+            重新播放动画
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.Pause">
+            <summary>
+            暂定动画
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.SpriteRenderComponent.Stop">
+            <summary>
+            停止动画
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SpriteRenderComponent.PackageID">
+            <summary>
+            获取资源包ID
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SpriteRenderComponent.AnimationSpeed">
+            <summary>
+            设置与获取动画速度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SpriteRenderComponent.PlayOnWake">
+            <summary>
+            播放暂停动画
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SpriteRenderComponent.BlockName">
+            <summary>
+            获取图块名称
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SpriteRenderComponent.AnimationName">
+            <summary>
+            获取动画名称
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SpriteRenderComponent.AnimationLoops">
+            <summary>
+            获取动画循环设置
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.SpriteRenderComponent.IsAnimationPlaying">
+            <summary>
+            获取动画是否正在播放
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.Util">
+            <summary>
+            场景中的基本方法，此类的方法都为静态方法。
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Util.GetDeltaTime">
+            <summary>
+            获取当前帧的时间.
+            </summary>
+            <returns>当前帧的时间.</returns>
+            @brief<b>示例</b>
+                    *@code{.cpp}
+                    float fDeltaTime = Util.GetDeltaTime();
+                    @endcode
+        </member>
+        <member name="M:ScriptRuntime.Util.SaveScene(System.String)">
+            <summary>
+            保存场景
+            </summary>
+            <param name="sceneName">要保存的场景的名字</param>
+            <returns>是否保存成功</returns>
+        </member>
+        <member name="M:ScriptRuntime.Util.GetRootScript">
+            <summary>
+            获取脚本根节点.
+            </summary>
+            <returns>脚本根节点.</returns>
+        </member>
+    </members>
+</doc>

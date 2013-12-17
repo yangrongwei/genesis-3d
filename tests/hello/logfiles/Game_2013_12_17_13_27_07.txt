@@ -1,0 +1,148 @@
+FreeImage version: 3.13.1  Info: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details 
+FreeImage Supported formats:  
+ BMP ICO JPG JIF JPEG JPE JNG KOA IFF LBM MNG PBM PBM PCD PCX PGM PGM PNG PPM PPM RAS TGA TARGA TIF TIFF WAP WBMP WBM PSD CUT XBM XPM GIF HDR G3 SGI EXR J2K J2C JP2 PFM PCT PICT PIC BAY BMQ CR2 CRW CS1 DC2 DCR DNG ERF FFF HDR K25 KDC MDC MOS MRW NEF ORF PEF PXN RAF RAW RDC SR2 SRF ARW 3FR CINE IA KC2 MEF NRW QTK RW2 STI DRF DSC PTX CAP IIQ RWZ
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+shader sys:Image_Copy.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+
+ mono dll path: E:/GenesisSource/GenesisProjects/hello/Script/mono-2.0.dll
+[WARNING] this app have no root class,maybe user don't need it.so root class's init will be canceled hereSynLoad Load Resource sys:white.dds OK 
+shader editor:Shader/Grid.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+shader editor:Shader/Indicator.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+shader editor:Shader/IndicatorDefaultColor.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+shader editor:Shader/Indicator_transparent.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+shader editor:Shader/Indicator_Rotation.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+shader sys:simple2d.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+SynLoad Load Resource editor:Mesh/worldAxis.mesh OK 
+SynLoad Load Resource editor:Mesh/SunLightArrow.mesh OK 
+shader sys:Forward_lightLitMap.shader
+[WARNING] Compile Shader Warning : (942) : warning C7050: "lightcameraNear" might be used before being initialized
+(945) : warning C7050: "lightcameraFar" might be used before being initialized
+(948) : warning C7050: "lightproj[0]" might be used before being initialized
+(948) : warning C7050: "lightproj[1]" might be used before being initialized
+(948) : warning C7050: "lightproj[2]" might be used before being initialized
+(948) : warning C7050: "lightproj[3]" might be used before being initialized
+(950) : warning C7050: "cameraZFar" might be used before being initialized
+(949) : warning C7050: "preLightproj[0]" might be used before being initialized
+(949) : warning C7050: "preLightproj[1]" might be used before being initialized
+(949) : warning C7050: "preLightproj[2]" might be used before being initialized
+(949) : warning C7050: "preLightproj[3]" might be used before being initialized
+ 
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+shader shd:Common_Diffuse.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+in PassSection,left
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+SynLoad Load Resource sys:meshRenderDefault.material OK 
+[WARNING] sys:meshRenderDefault.material
+[WARNING] sys:meshRenderDefault.material
+shader editor:Shader/ShapeDebug.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+shader editor:Shader/ShapeDebug_Diffuse.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+[WARNING] Syn Load Resource white Failed. Can Not Create Stream 
+SynLoad Load Resource sys:MIssing_Texture.dds OK 
+SynLoad Load Resource editor:Tex/Camera-01.png OK 
+SynLoad Load Resource editor:Tex/SpotLight-01.png OK 
+SynLoad Load Resource editor:Tex/PointLight-01.png OK 
+shader sys:Forward_lightLitMap.shader
+[WARNING] Compile Shader Warning : (942) : warning C7050: "lightcameraNear" might be used before being initialized
+(945) : warning C7050: "lightcameraFar" might be used before being initialized
+(948) : warning C7050: "lightproj[0]" might be used before being initialized
+(948) : warning C7050: "lightproj[1]" might be used before being initialized
+(948) : warning C7050: "lightproj[2]" might be used before being initialized
+(948) : warning C7050: "lightproj[3]" might be used before being initialized
+(950) : warning C7050: "cameraZFar" might be used before being initialized
+(949) : warning C7050: "preLightproj[0]" might be used before being initialized
+(949) : warning C7050: "preLightproj[1]" might be used before being initialized
+(949) : warning C7050: "preLightproj[2]" might be used before being initialized
+(949) : warning C7050: "preLightproj[3]" might be used before being initialized
+ 
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+[WARNING] this app have no root class,maybe user don't need it.so root class's init will be canceled hereshader editor:Shader/UI.shader
+in PassSection,left
+in DeviceTypeSetup
+in DeviceTypeSetup
+Asyn Load Resource editor:tex/x.png OK 
+Asyn Load Resource editor:tex/y.png OK 
+Asyn Load Resource editor:tex/z.png OK 
+Asyn Load Resource editor:Tex/SunLight-01-01.dds OK 
+Asyn Load Resource sys:box.mesh OK 

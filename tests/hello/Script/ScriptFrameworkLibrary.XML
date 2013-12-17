@@ -1,0 +1,4070 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScriptFrameworkLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:ScriptRuntime.BoundingBox">
+            <summary>
+            定义一个轴对齐型的包围盒
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.BoundingBox.CornerCount">
+            <summary>
+            指定包围盒由八个顶点
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.BoundingBox.Min">
+            <summary>
+            包围盒中最小的点
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.BoundingBox.Max">
+            <summary>
+            包围盒中最大的点
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.GetCorners">
+            <summary>
+            获取一个数组，由包围盒八个角的点构成. 返回的点符合包围盒表面的角与Z轴垂直. 靠近的面应该是Z值最大的面，然后是Z值最小的面. 0~3 表示Z轴正方向上离原点较近的面 从左上角开始 顺时针依次  4~7  表示Z轴正方向上离原点较远的面 从左上角开始 顺时针依次
+            </summary>
+            <returns>一个代表包围盒8个顶点的三维向量数组 </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.GetCorners(ScriptRuntime.Vector3[])">
+            <summary>
+            获取一个数组，由包围盒八个角的点构成. 返回的点符合包围盒表面的角与Z轴垂直. 靠近的面应该是Z值最大的面，然后是Z值最小的面. 0~3 表示Z轴正方向上离原点较近的面 从左上角开始 顺时针依次  4~7  表示Z轴正方向上离原点较远的面 从左上角开始 顺时针依次
+            </summary>
+            <param name="corners">将代表包围盒8个顶点写入三维向量数组</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.#ctor(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            创建一个包围盒实例 
+            </summary>
+            <param name="min">包围盒所包含最小的点</param>
+            <param name="max">包围盒所包含最大的点</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Equals(ScriptRuntime.BoundingBox)">
+            <summary>
+            判断两个包围盒是否相等 
+            </summary>
+            <param name="other">指定一个与之比较的包围盒 </param>
+            <returns>相等返回true，不相等返回false </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Equals(System.Object)">
+            <summary>
+            判断两个包围盒是否相等 
+            </summary>
+            <param name="obj">指定一个与之比较的对象 </param>
+            <returns>相等返回true，不相等返回false </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.GetHashCode">
+            <summary>
+            计算包围盒的哈希码 
+            </summary>
+            <returns>包围盒的哈希吗</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.ToString">
+            <summary>
+            返回代表当前包围盒的字符串 
+            </summary>
+            <returns>代表当前包围盒的字符串 </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.CreateFromSphere(ScriptRuntime.BoundingSphere)">
+            <summary>
+            创建一个能包含指定包围球的最小包围盒 
+            </summary>
+            <param name="sphere">指定包围球</param>
+            <returns>创建的包围盒 </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.CreateFromSphere(ScriptRuntime.BoundingSphere@,ScriptRuntime.BoundingBox@)">
+            <summary>
+            创建一个能包含指定包围球的最小包围盒 
+            </summary>
+            <param name="sphere">指定包围球.</param>
+            <param name="result">[OutAttribute] 创建的包围盒 </param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.CreateFromPoints(System.Collections.Generic.IEnumerable{ScriptRuntime.Vector3})">
+            <summary>
+            创建能包含一组顶点的最小包围盒 
+            </summary>
+            <param name="points">包围盒需包含的一组顶点 </param>
+            <returns>创建的包围盒</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.BoundingBox)">
+            <summary>
+            检查当前包围盒是否与指定包围盒相交
+            </summary>
+            <param name="box">检查是否与当前包围盒相交的包围盒</param>
+            <returns>相交返回true，不相交false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.BoundingBox@,System.Boolean@)">
+            <summary>
+            检查当前包围盒是否与指定包围盒相交
+            </summary>
+            <param name="box">指定的包围盒</param>
+            <param name="result">[输出属性] 相交true，不相交false</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            检查当前包围盒是否与指定包围断面锥相交 
+            </summary>
+            <param name="frustum">指定的包围断面锥</param>
+            <returns>相交true，不相交false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.Plane)">
+            <summary>
+            检查当前包围盒是否与指定平面相交
+            </summary>
+            <param name="plane">指定的平面</param>
+            <returns>一个枚举类型表明包围盒与平面是否相交</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.Plane@,ScriptRuntime.PlaneIntersectionStatus@)">
+            <summary>
+            检查当前包围盒是否与指定平面相交 
+            </summary>
+            <param name="plane">指定的平面</param>
+            <param name="result">[输出属性] 枚举类型表明包围盒与平面是否相交</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.BoundingSphere)">
+            <summary>
+            检查当前包围盒是否与指定包围球相交 
+            </summary>
+            <param name="sphere">指定的包围球</param>
+            <returns>相交true，不相交false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.BoundingSphere@,System.Boolean@)">
+            <summary>
+            检查当前包围盒是否与指定包围球相交 
+            </summary>
+            <param name="sphere">指定的包围球</param>
+            <param name="result">[OutAttribute] 相交true，不相交false</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.Ray)">
+            <summary>
+            检查当前包围盒是否与指定射线相交
+            </summary>
+            <param name="ray">指定的射线</param>
+            <returns>相交true，不相交false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Intersects(ScriptRuntime.Ray@,System.Single@)">
+            <summary>
+            检查当前包围盒是否与指定射线相交
+            </summary>
+            <param name="ray">指定的射线 </param>
+            <param name="distance">[OutAttribute] Distance at which the ray intersects the BoundingBox.If no intersect, "distance" is meaningless</param>
+            <returns>相交true，不相交false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Contains(ScriptRuntime.BoundingBox)">
+            <summary>
+            检测当前包围盒是否包含其他包围盒
+            </summary>
+            <param name="box">指定的包围盒</param>
+            <returns>表明两包围盒关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Contains(ScriptRuntime.BoundingBox@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检测当前包围盒是否包含其他包围盒
+            </summary>
+            <param name="box">指定的包围盒</param>
+            <param name="result">[OutAttribute] 表明两包围盒关系的枚举类型 </param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Contains(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            检测当前包围盒是否包含指定包围断面锥
+            </summary>
+            <param name="frustum">指定的包围断面锥 </param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Contains(ScriptRuntime.Vector3)">
+            <summary>
+            检测当前包围盒是否包含指定点
+            </summary>
+            <param name="point">指定点</param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Contains(ScriptRuntime.Vector3@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检测当前包围盒是否包含指定点
+            </summary>
+            <param name="point">指定点 </param>
+            <param name="result">[输出属性] 表明关系的枚举类型</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Contains(ScriptRuntime.BoundingSphere)">
+            <summary>
+            检测当前包围盒是否包含指定包围球
+            </summary>
+            <param name="sphere">指定包围球</param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Contains(ScriptRuntime.BoundingSphere@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检测当前包围盒是否包含指定包围球
+            </summary>
+            <param name="sphere">指定包围球</param>
+            <param name="result">[输出属性] 表明关系的枚举类型</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Transform(ScriptRuntime.Matrix44)">
+            <summary>
+            用给出的矩阵平移缩放包围盒 
+            </summary>
+            <param name="matrix">转化矩阵</param>
+            <returns>改变后的包围盒</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.Transform(ScriptRuntime.Matrix44@,ScriptRuntime.BoundingBox@)">
+            <summary>
+            用给出的矩阵平移缩放包围盒 
+            </summary>
+            <param name="matrix">转化矩阵</param>
+            <param name="result">[输出属性] 改变后的包围盒</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.SupportMapping(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            支持映射
+            </summary>
+            <param name="v">源向量</param>
+            <param name="result">结果</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.op_Equality(ScriptRuntime.BoundingBox,ScriptRuntime.BoundingBox)">
+            <summary>
+            判断两个包围盒是否相等
+            </summary>
+            <param name="a">要比较的包围盒 </param>
+            <param name="b">要比较的包围盒 </param>
+            <returns>相等true，不相等false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingBox.op_Inequality(ScriptRuntime.BoundingBox,ScriptRuntime.BoundingBox)">
+            <summary>
+            判断两个包围盒是否不相等 
+            </summary>
+            <param name="a">要比较的包围盒 </param>
+            <param name="b">要比较的包围盒 </param>
+            <returns>不相等true，相等false</returns>
+        </member>
+        <member name="T:ScriptRuntime.BoundingFrustum">
+            <summary>
+            定义一个平截头体，并提供相应的检测相交关系的方法
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.BoundingFrustum.CornerCount">
+            <summary>
+            指定平截头体有8个角
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.#ctor(ScriptRuntime.Matrix44)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="value">观察与投影矩阵组成的复合矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Contains(ScriptRuntime.BoundingBox)">
+            <summary>
+            检测平截头体与指定的包围盒的相交关系
+            </summary>
+            <param name="box">要检测的包围盒</param>
+            <returns>相交关系</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Contains(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            检测当前平截头体与指定的平截头体的相交关系
+            </summary>
+            <param name="frustum">要检测的平截头体</param>
+            <returns>相交关系</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Contains(ScriptRuntime.BoundingSphere)">
+            <summary>
+            检测当前平截头体与指定的包围球的相交关系
+            </summary>
+            <param name="sphere">要检测的包围球</param>
+            <returns>相交关系</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Contains(ScriptRuntime.Vector3)">
+            <summary>
+            检测平截头体与点的包含关系
+            </summary>
+            <param name="point">要检测的点</param>
+            <returns>平截头体与点的包含关系</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Contains(ScriptRuntime.BoundingBox@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检测当前平截头体与指定的包围盒的相交关系 
+            </summary>
+            <param name="box">要检测的包围盒</param>
+            <param name="result">[输出参数] 当前平截头体与包围盒的相交关系</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Contains(ScriptRuntime.BoundingSphere@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检测当前平截头体与指定的包围球的相交关系 
+            </summary>
+            <param name="box">要检测的包围球</param>
+            <param name="result">[输出参数] 当前平截头体与包围球的相交关系</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Contains(ScriptRuntime.Vector3@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检测当前平截头体与点的包含关系
+            </summary>
+            <param name="point">要检测的点</param>
+            <param name="result">[输出参数] 平截头体与点的包含关系</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Equals(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            判断两个平截头体是否相同
+            </summary>
+            <param name="other">要比较的平截头体</param>
+            <returns>如果相同，返回true，否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Equals(System.Object)">
+            <summary>
+            判断传入的对象是否是与当前平截头体相同的对象 
+            </summary>
+            <param name="obj">要比较的对象</param>
+            <returns>如果相同，返回true，否则，返回false </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.GetCorners">
+            <summary>
+            返回当前平截头体的角(位置)的数组。返回的点的顺序(位于Z轴正方向，看向Z轴原点)：近左上角，近右上角，近右下角，近左下角，远左上角，远右上角，远右下角，远左下角
+            </summary>
+            <returns>点的数组</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.GetCorners(ScriptRuntime.Vector3[])">
+            <summary>
+            返回当前平截头体的角(位置)的数组。返回的点的顺序(位于Z轴正方向，看向Z轴原点)：近左上角，近右上角，近右下角，近左下角，远左上角，远右上角，远右下角，远左下角
+            </summary>
+            <param name="corners">用于存储返回值的数组(数组大小最小为8) </param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.GetHashCode">
+            <summary>
+            返回对象的哈希值
+            </summary>
+            <returns>当前平截头体对象的哈希值</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.BoundingBox)">
+            <summary>
+            检测当前平截头体与指定的包围盒是否相交
+            </summary>
+            <param name="box">要检测的包围盒</param>
+            <returns>如果相交，返回true，否则，返回false </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            检测当前平截头体与指定的平截头体是否相交
+            </summary>
+            <param name="frustum">要检测的平截头体</param>
+            <returns>如果相交，返回true，否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.BoundingSphere)">
+            <summary>
+            检测当前平截头体与指定的包围球是否相交
+            </summary>
+            <param name="frustum">要检测的包围球</param>
+            <returns>如果相交，返回true，否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.Plane)">
+            <summary>
+            检测当前平截头体与指定的平面是否相交
+            </summary>
+            <param name="plane">要检测的平面</param>
+            <returns>指示是否相交的枚举</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.Ray)">
+            <summary>
+            检测当前平截头体与指定的射线是否相交
+            </summary>
+            <param name="ray">要检测的射线</param>
+            <returns>如果相交，返回true，否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.BoundingBox@,System.Boolean@)">
+            <summary>
+            检测当前平截头体是否与指定的包围盒相交
+            </summary>
+            <param name="box">要检测的包围盒</param>
+            <param name="result">[输出参数] 如果相交，返回true，否则，返回false</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.BoundingSphere@,System.Boolean@)">
+            <summary>
+            检测当前平截头体是否与指定的包围球相交
+            </summary>
+            <param name="box">要检测的包围球</param>
+            <param name="result">[输出参数] 如果相交，返回true，否则，返回false</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.Plane@,ScriptRuntime.PlaneIntersectionStatus@)">
+            <summary>
+            检测当前平截头体是否与指定的平面相交
+            </summary>
+            <param name="box">要检测的平面</param>
+            <param name="result">[输出参数] 指示是否相交的枚举</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.Intersects(ScriptRuntime.Ray@,System.Single@)">
+            <summary>
+            检测当前平截头体是否与指定的射线相交
+            </summary>
+            <param name="ray">要检测的射线</param>
+            <param name="result">[输出参数] 射线的起点相交点的距离。如果没有相交，则此参数值无意义</param>
+            <returns>如果相交，返回true，否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.op_Equality(ScriptRuntime.BoundingFrustum,ScriptRuntime.BoundingFrustum)">
+            <summary>
+            比较两个平截头体对象是否相同
+            </summary>
+            <param name="a">等号操作符的左参数</param>
+            <param name="b">等号操作符的右参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.op_Inequality(ScriptRuntime.BoundingFrustum,ScriptRuntime.BoundingFrustum)">
+            <summary>
+            判断两个平截头体对象是否不相同
+            </summary>
+            <param name="a">等号操作符的左参数</param>
+            <param name="b">等号操作符的右参数</param>
+            <returns>如果不相同，返回true，否则，返回false </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingFrustum.ToString">
+            <summary>
+            返回当前平截头体对象的字符串形式
+            </summary>
+            <returns>表示当前平截头体对象的字符串</returns>
+        </member>
+        <member name="P:ScriptRuntime.BoundingFrustum.Bottom">
+            <summary>
+            获取平截头体的下平面
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.BoundingFrustum.Far">
+            <summary>
+            获取平截头体的远平面
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.BoundingFrustum.Left">
+            <summary>
+            获取平截头体的左平面
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.BoundingFrustum.Matrix">
+            <summary>
+            获取/设置描述当前平截头体的矩阵
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.BoundingFrustum.Near">
+            <summary>
+            获取平截头体的近平面
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.BoundingFrustum.Right">
+            <summary>
+            获取平截头体的右平面
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.BoundingFrustum.Top">
+            <summary>
+            获取平截头体的上平面
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.BoundingSphere">
+            <summary>
+            定义一个包围球
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.BoundingSphere.Center">
+            <summary>
+            球心
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.BoundingSphere.Radius">
+            <summary>
+            球半径
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.#ctor(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            创建一个包围球实例
+            </summary>
+            <param name="center">圆心</param>
+            <param name="radius">半径</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Equals(ScriptRuntime.BoundingSphere)">
+            <summary>
+            判断当前包围球是否等于指定包围球
+            </summary>
+            <param name="other">指定包围球</param>
+            <returns>相等true，不相等false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Equals(System.Object)">
+            <summary>
+            判断当前包围球是否等于指定对象
+            </summary>
+            <param name="obj">指定对象 </param>
+            <returns>相等true，不相等false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.GetHashCode">
+            <summary>
+            计算哈希值
+            </summary>
+            <returns>当前包围球的哈希值</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.ToString">
+            <summary>
+            用字符串表示当前包围球
+            </summary>
+            <returns>表示当前包围球的字符串</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.CreateFromBoundingBox(ScriptRuntime.BoundingBox)">
+            <summary>
+            创建能包含指定包围盒的最小包围球
+            </summary>
+            <param name="box">指定包围盒</param>
+            <returns>创建的包围球</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.CreateFromBoundingBox(ScriptRuntime.BoundingBox@,ScriptRuntime.BoundingSphere@)">
+            <summary>
+            创建能包含指定包围盒的最小包围球 
+            </summary>
+            <param name="box">指定包围盒</param>
+            <param name="result">[输出属性] 创建的包围球</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.CreateFromPoints(System.Collections.Generic.IEnumerable{ScriptRuntime.Vector3})">
+            <summary>
+            创建一个能包含指定点集的包围球 
+            </summary>
+            <param name="points">点集</param>
+            <returns>创建的包围球</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.CreateFromFrustum(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            创建能包含指定包围断面锥的最小包围球
+            </summary>
+            <param name="frustum">指定包围断面锥</param>
+            <returns>创建的包围球</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.BoundingBox)">
+            <summary>
+            检查当前包围球是否与指定包围盒相交
+            </summary>
+            <param name="box">指定包围盒</param>
+            <returns>相交true，不相交false </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.BoundingBox@,System.Boolean@)">
+            <summary>
+            检查当前包围球是否与指定包围盒相交 
+            </summary>
+            <param name="box">指定包围盒</param>
+            <param name="result">[输出属性] 相交true，不相交false </param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            检查当前包围球是否与指定包围断面锥相交 
+            </summary>
+            <param name="frustum">指定包围断面锥 </param>
+            <returns>相交true，不相交false </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.Plane)">
+            <summary>
+            检查当前包围球是否与指定平面相交
+            </summary>
+            <param name="plane">指定平面</param>
+            <returns>表明关系的枚举类型 </returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.Plane@,ScriptRuntime.PlaneIntersectionStatus@)">
+            <summary>
+            检查当前包围球是否与指定平面相交
+            </summary>
+            <param name="plane">指定平面</param>
+            <param name="result">[输出属性] 表明关系的枚举类型</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.Ray)">
+            <summary>
+            检查当前包围球是否与指定射线相交
+            </summary>
+            <param name="ray">指定射线</param>
+            <returns>相交true，不相交false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.Ray@,System.Single@)">
+            <summary>
+            检查当前包围球是否与指定射线相交 
+            </summary>
+            <param name="ray">指定射线</param>
+            <param name="distance">[OutAttribute] 射线与包围球的距离，如果不相交，无意义</param>
+            <returns>[输出属性] 相交true，不相交false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.BoundingSphere)">
+            <summary>
+            检查当前包围球是否与指定包围球相交 
+            </summary>
+            <param name="sphere">指定包围球</param>
+            <returns>相交true，不相交false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Intersects(ScriptRuntime.BoundingSphere@,System.Boolean@)">
+            <summary>
+            检查当前包围球是否与指定包围球相交 
+            </summary>
+            <param name="sphere">指定包围球</param>
+            <param name="result">[输出属性] 相交true，不相交false</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Contains(ScriptRuntime.BoundingBox)">
+            <summary>
+            检查当前包围球是否包含指定包围盒
+            </summary>
+            <param name="box">指定包围盒 </param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Contains(ScriptRuntime.BoundingBox@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检查当前包围球是否包含指定包围盒
+            </summary>
+            <param name="box">指定包围盒 </param>
+            <param name="result">[输出属性] 表明关系的枚举类型</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Contains(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            检查当前包围球是否包含指定包围断面锥
+            </summary>
+            <param name="frustum">指定包围断面锥</param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Contains(ScriptRuntime.Vector3)">
+            <summary>
+            检查当前包围球是否包含指定点
+            </summary>
+            <param name="point">指定点</param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Contains(ScriptRuntime.Vector3@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检查当前包围球是否包含指定点
+            </summary>
+            <param name="point">指定点</param>
+            <param name="result">[输出属性] 表明关系的枚举类型</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Contains(ScriptRuntime.BoundingSphere)">
+            <summary>
+            检查当前包围球是否包含指定包围球
+            </summary>
+            <param name="sphere">指定包围球</param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Contains(ScriptRuntime.BoundingSphere@,ScriptRuntime.ClipStatus@)">
+            <summary>
+            检查当前包围球是否包含指定包围球 
+            </summary>
+            <param name="sphere">指定包围球 </param>
+            <param name="result">[输出属性] 表明关系的枚举类型 </param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Transform(ScriptRuntime.Matrix44)">
+            <summary>
+            通过给定的矩阵平移和旋转包围球
+            </summary>
+            <param name="matrix">变换矩阵</param>
+            <returns>变换后的包围球</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.Transform(ScriptRuntime.Matrix44@,ScriptRuntime.BoundingSphere@)">
+            <summary>
+            通过给定的矩阵平移和旋转包围球
+            </summary>
+            <param name="matrix">变换矩阵</param>
+            <param name="result">[输出参数]变换后的包围球</param>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.op_Equality(ScriptRuntime.BoundingSphere,ScriptRuntime.BoundingSphere)">
+            <summary>
+            判定两个包围球的实例是否相等
+            </summary>
+            <param name="a">做相等操作左边的对象</param>
+            <param name="b">做相等操作右边的对象</param>
+            <returns>若左边等于右边，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.BoundingSphere.op_Inequality(ScriptRuntime.BoundingSphere,ScriptRuntime.BoundingSphere)">
+            <summary>
+            判定两个包围球的实例是否不相等
+            </summary>
+            <param name="a">做相等操作左边的对象</param>
+            <param name="b">做相等操作右边的对象</param>
+            <returns>若左边不等于右边，则返回true；否则，返回false</returns>
+        </member>
+        <member name="T:ScriptRuntime.Color32">
+            <summary>
+            用红色分量、绿色分量、蓝色分量和透明度表示的四元颜色
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Color32.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            创建类的实例
+            </summary>
+            <param name="r">红色分量参数</param>
+            <param name="g">绿色分量参数</param>
+            <param name="b">蓝色分量参数</param>
+            <param name="a">透明度参数</param>
+        </member>
+        <member name="M:ScriptRuntime.Color32.Lerp(ScriptRuntime.Color32,ScriptRuntime.Color32,System.Single)">
+            <summary>
+            颜色的线性插值
+            </summary>
+            <param name="value1">颜色四元组</param>
+            <param name="value2">颜色四元组</param>
+            <param name="amount">插值因子</param>
+            <returns>颜色四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.Multiply(ScriptRuntime.Color32,System.Single)">
+            <summary>
+            乘法操作
+            </summary>
+            <param name="value">颜色四元组</param>
+            <param name="scale">缩放因子</param>
+            <returns>颜色四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.op_Multiply(ScriptRuntime.Color32,System.Single)">
+            <summary>
+            乘法操作
+            </summary>
+            <param name="value">颜色四元组</param>
+            <param name="scale">缩放因子</param>
+            <returns>颜色四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.ToString">
+            <summary>
+            返回当前对象的字符串表示
+            </summary>
+            <returns>对象的字符串表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.GetHashCode">
+            <summary>
+            为特殊类型提供一种哈希函数
+            </summary>
+            <returns>哈希值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.Equals(System.Object)">
+            <summary>
+            判定颜色对象实例是否与指定的对象相等
+            </summary>
+            <param name="obj">颜色对象</param>
+            <returns>若当前实例与指定的对象相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.Equals(ScriptRuntime.Color32)">
+            <summary>
+            判定颜色是否与同一类型的颜色实例相等
+            </summary>
+            <param name="other">颜色四元组</param>
+            <returns>如果两个颜色相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.op_Equality(ScriptRuntime.Color32,ScriptRuntime.Color32)">
+            <summary>
+            判定颜色相等操作
+            </summary>
+            <param name="a">颜色四元组</param>
+            <param name="b">颜色四元组</param>
+            <returns>如果两个颜色相同，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.op_Inequality(ScriptRuntime.Color32,ScriptRuntime.Color32)">
+            <summary>
+            判定颜色不相等操作
+            </summary>
+            <param name="a">颜色四元组</param>
+            <param name="b">颜色四元组</param>
+            <returns>如果两个颜色不相同，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Color32.ToColorF">
+            <summary>
+            获取该对象的ColorF表示
+            </summary>
+            <returns>对象的ColorF表示</returns>
+        </member>
+        <member name="P:ScriptRuntime.Color32.R">
+            <summary>
+            获取或设置红色分量值
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.G">
+            <summary>
+            获取或设置绿色分量值
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.B">
+            <summary>
+            获取或设置蓝色分量值
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.A">
+            <summary>
+            获取或设置颜色透明度
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.PackedValue">
+            <summary>
+            获取或设置打包后的值
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.Black">
+            <summary>
+            获取系统定义的颜色值 R:0 G:0 B:0 A:255
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.Blue">
+            <summary>
+            获取系统定义的颜色值 R:0 G:0 B:255 A:255
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.Green">
+            <summary>
+            获取系统定义的颜色值 R:0 G:255 B:0 A:255
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.Red">
+            <summary>
+            获取系统定义的颜色值 R:255 G:0 B:0 A:255
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Color32.White">
+            <summary>
+            获取系统定义的颜色值 R:255 G:255 B:255 A:255
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.ColorF">
+            <summary>
+            用红色分量、绿色分量、蓝色分量和透明度表示的四元颜色。每个分量值用0到1之间浮点数表示
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.ColorF.R">
+            <summary>
+            获取或设置颜色的红色分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.ColorF.G">
+            <summary>
+            获取或设置颜色的绿色分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.ColorF.B">
+            <summary>
+            获取或设置颜色的蓝色分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.ColorF.A">
+            <summary>
+            获取或设置颜色的透明度
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            创建颜色对象的一个实例
+            </summary>
+            <param name="r">红色分量</param>
+            <param name="g">绿色分量</param>
+            <param name="b">蓝色分量</param>
+            <param name="a">透明度</param>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            创建一个透明度为1.0f的颜色实例
+            </summary>
+            <param name="r">红色分量</param>
+            <param name="g">绿色分量</param>
+            <param name="b">蓝色分量</param>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.ToString">
+            <summary>
+            返回当前对象的字符串表示
+            </summary>
+            <returns>对象的字符串表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.GetHashCode">
+            <summary>
+            为特殊类型提供一种哈希函数
+            </summary>
+            <returns>哈希值</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.Equals(System.Object)">
+            <summary>
+            判定颜色对象实例是否与指定的对象相等
+            </summary>
+            <param name="obj">颜色对象</param>
+            <returns>若当前实例与指定的对象相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.Equals(ScriptRuntime.ColorF)">
+            <summary>
+            判定颜色是否与同一类型的颜色实例相等
+            </summary>
+            <param name="other">颜色四元组</param>
+            <returns>如果两个颜色相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Equality(ScriptRuntime.ColorF,ScriptRuntime.ColorF)">
+            <summary>
+            判定颜色相等操作
+            </summary>
+            <param name="a">颜色四元组</param>
+            <param name="b">颜色四元组</param>
+            <returns>如果两个颜色相同，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Inequality(ScriptRuntime.ColorF,ScriptRuntime.ColorF)">
+            <summary>
+            判定颜色不相等操作
+            </summary>
+            <param name="a">颜色四元组</param>
+            <param name="b">颜色四元组</param>
+            <returns>如果两个颜色不相同，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Addition(ScriptRuntime.ColorF,ScriptRuntime.ColorF)">
+            <summary>
+            颜色相加
+            </summary>
+            <param name="value1">颜色四元组</param>
+            <param name="value2">颜色四元组</param>
+            <returns>两个颜色之和</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Subtraction(ScriptRuntime.ColorF,ScriptRuntime.ColorF)">
+            <summary>
+            颜色相减
+            </summary>
+            <param name="value1">源颜色</param>
+            <param name="value2">源颜色</param>
+            <returns>相减的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Multiply(ScriptRuntime.ColorF,ScriptRuntime.ColorF)">
+            <summary>
+            两个颜色对应分量相乘
+            </summary>
+            <param name="value1">源颜色</param>
+            <param name="value2">源颜色</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Multiply(ScriptRuntime.ColorF,System.Single)">
+            <summary>
+            颜色与标量值相乘
+            </summary>
+            <param name="value1">源颜色</param>
+            <param name="scaleFactor"></param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Multiply(System.Single,ScriptRuntime.ColorF)">
+            <summary>
+            颜色与标量值相乘
+            </summary>
+            <param name="scaleFactor">标量值</param>
+            <param name="value">源颜色</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Division(ScriptRuntime.ColorF,ScriptRuntime.ColorF)">
+            <summary>
+            两个颜色对应分量相除
+            </summary>
+            <param name="value1">源颜色</param>
+            <param name="value2">相除的颜色</param>
+            <returns>颜色相除的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.op_Division(ScriptRuntime.ColorF,System.Single)">
+            <summary>
+            颜色与一个标量值相除
+            </summary>
+            <param name="value1">源颜色</param>
+            <param name="divider">除数</param>
+            <returns>相除的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.ToColor32">
+            <summary>
+            获取对象的Color32表示
+            </summary>
+            <returns>对象的Color32表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.ColorF.ToVector4">
+            <summary>
+            获取对象的四元向量表示
+            </summary>
+            <returns>对象的四元向量表示</returns>
+        </member>
+        <member name="T:ScriptRuntime.MathHelper">
+            <summary>
+            数学运算类
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.E">
+            <summary>
+            数学常数 e
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.Log10E">
+            <summary>
+            log10 e.
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.Log2E">
+            <summary>
+            log2 e.
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.Pi">
+            <summary>
+            圆周率pi
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.PiOver2">
+            <summary>
+            圆周率pi/2
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.PiOver4">
+            <summary>
+            圆周率pi/4
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.TwoPi">
+            <summary>
+            圆周率pi*2
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.Deg2Rad">
+            <summary>
+            角度转换为弧度所用常量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.Rad2Deg">
+            <summary>
+            弧度转换为角度所用常量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.Epsilon">
+            <summary>
+            一个很小的浮点值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.Infinity">
+            <summary>
+            代表正无穷
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.MathHelper.NegativeInfinity">
+            <summary>
+            代表负无穷
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Clamp(System.Single,System.Single,System.Single)">
+            <summary>
+            在规定的范围内限定一个值
+            </summary>
+            <param name="value">需要限定的值</param>
+            <param name="min">最小值</param>
+            <param name="max">最大值</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Clamp(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            在规定的范围内限定一个值
+            </summary>
+            <param name="value">需要限定的值</param>
+            <param name="min">最小值</param>
+            <param name="max">最大值</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Hermite(System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Hermite样条插值
+            </summary>
+            <param name="value1">源值</param>
+            <param name="tangent1">源切线</param>
+            <param name="value2">源值</param>
+            <param name="tangent2">源切线</param>
+            <param name="amount">权重</param>
+            <returns>Hermite样条插值的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Lerp(System.Single,System.Single,System.Single)">
+            <summary>
+            两个向量之间的线性插值
+            </summary>
+            <param name="value1">源值</param>
+            <param name="value2">源值</param>
+            <param name="amount">表明value2的权重，数字0到1之间</param>
+            <returns>结果所得值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Max(System.Single,System.Single)">
+            <summary>
+            返回较大的值
+            </summary>
+            <param name="a">源值</param>
+            <param name="b">源值</param>
+            <returns>较大的值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Min(System.Single,System.Single)">
+            <summary>
+            返回较小的值
+            </summary>
+            <param name="a">源值</param>
+            <param name="b">源值</param>
+            <returns>较小的值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Max(System.Int32,System.Int32)">
+            <summary>
+            返回较大的值 
+            </summary>
+            <param name="a">源值</param>
+            <param name="b">源值</param>
+            <returns>较大的值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Min(System.Int32,System.Int32)">
+            <summary>
+            返回较小的值
+            </summary>
+            <param name="a">源值</param>
+            <param name="b">源值</param>
+            <returns>较小</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.SmoothStep(System.Single,System.Single,System.Single)">
+            <summary>
+            用立方等式在两个值之间插值
+            </summary>
+            <param name="value1">源值</param>
+            <param name="value2">源值</param>
+            <param name="amount">权重</param>
+            <returns>插值结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.RadiansToDegrees(System.Single)">
+            <summary>
+            将弧度转换为角度
+            </summary>
+            <param name="radians">角的弧度值</param>
+            <returns>角的角度值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.DegreesToRadians(System.Single)">
+            <summary>
+            将弧度转换为角度
+            </summary>
+            <param name="degrees">角的角度值</param>
+            <returns>角的弧度值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Sin(System.Single)">
+            <summary>
+            指定角的正弦
+            </summary>
+            <param name="f">一个角的弧度表示</param>
+            <returns>角的正弦值，如果角为NaN或者是正无穷或负无穷，返回NaN</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Cos(System.Single)">
+            <summary>
+            指定角的余弦
+            </summary>
+            <param name="f">一个角的弧度表示</param>
+            <returns>角的余弦值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Tan(System.Single)">
+            <summary>
+            指定角的正切
+            </summary>
+            <param name="f">一个角的弧度表示</param>
+            <returns>角的正切值，如果角为NaN或者是正无穷或负无穷，返回NaN</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.ASin(System.Single)">
+            <summary>
+            指定值的反正弦
+            </summary>
+            <param name="f">正弦值</param>
+            <returns>一个角的弧度表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.ACos(System.Single)">
+            <summary>
+            指定值的反余弦
+            </summary>
+            <param name="f">余弦值</param>
+            <returns>一个角的弧度表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.ATan(System.Single)">
+            <summary>
+            指定值的反正切
+            </summary>
+            <param name="f">正切值</param>
+            <returns>一个角的弧度表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.ATan2(System.Single,System.Single)">
+             <summary>
+             Returns the angle whose tangent is the quotient of two specified numbers.
+             </summary>
+             <param name="a">点的X坐标</param>
+             <param name="b">点的Y坐标</param>
+             <returns>一个角的弧度表示, 例如 -π≤θ≤π, 和 tan(θ) = y / x, 点(x, y)在笛卡尔坐标系中.遵守如下规律: 
+            (x, y)在第一象限 ,0 &lt; θ &lt; π/2.
+            (x, y)在第二象限 , π/2 &lt; θ≤π.
+            (x, y)在第三象限 , -π &lt; θ &lt; -π/2.
+            (x, y)在第四象限 , -π/2 &lt; θ &lt; 0.
+            如果点在象限边界，值如下：
+            如果X为0，Y为非负, θ = 0.
+            如果X为0，Y为负, θ = π.
+            如果X为负，Y为0, θ = π/2.
+            如果X为正，Y为0, θ = -π/2.
+            </returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Sqrt(System.Single)">
+            <summary>
+            求指定数的平方根
+            </summary>
+            <param name="f">指定数值</param>
+            <returns>零或者正数返回结果，负数返回NaN</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Abs(System.Single)">
+            <summary>
+            求指定数的绝对值
+            </summary>
+            <param name="f">指定数</param>
+            <returns>绝对值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Abs(System.Int32)">
+            <summary>
+            求指定数的绝对值
+            </summary>
+            <param name="value">指定数</param>
+            <returns>绝对值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Pow(System.Single,System.Single)">
+            <summary>
+            求指定数的指定次方
+            </summary>
+            <param name="fBase">底数</param>
+            <param name="fExponent">指数 </param>
+            <returns>结果值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Exp(System.Single)">
+            <summary>
+            数学常量e的指定次方
+            </summary>
+            <param name="power">指数</param>
+            <returns>结果值</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Log(System.Single)">
+            <summary>
+            求指定数的对数
+            </summary>
+            <param name="f">指定数</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Log10(System.Single)">
+            <summary>
+            求指定数的以10为底对数
+            </summary>
+            <param name="f">指定数</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Ceil(System.Single)">
+            <summary>
+            求比指定数大或相等的最小整数
+            </summary>
+            <param name="f">一个数 </param>
+            <returns>比指定数大或相等的最小整数</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Floor(System.Single)">
+            <summary>
+            求比指定数小或相等的最大整数
+            </summary>
+            <param name="f">一个数 </param>
+            <returns>比指定数小或相等的最大整数</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.Round(System.Single)">
+            <summary>
+            求距指定数最近的一个整数
+            </summary>
+            <param name="f">一个数.</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.ICeil(System.Single)">
+            <summary>
+            求比指定数大或相等的最小整数
+            </summary>
+            <param name="f">一个数 </param>
+            <returns>比指定数大或相等的最小整数</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.IFloor(System.Single)">
+            <summary>
+            求比指定数小或相等的最大整数
+            </summary>
+            <param name="f">一个数</param>
+            <returns>比指定数小或相等的最大整数</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.IRound(System.Single)">
+            <summary>
+            求距指定数最近的一个整数
+            </summary>
+            <param name="f">一个数</param>
+            <returns>距指定数最近的一个整数</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.IsPowerOfTwo(System.Int32)">
+            <summary>
+            检测一个数是否是2的次幂
+            </summary>
+            <param name="value">一个数</param>
+            <returns>是返回true，不是false</returns>
+        </member>
+        <member name="M:ScriptRuntime.MathHelper.NextPowerOfTwo(System.Int32)">
+            <summary>
+            求最接近较大的2的次幂
+            </summary>
+            <param name="v">一个数</param>
+            <returns>最接近较大的2的次幂</returns>
+        </member>
+        <member name="T:ScriptRuntime.Matrix44">
+            <summary>
+            定义矩阵
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M00">
+            <summary>
+            矩阵第0行第0列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M01">
+            <summary>
+            矩阵第0行第1列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M02">
+            <summary>
+            矩阵第0行第2列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M03">
+            <summary>
+            矩阵第0行第3列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M10">
+            <summary>
+            矩阵第1行第0列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M11">
+            <summary>
+            矩阵第1行第1列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M12">
+            <summary>
+            矩阵第1行第2列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M13">
+            <summary>
+            矩阵第1行第3列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M20">
+            <summary>
+            矩阵第2行第0列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M21">
+            <summary>
+            矩阵第2行第1列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M22">
+            <summary>
+            矩阵第2行第2列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M23">
+            <summary>
+            矩阵第2行第3列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M30">
+            <summary>
+            矩阵第3行第0列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M31">
+            <summary>
+            矩阵第3行第1列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M32">
+            <summary>
+            矩阵第3行第2列的值
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Matrix44.M33">
+            <summary>
+            矩阵第3行第3列的值
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.GetRow(System.Int32)">
+            <summary>
+            获取矩阵的一行
+            </summary>
+            <param name="index">行索引</param>
+            <returns>矩阵相应的行</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.SetRow(System.Int32,ScriptRuntime.Vector4)">
+            <summary>
+            设置矩阵的一行
+            </summary>
+            <param name="index">行索引</param>
+            <param name="value">一行的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.GetColumn(System.Int32)">
+            <summary>
+            获取矩阵的一列
+            </summary>
+            <param name="index">列索引</param>
+            <returns>矩阵相应的列</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.SetColumn(System.Int32,ScriptRuntime.Vector4)">
+            <summary>
+            设置矩阵的一列
+            </summary>
+            <param name="index">列索引</param>
+            <param name="value">一列的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            初始化一个矩阵实例
+            </summary>
+            <param name="m00">初始化m00的值</param>
+            <param name="m01">初始化m01的值</param>
+            <param name="m02">初始化m02的值</param>
+            <param name="m03">初始化m03的值</param>
+            <param name="m10">初始化m10的值</param>
+            <param name="m11">初始化m11的值</param>
+            <param name="m12">初始化m12的值</param>
+            <param name="m13">初始化m13的值</param>
+            <param name="m20">初始化m20的值</param>
+            <param name="m21">初始化m21的值</param>
+            <param name="m22">初始化m22的值</param>
+            <param name="m23">初始化m23的值</param>
+            <param name="m30">初始化m30的值</param>
+            <param name="m31">初始化m31的值</param>
+            <param name="m32">初始化m32的值</param>
+            <param name="m33">初始化m33的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateTranslation(ScriptRuntime.Vector3)">
+            <summary>
+            创建一个平移矩阵
+            </summary>
+            <param name="position">在x、y和z轴上的平移量</param>
+            <returns>创建的平移矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateTranslation(ScriptRuntime.Vector3@,ScriptRuntime.Matrix44@)">
+            <summary>
+            创建一个平移矩阵
+            </summary>
+            <param name="position">在x、y和z轴上的平移量</param>
+            <param name="matrix">[输出参数]创建的平移矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateScale(ScriptRuntime.Vector3)">
+            <summary>
+            创建一个缩放矩阵
+            </summary>
+            <param name="scales">在x、y和z轴上的缩放量</param>
+            <returns>创建的缩放矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateScale(ScriptRuntime.Vector3@,ScriptRuntime.Matrix44@)">
+            <summary>
+            创建一个缩放矩阵
+            </summary>
+            <param name="scales">在x、y和z轴上的缩放量</param>
+            <param name="matrix">[输出参数]创建的缩放矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreatePerspectiveFieldOfView(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            构建一个基于视域的透视投影矩阵并返回该值
+            </summary>
+            <param name="fieldOfView">沿着y轴方向的视域，用弧度表示</param>
+            <param name="aspectRatio">宽高比，定义为视平面宽度与高度之比</param>
+            <param name="nearPlaneDistance">到近视平面的距离</param>
+            <param name="farPlaneDistance">到远视平面的距离</param>
+            <returns>透视投影矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreatePerspectiveFieldOfView(System.Single,System.Single,System.Single,System.Single,ScriptRuntime.Matrix44@)">
+            <summary>
+            构建一个基于视域的透视投影矩阵并返回该值
+            </summary>
+            <param name="fieldOfView">沿着y轴方向的视域，用弧度表示</param>
+            <param name="aspectRatio">宽高比，定义为视平面宽度与高度之比</param>
+            <param name="nearPlaneDistance">到近视平面的距离</param>
+            <param name="farPlaneDistance">到远视平面的距离</param>
+            <param name="matrix">[输出参数]透视投影矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreatePerspective(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            构建一个基于视域的透视投影矩阵并返回该值
+            </summary>
+            <param name="width">视景体近视平面的宽度</param>
+            <param name="height">视景体近视平面的高度</param>
+            <param name="nearPlaneDistance">到近视平面的距离</param>
+            <param name="farPlaneDistance">到远视平面的距离</param>
+            <returns>投影矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreatePerspective(System.Single,System.Single,System.Single,System.Single,ScriptRuntime.Matrix44@)">
+            <summary>
+            构建一个基于视域的透视投影矩阵并返回该值
+            </summary>
+            <param name="width">视景体近视平面的宽度</param>
+            <param name="height">视景体近视平面的高度</param>
+            <param name="nearPlaneDistance">到近视平面的距离</param>
+            <param name="farPlaneDistance">到远视平面的距离</param>
+            <param name="matrix">[输出参数]投影矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateOrthographic(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            构建一个正交投影矩阵
+            </summary>
+            <param name="width">视景体的宽度</param>
+            <param name="height">视景体的高度</param>
+            <param name="zNearPlane">视景体的最小深度值</param>
+            <param name="zFarPlane">视景体的最大深度值</param>
+            <returns>投影矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateOrthographic(System.Single,System.Single,System.Single,System.Single,ScriptRuntime.Matrix44@)">
+            <summary>
+            构建一个正交投影矩阵
+            </summary>
+            <param name="width">视景体的宽度</param>
+            <param name="height">视景体的高度</param>
+            <param name="zNearPlane">视景体的最小深度值</param>
+            <param name="zFarPlane">视景体的最大深度值</param>
+            <param name="matrix">[输出参数]投影矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateLookAt(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            创建一个视口矩阵
+            </summary>
+            <param name="cameraPosition">相机的位置</param>
+            <param name="cameraTarget">相机指向的目标位置</param>
+            <param name="cameraUpVector">视口相机向上的方向</param>
+            <returns>创建的视口矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateLookAt(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Matrix44@)">
+            <summary>
+            创建一个视口矩阵
+            </summary>
+            <param name="cameraPosition">相机的位置</param>
+            <param name="cameraTarget">相机指向的目标位置</param>
+            <param name="cameraUpVector">视口相机向上的方向</param>
+            <param name="matrix">[输出参数]创建的视口矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateFromQuaternion(ScriptRuntime.Quaternion)">
+            <summary>
+            创建一个基于四元数的旋转矩阵
+            </summary>
+            <param name="quaternion">用于创建矩阵的四元数</param>
+            <returns>创建的矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateFromQuaternion(ScriptRuntime.Quaternion@,ScriptRuntime.Matrix44@)">
+            <summary>
+            创建一个基于四元数的旋转矩阵
+            </summary>
+            <param name="quaternion">用于创建矩阵的四元数</param>
+            <param name="matrix">[输出参数]创建的矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)">
+            <summary>
+            创建一个基于指定的偏航角、俯仰角和翻转角的旋转矩阵
+            </summary>
+            <param name="yaw">绕着y轴的旋转角，用弧度表示</param>
+            <param name="pitch">绕着x轴的旋转角，用弧度表示</param>
+            <param name="roll">绕着z轴的旋转角，用弧度表示</param>
+            <returns>基于指定的偏航角、俯仰角和翻转角的旋转矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateFromYawPitchRoll(System.Single,System.Single,System.Single,ScriptRuntime.Matrix44@)">
+            <summary>
+            创建一个基于指定的偏航角、俯仰角和翻转角的旋转矩阵
+            </summary>
+            <param name="yaw">绕着y轴的旋转角，用弧度表示</param>
+            <param name="pitch">绕着x轴的旋转角，用弧度表示</param>
+            <param name="roll">绕着z轴的旋转角，用弧度表示</param>
+            <param name="result">[输出参数]基于指定的偏航角、俯仰角和翻转角的旋转矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateRotationX(System.Single)">
+            <summary>
+            返回一个绕x轴旋转的顶点集表示的矩阵
+            </summary>
+            <param name="radians">绕x轴旋转的弧度值。可以用ToRadians方法将度数转成弧度</param>
+            <returns>旋转矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateRotationX(System.Single,ScriptRuntime.Matrix44@)">
+            <summary>
+            返回一个绕x轴旋转的顶点集表示的矩阵
+            </summary>
+            <param name="radians">绕x轴旋转的弧度值。可以用ToRadians方法将度数转成弧度</param>
+            <param name="result">[输出参数]旋转矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateRotationY(System.Single)">
+            <summary>
+            返回一个绕y轴旋转的顶点集表示的矩阵
+            </summary>
+            <param name="radians">绕y轴旋转的弧度值。可以用ToRadians方法将度数转成弧度</param>
+            <returns>旋转矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateRotationY(System.Single,ScriptRuntime.Matrix44@)">
+            <summary>
+            返回一个绕y轴旋转的顶点集表示的矩阵
+            </summary>
+            <param name="radians">绕y轴旋转的弧度值。可以用ToRadians方法将度数转成弧度</param>
+            <param name="result">[输出参数]旋转矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateRotationZ(System.Single)">
+            <summary>
+            返回一个绕z轴旋转的顶点集表示的矩阵
+            </summary>
+            <param name="radians">绕z轴旋转的弧度值。可以用ToRadians方法将度数转成弧度</param>
+            <returns>旋转矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateRotationZ(System.Single,ScriptRuntime.Matrix44@)">
+            <summary>
+            返回一个绕z轴旋转的顶点集表示的矩阵
+            </summary>
+            <param name="radians">绕z轴旋转的弧度值。可以用ToRadians方法将度数转成弧度</param>
+            <param name="result">[输出参数]旋转矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateFromAxisAngle(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            创建一个基于任意向量旋转的矩阵
+            </summary>
+            <param name="axis">旋转轴</param>
+            <param name="angle">旋转角</param>
+            <returns>创建的矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.CreateFromAxisAngle(ScriptRuntime.Vector3@,System.Single,ScriptRuntime.Matrix44@)">
+            <summary>
+            创建一个基于任意向量旋转的矩阵
+            </summary>
+            <param name="axis">旋转轴</param>
+            <param name="angle">旋转角</param>
+            <param name="result">[输出参数]创建的矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Decompose(ScriptRuntime.Vector3@,ScriptRuntime.Quaternion@,ScriptRuntime.Vector3@)">
+            <summary>
+            解析出变换矩阵的缩放、平移和旋转分量 
+            </summary>
+            <param name="scale">[输出参数]变换矩阵的缩放分量，采用三元组向量表示</param>
+            <param name="rotation">[输出参数]变换矩阵的旋转分量，采用四元数表示</param>
+            <param name="translation">[输出参数]变换矩阵的平移分量，采用三元组向量表示</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.ToString">
+            <summary>
+            返回当前对象的字符串表示
+            </summary>
+            <returns>对象的字符串表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Equals(ScriptRuntime.Matrix44)">
+            <summary>
+            判定矩阵是否相等
+            </summary>
+            <param name="other">与当前矩阵比较的矩阵</param>
+            <returns>若矩阵与当前的矩阵相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Equals(System.Object)">
+            <summary>
+            判定矩阵对象是否相等
+            </summary>
+            <param name="obj">用作比较的对象</param>
+            <returns>若对象与当前的对象相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.GetHashCode">
+            <summary>
+            获取对象的哈希值
+            </summary>
+            <returns>对象的哈希值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Transpose(ScriptRuntime.Matrix44)">
+            <summary>
+            转置矩阵的行和列
+            </summary>
+            <param name="matrix">源矩阵</param>
+            <returns>转置后的矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Transpose(ScriptRuntime.Matrix44@,ScriptRuntime.Matrix44@)">
+            <summary>
+            转置矩阵的行和列
+            </summary>
+            <param name="matrix">源矩阵</param>
+            <param name="result">[输出参数]转置后的矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Determinant">
+            <summary>
+            计算矩阵的行列式
+            </summary>
+            <returns>矩阵的行列式</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Invert(ScriptRuntime.Matrix44)">
+            <summary>
+            计算矩阵的逆矩阵
+            </summary>
+            <param name="matrix">源矩阵</param>
+            <returns>矩阵的逆矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Invert(ScriptRuntime.Matrix44@,ScriptRuntime.Matrix44@)">
+            <summary>
+            计算矩阵的逆矩阵
+            </summary>
+            <param name="matrix">源矩阵</param>
+            <param name="result">[输出参数]矩阵的逆矩阵</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Add(ScriptRuntime.Matrix44,ScriptRuntime.Matrix44)">
+            <summary>
+            矩阵求和
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <returns>矩阵之和</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Add(ScriptRuntime.Matrix44@,ScriptRuntime.Matrix44@,ScriptRuntime.Matrix44@)">
+            <summary>
+            矩阵求和
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <param name="result">[输出参数]矩阵之和</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Sub(ScriptRuntime.Matrix44,ScriptRuntime.Matrix44)">
+            <summary>
+            矩阵相减
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <returns>相减的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Sub(ScriptRuntime.Matrix44@,ScriptRuntime.Matrix44@,ScriptRuntime.Matrix44@)">
+            <summary>
+            矩阵相减
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <param name="result">[输出参数]相减的结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Multiply(ScriptRuntime.Matrix44,ScriptRuntime.Matrix44)">
+            <summary>
+            矩阵相除
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <returns>相除的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.Multiply(ScriptRuntime.Matrix44@,ScriptRuntime.Matrix44@,ScriptRuntime.Matrix44@)">
+            <summary>
+            矩阵相乘
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <param name="result">[输出参数]相乘的结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.TransformVector4(ScriptRuntime.Matrix44,ScriptRuntime.Vector4)">
+            <summary>
+            通过指定的矩阵变换向量
+            </summary>
+            <param name="matrix">源向量</param>
+            <param name="vector">变换矩阵</param>
+            <returns>变换后的向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.TransformVector4(ScriptRuntime.Matrix44@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            通过指定的矩阵变换向量
+            </summary>
+            <param name="matrix">源向量</param>
+            <param name="vector">变换矩阵</param>
+            <param name="result">[输出参数]变换后的向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.TransformPosition(ScriptRuntime.Matrix44,ScriptRuntime.Vector3)">
+            <summary>
+            通过指定的矩阵变换位置
+            </summary>
+            <param name="matrix">变换矩阵</param>
+            <param name="position">源位置</param>
+            <returns>变换后的位置</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.TransformPosition(ScriptRuntime.Matrix44@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            通过指定的矩阵变换位置
+            </summary>
+            <param name="matrix">变换矩阵</param>
+            <param name="position">源位置</param>
+            <param name="result">[输出参数]变换后的位置</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.TransformDirection(ScriptRuntime.Matrix44,ScriptRuntime.Vector3)">
+            <summary>
+            通过指定的矩阵变换方向。若矩阵包含缩放因子，则方向随之缩放
+            </summary>
+            <param name="matrix">变换矩阵</param>
+            <param name="direction">源方向</param>
+            <returns>变换后的方向</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.TransformDirection(ScriptRuntime.Matrix44@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            通过指定的矩阵变换方向。若矩阵包含缩放因子，则方向随之缩放
+            </summary>
+            <param name="matrix">变换矩阵</param>
+            <param name="direction">源方向</param>
+            <param name="result">[输出参数]变换后的方向</param>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.op_UnaryNegation(ScriptRuntime.Matrix44)">
+            <summary>
+            矩阵每一个元素取反
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <returns>取反矩阵</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.op_Equality(ScriptRuntime.Matrix44,ScriptRuntime.Matrix44)">
+            <summary>
+            比较两个矩阵相等
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <returns>若两个矩阵相等，则返回true；否则，返回false。</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.op_Inequality(ScriptRuntime.Matrix44,ScriptRuntime.Matrix44)">
+            <summary>
+            比较两个矩阵不相等
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <returns>若两个矩阵不相等，则返回true；否则，返回false。</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.op_Addition(ScriptRuntime.Matrix44,ScriptRuntime.Matrix44)">
+            <summary>
+            矩阵相加
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <returns>相加的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.op_Subtraction(ScriptRuntime.Matrix44,ScriptRuntime.Matrix44)">
+            <summary>
+            矩阵相减
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <returns>相减的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Matrix44.op_Multiply(ScriptRuntime.Matrix44,ScriptRuntime.Matrix44)">
+            <summary>
+            矩阵相乘
+            </summary>
+            <param name="matrix1">源矩阵</param>
+            <param name="matrix2">源矩阵</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Identity">
+            <summary>
+            返回一个单位矩阵实例
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Up">
+            <summary>
+            获取或设置矩阵的第1列的列向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Down">
+            <summary>
+            获取或设置矩阵的第1列的反向列向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Right">
+            <summary>
+            获取或设置矩阵的第0列的列向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Left">
+            <summary>
+            获取或设置矩阵的第0列的反向列向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Forward">
+            <summary>
+            获取或设置矩阵的第2列的反向列向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Backward">
+            <summary>
+            获取或设置矩阵的第2列的列向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Item(System.Int32,System.Int32)">
+            <summary>
+            获取或设置矩阵的一个元素
+            </summary>
+            <param name="row">行索引</param>
+            <param name="col">列索引</param>
+            <returns>相应的元素</returns>
+        </member>
+        <member name="P:ScriptRuntime.Matrix44.Item(System.Int32)">
+            <summary>
+            获取或设置矩阵的一个元素
+            </summary>
+            <param name="index">元素索引</param>
+            <returns>相应的元素</returns>
+        </member>
+        <member name="T:ScriptRuntime.Plane">
+            <summary>
+            定义一个平面
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Plane.Normal">
+            <summary>
+            平面的法向量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Plane.D">
+            <summary>
+            到原点的距离
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            创建一个平面实例
+            </summary>
+            <param name="a">法向量X轴分量</param>
+            <param name="b">法向量Y轴分量</param>
+            <param name="c">法向量Z轴分量</param>
+            <param name="d">平面到原点的距离</param>
+        </member>
+        <member name="M:ScriptRuntime.Plane.#ctor(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            创建一个平面实例 
+            </summary>
+            <param name="normal">平面的法向量</param>
+            <param name="d">平面到原点的距离</param>
+        </member>
+        <member name="M:ScriptRuntime.Plane.#ctor(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            创建一个平面实例
+            </summary>
+            <param name="point1">三个顶点确定一个平面之一</param>
+            <param name="point2">三个顶点确定一个平面之二</param>
+            <param name="point3">三个顶点确定一个平面之三</param>
+        </member>
+        <member name="M:ScriptRuntime.Plane.#ctor(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            创建一个平面实例
+            </summary>
+            <param name="normal">平面的法向量</param>
+            <param name="point">平面上的一个点</param>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Equals(ScriptRuntime.Plane)">
+            <summary>
+            判断两个平面是否相等 
+            </summary>
+            <param name="other">指定的平面</param>
+            <returns>相等true，不相等false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Equals(System.Object)">
+            <summary>
+            判断两个平面是否相等
+            </summary>
+            <param name="obj">指定的对象</param>
+            <returns>相等true，不相等false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.GetHashCode">
+            <summary>
+            获取平面对象的哈希码 
+            </summary>
+            <returns>哈希码</returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.ToString">
+            <summary>
+            用字符串表示平面
+            </summary>
+            <returns>表示当前平面的字符串</returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Transform(ScriptRuntime.Matrix44,ScriptRuntime.Plane)">
+            <summary>
+            用一个矩阵转换标准化平面
+            </summary> 
+            <param name="matrix">转换矩阵</param>
+            <param name="plane">要转换的平面，在这个方法调用前，要保证平面的法向量是单位向量</param>
+            <returns></returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Transform(ScriptRuntime.Matrix44@,ScriptRuntime.Plane@,ScriptRuntime.Plane@)">
+            <summary>
+            用一个矩阵转换标准化平面
+            </summary> 
+            <param name="matrix">转换矩阵</param>
+            <param name="plane">要转换的平面，在这个方法调用前，要保证平面的法向量是单位向量</param>
+            <param name="result">[输出属性] 一个现有的平面保存这个结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Intersects(ScriptRuntime.BoundingBox)">
+            <summary>
+            检查这个平面是否与指定包围盒相交
+            </summary>
+            <param name="box">指定的包围盒</param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Intersects(ScriptRuntime.BoundingBox@,ScriptRuntime.PlaneIntersectionStatus@)">
+            <summary>
+            检查这个平面是否与指定包围盒相交
+            </summary>
+            <param name="box">指定的包围盒</param>
+            <param name="result">[输出属性] 表明关系的枚举类型</param>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Intersects(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            检查这个平面是否与指定包围断面锥相交
+            </summary>
+            <param name="frustum">指定的包围断面锥</param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Intersects(ScriptRuntime.BoundingSphere)">
+            <summary>
+            检查这个平面是否与指定包围球相交
+            </summary>
+            <param name="sphere">指定的包围球</param>
+            <returns>表明关系的枚举类型</returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Intersects(ScriptRuntime.Ray)">
+            <summary>
+            检查这个平面是否与指定射线相交
+            </summary>
+            <param name="ray">指定的射线</param>
+            <returns>相交为true，不相交为false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Plane.Intersects(ScriptRuntime.BoundingSphere@,ScriptRuntime.PlaneIntersectionStatus@)">
+            <summary>
+            检查这个平面是否与指定包围球相交
+            </summary>
+            <param name="sphere">指定的包围球</param>
+            <param name="result">表明关系的枚举类型</param>
+        </member>
+        <member name="M:ScriptRuntime.Plane.op_Equality(ScriptRuntime.Plane,ScriptRuntime.Plane)">
+            <summary>
+            判断两个平面是否相等
+            </summary>
+            <param name="lhs">符号左边的平面</param>
+            <param name="rhs">符号右边的平面</param>
+            <returns>相等true，不相等false</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ScriptRuntime.Plane.op_Inequality(ScriptRuntime.Plane,ScriptRuntime.Plane)" -->
+        <member name="T:ScriptRuntime.Quaternion">
+            <summary>
+            定义一个四维向量，可以使对象关于一个三维向量有效旋转一定角度。
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Quaternion.W">
+            <summary>
+            指定四元组的旋转分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Quaternion.X">
+            <summary>
+            指定四元组的X轴分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Quaternion.Y">
+            <summary>
+            指定四元组的Y轴分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Quaternion.Z">
+            <summary>
+            指定四元组的Z轴分量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            初始化一个四元组实例
+            </summary>
+            <param name="x">四元组的x值</param>
+            <param name="y">四元组的y值</param>
+            <param name="z">四元组的z值</param>
+            <param name="w">四元组的w值</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.#ctor(System.Single,ScriptRuntime.Vector3)">
+            <summary>
+            初始化一个四元组实例
+            </summary>
+            <param name="angle">旋转角</param>
+            <param name="rkAxis">四元组的旋转分量.</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.#ctor(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            初始化一个四元组实例
+            </summary>
+            <param name="xaxis">X轴分量</param>
+            <param name="yaxis">Y轴分量</param>
+            <param name="zaxis">Z轴分量</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            用指定的偏航角，俯仰角，翻转角初始化四元组
+            </summary>
+            <param name="yaw">Y轴旋转弧度值</param>
+            <param name="pitch">X轴旋转弧度值</param>
+            <param name="roll">Z轴旋转弧度值</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.ToString">
+            <summary>
+            用字符表示当前对象
+            </summary>
+            <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Equals(ScriptRuntime.Quaternion)">
+            <summary>
+            判断是否相等
+            </summary>
+            <param name="other">指定的四元组</param>
+            <returns>相等true，不相等false </returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Equals(System.Object)">
+            <summary>
+            返回一个值表明现有实例等于指定对象
+            </summary>
+            <param name="obj">指定对象</param>
+            <returns>相等true，不相等false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.GetHashCode">
+            <summary>
+            计算哈希值
+            </summary>
+            <returns>对象的哈希值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.LengthSquared">
+            <summary>
+            计算一个四元组长度的平方
+            </summary>
+            <returns>四元组长度的平方</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Length">
+            <summary>
+            计算四元组长度
+            </summary>
+            <returns>四元组的长度</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Normalize">
+            <summary>
+            用四元组长度划分分量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Normalize(ScriptRuntime.Quaternion)">
+            <summary>
+            用四元组长度划分分量
+            </summary>
+            <param name="quaternion">源四元组</param>
+            <returns>标准化四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Normalize(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@)">
+            <summary>
+            用四元组长度划分分量
+            </summary>
+            <param name="quaternion">源四元组</param>
+            <param name="result">[输出属性] 标准化四元组</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Inverse(ScriptRuntime.Quaternion)">
+            <summary>
+            返回相反的四元组
+            </summary>
+            <param name="quaternion">源四元组</param>
+            <returns>逆四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Inverse(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@)">
+            <summary>
+            返回相反的四元组
+            </summary>
+            <param name="quaternion">源四元组</param>
+            <param name="result">[输出属性] 逆四元组</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.CreateFromAxisAngle(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            用轴向量和旋转角创建一个四元组
+            </summary>
+            <param name="axis">轴向量</param>
+            <param name="angle">旋转角</param>
+            <returns></returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.CreateFromAxisAngle(ScriptRuntime.Vector3@,System.Single,ScriptRuntime.Quaternion@)">
+            <summary>
+            用轴向量和旋转角创建一个四元组
+            </summary>
+            <param name="axis">轴向量</param>
+            <param name="angle">旋转角</param>
+            <param name="result">[输出属性] 创建的四元组</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)">
+            <summary>
+            用指定的偏航角，俯仰角，翻转角创建四元组 
+            </summary>
+            <param name="yaw">Y轴旋转弧度值</param>
+            <param name="pitch">X轴旋转弧度值</param>
+            <param name="roll">Z轴旋转弧度值</param>
+            <returns>创建的四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.CreateFromYawPitchRoll(System.Single,System.Single,System.Single,ScriptRuntime.Quaternion@)">
+            <summary>
+            用指定的yaw，pitch，roll创建四元组 
+            </summary>
+            <param name="yaw">Y轴旋转弧度值</param>
+            <param name="pitch">X轴旋转弧度值</param>
+            <param name="roll">Z轴旋转弧度值</param>
+            <param name="result">创建的四元组</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.CreateFromRotationMatrix(ScriptRuntime.Matrix44)">
+            <summary>
+            用旋转矩阵创建四元组
+            </summary>
+            <param name="matrix">旋转矩阵</param>
+            <returns>创建的四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.CreateFromRotationMatrix(ScriptRuntime.Matrix44@,ScriptRuntime.Quaternion@)">
+            <summary>
+            用旋转矩阵创建四元组
+            </summary>
+            <param name="matrix">旋转矩阵</param>
+            <param name="result">[输出属性] 创建的四元组</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Dot(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion)">
+            <summary>
+            计算两个四元组点乘
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <returns>点乘结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Dot(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@,System.Single@)">
+            <summary>
+            计算两个四元组点乘
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <param name="result">[输出属性] 点乘结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Slerp(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion,System.Single)">
+            <summary>
+            两个四元组之间的线性插值
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <param name="amount">权重</param>
+            <returns>计算结果.</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Slerp(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@,System.Single,ScriptRuntime.Quaternion@)">
+            <summary>
+            两个四元组之间的线性插值
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <param name="amount">权重</param>
+            <param name="result">[输出属性] 计算结果 </param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Lerp(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion,System.Single)">
+            <summary>
+            两个四元组之间的线性插值
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <param name="amount">权重</param>
+            <returns>计算结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Lerp(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@,System.Single,ScriptRuntime.Quaternion@)">
+            <summary>
+            两个四元组之间的线性插值
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <param name="amount">权重</param>
+            <param name="result">[输出属性] 计算结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Conjugate">
+            <summary>
+            改变为与当前四元组共轭的四元组
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Conjugate(ScriptRuntime.Quaternion)">
+            <summary>
+            求当前四元组共轭的四元组 
+            </summary>
+            <param name="value">指定四元组 </param>
+            <returns>与指定四元组共轭的四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Conjugate(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@)">
+            <summary>
+            求当前四元组共轭的四元组 
+            </summary>
+            <param name="value">指定四元组 </param>
+            <param name="result">[输出属性] 与指定四元组共轭的四元组</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Angle(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion)">
+            <summary>
+            返回一个a,b之间的角度值
+            </summary>
+            <param name="a">源四元组</param>
+            <param name="b">源四元组</param>
+            <returns>计算所得角度值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Angle(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@,System.Single@)">
+            <summary>
+            返回一个a,b之间的角度值
+            </summary>
+            <param name="a">源四元组</param>
+            <param name="b">源四元组</param>
+            <param name="result">[输出属性] 计算所得角度值</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Negate(ScriptRuntime.Quaternion)">
+            <summary>
+            各分量相反的四元组
+            </summary>
+            <param name="quaternion">源四元组</param>
+            <returns>相反的四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Negate(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@)">
+            <summary>
+            各分量相反的四元组 
+            </summary>
+            <param name="quaternion">源四元组</param>
+            <param name="result">[OutAttribute] 相反的四元组</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Sub(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion)">
+            <summary>
+            四元组减法
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <returns>计算结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Sub(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@)">
+            <summary>
+            四元组减法 
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <param name="result">[输出属性] 计算结果 </param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Rotate(ScriptRuntime.Quaternion,ScriptRuntime.Vector3)">
+            <summary>
+            用四元组旋转一个向量
+            </summary>
+            <param name="rotation">旋转四元组</param>
+            <param name="vector3">向量</param>
+            <returns>旋转后向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Rotate(ScriptRuntime.Quaternion@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            用四元组旋转一个向量
+            </summary>
+            <param name="rotation">旋转四元组</param>
+            <param name="vector3">向量</param>
+            <param name="result">[输出属性] 旋转后的向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Multiply(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion)">
+            <summary>
+            四元组乘法
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <returns>乘法结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.Multiply(ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@,ScriptRuntime.Quaternion@)">
+            <summary>
+            四元组乘法
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <param name="result">[输出属性] 乘法结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.op_UnaryNegation(ScriptRuntime.Quaternion)">
+            <summary>
+            各分量相反的四元组
+            </summary>
+            <param name="quaternion">源四元组</param>
+            <returns>各分量相反的四元组</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.op_Equality(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion)">
+            <summary>
+            比较四元组是否相等
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <returns>相等true，不相等false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.op_Inequality(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion)">
+            <summary>
+            比较四元组是否不相等
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <returns>不相等true，相等false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.op_Subtraction(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion)">
+            <summary>
+            四元组减法
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <returns>计算结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Quaternion.op_Multiply(ScriptRuntime.Quaternion,ScriptRuntime.Quaternion)">
+            <summary>
+            四元组乘法 
+            </summary>
+            <param name="quaternion1">源四元组</param>
+            <param name="quaternion2">源四元组</param>
+            <returns>计算结果</returns>
+        </member>
+        <member name="P:ScriptRuntime.Quaternion.Identity">
+            <summary>
+            返回一个代表不旋转的四元组
+            </summary>
+        </member>
+        <member name="T:ScriptRuntime.Ray">
+            <summary>
+            定义射线
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Ray.Position">
+            <summary>
+            指定射线的起始位置
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Ray.Direction">
+            <summary>
+            指定表示射线方向的单位向量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Ray.#ctor(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            创建一个射线对象实例 
+            </summary>
+            <param name="position">射线的起始位置</param>
+            <param name="direction">表示射线方向的单位向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Equals(ScriptRuntime.Ray)">
+            <summary>
+            判定两个射线对象实例是否相等
+            </summary>
+            <param name="other">与当前射线对象比较的射线对象</param>
+            <returns>若指定的射线对象与当前的射线对象相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Equals(System.Object)">
+            <summary>
+            判定两个射线对象实例是否相等
+            </summary>
+            <param name="obj">与当前射线对象比较的对象</param>
+            <returns>若指定的对象与当前的射线对象相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.GetHashCode">
+            <summary>
+            获取实例哈希值
+            </summary>
+            <returns>当前射线对象的哈希值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.ToString">
+            <summary>
+            返回当前射线对象的字符串表示
+            </summary>
+            <returns>当前射线对象的字符串表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Intersects(ScriptRuntime.BoundingBox)">
+            <summary>
+            检测当前包围盒是否与射线相交
+            </summary>
+            <param name="box">用于检测相交的包围盒</param>
+            <returns>若包围盒与射线相交，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Intersects(ScriptRuntime.BoundingBox@,System.Single@)">
+            <summary>
+            检测当前包围盒是否与射线相交
+            </summary>
+            <param name="box">用于检测相交的包围盒</param>
+            <param name="distance">[输出参数]表示射线与包围盒相交的距离。若不相交，则距离的概念没有意义</param>
+            <returns>若包围盒与射线相交，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Intersects(ScriptRuntime.BoundingFrustum)">
+            <summary>
+            检测当前包围台是否与射线相交
+            </summary>
+            <param name="frustum">用于检测相交的包围台</param>
+            <returns>若包围台与射线相交，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Intersects(ScriptRuntime.BoundingSphere)">
+            <summary>
+            检测当前包围球是否与射线相交
+            </summary>
+            <param name="sphere">用于检测相交的包围球</param>
+            <returns>若包围球与射线相交，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Intersects(ScriptRuntime.BoundingSphere@,System.Single@)">
+            <summary>
+            检测当前射线是否与指定的包围球相交
+            </summary>
+            <param name="sphere">用于检测与射线相交的包围球</param>
+            <param name="distance">[输出参数]表示射线与包围球相交的距离。若不相交，则距离的概念没有意义</param>
+            <returns>若包围球与射线相交，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Intersects(ScriptRuntime.Plane)">
+            <summary>
+            检测当前射线是否与指定的平面相交
+            </summary>
+            <param name="plane">用于检测与射线相交的平面</param>
+            <returns>若平面与射线相交，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.Intersects(ScriptRuntime.Plane@,System.Single@)">
+            <summary>
+            检测当前射线是否与指定的平面相交
+            </summary>
+            <param name="plane">用于检测与射线相交的平面</param>
+            <param name="distance">[输出参数]表示射线与平面相交的距离。若不相交，则距离的概念没有意义</param>
+            <returns>若平面与射线相交，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.op_Equality(ScriptRuntime.Ray,ScriptRuntime.Ray)">
+            <summary>
+            判定两个射线实例是否相等
+            </summary>
+            <param name="a">相等比较操作左边的对象</param>
+            <param name="b">相等比较操作右边的对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:ScriptRuntime.Ray.op_Inequality(ScriptRuntime.Ray,ScriptRuntime.Ray)">
+            <summary>
+            判定两个射线实例是否不相等
+            </summary>
+            <param name="a">不相等比较操作左边的对象</param>
+            <param name="b">不相等比较操作左边的对象</param>
+            <returns></returns>
+        </member>
+        <member name="T:ScriptRuntime.Vector2">
+            <summary>
+            二维向量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector2.X">
+            <summary>
+            获取或设置X分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector2.Y">
+            <summary>
+            获取或设置Y分量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.#ctor(System.Single,System.Single)">
+            <summary>
+            初始化一个二维向量实例
+            </summary>
+            <param name="x">初始化X轴方向的值</param>
+            <param name="y">初始化Y轴方向的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.#ctor(System.Single)">
+            <summary>
+            创建一个新的二维向量实例
+            </summary>
+            <param name="value">初始化X轴方向Y轴方向同为的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.ToString">
+            <summary>
+            用字符串表示
+            </summary>
+            <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Equals(ScriptRuntime.Vector2)">
+            <summary>
+            判断当前向量与指定向量是否相等
+            </summary>
+            <param name="other">指定的二维向量</param>
+            <returns>返回是否相等</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Equals(System.Object)">
+            <summary>
+            判断是否当前实例等于指定对象 
+            </summary>
+            <param name="obj">指定的对象.</param>
+            <returns>当前实例等于指定对象返回true，不等于返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.GetHashCode">
+            <summary>
+            获取向量对象的哈希码
+            </summary>
+            <returns>向量对象的哈希吗</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Length">
+            <summary>
+            计算向量的模
+            </summary>
+            <returns>向量的模</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.LengthSquared">
+            <summary>
+            计算向量长度值的平方
+            </summary>
+            <returns>向量长度的平方值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Distance(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            计算两个向量之间的距离
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个二维向量之间的距离</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Distance(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,System.Single@)">
+            <summary>
+            计算两个向量之间的距离
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 两个向量之间的距离</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.DistanceSquared(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            计算两个向量之间的距离的平方
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个向量之间的距离的平方</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.DistanceSquared(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,System.Single@)">
+            <summary>
+            计算两个向量之间的距离的平方
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 两个向量之间的距离的平方</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Normalize">
+            <summary>
+            返回指定向量的单位向量，方向保持一致
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Normalize(ScriptRuntime.Vector2)">
+            <summary>
+            返回指定向量的单位向量，方向保持一致
+            </summary>
+            <param name="value">源向量</param>
+            <returns>被创建的单位向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Normalize(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            指定向量的单位向量，方向保持一致，用户指定变量
+            </summary>
+            <param name="value">源向量</param>
+            <param name="result">[输出属性] 标准化向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Reflect(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            给出向量和法线 确定反射向量 
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="normal">法线向量</param>
+            <returns>求得的反射向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Reflect(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            给出向量和法线 确定反射向量 
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="normal">法线向量</param>
+            <param name="result">[输出属性] 求得的反射向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Min(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            返回一个向量，包含每对向量分量中最小值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>最小向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Min(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            返回一个向量，包含每对向量分量中最小值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 最小向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Max(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            返回一个向量，包含每对向量分量中最大值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>最大向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Max(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            返回一个向量，包含每对向量分量中最大值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 最大向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Clamp(ScriptRuntime.Vector2,ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            在规定的范围内限定一个值
+            </summary>
+            <param name="value1">需要限定的向量</param>
+            <param name="min">最小值</param>
+            <param name="max">最大值</param>
+            <returns>限定后的向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Clamp(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            在规定的范围内限定一个值
+            </summary>
+            <param name="value1">需要限定的向量</param>
+            <param name="min">最小值.</param>
+            <param name="max">最大值.</param>
+            <param name="result">[输出属性] 限定后的向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Lerp(ScriptRuntime.Vector2,ScriptRuntime.Vector2,System.Single)">
+            <summary>
+            执行两个向量之间的线性插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">表明value2的权重，数字0到1之间</param>
+            <returns>两个向量之间的线性插值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Lerp(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,System.Single,ScriptRuntime.Vector2@)">
+            <summary>
+            执行两个向量之间的线性插值 
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">表明value2的权重，数字0到1之间</param>
+            <param name="result">[输出属性] 两个向量之间的线性插值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.SmoothStep(ScriptRuntime.Vector2,ScriptRuntime.Vector2,System.Single)">
+            <summary>
+            用立方等式在两个值之间插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">权重</param>
+            <returns>计算结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.SmoothStep(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,System.Single,ScriptRuntime.Vector2@)">
+            <summary>
+            用立方等式在两个值之间插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">权重</param>
+            <param name="result">[输出属性] 计算结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Negate(ScriptRuntime.Vector2)">
+            <summary>
+            返回一个指向相反方向的向量
+            </summary>
+            <param name="value">源向量</param>
+            <returns>指向相反方向的向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Negate(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            返回一个指向相反方向的向量
+            </summary>
+            <param name="value">源向量</param>
+            <param name="result">[输出属性] 指向相反方向的向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Dot(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            计算两个向量的点积，如果两个向量是单位向量, 所得乘积是-1到1之间的浮点值 可以用来确定两个向量之间的一些夹角，例如, 它可以表明向量是否正交，平行，或者夹角是锐角还是钝角 
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个向量的点积</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Dot(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,System.Single@)">
+            <summary>
+            计算两个向量的点积，如果两个向量是单位向量, 所得乘积是-1到1之间的浮点值 可以用来确定两个向量之间的一些夹角，例如, 它可以表明向量是否正交，平行，或者夹角是锐角还是钝角  
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 两个向量的点积</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Angle(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            返回向量之间的夹角
+            </summary>
+            <param name="from">源向量.</param>
+            <param name="to">源向量</param>
+            <returns>[输出属性]向量之间夹角的角度值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Angle(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,System.Single@)">
+            <summary>
+            返回向量之间的夹角
+            </summary>
+            <param name="from">源向量</param>
+            <param name="to">源向量</param>
+            <param name="result">[输出属性] 向量之间夹角的角度值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Add(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            计算两个向量相加
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个向量相加的和</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Add(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            计算两个向量相加
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 两个向量相加的和</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Sub(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            计算两个向量相减
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个向量相减的差</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Sub(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            计算两个向量相减
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 两个向量相减的差</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Multiply(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            两个向量的分量对应相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Multiply(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            两个向量的分量对应相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 相乘的结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Multiply(ScriptRuntime.Vector2,System.Single)">
+            <summary>
+            向量乘以一个标量值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <returns>向量乘以一个标量值所得的乘积</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Multiply(ScriptRuntime.Vector2@,System.Single,ScriptRuntime.Vector2@)">
+            <summary>
+            向量乘以一个标量值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <param name="result">[输出属性] 向量乘以一个标量值所得的乘积</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Divide(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            两向量的分量对应相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除向量</param>
+            <returns>相除的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Divide(ScriptRuntime.Vector2@,ScriptRuntime.Vector2@,ScriptRuntime.Vector2@)">
+            <summary>
+            两向量的分量对应相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除向量</param>
+            <param name="result">[输出属性] 相除的结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Divide(ScriptRuntime.Vector2,System.Single)">
+            <summary>
+            向量除以一个标量值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="divider">标量值</param>
+            <returns>向量除以一个标量值所得的向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.Divide(ScriptRuntime.Vector2@,System.Single,ScriptRuntime.Vector2@)">
+            <summary>
+            向量除以一个标量值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="divider">标量值</param>
+            <param name="result">[输出属性] 向量除以一个标量值所得的向量.</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_UnaryNegation(ScriptRuntime.Vector2)">
+            <summary>
+            返回一个指向相反方向的向量
+            </summary>
+            <param name="value">源向量</param>
+            <returns>返回一个指向相反方向的向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Equality(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            判断向量是否相等
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>如果相等返回true，不相等返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Inequality(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            判断向量是否不等
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>如果不相等返回true，相等返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Addition(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            两个向量相加
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个向量相加所得的和</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Subtraction(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            两个向量相减
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个向量相减所得的差</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Multiply(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            两个向量的分量分别相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Multiply(ScriptRuntime.Vector2,System.Single)">
+            <summary>
+            向量乘以一个标量值 
+            </summary>
+            <param name="value">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <returns>向量乘以一个标量值所得的向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Multiply(System.Single,ScriptRuntime.Vector2)">
+            <summary>
+            向量乘以一个标量值 
+            </summary>
+            <param name="scaleFactor">标量值</param>
+            <param name="value">源向量</param>
+            <returns>向量乘以一个标量值所得的向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Division(ScriptRuntime.Vector2,ScriptRuntime.Vector2)">
+            <summary>
+            两个向量的分量对应相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除向量</param>
+            <returns>相除的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector2.op_Division(ScriptRuntime.Vector2,System.Single)">
+            <summary>
+            向量除以一个标量值    
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="divider">标量值</param>
+            <returns>向量除以一个标量值所得的向量</returns>
+        </member>
+        <member name="P:ScriptRuntime.Vector2.Zero">
+            <summary>       
+            返回一个分量为0的二维向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector2.One">
+            <summary>
+            返回一个分量为1的二维向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector2.UnitX">
+            <summary>
+            返回X轴方向上的单位向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector2.UnitY">
+            <summary>
+            返回Y轴方向上的单位向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector2.Item(System.Int32)">
+            <summary>
+            使用[0],[1]分别对应X轴分量，Y轴分量
+            </summary>
+            <param name="index">想要获取分量的索引</param>
+            <returns>想要获取的分量</returns>
+        </member>
+        <member name="T:ScriptRuntime.Vector3">
+            <summary>
+            三维向量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector3.X">
+            <summary>
+            获取或设置向量的X分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector3.Y">
+            <summary>
+            获取或设置向量的Y分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector3.Z">
+            <summary>
+            获取或设置向量的Z分量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            初始化一个三维向量实例 
+            </summary>
+            <param name="x">初始化X轴方向的值</param>
+            <param name="y">初始化Y轴方向的值</param>
+            <param name="z">初始化Z轴方向的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.#ctor(System.Single)">
+            <summary>
+            初始化一个三维向量实例
+            </summary>
+            <param name="value">初始化X轴方向Y轴方向Z轴方向同为的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.#ctor(ScriptRuntime.Vector2,System.Single)">
+            <summary>
+            初始化一个三维向量实例
+            </summary>
+            <param name="value">一个向量包含初始化X轴方向上和Y轴方向的值</param>
+            <param name="z">初始化Z轴方向的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.ToString">
+            <summary>
+            用字符串表示
+            </summary>
+            <returns>表示当前对象的字符串</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Equals(ScriptRuntime.Vector3)">
+            <summary>
+            判断当前向量与指定向量是否相等
+            </summary>
+            <param name="other">指定的二维向量</param>
+            <returns>返回是否相等</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Equals(System.Object)">
+            <summary>
+            判断当前实例是否等于指定对象
+            </summary>
+            <param name="obj">指定的对象</param>
+            <returns>返回是否相等</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.GetHashCode">
+            <summary>
+            获取向量对象的哈希码
+            </summary>
+            <returns>向量对象的哈希码</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Length">
+            <summary>
+            计算向量模
+            </summary>
+            <returns>向量的模</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.LengthSquared">
+            <summary>
+            计算向量长度的平方值
+            </summary>
+            <returns>向量长度的平方值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Distance(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            计算两个三维向量之间的距离
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个三维向量之间的距离</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Distance(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,System.Single@)">
+            <summary>
+            计算两个三维向量之间的距离
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 两个三维向量之间的距离</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.DistanceSquared(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            计算两个三维向量之间的距离的平方
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个三维向量之间的距离的平方</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.DistanceSquared(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,System.Single@)">
+            <summary>
+            计算两个三维向量之间的距离的平方
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 两个三维向量之间的距离的平方</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Dot(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            计算两个向量的点积，如果两个向量是单位向量, 所得乘积是-1到1之间的浮点值 可以用来确定两个向量之间的一些夹角，例如, 它可以表明向量是否正交，平行，或者夹角是锐角还是钝角 
+            </summary>
+            <param name="vector1">源向量</param>
+            <param name="vector2">源向量</param>
+            <returns>两个向量的点积</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Dot(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,System.Single@)">
+            <summary>
+            计算两个向量的点积，如果两个向量是单位向量, 所得乘积是-1到1之间的浮点值 可以用来确定两个向量之间的一些夹角，例如, 它可以表明向量是否正交，平行，或者夹角是锐角还是钝角 
+            </summary>
+            <param name="vector1">源向量</param>
+            <param name="vector2">源向量</param>
+            <param name="result">[输出属性] 两个向量的点积</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Normalize">
+            <summary>
+            返回当前向量的单位向量，方向保持一致
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Normalize(ScriptRuntime.Vector3)">
+            <summary>
+            返回指定向量的单位向量，方向保持一致
+            </summary>
+            <param name="value">源向量</param>
+            <returns>被创建的单位向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Normalize(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            指定向量的单位向量，方向保持一致，用户指定变量
+            </summary>
+            <param name="value">源向量</param>
+            <param name="result">[输出属性] 标准化向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Cross(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            计算两个向量的叉积 
+            </summary>
+            <param name="vector1">源向量</param>
+            <param name="vector2">源向量</param>
+            <returns>两个向量的叉积</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Cross(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            计算两个向量的叉积
+            </summary>
+            <param name="vector1">源向量</param>
+            <param name="vector2">源向量</param>
+            <param name="result">[输出属性] 两个向量的叉积</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Reflect(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            给出向量和法线 确定反射向量 
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="normal">法线向量</param>
+            <returns>求得的反射向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Reflect(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            给出向量和法线 确定反射向量 
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="normal">法线向量</param>
+            <param name="result">[输出属性] 求得的反射向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Min(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            返回一个向量，包含每对向量分量中最小值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>最小向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Min(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            返回一个向量，包含每对向量分量中最小值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 最小向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Max(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            返回一个向量，包含每对向量分量中最大值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>最大向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Max(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            返回一个向量，包含每对向量分量中最大值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出属性] 最大向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Clamp(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            在规定的范围内限定一个值
+            </summary>
+            <param name="value1">需要限定的向量</param>
+            <param name="min">最小值</param>
+            <param name="max">最大值</param>
+            <returns>限定后的向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Clamp(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            在规定的范围内限定一个值
+            </summary>
+            <param name="value1">需要限定的向量</param>
+            <param name="min">最小值</param>
+            <param name="max">最大值</param>
+            <param name="result">[输出属性] 限定后的向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Lerp(ScriptRuntime.Vector3,ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            执行两个向量之间的线性插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">表明value2的权重，数字0到1之间</param>
+            <returns>两个向量之间的线性插值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Lerp(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,System.Single,ScriptRuntime.Vector3@)">
+            <summary>
+            执行两个向量之间的线性插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">表明value2的权重，数字0到1之间</param>
+            <param name="result">[输出属性] 两个向量之间的线性插值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.SmoothStep(ScriptRuntime.Vector3,ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            用立方等式在两个值之间插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">权重</param>
+            <returns>计算结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.SmoothStep(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,System.Single,ScriptRuntime.Vector3@)">
+            <summary>
+            用立方等式在两个值之间插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">权重</param>
+            <param name="result">[输出属性] 计算结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Hermite(ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.Vector3,ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            实现Hermite样条插值
+            </summary>
+            <param name="value1">源位置向量</param>
+            <param name="tangent1">源切向量</param>
+            <param name="value2">源位置向量</param>
+            <param name="tangent2">源切向量</param>
+            <param name="amount">权重因子</param>
+            <returns>Hermite样条插值的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Hermite(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,System.Single,ScriptRuntime.Vector3@)">
+            <summary>
+            实现Hermite样条插值
+            </summary>
+            <param name="value1">源位置向量</param>
+            <param name="tangent1">源切向量</param>
+            <param name="value2">源位置向量</param>
+            <param name="tangent2">源切向量</param>
+            <param name="amount">权重因子</param>
+            <param name="result">[输出参数]Hermite样条插值的结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Negate(ScriptRuntime.Vector3)">
+            <summary>
+            返回反向向量
+            </summary>
+            <param name="value">源向量</param>
+            <returns>反向向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Negate(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            返回反向向量
+            </summary>
+            <param name="value">源向量</param>
+            <param name="result">[输出参数]反向向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Add(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            向量求和
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个源向量之和</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Add(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            向量求和
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]两个源向量之和</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Sub(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            向量相减
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>向量相减的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Sub(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            向量相减
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]向量相减的结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Multiply(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            两个向量对应元素相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>返回相乘结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Multiply(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            两个向量对应元素相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]返回相乘结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Multiply(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            向量数乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <returns>数乘结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Multiply(ScriptRuntime.Vector3@,System.Single,ScriptRuntime.Vector3@)">
+            <summary>
+            向量数乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <param name="result">[输出参数]数乘结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Divide(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            两个向量对应元素相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除数向量</param>
+            <returns>返回相除结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Divide(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            两个向量对应元素相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除数向量</param>
+            <param name="result">[输出向量] 返回相除结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Divide(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            向量与标量相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="divider">标量值</param>
+            <returns>相除结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Divide(ScriptRuntime.Vector3@,System.Single,ScriptRuntime.Vector3@)">
+            <summary>
+            向量与标量相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="divider">标量值</param>
+            <param name="result">[输出参数]相除结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.OrthoNormalize(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            正交化两个向量。以切向量为参考，使得尽可能接近法向量
+            </summary>
+            <param name="normal">法向量</param>
+            <param name="tangent">切向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.OrthoNormalize(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            正交化三个向量
+            </summary>
+            <param name="normal">法向量</param>
+            <param name="tangent">切向量</param>
+            <param name="binormal">次法线向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Project(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            返回法向量的投影向量，若法向量模接近零，则返回零向量
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="onNormal">法向量</param>
+            <returns>源向量相对于法向量的投影结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Project(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,ScriptRuntime.Vector3@)">
+            <summary>
+            返回法向量的投影向量，若法向量模接近零，则返回零向量
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="onNormal">法向量</param>
+            <param name="result">[输出参数]源向量相对于法向量的投影结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Angle(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            返回第一个向量到第二个向量的角度值
+            </summary>
+            <param name="from">源向量</param>
+            <param name="to">源向量</param>
+            <returns>第一个向量到第二个向量的角度值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.Angle(ScriptRuntime.Vector3@,ScriptRuntime.Vector3@,System.Single@)">
+            <summary>
+            返回第一个向量到第二个向量的角度值
+            </summary>
+            <param name="from">源向量</param>
+            <param name="to">源向量</param>
+            <param name="result">[输出参数]第一个向量到第二个向量的角度值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_UnaryNegation(ScriptRuntime.Vector3)">
+            <summary>
+            返回反向向量
+            </summary>
+            <param name="value">源向量</param>
+            <returns>反向向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Equality(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            判定两个向量相等
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>若两向量相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Inequality(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            判定两个向量不相等
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>若两向量不相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Addition(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            两个向量求和
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两向量之和</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Subtraction(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            一个向量减去另一个向量
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>相减的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Multiply(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            两个向量对应元素相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Multiply(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            一个向量与一个标量相乘
+            </summary>
+            <param name="value">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Multiply(System.Single,ScriptRuntime.Vector3)">
+            <summary>
+            一个向量与一个标量相乘
+            </summary>
+            <param name="scaleFactor">标量值</param>
+            <param name="value">源向量</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Division(ScriptRuntime.Vector3,ScriptRuntime.Vector3)">
+            <summary>
+            一个向量的元素与另一个向量的对应元素相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除数向量</param>
+            <returns>向量相除的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector3.op_Division(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            一个向量除以一个标量
+            </summary>
+            <param name="value">源向量</param>
+            <param name="divider">除数</param>
+            <returns>相除的结果</returns>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.Zero">
+            <summary>
+            返回一个分量为0的三维向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.One">
+            <summary>
+            返回一个分量为1的三维向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.UnitX">
+            <summary>
+            返回X轴方向上的单位向量 (1, 0, 0).
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.UnitY">
+            <summary>
+            返回Y轴方向上的单位向量 (0, 1, 0). 
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.UnitZ">
+            <summary>
+            返回Z轴方向上的单位向量 (0, 0, 1). 
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.Up">
+            <summary>
+            返回一个单位向量指定向上 (0, 1, 0).
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.Down">
+            <summary>
+            返回一个单位向量指定向下 (0, −1, 0).
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.Right">
+            <summary>
+            返回一个单位向量指定向右 (1, 0, 0).
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.Left">
+            <summary>
+            返回一个单位向量指定向左 (−1, 0, 0).
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.Forward">
+            <summary>
+            返回一个单位向量在右坐标系指定前方向(0, 0, −1).
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.Backward">
+            <summary>
+            返回一个单位向量在右手坐标系指定后方向 (0, 0, 1).
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector3.Item(System.Int32)">
+            <summary>
+            使用[0],[1],[3]分别对应X轴分量，Y轴分量，Z轴分量.
+            </summary>
+            <param name="index">想要获取分量的索引</param>
+            <returns>想要获取的分量</returns>
+        </member>
+        <member name="T:ScriptRuntime.Vector4">
+            <summary>
+            四元向量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector4.X">
+            <summary>
+            获取或设置向量的x分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector4.Y">
+            <summary>
+            获取或设置向量的y分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector4.Z">
+            <summary>
+            获取或设置向量的z分量
+            </summary>
+        </member>
+        <member name="F:ScriptRuntime.Vector4.W">
+            <summary>
+            获取或设置向量的w分量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            初始化一个四元向量实例
+            </summary>
+            <param name="x">初始化四元向量元素x的值</param>
+            <param name="y">初始化四元向量元素y的值</param>
+            <param name="z">初始化四元向量元素z的值</param>
+            <param name="w">初始化四元向量元素w的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.#ctor(ScriptRuntime.Vector2,System.Single,System.Single)">
+            <summary>
+            初始化一个四元向量实例
+            </summary>
+            <param name="value">同时初始化四元向量元素x和y的二元向量</param>
+            <param name="z">初始化四元向量元素z的值</param>
+            <param name="w">初始化四元向量元素w的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.#ctor(ScriptRuntime.Vector3,System.Single)">
+            <summary>
+            初始化一个四元向量实例
+            </summary>
+            <param name="value">同时初始化四元向量元素x、y和z的向量</param>
+            <param name="w">初始化四元向量元素w的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.#ctor(System.Single)">
+            <summary>
+            创建一个四元向量实例
+            </summary>
+            <param name="value">初始化每一个元素</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.ToString">
+            <summary>
+            返回当前对象的字符串表示
+            </summary>
+            <returns>对象的字符串表示</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Equals(ScriptRuntime.Vector4)">
+            <summary>
+            判定向量是否相等
+            </summary>
+            <param name="other">与当前向量比较的向量</param>
+            <returns>若向量与当前向量相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Equals(System.Object)">
+            <summary>
+            判定当前的实例是否与指定的对象相等
+            </summary>
+            <param name="obj">作比较的对象</param>
+            <returns>若当前实例与指定的对象相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.GetHashCode">
+            <summary>
+            获取向量对象的哈希值
+            </summary>
+            <returns>向量对象的哈希值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Length">
+            <summary>
+            计算向量的模
+            </summary>
+            <returns>向量的模</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.LengthSquared">
+            <summary>
+            计算向量模的平方
+            </summary>
+            <returns>向量模的平方</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Distance(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            计算两个向量之间的距离
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个向量之间的距离</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Distance(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,System.Single@)">
+            <summary>
+            计算两个向量之间的距离
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]两个向量之间的距离</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.DistanceSquared(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            计算两个向量之间距离的平方
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个向量之间距离的平方</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.DistanceSquared(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,System.Single@)">
+            <summary>
+            计算两个向量之间距离的平方
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]两个向量之间距离的平方</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Dot(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            计算两个向量的点积。若两个向量是单位向量，则点积的结果为一个在-1到1之间的浮点数，该数值用来判定两个向量角度关系。例如，这个值可以表示两个向量是否正交，平行或存在一个锐角钝角的关系
+            </summary>
+            <param name="vector1">源向量</param>
+            <param name="vector2">源向量</param>
+            <returns>两个向量的点积</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Dot(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,System.Single@)">
+            <summary>
+            计算两个向量的点积。若两个向量是单位向量，则点积的结果为一个在-1到1之间的浮点数，该数值用来判定两个向量角度关系。例如，这个值可以表示两个向量是否正交，平行或存在一个锐角钝角的关系
+            </summary>
+            <param name="vector1">源向量</param>
+            <param name="vector2">源向量</param>
+            <param name="result">[输出参数]两个向量的点积</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Normalize">
+            <summary>
+            转换当前向量为一个单位向量。该结果是一个长度为1且方向与原向量方向一致的向量
+            </summary>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Normalize(ScriptRuntime.Vector4)">
+            <summary>
+            根据指定的向量创建一个单位向量。该结果是一个长度为1且方向与原向量方向一致的向量
+            </summary>
+            <param name="vector">源向量</param>
+            <returns>创建的单位向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Normalize(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            根据指定的向量创建一个单位向量。该结果是一个长度为1且方向与原向量方向一致的向量
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="result">[输出参数]标准向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Min(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            返回两个向量中对应元素相对较小的元素所构成的向量
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>最小化向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Min(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            返回两个向量中对应元素相对较小的元素所构成的向量
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]最小化向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Max(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            返回两个向量中对应元素相对较大的元素所构成的向量
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>最大化向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Max(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            返回两个向量中对应元素相对较大的元素所构成的向量
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]最大化向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Clamp(ScriptRuntime.Vector4,ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            限定一个值在指定范围内
+            </summary>
+            <param name="value1">待限定的值</param>
+            <param name="min">最小值</param>
+            <param name="max">最大值</param>
+            <returns>夹在范围内的值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Clamp(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            限定一个值在指定范围内
+            </summary>
+            <param name="value1">待限定的值</param>
+            <param name="min">最小值</param>
+            <param name="max">最大值</param>
+            <param name="result">[输出参数]夹在范围内的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Lerp(ScriptRuntime.Vector4,ScriptRuntime.Vector4,System.Single)">
+            <summary>
+            计算两个向量的线性插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">指示第二个向量的权重，范围在0到1之间</param>
+            <returns>两个向量的线性插值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Lerp(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,System.Single,ScriptRuntime.Vector4@)">
+            <summary>
+            计算两个向量的线性插值
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="amount">指示第二个向量的权重，范围在0到1之间</param>
+            <param name="result">[输出参数]两个向量的线性插值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.SmoothStep(ScriptRuntime.Vector4,ScriptRuntime.Vector4,System.Single)">
+            <summary>
+            用立方公式在两个值之间做插值
+            </summary>
+            <param name="value1">源值</param>
+            <param name="value2">源值</param>
+            <param name="amount">权重</param>
+            <returns>插入的值</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.SmoothStep(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,System.Single,ScriptRuntime.Vector4@)">
+            <summary>
+            用立方公式在两个值之间做插值
+            </summary>
+            <param name="value1">源值</param>
+            <param name="value2">源值</param>
+            <param name="amount">权重</param>
+            <param name="result">[输出参数]插入的值</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Hermite(ScriptRuntime.Vector4,ScriptRuntime.Vector4,ScriptRuntime.Vector4,ScriptRuntime.Vector4,System.Single)">
+            <summary>
+            计算埃尔米特样条插值
+            </summary>
+            <param name="value1">源位置向量</param>
+            <param name="tangent1">源切向量</param>
+            <param name="value2">源位置向量</param>
+            <param name="tangent2">源切向量</param>
+            <param name="amount">权重因子</param>
+            <returns>埃尔米特样条插值的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Hermite(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,System.Single,ScriptRuntime.Vector4@)">
+            <summary>
+            计算埃尔米特样条插值
+            </summary>
+            <param name="value1">源位置向量</param>
+            <param name="tangent1">源切向量</param>
+            <param name="value2">源位置向量</param>
+            <param name="tangent2">源切向量</param>
+            <param name="amount">权重因子</param>
+            <param name="result">[输出参数]埃尔米特样条插值的结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Project(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            返回法向量的投影向量，若法向量模接近零，则返回零向量
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="onNormal">法向量</param>
+            <returns>源向量相对于法向量的投影结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Project(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            返回法向量的投影向量，若法向量模接近零，则返回零向量
+            </summary>
+            <param name="vector">源向量</param>
+            <param name="onNormal">法向量</param>
+            <param name="result">[输出参数]源向量相对于法向量的投影结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Negate(ScriptRuntime.Vector4)">
+            <summary>
+            返回反向向量
+            </summary>
+            <param name="value">源向量</param>
+            <returns>反向向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Negate(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            返回反向向量
+            </summary>
+            <param name="value">源向量</param>
+            <param name="result">[输出参数]反向向量</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Add(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            向量求和
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两个源向量之和</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Add(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            向量求和
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]两个源向量之和</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Sub(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            向量相减
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>向量相减的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Sub(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            向量相减
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]向量相减的结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Multiply(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            两个向量对应元素相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>返回相乘结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Multiply(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            两个向量对应元素相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <param name="result">[输出参数]返回相乘结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Multiply(ScriptRuntime.Vector4,System.Single)">
+            <summary>
+            向量数乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <returns>数乘结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Multiply(ScriptRuntime.Vector4@,System.Single,ScriptRuntime.Vector4@)">
+            <summary>
+            向量数乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <param name="result">[输出参数]数乘结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Divide(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            两个向量对应元素相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除数向量</param>
+            <returns>返回相除结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Divide(ScriptRuntime.Vector4@,ScriptRuntime.Vector4@,ScriptRuntime.Vector4@)">
+            <summary>
+            两个向量对应元素相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除数向量</param>
+            <param name="result">[输出向量] 返回相除结果</param>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Divide(ScriptRuntime.Vector4,System.Single)">
+            <summary>
+            向量与标量相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="divider">标量值</param>
+            <returns>相除结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.Divide(ScriptRuntime.Vector4@,System.Single,ScriptRuntime.Vector4@)">
+            <summary>
+            向量与标量相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="divider">标量值</param>
+            <returns>相除结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_UnaryNegation(ScriptRuntime.Vector4)">
+            <summary>
+            返回反向向量
+            </summary>
+            <param name="value">源向量</param>
+            <returns>反向向量</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Equality(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            判定两个向量相等
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>若两向量相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Inequality(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            判定两个向量不相等
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>若两向量不相等，则返回true；否则，返回false</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Addition(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            两个向量求和
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>两向量之和</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Subtraction(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            一个向量减去另一个向量
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>相减的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Multiply(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            两个向量对应元素相乘
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">源向量</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Multiply(ScriptRuntime.Vector4,System.Single)">
+            <summary>
+            一个向量与一个标量相乘
+            </summary>
+            <param name="value">源向量</param>
+            <param name="scaleFactor">标量值</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Multiply(System.Single,ScriptRuntime.Vector4)">
+            <summary>
+            一个向量与一个标量相乘
+            </summary>
+            <param name="scaleFactor">标量值</param>
+            <param name="value">源向量</param>
+            <returns>相乘的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Division(ScriptRuntime.Vector4,ScriptRuntime.Vector4)">
+            <summary>
+            一个向量的元素与另一个向量的对应元素相除
+            </summary>
+            <param name="value1">源向量</param>
+            <param name="value2">除数向量</param>
+            <returns>向量相除的结果</returns>
+        </member>
+        <member name="M:ScriptRuntime.Vector4.op_Division(ScriptRuntime.Vector4,System.Single)">
+            <summary>
+            一个向量除以一个标量
+            </summary>
+            <param name="value">源向量</param>
+            <param name="divider">除数</param>
+            <returns>相除的结果</returns>
+        </member>
+        <member name="P:ScriptRuntime.Vector4.Zero">
+            <summary>
+            返回所有元素置为零的四元向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector4.One">
+            <summary>
+            返回所有元素置为1的四元向量
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector4.UnitX">
+            <summary>
+            返回四元向量(1, 0, 0, 0). 
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector4.UnitY">
+            <summary>
+            返回四元向量(0, 1, 0, 0). 
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector4.UnitZ">
+            <summary>
+            返回四元向量 (0, 0, 1, 0). 
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector4.UnitW">
+            <summary>
+            返回四元向量 (0, 0, 0, 1). 
+            </summary>
+        </member>
+        <member name="P:ScriptRuntime.Vector4.Item(System.Int32)">
+            <summary>
+            用[0],[1],[2]方式分别访问元素x、y和z的值
+            </summary>
+            <param name="index">对应元素的索引</param>
+            <returns>对应的元素值</returns>
+        </member>
+    </members>
+</doc>

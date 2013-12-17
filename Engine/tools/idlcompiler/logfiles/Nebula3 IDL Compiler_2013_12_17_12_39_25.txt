@@ -1,0 +1,2 @@
+Compiling 'file:///E:/GenesisSource/genesis-3d_src/Engine/foundation/http/httpprotocol.nidl'
+Compiling 'file:///E:/GenesisSource/genesis-3d_src/Engine/foundation/io/iointerfaceprotocol.nidl'
