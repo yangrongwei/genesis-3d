@@ -1,0 +1,18 @@
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch Genesis.pdb" HEAD
+//
+// 不会成功的，因为没有指定全路径
+
+
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch bin/win32/Debut/Genesis.pdb" HEAD
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch bin/win32/Debut/*.dmp" HEAD
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch bin/win32/Debut/*.lib" HEAD
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch bin/win32/Debut/*.exe" HEAD
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch bin/win32/Debut/*.exp" HEAD
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch bin/win32/Debut/*.ilk" HEAD
+//
+// 成功的。全路径外还可以使用通配符
+
+
+http://yihui.name/cn/2010/12/animation-update-1-1-5/
+https://help.github.com/articles/remove-sensitive-data
+
