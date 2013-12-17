@@ -1,0 +1,9 @@
+﻿Build started 2013/6/17 14:15:26.
+     1>Project "E:\tools\thirdlib\hlsl2glslfork\hlslang.vcxproj" on node 3 (clean target(s)).
+     1>_PrepareForClean:
+         Deleting file "build/Debug\hlslang.lastbuildstate".
+     1>Done Building Project "E:\tools\thirdlib\hlsl2glslfork\hlslang.vcxproj" (clean target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.03

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" ?>
+<root>
+<class cppclass="SoundDistortionFilterComponent" csclass="SoundDistortionFilterComponent" csbase="Component">
+<func name="Bind">
+	<param type="SoundDistortionFilterComponent">self</param>
+</func>
+<func name="GetDistortionLevel">
+	<ret type ="float"></ret>
+	<param type="SoundDistortionFilterComponent">self</param>
+</func>
+<func name="SetDistortionLevel">
+	<param type="SoundDistortionFilterComponent">self</param>
+	<param type="float">distortionLevel</param>
+</func>
+</class>
+</root>
+

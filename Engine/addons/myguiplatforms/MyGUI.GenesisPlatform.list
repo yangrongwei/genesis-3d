@@ -1,0 +1,33 @@
+set (HEADER_FILES
+  include/MyGUI_LastHeader.h
+  include/MyGUI_GenesisDataManager.h
+  include/MyGUI_GenesisDataStream.h
+  include/MyGUI_GenesisDiagnostic.h
+  include/MyGUI_GenesisPlatform.h
+  include/MyGUI_GenesisRenderManager.h
+  include/MyGUI_GenesisRTTexture.h
+  include/MyGUI_GenesisTexture.h
+  include/MyGUI_GenesisVertexBuffer.h
+  include/MyGUI_GenesisInput.h
+  include/MyGUI_GenesisVertexBufferManager.h
+)
+set (SOURCE_FILES
+  src/MyGUI_GenesisDataManager.cpp
+  src/MyGUI_GenesisDataStream.cpp
+  src/MyGUI_GenesisRenderManager.cpp
+  src/MyGUI_GenesisRTTexture.cpp
+  src/MyGUI_GenesisTexture.cpp
+  src/MyGUI_GenesisVertexBuffer.cpp
+  src/MyGUI_GenesisInput.cpp
+  src/MyGUI_GenesisVertexBufferManager.cpp
+)
+SOURCE_GROUP("Source Files" FILES
+  ${SOURCE_FILES}
+)
+SOURCE_GROUP("Header Files" FILES
+	${HEADER_FILES}
+)
+SOURCE_GROUP("" FILES
+  CMakeLists.txt
+  MyGUI.GenesisPlatform.list
+)

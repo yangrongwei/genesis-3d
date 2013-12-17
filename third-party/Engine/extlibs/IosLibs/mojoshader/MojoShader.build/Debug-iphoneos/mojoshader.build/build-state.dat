@@ -1,0 +1,418 @@
+Tmojoshader
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-FCF09AF85EFC40B489AE5674.sh
+cCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_common.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_effects.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_compiler.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_preprocessor.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_lexer.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_assembler.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_opengl.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/libmojoshader.a normal armv7
+cPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-3F7A5C2FDA474C47AFC95554.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c0000000050ED385D0000000000000110
+t1357723741
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/sys/types.h
+c0000000051649D3E0000000000002795
+t1365548350
+s10133
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/libmojoshader.a
+t1371457445
+s1010752
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/GL/gl.h
+c000000004FA422040000000000011CF5
+t1336156676
+s72949
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/GL/glext.h
+c000000004FA42204000000000005BC2F
+t1336156676
+s375855
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.LinkFileList
+c0000000051BEC6FF0000000000000404
+t1371457279
+s1028
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.o
+t1371457280
+s328148
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_assembler.o
+t1371457280
+s64020
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_common.o
+t1371457279
+s32248
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_compiler.o
+t1371457280
+s351912
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_effects.o
+t1371457279
+s31080
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_lexer.o
+t1371457280
+s23116
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_opengl.o
+t1371457445
+s106640
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_preprocessor.o
+t1371457280
+s69672
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-3F7A5C2FDA474C47AFC95554.sh
+c0000000051BEC6FF000000000000009F
+t1371457279
+s159
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-FCF09AF85EFC40B489AE5674.sh
+c0000000051BEC6FF00000000000000A5
+t1371457279
+s165
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c
+c0000000051BEB2990000000000045F3D
+t1371452057
+s286525
+i"mojoshader_internal.h"
+i<sys/types.h>
+i"mojoshader_internal.h"
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.h
+c000000004FA42202000000000001C42F
+t1336156674
+s115759
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c
+c000000004FA42206000000000000CC2F
+t1336156678
+s52271
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c
+c000000004FA422020000000000006430
+t1336156674
+s25648
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c
+c000000005109DBE0000000000003B08E
+t1359600608
+s241806
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c
+c000000004FA42206000000000000585B
+t1336156678
+s22619
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_internal.h
+c000000005109DAA40000000000005A7B
+t1359600292
+s23163
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c
+c000000004FA42206000000000000728F
+t1336156678
+s29327
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c
+c0000000051BEC7A5000000000001430A
+t1371457445
+s82698
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_parser_hlsl.h
+c0000000051BEB10B000000000003B24E
+t1371451659
+s242254
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c
+c000000004FA4220200000000000109CF
+t1336156674
+s68047
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_version.h
+c0000000051BEC06300000000000000C1
+t1371455587
+s193
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies172968deff6eb741^09c368deff6eb741^---0#1#0#--18"Check dependencies36"C0D7F75A-44F1-4001-BBAE-9ADC9CB0A488-
+
+CCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150079.187154
+e393150080.134037
+r1
+xCompileC
+xMojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:5475:24: warning: comparison of unsigned enum expression < 0 is always false [-Wtautological-compare]
+o    if ((info->regtype < 0) || (info->regtype > REG_TYPE_MAX))
+o         ~~~~~~~~~~~~~ ^ ~
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c7907307ffe6eb741^124f2280fe6eb741^-264"/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:5475:24: warning: comparison of unsigned enum expression < 0 is always false [-Wtautological-compare]    if ((info->regtype < 0) || (info->regtype > REG_TYPE_MAX))         ~~~~~~~~~~~~~ ^ ~1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@58"Comparison of unsigned enum expression < 0 is always false-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^5474#23#5474#23#187097#0#14"Semantic Issue2(3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^5474#9#5474#22#187083#6#3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^5474#25#5474#26#187099#0#-0#0#0#-19%DVTDocumentLocation4@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^2201"CompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.o mojoshader.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug-iphoneos\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources/armv7 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.o36"5DD3E6F7-2A05-4D64-BE7B-67EC6E144C96-
+
+CCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_assembler.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150080.466140
+e393150080.596943
+r1
+xCompileC
+xMojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_assembler.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c8e777780fe6eb741^26559b80fe6eb741^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c0000000000000000^2261"CompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_assembler.o mojoshader_assembler.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug-iphoneos\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources/armv7 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_assembler.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_assembler.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_assembler.o36"869415A4-5686-4525-BD67-0933ABFB955B-
+
+CCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_common.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150079.187803
+e393150079.715721
+r1
+xCompileC
+xMojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_common.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c062d307ffe6eb741^c64fb77ffe6eb741^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c0000000000000000^2243"CompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_common.o mojoshader_common.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug-iphoneos\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources/armv7 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_common.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_common.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_common.o36"9857223A-B0A7-4727-AFCE-5CD582280343-
+
+CCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_compiler.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150079.809227
+e393150080.464216
+r1
+xCompileC
+xMojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_compiler.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3437:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '!'): return TOKEN_HLSL_EXCLAMATION;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3436:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '%'): return TOKEN_HLSL_PERCENT;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3423:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '&'): return TOKEN_HLSL_AND;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3444:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '('): return TOKEN_HLSL_LPAREN;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3445:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ')'): return TOKEN_HLSL_RPAREN;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3434:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '*'): return TOKEN_HLSL_STAR;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3432:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '+'): return TOKEN_HLSL_PLUS;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3406:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ','): return TOKEN_HLSL_COMMA;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3433:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '-'): return TOKEN_HLSL_MINUS;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3441:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '.'): return TOKEN_HLSL_DOT;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3435:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '/'): return TOKEN_HLSL_SLASH;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3449:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ':'): return TOKEN_HLSL_COLON;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3450:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ';'): return TOKEN_HLSL_SEMICOLON;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3426:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '<'): return TOKEN_HLSL_LT;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3407:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '='): return TOKEN_HLSL_ASSIGN;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3428:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '>'): return TOKEN_HLSL_GT;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3418:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '?'): return TOKEN_HLSL_QUESTION;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3442:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '['): return TOKEN_HLSL_LBRACKET;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3443:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ']'): return TOKEN_HLSL_RBRACKET;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3422:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '^'): return TOKEN_HLSL_XOR;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3451:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '{'): return TOKEN_HLSL_LBRACE;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3421:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '|'): return TOKEN_HLSL_OR;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3452:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '}'): return TOKEN_HLSL_RBRACE;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3438:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '~'): return TOKEN_HLSL_COMPLEMENT;
+o             ^
+o24 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c8846cf7ffe6eb741^9dd57680fe6eb741^-4813"/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3437:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '!'): return TOKEN_HLSL_EXCLAMATION;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3436:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '%'): return TOKEN_HLSL_PERCENT;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3423:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '&'): return TOKEN_HLSL_AND;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3444:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '('): return TOKEN_HLSL_LPAREN;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3445:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ')'): return TOKEN_HLSL_RPAREN;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3434:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '*'): return TOKEN_HLSL_STAR;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3432:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '+'): return TOKEN_HLSL_PLUS;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3406:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ','): return TOKEN_HLSL_COMMA;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3433:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '-'): return TOKEN_HLSL_MINUS;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3441:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '.'): return TOKEN_HLSL_DOT;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3435:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '/'): return TOKEN_HLSL_SLASH;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3449:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ':'): return TOKEN_HLSL_COLON;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3450:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ';'): return TOKEN_HLSL_SEMICOLON;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3426:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '<'): return TOKEN_HLSL_LT;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3407:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '='): return TOKEN_HLSL_ASSIGN;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3428:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '>'): return TOKEN_HLSL_GT;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3418:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '?'): return TOKEN_HLSL_QUESTION;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3442:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '['): return TOKEN_HLSL_LBRACKET;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3443:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ']'): return TOKEN_HLSL_RBRACKET;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3422:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '^'): return TOKEN_HLSL_XOR;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3451:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '{'): return TOKEN_HLSL_LBRACE;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3421:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '|'): return TOKEN_HLSL_OR;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3452:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '}'): return TOKEN_HLSL_RBRACE;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3438:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '~'): return TOKEN_HLSL_COMPLEMENT;             ^24 warnings generated.24(36%IDEClangDiagnosticActivityLogMessage2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3436#13#3436#13#125892#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3435#13#3435#13#125837#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3422#13#3422#13#125122#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3443#13#3443#13#126310#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3444#13#3444#13#126364#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3433#13#3433#13#125732#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3431#13#3431#13#125627#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3405#13#3405#13#124035#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3432#13#3432#13#125679#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3440#13#3440#13#126147#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3434#13#3434#13#125784#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3448#13#3448#13#126649#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3449#13#3449#13#126702#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3425#13#3425#13#125287#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3406#13#3406#13#124088#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3427#13#3427#13#125394#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3417#13#3417#13#124843#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3441#13#3441#13#126198#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3442#13#3442#13#126254#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3421#13#3421#13#125071#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3450#13#3450#13#126759#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3420#13#3420#13#125021#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3451#13#3451#13#126813#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^3437#13#3437#13#125951#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^2255"CompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_compiler.o mojoshader_compiler.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug-iphoneos\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources/armv7 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_compiler.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_compiler.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_compiler.o36"DF798D5C-BA29-44B0-B248-F887C2E41519-
+
+CCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_effects.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150079.716927
+e393150079.807931
+r1
+xCompileC
+xMojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_effects.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c0da8b77ffe6eb741^d8d3ce7ffe6eb741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c0000000000000000^2249"CompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_effects.o mojoshader_effects.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug-iphoneos\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources/armv7 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_effects.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_effects.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_effects.o36"77697890-BCBD-4F81-83E3-95730C4D8B33-
+
+CCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_lexer.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150080.351691
+e393150080.497077
+r1
+xCompileC
+xMojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_lexer.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c70265a80fe6eb741^d74f7f80fe6eb741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c0000000000000000^2237"CompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_lexer.o mojoshader_lexer.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug-iphoneos\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources/armv7 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_lexer.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_lexer.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_lexer.o36"FE1E1483-301B-4A73-9588-5DD097A4BDA0-
+
+CCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_opengl.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150245.321449
+e393150245.518171
+r1
+xCompileC
+xMojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_opengl.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c:1013:10: warning: implicit declaration of function 'macosx_version_atleast' is invalid in C99 [-Wimplicit-function-declaration]
+o    if (!macosx_version_atleast(10, 5, 0))
+o         ^
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.cf9675225ff6eb741^91278925ff6eb741^-261"/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c:1013:10: warning: implicit declaration of function 'macosx_version_atleast' is invalid in C99 [-Wimplicit-function-declaration]    if (!macosx_version_atleast(10, 5, 0))         ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@75"Implicit declaration of function 'macosx_version_atleast' is invalid in C99-393150245#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@73"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c0000000000000000^1012#9#1012#9#34829#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@73"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c0000000000000000^2243"CompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_opengl.o mojoshader_opengl.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug-iphoneos\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources/armv7 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_opengl.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_opengl.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_opengl.o36"710B8957-A518-48D0-9012-78F571911F9B-
+
+CCompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_preprocessor.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150080.135443
+e393150080.349961
+r1
+xCompileC
+xMojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_preprocessor.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:891:18: warning: case value not in enumerated type 'Token' [-Wswitch]
+o            case ((Token) '\n'):
+o                 ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:900:18: warning: case value not in enumerated type 'Token' [-Wswitch]
+o            case ((Token) ' '):
+o                 ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1060:18: warning: case value not in enumerated type 'Token' [-Wswitch]
+o            case ((Token) '\n'):
+o                 ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1064:18: warning: case value not in enumerated type 'Token' [-Wswitch]
+o            case ((Token) ' '):  // may not actually point to ' '.
+o                 ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1709:18: warning: case value not in enumerated type 'Token' [-Wswitch]
+o            case ((Token) '\n'):
+o                 ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1753:18: warning: case value not in enumerated type 'Token' [-Wswitch]
+o            case ((Token) '('):
+o                 ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1757:18: warning: case value not in enumerated type 'Token' [-Wswitch]
+o            case ((Token) ')'):
+o                 ^
+o7 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c2ec82280fe6eb741^240e6180fe6eb741^-1360"/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:891:18: warning: case value not in enumerated type 'Token' [-Wswitch]            case ((Token) '\n'):                 ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:900:18: warning: case value not in enumerated type 'Token' [-Wswitch]            case ((Token) ' '):                 ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1060:18: warning: case value not in enumerated type 'Token' [-Wswitch]            case ((Token) '\n'):                 ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1064:18: warning: case value not in enumerated type 'Token' [-Wswitch]            case ((Token) ' '):  // may not actually point to ' '.                 ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1709:18: warning: case value not in enumerated type 'Token' [-Wswitch]            case ((Token) '\n'):                 ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1753:18: warning: case value not in enumerated type 'Token' [-Wswitch]            case ((Token) '('):                 ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c:1757:18: warning: case value not in enumerated type 'Token' [-Wswitch]            case ((Token) ')'):                 ^7 warnings generated.7(36%IDEClangDiagnosticActivityLogMessage2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@79"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c0000000000000000^890#17#890#17#24656#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c0000000000000000^899#17#899#17#24987#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c0000000000000000^1059#17#1059#17#29397#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c0000000000000000^1063#17#1063#17#29480#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c0000000000000000^1708#17#1708#17#48697#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c0000000000000000^1752#17#1752#17#50288#0#14"Semantic Issue--2@41"Case value not in enumerated type 'Token'-393150080#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c0000000000000000^1756#17#1756#17#50388#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@79"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c0000000000000000^2279"CompileC MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_preprocessor.o mojoshader_preprocessor.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug-iphoneos\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources/armv7 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_preprocessor.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_preprocessor.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader_preprocessor.o36"4F34E82D-670F-4F16-AB14-39A653D38EEB-
+
+CLibtool /Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/libmojoshader.a normal armv7
+s393150245.535052
+e393150245.582600
+r1
+xLibtool
+x/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/libmojoshader.a
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Libtool Debug-iphoneos/libmojoshader.a normal armv7a4178925ff6eb741^edbc9525ff6eb741^---0#0#0#--834"Libtool Debug-iphoneos/libmojoshader.a normal armv7    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos -filelist /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Objects-normal/armv7/mojoshader.LinkFileList -o /Volumes/MacDisk2/thirdlib/mojoshader/Debug-iphoneos/libmojoshader.a36"C856A695-F385-4374-BB08-BBDEBC833FFF-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-3F7A5C2FDA474C47AFC95554.sh
+s393150430.497236
+e393150430.570171
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-3F7A5C2FDA474C47AFC95554.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mojoshader.Debug
+omake[1]: Nothing to be done for `PostBuild.mojoshader.Debug'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'0d1880deff6eb741^240d92deff6eb741^-311"echo "Depend check for xcode"Depend check for xcodecd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mojoshader.Debugmake[1]: Nothing to be done for `PostBuild.mojoshader.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393150430#0#30#-0#-----2@23"Depend check for xcode-393150430#30#23#-0#-----2@196"cd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mojoshader.Debug-393150430#53#196#-0#-----2@62"make[1]: Nothing to be done for `PostBuild.mojoshader.Debug'.-393150430#249#62#-0#-----0#0#0#--311"PhaseScriptExecution "CMake PostBuild Rules" MojoShader.build/Debug-iphoneos/mojoshader.build/Script-3F7A5C2FDA474C47AFC95554.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-3F7A5C2FDA474C47AFC95554.sh36"AE049D9A-CE03-4A06-87C3-08B766205A84-
+
+CPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-FCF09AF85EFC40B489AE5674.sh
+s393150430.410271
+e393150430.441888
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-FCF09AF85EFC40B489AE5674.sh
+omake: Nothing to be done for `all'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'139969deff6eb741^3b3771deff6eb741^-36"make: Nothing to be done for `all'.1(21%IDEActivityLogMessage2@36"make: Nothing to be done for `all'.-393150430#0#36#-0#-----0#0#0#--301"PhaseScriptExecution "CMake Rules" MojoShader.build/Debug-iphoneos/mojoshader.build/Script-FCF09AF85EFC40B489AE5674.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/mojoshader.build/Script-FCF09AF85EFC40B489AE5674.sh36"751944E3-0B10-4548-8FA5-80A7646A2D29-
+

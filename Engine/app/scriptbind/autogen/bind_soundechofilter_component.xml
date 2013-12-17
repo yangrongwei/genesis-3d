@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<root>
+<class cppclass="SoundEchoFilterComponent" csclass="SoundEchoFilterComponent" csbase="Component">
+<func name="Bind">
+	<param type="SoundEchoFilterComponent">self</param>
+</func>
+<func name="GetDelay">
+	<ret type ="float"></ret>
+	<param type="SoundEchoFilterComponent">self</param>
+</func>
+<func name="SetDelay">
+	<param type="SoundEchoFilterComponent">self</param>
+	<param type="float">delay</param>
+</func>
+<func name="GetDecayRatio">
+	<ret type="float"></ret>
+	<param type="SoundEchoFilterComponent">self</param>
+</func>
+<func name="SetDecayRatio">
+	<param type="SoundEchoFilterComponent">self</param>
+	<param type="float">decay</param>
+</func>
+<func name="GetDryMix">
+	<ret type="float"></ret>
+	<param type="SoundEchoFilterComponent">self</param>
+</func>
+<func name="SetDryMix">
+	<param type="SoundEchoFilterComponent">self</param>
+	<param type="float">drymix</param>
+</func>
+<func name="GetWetMix">
+	<ret type="float"></ret>
+	<param type="SoundEchoFilterComponent">self</param>
+</func>
+<func name="SetWetMix">
+	<param type="SoundEchoFilterComponent">self</param>
+	<param type="float">wetmix</param>
+</func>
+</class>
+</root>
+

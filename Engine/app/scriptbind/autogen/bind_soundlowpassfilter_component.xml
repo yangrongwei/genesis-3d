@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<root>
+<class cppclass="SoundLowPassFilterComponent" csclass="SoundLowPassFilterComponent" csbase="Component">
+<func name="Bind">
+	<param type="SoundLowPassFilterComponent">self</param>
+</func>
+<func name="GetCutoffFrequency">
+	<ret type ="float"></ret>
+	<param type="SoundLowPassFilterComponent">self</param>
+</func>
+<func name="SetCutoffFrequency">
+	<param type="SoundLowPassFilterComponent">self</param>
+	<param type="float">pvalue</param>
+</func>
+<func name="GetLowpassResonanceQ">
+	<ret type="float"></ret>
+	<param type="SoundLowPassFilterComponent">self</param>
+</func>
+<func name="SetLowpassResonanceQ">
+	<param type="SoundLowPassFilterComponent">self</param>
+	<param type="float">pvalue</param>
+</func>
+</class>
+</root>
+

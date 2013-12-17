@@ -1,0 +1,30 @@
+
+#line 123
+struct v2f_vertex_lit {
+    highp vec2 uv;
+    highp vec4 diff;
+    highp vec4 spec;
+};
+#line 159
+struct v2f_img {
+    highp vec4 pos;
+    highp vec2 uv;
+};
+#line 153
+struct appdata_img {
+    highp vec4 vertex;
+    highp vec2 texcoord;
+};
+uniform sampler2D _FlareTexture;
+mediump vec4 xlat_main( in highp vec4 color, in highp vec2 texcoord );
+#line 270
+mediump vec4 xlat_main( in highp vec4 color, in highp vec2 texcoord ) {
+    return (texture2D( _FlareTexture, texcoord) * color);
+}
+varying highp vec4 xlv_COLOR;
+varying highp vec2 xlv_TEXCOORD0;
+void main() {
+    mediump vec4 xl_retval;
+    xl_retval = xlat_main( vec4(xlv_COLOR), vec2(xlv_TEXCOORD0));
+    gl_FragData[0] = vec4( xl_retval);
+}

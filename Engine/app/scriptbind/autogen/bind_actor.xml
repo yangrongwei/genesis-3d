@@ -1,0 +1,241 @@
+<?xml version='1.0'?>
+<root>
+<class cppclass="Actor" csclass="Actor" csbase="Base">
+<func name="Bind">
+	<param type="Actor">self</param>
+</func>
+<func name="Destory">
+	<param type="Actor">self</param>
+</func>
+<func name="DestoryDelayed">
+	<param type="Actor">self</param>
+	<param type="float">delayedTime</param>
+</func>
+<func name="Release">
+	<param type="Actor">self</param>
+</func>
+<func name="SetName">
+	<param type="Actor">self</param>
+	<param type="String">sName</param>
+</func>
+<func name="GetName">
+	<ret type="String"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="GetTemplateName">
+	<ret type="String"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="SetLayerID">
+	<param type="Actor">self</param>
+	<param type="UInt32">layerID</param>
+</func>
+<func name="GetLayerID">
+	<ret type="UInt32"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="IsLinkTemplate">
+	<ret type="bool"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="SetLinkTemplate">
+	<param type="Actor">self</param>
+	<param type="bool">bLink</param>
+</func>
+<func name="SetTagID">
+	<param type="Actor">self</param>
+	<param type="UInt32">tagID</param>
+</func>
+<func name="GetTagID">
+	<ret type="UInt32"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="GetGuid">
+	<param type="Actor">self</param>
+</func>
+<func name="GetFastId">
+	<ret type="UInt32"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="IsActive">
+	<ret type="bool"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="Active">
+	<param type="Actor">self</param>
+	<param type="bool">bIncludeChild</param>
+</func>
+<func name="Deactive">
+	<param type="Actor">self</param>
+	<param type="bool">bActive</param>
+	<param type="float">delayTime</param>
+</func>
+<func name="GetParent">
+	<ret type="Actor"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="SetParent">
+	<param type="Actor">self</param>
+	<param type="Actor">parent</param>
+</func>
+<func name="GetChildCount">
+  <ret type="SizeT"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="GetChild">
+  <ret type="Actor"></ret>
+	<param type="Actor">self</param>
+	<param type="IndexT">index</param>
+</func>
+<func name="FindChild">
+  <ret type="Actor"></ret>
+	<param type="Actor">self</param>
+	<param type="UInt32">fastId</param>
+</func>
+<func name="FindChildIndex">
+  <ret type="IndexT"></ret>
+	<param type="Actor">self</param>
+	<param type="UInt32">fastId</param>
+</func>
+<func name="AddChild">
+	<param type="Actor">self</param>
+	<param type="Actor">child</param>
+</func>
+<func name="RemoveChild">
+	<param type="Actor">self</param>
+	<param type="IndexT">index</param>
+</func>
+<func name="SetLocalPos">
+	<param type="Actor">self</param>
+	<param type="ref Vector3">pos</param>
+</func>
+<func name="SetLocalRotation">
+	<param type="Actor">self</param>
+	<param type="ref Quaternion">rot</param>
+</func>
+<func name="SetLocalScale">
+	<param type="Actor">self</param>
+	<param type="ref Vector3">scale</param>
+</func>
+<func name="GetLocalPos">
+	<param type="Actor">self</param>
+	<param type="out Vector3">outPos</param>
+</func>
+<func name="GetLocalRotation">
+	<param type="Actor">self</param>
+	<param type="out Quaternion">outRot</param>
+</func>
+<func name="GetLocalScale">
+	<param type="Actor">self</param>
+	<param type="out Vector3">outScale</param>
+</func>
+<func name="Roll">
+	<param type="Actor">self</param>
+	<param type="float">angle</param>
+</func>
+<func name="Pitch">
+	<param type="Actor">self</param>
+	<param type="float">angle</param>
+</func>
+<func name="Yaw">
+	<param type="Actor">self</param>
+	<param type="float">angle</param>
+</func>
+<func name="Rotate">
+	<param type="Actor">self</param>
+	<param type="float">roll</param>
+	<param type="float">picth</param>
+	<param type="float">yaw</param>
+</func>
+<func name="SetTransform">
+	<param type="Actor">self</param>
+	<param type="ref Matrix44">matrix</param>
+</func>
+<func name="GetTransform">
+	<param type="Actor">self</param>
+	<param type="out Matrix44">matrix</param>
+</func>
+<func name="SetWorldTransform">
+	<param type="Actor">self</param>
+	<param type="ref Matrix44">matrix</param>
+</func>
+<func name="GetWorldTransform">
+	<param type="Actor">self</param>
+	<param type="out Matrix44">matrix</param>
+</func>
+<func name="SetInheritRotation">
+	<param type="Actor">self</param>
+	<param type="bool">bInherit</param>
+</func>
+<func name="GetInheritRotation">
+	<ret type="bool"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="SetInheritScale">
+	<param type="Actor">self</param>
+	<param type="bool">bInherit</param>
+</func>
+<func name="GetInheritScale">
+	<ret type="bool"></ret>
+	<param type="Actor">self</param>
+</func>
+<func name="GetWorldRotation">
+	<param type="Actor">self</param>
+	<param type="out Quaternion">rot</param>
+</func>
+<func name="SetWorldRotation">
+	<param type="Actor">self</param>
+	<param type="ref Quaternion">rot</param>
+</func>
+<func name="GetWorldPos">
+	<param type="Actor">self</param>
+	<param type="out Vector3">rot</param>
+</func>
+<func name="SetWorldPos">
+	<param type="Actor">self</param>
+	<param type="ref Vector3">rot</param>
+</func>
+<func name="GetWorldScale">
+	<param type="Actor">self</param>
+	<param type="out Vector3">rot</param>
+</func>
+<func name="SetWorldScale">
+	<param type="Actor">self</param>
+	<param type="ref Vector3">rot</param>
+</func>
+<func name="GetWorldBoundingBox">
+	<param type="Actor">self</param>
+	<param type="out BoundingBox">bb</param>
+</func>
+<func name="GetWorldBoundingBoxWithChild">
+	<param type="Actor">self</param>
+	<param type="out BoundingBox">bb</param>
+</func>
+<func name="GetLocalBoundingBox">
+	<param type="Actor">self</param>
+	<param type="out BoundingBox">bb</param>
+</func>
+<func name="SetLocalBoundingBox">
+	<param type="Actor">self</param>
+	<param type="ref BoundingBox">bb</param>
+</func>
+<func name="AddComponentByName">
+	<ret type="Component"></ret>
+	<param type="Actor">self</param>
+	<param type="String">sName</param>
+</func>
+<func name="GetComponentByName">
+	<ret type="Component"></ret>
+	<param type="Actor">self</param>
+	<param type="String">sName</param>
+</func>
+<func name="AddPostEffectComponent">
+	<param type="Actor">self</param>
+	<param type="PostEffectComponent">pec</param>
+</func>
+<func name="IsAllResourcePrepared">
+	<ret type="bool"></ret>
+	<param type="Actor">self</param>
+</func>
+</class>
+</root>

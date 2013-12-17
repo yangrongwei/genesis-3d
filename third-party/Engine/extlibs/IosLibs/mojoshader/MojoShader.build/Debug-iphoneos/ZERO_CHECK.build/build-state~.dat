@@ -1,0 +1,28 @@
+TZERO_CHECK
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh
+c0000000051BEB39200000000000000A5
+t1371452306
+s165
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa019c812eb6eb741^ee7ccb12eb6eb741^---0#1#0#--18"Check dependencies36"2EBFC46C-4F22-4F42-9B49-278203C95061-
+
+CPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh
+s393145106.796032
+e393145107.120917
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh
+oecho ""
+o
+omake -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'4293cc12eb6eb741^96051f13eb6eb741^-139"echo ""make -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-393145107#0#8#-0#-----2@75"make -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/ReRunCMake.make-393145107#9#75#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-393145107#84#55#-0#-----0#0#0#--301"PhaseScriptExecution "CMake Rules" MojoShader.build/Debug-iphoneos/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug-iphoneos/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh36"585DFF91-3B36-4F5E-848A-331CF7E48C6C-
+

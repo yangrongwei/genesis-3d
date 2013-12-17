@@ -1,0 +1,24 @@
+2009-10-08  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* WebScriptEnablingBehaviorTest.cs : new test.
+
+2009-09-15  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* WebHttpBehaviorTest.cs : enable working test.
+
+2009-09-02  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* WebHttpBehaviorTest.cs : some message formatters tests.
+
+2008-02-15  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* WebHttpBehaviorTest.cs : test that ApplyDispatchBehavior() sets
+	  address filter.
+
+2008-02-15  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* WebHttpBehaviorTest.cs : test ApplyDispatchBehavior().
+
+2008-02-12  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* WebHttpBehaviorTest.cs : new test.

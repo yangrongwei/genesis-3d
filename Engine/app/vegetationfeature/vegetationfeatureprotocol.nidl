@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Nebula3>
+  <Protocol namespace="App" name="VegetationFeatureProtocol">
+
+    <!-- dependencies -->
+    <Dependency header="util/variant.h"/>
+    <Dependency header="appframework/component.h"/>
+
+    <!-- notify the mesh component data change -->
+    <Message name="VegetationRenderComponentChangeMsg" fourcc="VCCM">
+    </Message>
+ 
+
+  </Protocol>
+
+</Nebula3>

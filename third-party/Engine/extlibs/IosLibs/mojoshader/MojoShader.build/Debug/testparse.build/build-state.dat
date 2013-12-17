@@ -1,0 +1,120 @@
+Ttestparse
+v5
+r1
+cCheck dependencies
+cCompileC MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.o /Volumes/MacDisk2/thirdlib/mojoshader/utils/testparse.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/MacDisk2/thirdlib/mojoshader/Debug/testparse normal x86_64
+cPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-434B7900107F49E3802BB623.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdio.h
+c0000000051649C530000000000004523
+t1365548115
+s17699
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdlib.h
+c0000000051649C530000000000003089
+t1365548115
+s12425
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/Debug/testparse
+t1371457446
+s290692
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.LinkFileList
+c0000000051BEB29A000000000000006F
+t1371452058
+s111
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.o
+t1371457446
+s38404
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-01D593D6694F4CED802CCCB3.sh
+c0000000051BEB29A000000000000009E
+t1371452058
+s158
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-434B7900107F49E3802BB623.sh
+c0000000051BEC7A6000000000000009E
+t1371457446
+s158
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.h
+c000000004FA42202000000000001C42F
+t1336156674
+s115759
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_version.h
+c0000000051BEC06300000000000000C1
+t1371455587
+s193
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/utils/testparse.c
+c000000004FA4220200000000000042A0
+t1336156674
+s17056
+i<stdio.h>
+i<stdlib.h>
+i"mojoshader.h"
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/utils/testparse.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies69e3b0deff6eb741^2e55b1deff6eb741^---0#1#0#--18"Check dependencies36"597B3CD0-ED27-4E74-9343-2731A963DDD6-
+
+CCompileC MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.o /Volumes/MacDisk2/thirdlib/mojoshader/utils/testparse.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150246.206441
+e393150246.276520
+r1
+xCompileC
+xMojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/utils/testparse.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Volumes/MacDisk2/thirdlib/mojoshader/utils/testparse.c62f83426ff6eb741^98da4626ff6eb741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/utils/testparse.c0000000000000000^1948"CompileC MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.o utils/testparse.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/DerivedSources/x86_64 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/utils/testparse.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.o36"39734D0E-5727-4DC3-919C-6CBC5382583E-
+
+CLd /Volumes/MacDisk2/thirdlib/mojoshader/Debug/testparse normal x86_64
+s393150246.293063
+e393150246.360970
+r1
+xLd
+x/Volumes/MacDisk2/thirdlib/mojoshader/Debug/testparse
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Link /Volumes/MacDisk2/thirdlib/mojoshader/Debug/testparse59344d26ff6eb741^01685c26ff6eb741^---0#0#0#--766"Ld Debug/testparse normal x86_64    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Volumes/MacDisk2/thirdlib/mojoshader/Debug -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -filelist /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Objects-normal/x86_64/testparse.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Volumes/MacDisk2/thirdlib/mojoshader/Debug/libmojoshader.a -lm -o /Volumes/MacDisk2/thirdlib/mojoshader/Debug/testparse36"4F64D9FB-1306-48D0-B955-876F9AA5B269-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-01D593D6694F4CED802CCCB3.sh
+s393147438.030536
+e393147438.081674
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-01D593D6694F4CED802CCCB3.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.testparse.Debug
+omake[1]: Nothing to be done for `PostBuild.testparse.Debug'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'4b76082ef46eb741^47ff172ef46eb741^-309"echo "Depend check for xcode"Depend check for xcodecd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.testparse.Debugmake[1]: Nothing to be done for `PostBuild.testparse.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393147438#0#30#-0#-----2@23"Depend check for xcode-393147438#30#23#-0#-----2@195"cd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.testparse.Debug-393147438#53#195#-0#-----2@61"make[1]: Nothing to be done for `PostBuild.testparse.Debug'.-393147438#248#61#-0#-----0#0#0#--291"PhaseScriptExecution "CMake PostBuild Rules" MojoShader.build/Debug/testparse.build/Script-01D593D6694F4CED802CCCB3.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-01D593D6694F4CED802CCCB3.sh36"2233B224-1A78-4D91-81A1-500A6E06A967-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-434B7900107F49E3802BB623.sh
+s393150430.708344
+e393150430.769299
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-434B7900107F49E3802BB623.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.testparse.Debug
+omake[1]: Nothing to be done for `PostBuild.testparse.Debug'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'b4cc5e26ff6eb741^882e6826ff6eb741^-309"echo "Depend check for xcode"Depend check for xcodecd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.testparse.Debugmake[1]: Nothing to be done for `PostBuild.testparse.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393150246#0#30#-0#-----2@23"Depend check for xcode-393150246#30#23#-0#-----2@195"cd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.testparse.Debug-393150246#53#195#-0#-----2@61"make[1]: Nothing to be done for `PostBuild.testparse.Debug'.-393150246#248#61#-0#-----0#0#0#--291"PhaseScriptExecution "CMake PostBuild Rules" MojoShader.build/Debug/testparse.build/Script-434B7900107F49E3802BB623.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/testparse.build/Script-434B7900107F49E3802BB623.sh36"58D8FC56-9893-4267-ADBC-CBE40D9798FE-
+

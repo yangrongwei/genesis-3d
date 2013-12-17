@@ -1,0 +1,47 @@
+﻿Build started 2012-10-11 21:56:19.
+     1>Project "D:\FreeImage\Source\ZLib\ZLib.2008.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Release\ZLib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\zlib /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt adler32.c compress.c crc32.c deflate.c gzclose.c gzlib.c gzread.c gzwrite.c infback.c inffast.c inflate.c inftrees.c trees.c uncompr.c zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzclose.c
+         gzlib.c
+         gzread.c
+         gzwrite.c
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         trees.c
+         uncompr.c
+         zutil.c
+         Generating Code...
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\Release\ZLib.lib" /NOLOGO .\Release/adler32.obj
+         .\Release/compress.obj
+         .\Release/crc32.obj
+         .\Release/deflate.obj
+         .\Release/gzclose.obj
+         .\Release/gzlib.obj
+         .\Release/gzread.obj
+         .\Release/gzwrite.obj
+         .\Release/infback.obj
+         .\Release/inffast.obj
+         .\Release/inflate.obj
+         .\Release/inftrees.obj
+         .\Release/trees.obj
+         .\Release/uncompr.obj
+         .\Release/zutil.obj
+         ZLib.2008.vcxproj -> D:\FreeImage\Source\ZLib\.\Release\ZLib.lib
+       FinalizeBuildStatus:
+         Deleting file ".\Release\ZLib.unsuccessfulbuild".
+         Touching ".\Release\ZLib.lastbuildstate".
+     1>Done Building Project "D:\FreeImage\Source\ZLib\ZLib.2008.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.10

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Nebula3>
+  <Protocol namespace="App" name="AppFrameWorkProtocol">
+
+    <!-- dependencies -->
+    <Dependency header="util/variant.h"/>
+    <Dependency header="appframework/component.h"/>
+
+    <!-- notify the component just attached -->
+    <Message name="AttachComponentMsg" fourcc="ACMG">
+        <InArg name="Object" type="GPtr<App::Component>" />
+    </Message>
+
+    <!-- notify the component will DeAttached -->
+    <Message name="DeAttachComponentMsg" fourcc="DACM">
+      <InArg name="Object" type="GPtr<App::Component>" />
+    </Message>
+
+  </Protocol>
+
+</Nebula3>

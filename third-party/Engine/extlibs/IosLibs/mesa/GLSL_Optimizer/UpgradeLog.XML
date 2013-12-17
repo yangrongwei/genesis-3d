@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GLSL_Optimizer">
+</Property><Property Name="Solution File" Value="D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\GLSL_Optimizer.sln">
+</Property><Property Name="User Options File" Value="D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\GLSL_Optimizer.suo">
+</Property><Property Name="Date" Value="2012年11月28日">
+</Property><Property Name="Time" Value="13:12">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="GLSL_Optimizer.sln" Description="File successfully backed up as D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\GLSL_Optimizer.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="GLSL_Optimizer.suo" Description="File successfully backed up as D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\GLSL_Optimizer.suo.old">
+</Event><Event ErrorLevel="0" Project="GLSL_Optimizer" Source="GLSL_Optimizer\GLSL_Optimizer.vcproj" Description="Converting project file 'D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\GLSL_Optimizer\GLSL_Optimizer.vcproj'.">
+</Event><Event ErrorLevel="1" Project="GLSL_Optimizer" Source="GLSL_Optimizer\GLSL_Optimizer.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="GLSL_Optimizer" Source="GLSL_Optimizer\GLSL_Optimizer.vcproj" Description="Done converting to new project file 'D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\GLSL_Optimizer\GLSL_Optimizer.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="GLSL_Optimizer" Source="GLSL_Optimizer\GLSL_Optimizer.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="GLSL_Optimizer.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="GLSL_Optimizer.sln" Description="Converted">
+</Event></UpgradeLog>

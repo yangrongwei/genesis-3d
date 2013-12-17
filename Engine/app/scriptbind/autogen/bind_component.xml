@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" ?>
+<root>
+<class cppclass="Component" csclass="Component" csbase="Base">
+<func name="GetOwner">
+	<ret type="Actor"></ret>
+	<param type="Component">self</param>
+</func>
+<func name="Release">
+	<param type="Component">self</param>
+</func>
+<func name="Active">
+	<ret type="bool"></ret>
+	<param type="Component">self</param>
+</func>
+</class>
+</root>
+

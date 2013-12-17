@@ -1,0 +1,7 @@
+AssemblyInfo.cs
+../../build/common/Consts.cs
+DataTools.cs
+Provider.cs
+ProviderCollection.cs
+ProviderFactory.cs
+ProviderSectionHandler.cs

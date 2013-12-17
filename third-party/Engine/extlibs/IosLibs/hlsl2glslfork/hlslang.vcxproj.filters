@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Machine Independent">
+      <UniqueIdentifier>{b537da9a-6530-4392-b4e2-b56ad0c858c2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;y;l</Extensions>
+    </Filter>
+    <Filter Include="Machine Independent\Generated Source">
+      <UniqueIdentifier>{2f5a6823-8dde-4aae-8d1a-369cec8a52df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Machine Independent\CPP">
+      <UniqueIdentifier>{32096654-7618-4797-baea-501bb461cb32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{687e1c38-f91e-4c00-9c8b-768dc09c9c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{13ef8979-946c-4b39-a38d-c44a027bc070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLSL Code Gen">
+      <UniqueIdentifier>{a7f6a1d3-facb-4378-8f09-e91d5a0ac653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSDependent">
+      <UniqueIdentifier>{ab9216a1-ccc8-48b5-a416-3ba6fe8cc259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSDependent\Linux">
+      <UniqueIdentifier>{4fa212c3-adf5-4b95-b43b-5708e32c4697}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hlslang\MachineIndependent\HLSL2GLSL.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\InfoSink.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\Initialize.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLCompilersDLL\InitializeDll.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\Intermediate.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\intermOut.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\IntermTraverse.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\parseConst.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\ParseHelper.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\PoolAlloc.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\RemoveTree.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\SymbolTable.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\preprocessor\atom.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\preprocessor\cpp.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\preprocessor\cppstruct.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\preprocessor\memory.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\preprocessor\scanner.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\preprocessor\symbols.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\preprocessor\tokens.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\glslCommon.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\glslFunction.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\glslOutput.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\glslStruct.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\glslSymbol.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\hlslCrossCompiler.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\hlslLinker.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\hlslSupportLib.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\propagateMutable.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\GLSLCodeGen\typeSamplers.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\OSDependent\Linux\ossource.cpp">
+      <Filter>OSDependent\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\Gen_hlslang_tab.cpp">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClCompile>
+    <ClCompile Include="hlslang\MachineIndependent\Gen_hlslang.cpp">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hlslang\MachineIndependent\Initialize.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\localintermediate.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\ParseHelper.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\RemoveTree.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\hlslang_tab.h">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\atom.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\compile.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\cpp.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\memory.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\parser.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\preprocess.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\scanner.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\slglobals.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\symbols.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\preprocessor\tokens.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\BaseTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\ConstantUnion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\InfoSink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLCompilersDLL\InitializeDll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\InitializeGlobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\InitializeParseContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\intermediate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\PoolAlloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\SymbolTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\Include\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\MachineIndependent\unistd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hlsl2glsl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\glslCommon.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\glslFunction.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\glslOutput.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\glslStruct.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\glslSymbol.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\hlslCrossCompiler.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\hlslLinker.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\hlslSupportLib.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\propagateMutable.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\GLSLCodeGen\typeSamplers.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="hlslang\OSDependent\Linux\osinclude.h">
+      <Filter>OSDependent\Linux</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlslang\MachineIndependent\hlslang.l">
+      <Filter>Machine Independent</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlslang\MachineIndependent\hlslang.y">
+      <Filter>Machine Independent</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

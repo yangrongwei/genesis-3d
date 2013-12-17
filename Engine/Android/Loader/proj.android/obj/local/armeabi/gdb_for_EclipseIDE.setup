@@ -1,0 +1,8 @@
+set solib-search-path D:/android/android-ndk-r8b/samples/cocos2d_android/proj.android/libs/armeabi
+set solib-search-path D:/android/android-ndk-r8b/samples/cocos2d_android/proj.android/obj/local/armeabi
+
+
+directory D:/android/android-ndk-r8b/platforms/android-8/arch-arm/usr/include D:/android/android-ndk-r8b/sources/cxx-stl/system E:\WebJet\android_dev\Engine\Sln\players\Android_Gles
+
+file D:/android/android-ndk-r8b/samples/cocos2d_android/proj.android/obj/local/armeabi/app_process
+

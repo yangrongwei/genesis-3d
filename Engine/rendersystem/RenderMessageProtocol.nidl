@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Nebula3>
+    <Protocol namespace="RenderBase" name="RenderMessageProtocol">
+        <!-- dependencies -->
+        <Dependency header="core/rtti.h"/>
+        <Dependency header="threading/objectref.h"/>
+        <Dependency header="math/matrix44.h"/>
+        <Dependency header="math/float4.h"/>
+        <Dependency header="base/RenderDeviceTypes.h"/>
+        <Dependency header="base/RenderStateDesc.h"/>
+        <Dependency header="RenderSystem.h"/>
+
+        <!-- start render system -->
+        <Message name="StartRenderSystemMSG" fourcc="srrs">
+        </Message>
+        
+        <!-- begin frame runtime -->
+        <Message name="BeginFrameMSG" fourcc="bfrs">
+        </Message>
+      
+        <!-- end frame runtime -->
+        <Message name="EndFrameMSG" fourcc="efrs">
+        </Message>
+
+        <!-- set viewport -->
+        <Message name="SetViewPortMSG" fourcc="vprs">
+          <InArg name="X" type="SizeT"/>
+          <InArg name="Y" type="SizeT"/>
+          <InArg name="Width" type="SizeT"/>
+          <InArg name="Height" type="SizeT"/>
+          <InArg name="MinZ" type="float"/>
+          <InArg name="MaxZ" type="float"/>
+        </Message>
+      
+        <!-- create texture -->
+        <Message name="CreateTextureMSG" fourcc="ctrs">
+          <InArg name="Texture" type="GPtr<Texture>"/>
+          <OutArg name="Handle" type="TextureHandle"/>
+        </Message>
+      
+        <!-- create GPU program -->
+        <Message name="CreateShaderProgramMSG" fourcc="csrs">
+          <InArg name="Program" type="GPtr<GPUProgram>"/>
+          <OutArg name="Handle" type="GPUProgramHandle"/>
+        </Message>
+      
+        <!-- create primitive group -->
+        <Message name="CreatePrimitiveGroupMSG" fourcc="cprs">
+          <InArg name="PrimitiveGroup" type="GPtr<PrimitiveGroup>"/>
+          <OutArg name="Handle" type="PrimitiveHandle"/>
+        </Message>
+
+        <!-- create render target -->
+        <Message name="CreateRenderTargetMSG" fourcc="crrs">
+          <InArg name="RenderTarget" type="GPtr<RenderTarget>"/>
+          <OutArg name="Handle" type="RenderTargetHandle"/>
+          <OutArg name="TextureHandle" type="TextureHandle"/>
+        </Message>
+      
+        <!-- update primitive group -->
+        <Message name="UpdatePrimitiveGroupMSG" fourcc="uprs">
+            <InArg name="PrimitiveGroup" type="GPtr<PrimitiveGroup>"/>
+            <InArg name="Handle" type="PrimitiveHandle"/>
+        </Message>
+      
+        <!-- set texture -->
+        <Message name="SetTextureMSG" fourcc="strs">
+            <InArg name="Handle" type="TextureHandle"/>
+            <InArg name="TexUnit" type="SizeT"/>
+        </Message>
+        
+        <!-- set render state -->
+        <Message name="SetRenderStateMSG" fourcc="rsrs">
+            <InArg name="Object" type="GPtr<RenderStateDesc>"/>
+        </Message>
+      
+        <!-- set GPU program -->
+        <Message name="SetGPUProgramMSG" fourcc="gprs">
+            <InArg name="Handle" type="GPUProgramHandle"/>
+        </Message>
+
+        <!-- set VS constant buffer -->
+        <Message name="SetVertexShaderConstantVectorFMSG" fourcc="vcrs">
+          <InArg name="Reg" type="SizeT"/>
+          <InArg name="ValueRef" type="float*"/>
+          <InArg name="Vec4count" type="SizeT"/>
+        </Message>
+
+        <!-- set PS constant buffer -->
+        <Message name="SetPixelShaderConstantVectorFMSG" fourcc="pcrs">
+          <InArg name="Reg" type="SizeT"/>
+          <InArg name="ValueRef" type="float*"/>
+          <InArg name="Vec4count" type="SizeT"/>
+        </Message>
+
+      <!-- set VS constant buffer -->
+      <Message name="SetVertexShaderConstantFloatMSG" fourcc="vcrs">
+        <InArg name="Reg" type="SizeT"/>
+        <InArg name="ValueRef" type="float*"/>
+      </Message>
+
+      <!-- set PS constant buffer -->
+      <Message name="SetPixelShaderConstantFloatMSG" fourcc="pcrs">
+        <InArg name="Reg" type="SizeT"/>
+        <InArg name="ValueRef" type="float*"/>
+      </Message>
+
+      <!-- set VS constant buffer -->
+      <Message name="SetVertexShaderConstantMatrixFMSG" fourcc="vcrs">
+        <InArg name="Reg" type="SizeT"/>
+        <InArg name="ValueRef" type="float*"/>
+        <InArg name="matrixCount" type="SizeT"/>
+      </Message>
+
+      <!-- set PS constant buffer -->
+      <Message name="SetPixelShaderConstantMatrixFMSG" fourcc="pcrs">
+        <InArg name="Reg" type="SizeT"/>
+        <InArg name="ValueRef" type="float*"/>
+        <InArg name="matrixCount" type="SizeT"/>
+      </Message>
+      
+        <!-- set rendertarget -->
+        <Message name="SetRenderTargetMSG" fourcc="rtrs">
+            <InArg name="Handle" type="RenderTargetHandle"/>
+            <InArg name="Index" type="SizeT"/>
+            <InArg name="ClearFlag" type="uint"/>
+        </Message>
+      
+        <!-- draw primitive -->
+        <Message name="DrawMSG" fourcc="dprs">
+            <InArg name="Handle" type="PrimitiveHandle"/>
+            <InArg name="StartVertice" type="SizeT"/>
+            <InArg name="EndVertice" type="SizeT"/>
+            <InArg name="StartIndice" type="SizeT"/>
+            <InArg name="EndIndice" type="SizeT"/>
+        </Message>
+      
+        <!-- remove render resource -->
+        <Message name="RemoveRenderResourceMSG" fourcc="rrrs">
+            <InArg name="Handle" type="RenderResourceHandle"/>
+        </Message>
+
+        <!-- Fixed Pipeline Functions -->
+        <!-- set clip plane -->
+        <Message name="FXSetClipPlaneMSG" fourcc="scrs">
+            <InArg name="Index" type="SizeT"/>
+            <InArg name="Plane" type="Math::float4"/>
+        </Message>
+        
+      </Protocol>    
+</Nebula3>

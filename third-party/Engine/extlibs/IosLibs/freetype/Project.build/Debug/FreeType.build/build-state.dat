@@ -1,0 +1,707 @@
+TFreeType
+v5
+r1
+cCheck dependencies
+cCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/autofit.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbase.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Debug/libFreeType.a
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/FreeType.LinkFileList
+c0000000051F8C5BC000000000000143B
+t1375258044
+s5179
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/autofit.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/bdf.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/cff.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbase.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbbox.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbitmap.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbzip2.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftcache.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftcid.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftfstype.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftgasp.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftglyph.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftgzip.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftinit.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftlzw.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftmm.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftpfr.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftstroke.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftsynth.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftsystem.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/fttype1.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftwinfnt.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/pcf.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/pfr.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/psaux.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/pshinter.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/psmodule.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/raster.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/sfnt.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/smooth.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/test_afm.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/test_bbox.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/test_trig.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/truetype.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/type1.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/type1cid.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/type42.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/winfnt.o
+t2
+s0
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Script-F8C6412DFE054FCD9A106C92.sh
+c0000000051F8C5BC00000000000000DD
+t1375258044
+s221
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afangles.c
+c0000000051AC0EA40000000000001B2C
+t1370230436
+s6956
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afcjk.c
+c0000000051AC0EA400000000000110A3
+t1370230436
+s69795
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afdummy.c
+c0000000051AC0EA400000000000008B3
+t1370230436
+s2227
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afglobal.c
+c0000000051AC0EA400000000000023B9
+t1370230436
+s9145
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afhints.c
+c0000000051AC0EA40000000000008460
+t1370230436
+s33888
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afindic.c
+c0000000051AC0EA40000000000001383
+t1370230436
+s4995
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/aflatin.c
+c0000000051AC0EA40000000000011FA2
+t1370230436
+s73634
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/aflatin2.c
+c0000000051AC0EA40000000000011CAB
+t1370230436
+s72875
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afloader.c
+c0000000051AC0EA40000000000004840
+t1370230436
+s18496
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afmodule.c
+c0000000051AC0EA40000000000000BE3
+t1370230436
+s3043
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afpic.c
+c0000000051AC0EA40000000000000F23
+t1370230436
+s3875
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/afwarp.c
+c0000000051AC0EA40000000000002D39
+t1370230436
+s11577
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c
+c0000000051F8C5C9000000000000069B
+t1375258057
+s1691
+i<ft2build.h>
+i"afpic.c"
+i"afangles.c"
+i"afglobal.c"
+i"afhints.c"
+i"afdummy.c"
+i"aflatin.c"
+i"aflatin2.c"
+i"afcjk.c"
+i"afindic.c"
+i"afloader.c"
+i"afmodule.c"
+i"afwarp.c"
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c
+c0000000051AC0EA400000000000006BE
+t1370230436
+s1726
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbbox.c
+c0000000051AC0EA40000000000006672
+t1370230436
+s26226
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbitmap.c
+c0000000051AC0EA40000000000003FA4
+t1370230436
+s16292
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftcid.c
+c0000000051AC0EA40000000000000CC8
+t1370230436
+s3272
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftfstype.c
+c0000000051AC0EA40000000000000902
+t1370230436
+s2306
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftgasp.c
+c0000000051AC0EA40000000000000855
+t1370230436
+s2133
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftglyph.c
+c0000000051AC0EA400000000000046DB
+t1370230436
+s18139
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftinit.c
+c0000000051AC0EA40000000000002143
+t1370230436
+s8515
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftmm.c
+c0000000051AC0EA40000000000001728
+t1370230436
+s5928
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftpfr.c
+c0000000051AC0EA400000000000010DE
+t1370230436
+s4318
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftstroke.c
+c0000000051AC0EA40000000000010BFF
+t1370230436
+s68607
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftsynth.c
+c0000000051AC0EA400000000000017E4
+t1370230436
+s6116
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftsystem.c
+c0000000051AC0EA400000000000037E2
+t1370230436
+s14306
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/fttype1.c
+c0000000051AC0EA40000000000000DFE
+t1370230436
+s3582
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftwinfnt.c
+c0000000051AC0EA4000000000000077A
+t1370230436
+s1914
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/bdf/bdf.c
+c0000000051AC0EA30000000000000509
+t1370230435
+s1289
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/bzip2/ftbzip2.c
+c0000000051AC0EA3000000000000363C
+t1370230435
+s13884
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cache/ftcache.c
+c0000000051AC0EA300000000000005F5
+t1370230435
+s1525
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cff/cff.c
+c0000000051AC0EA300000000000005DC
+t1370230435
+s1500
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cid/type1cid.c
+c0000000051AC0EA300000000000005B3
+t1370230435
+s1459
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/gzip/ftgzip.c
+c0000000051AC0EA40000000000004744
+t1370230436
+s18244
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/lzw/ftlzw.c
+c0000000051AC0EA40000000000002BFC
+t1370230436
+s11260
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pcf/pcf.c
+c0000000051AC0EA4000000000000051F
+t1370230436
+s1311
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pfr/pfr.c
+c0000000051AC0EA300000000000005C6
+t1370230435
+s1478
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/psaux/psaux.c
+c0000000051AC0EA300000000000005F3
+t1370230435
+s1523
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pshinter/pshinter.c
+c0000000051AC0EA300000000000005AD
+t1370230435
+s1453
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/psnames/psmodule.c
+c0000000051AC0EA40000000000003CA2
+t1370230436
+s15522
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/raster/raster.c
+c0000000051AC0EA30000000000000585
+t1370230435
+s1413
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/sfnt/sfnt.c
+c0000000051AC0EA400000000000006A2
+t1370230436
+s1698
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/smooth/smooth.c
+c0000000051AC0EA40000000000000584
+t1370230436
+s1412
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_afm.c
+c0000000051AC0EA3000000000000101F
+t1370230435
+s4127
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_bbox.c
+c0000000051AC0EA30000000000000E7C
+t1370230435
+s3708
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_trig.c
+c0000000051AC0EA30000000000001414
+t1370230435
+s5140
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/truetype/truetype.c
+c0000000051AC0EA300000000000006CC
+t1370230435
+s1740
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/type1/type1.c
+c0000000051AC0EA300000000000005EE
+t1370230435
+s1518
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/type42/type42.c
+c0000000051AC0EA30000000000000582
+t1370230435
+s1410
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/winfonts/winfnt.c
+c0000000051AC0EA40000000000008692
+t1370230436
+s34450
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbbox.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbitmap.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftcid.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftfstype.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftgasp.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftglyph.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftinit.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftmm.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftpfr.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftstroke.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftsynth.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftsystem.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/fttype1.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftwinfnt.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/bdf/bdf.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/bzip2/ftbzip2.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cache/ftcache.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cff/cff.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cid/type1cid.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/gzip/ftgzip.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/lzw/ftlzw.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pcf/pcf.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pfr/pfr.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/psaux/psaux.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pshinter/pshinter.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/psnames/psmodule.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/raster/raster.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/sfnt/sfnt.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/smooth/smooth.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_afm.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_bbox.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_trig.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/truetype/truetype.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/type1/type1.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/type42/type42.c
+r0
+
+CBuild AST from /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/winfonts/winfnt.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2845c38dfda8b741^7ba1c48dfda8b741^---0#1#0#--18"Check dependencies36"EA934D7D-EA41-485A-896B-CF14AB08BED5-
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/autofit.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s396950925.770814
+e396950925.835749
+r0
+xCompileC
+xProject.build/Debug/FreeType.build/Objects-normal/x86_64/autofit.o
+x/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c:20:10: fatal error: 'ft2build.h' file not found
+o#include "ft2build.h"
+o         ^
+o1 error generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.cf06ec58dfda8b741^5401d78dfda8b741^-192"/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c:20:10: fatal error: 'ft2build.h' file not found#include "ft2build.h"         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@27"'ft2build.h' file not found-396950925#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@107"file://localhost/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c0000000000000000^19#9#19#9#1315#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation4@107"file://localhost/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c0000000000000000^2276"CompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/autofit.o src/autofit/autofit.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -DFT2_BUILD_LIBRARY -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Debug/include -I/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/extlibs/freetype/include -I/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/DerivedSources/x86_64 -I/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Debug -MMD -MT dependencies -MF /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/autofit.d --serialize-diagnostics /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/autofit.dia -c /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/autofit/autofit.c -o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/autofit.o36"A9A83E4A-3D09-41FB-8B7F-6DD918C581BB-
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/bdf.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/bdf/bdf.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/cff.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cff/cff.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbase.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s396950925.771419
+e396950925.836925
+r0
+xCompileC
+xProject.build/Debug/FreeType.build/Objects-normal/x86_64/ftbase.o
+x/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c:19:10: fatal error: 'ft2build.h' file not found
+o#include <ft2build.h>
+o         ^
+o1 error generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.cc992c58dfda8b741^f10fd78dfda8b741^-188"/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c:19:10: fatal error: 'ft2build.h' file not found#include <ft2build.h>         ^1 error generated.-0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c0000000000000000^2264"CompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbase.o src/base/ftbase.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -DFT2_BUILD_LIBRARY -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Debug/include -I/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/extlibs/freetype/include -I/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/DerivedSources/x86_64 -I/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Debug -MMD -MT dependencies -MF /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbase.d --serialize-diagnostics /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbase.dia -c /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbase.c -o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbase.o36"82DB3C0E-9793-482C-9D72-CD7E3A852311-
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbbox.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbbox.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbitmap.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftbitmap.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftbzip2.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/bzip2/ftbzip2.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftcache.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cache/ftcache.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftcid.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftcid.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftfstype.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftfstype.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftgasp.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftgasp.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftglyph.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftglyph.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftgzip.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/gzip/ftgzip.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftinit.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftinit.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftlzw.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/lzw/ftlzw.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftmm.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftmm.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftpfr.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftpfr.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftstroke.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftstroke.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftsynth.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftsynth.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftsystem.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftsystem.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/fttype1.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/fttype1.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/ftwinfnt.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/base/ftwinfnt.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/pcf.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pcf/pcf.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/pfr.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pfr/pfr.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/psaux.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/psaux/psaux.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/pshinter.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/pshinter/pshinter.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/psmodule.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/psnames/psmodule.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/raster.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/raster/raster.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/sfnt.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/sfnt/sfnt.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/smooth.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/smooth/smooth.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/test_afm.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_afm.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/test_bbox.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_bbox.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/test_trig.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/tools/test_trig.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/truetype.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/truetype/truetype.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/type1.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/type1/type1.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/type1cid.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/cid/type1cid.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/type42.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/type42/type42.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Project.build/Debug/FreeType.build/Objects-normal/x86_64/winfnt.o /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/src/winfonts/winfnt.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CLibtool /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Debug/libFreeType.a normal x86_64
+r0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/FreeType.build/Script-F8C6412DFE054FCD9A106C92.sh
+r0
+

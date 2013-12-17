@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<root>
+<class cppclass="SoundReverbFilterComponent" csclass="SoundReverbFilterComponent" csbase="Component">
+<func name="Bind">
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="GetDryLevel">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetDryLevel">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">drylevel</param>
+</func>
+<func name="GetRoomRolloff">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetRoomRolloff">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">rolloffscale</param>
+</func>	
+<func name="GetReverbPreset">
+	<ret type="int"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetReverbPreset">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="int">preset</param>
+</func>
+<func name="GetRoom">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetRoom">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">room</param>
+</func>
+<func name="GetRoomHF">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetRoomHF">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">roomHF</param>
+</func>	
+<func name="GetDecayTime">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetDecayTime">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">decayTime</param>
+</func>	
+<func name="GetDecayHFRatio">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetDecayHFRatio">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">decayHFRatio</param>
+</func>	
+<func name="GetReflectionsDelay">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetReflectionsDelay">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">reflectionsDelay</param>
+</func>	
+<func name="GetReflectionsLevel">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetReflectionsLevel">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">reflectionsLevel</param>
+</func>	
+<func name="GetReverbLevel">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetReverbLevel">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">reverbLevel</param>
+</func>	
+<func name="GetReverbDelay">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetReverbDelay">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">reverbDelay</param>
+</func>	
+<func name="GetHFReference">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetHFReference">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">hfReference</param>
+</func>	
+<func name="GetDiffusion">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetDiffusion">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">diffusion</param>
+</func>	
+<func name="GetDensity">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetDensity">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">density</param>
+</func>	
+<func name="GetRoomLF">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetRoomLF">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">roomLF</param>
+</func>	
+<func name="GetLFReference">
+	<ret type="float"></ret>
+	<param type="SoundReverbFilterComponent">self</param>
+</func>
+<func name="SetLFReference">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="float">lfReference</param>
+</func>
+<func name="CopyValueFromPreset">
+	<param type="SoundReverbFilterComponent">self</param>
+	<param type="int">preset</param>
+</func>
+</class>
+</root>
+

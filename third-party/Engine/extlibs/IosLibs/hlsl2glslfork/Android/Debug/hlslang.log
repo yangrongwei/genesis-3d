@@ -1,0 +1,19 @@
+﻿Build started 2013-1-30 20:08:43.
+     1>Project "D:\WebJet\Engine\tools\hlsl2glslfork\hlslang.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Android\Debug\hlslang.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\android\android-ndk-r8b\toolchains\arm-linux-androideabi-4.4.3\prebuilt\windows\bin\arm-linux-androideabi-g++.exe -x c++ -o Android/Debug/ossource.o -Dlinux -marm -fno-strict-aliasing -funswitch-loops -finline-limit=100 -fomit-frame-pointer -fno-exceptions -fpic -fstack-protector -fno-rtti -fno-short-enums -Wno-psabi -ID:/android/android-ndk-r8b/platforms/android-14/arch-arm/usr/include -ID:/android/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -ID:/android/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -DANDROID_NDK -DANDROID -D__ANDROID__ -D__ARM_EABI__ -D__ARM_ARCH_5__ -D__ARM_ARCH_5T__ -D__ARM_ARCH_5E__ -D__ARM_ARCH_5TE__ -O0 -g -Ihlslang -Ihlslang/MachineIndependent -Ihlslang/OSDependent/Linux -IOGLCompilersDLL -ID:/android/android-ndk-r8b/platforms/android-14/arch-x86/usr/include -ID:/android/android-ndk-r8b/sources/cxx-stl/stlport/stlport -march=armv5te -mtune=xscale -c -MD hlslang/OSDependent/Linux/ossource.cpp
+         Gen_hlslang.cpp
+         pathToTool:D:\android\android-ndk-r8b\toolchains\arm-linux-androideabi-4.4.3\prebuilt\windows\bin\arm-linux-androideabi-g++.exe;responseFileCommands:-x c++ -o Android/Debug/Gen_hlslang.o -Dlinux -marm -fno-strict-aliasing -funswitch-loops -finline-limit=100 -fomit-frame-pointer -fno-exceptions -fpic -fstack-protector -fno-rtti -fno-short-enums -Wno-psabi -ID:/android/android-ndk-r8b/platforms/android-14/arch-arm/usr/include -ID:/android/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -ID:/android/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -DANDROID_NDK -DANDROID -D__ANDROID__ -D__ARM_EABI__ -D__ARM_ARCH_5__ -D__ARM_ARCH_5T__ -D__ARM_ARCH_5E__ -D__ARM_ARCH_5TE__ -O0 -g -Ihlslang -Ihlslang/MachineIndependent -Ihlslang/OSDependent/Linux -IOGLCompilersDLL -ID:/android/android-ndk-r8b/platforms/android-14/arch-x86/usr/include -ID:/android/android-ndk-r8b/sources/cxx-stl/stlport/stlport -march=armv5te -mtune=xscale -c -MD hlslang/MachineIndependent/Gen_hlslang.cpp
+       Lib:
+         D:\android\android-ndk-r8b\toolchains\arm-linux-androideabi-4.4.3\prebuilt\windows\bin\arm-linux-androideabi-ar.exe rcs D:/WebJet/Engine/tools/hlsl2glslfork/Android/Debug/hlslang.a Android/Debug/Gen_hlslang.o Android/Debug/Gen_hlslang_tab.o Android/Debug/HLSL2GLSL.o Android/Debug/InfoSink.o Android/Debug/Initialize.o Android/Debug/InitializeDll.o Android/Debug/Intermediate.o Android/Debug/intermOut.o Android/Debug/IntermTraverse.o Android/Debug/parseConst.o Android/Debug/ParseHelper.o Android/Debug/PoolAlloc.o Android/Debug/RemoveTree.o Android/Debug/SymbolTable.o Android/Debug/atom.o Android/Debug/cpp.o Android/Debug/cppstruct.o Android/Debug/memory.o Android/Debug/scanner.o Android/Debug/symbols.o Android/Debug/tokens.o Android/Debug/glslCommon.o Android/Debug/glslFunction.o Android/Debug/glslOutput.o Android/Debug/glslStruct.o Android/Debug/glslSymbol.o Android/Debug/hlslCrossCompiler.o Android/Debug/hlslLinker.o Android/Debug/hlslSupportLib.o Android/Debug/propagateMutable.o Android/Debug/typeSamplers.o Android/Debug/ossource.o 
+         hlslang.vcxproj -> D:\WebJet\Engine\tools\hlsl2glslfork\Android\Debug\hlslang.a
+       FinalizeBuildStatus:
+         Deleting file "Android\Debug\hlslang.unsuccessfulbuild".
+         Touching "Android\Debug\hlslang.lastbuildstate".
+     1>Done Building Project "D:\WebJet\Engine\tools\hlsl2glslfork\hlslang.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.75

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" ?>
+<root>
+<class cppclass="LightComponent" csclass="LightComponent" csbase="Component">
+<func name="Bind">
+	<param type="LightComponent">self</param>
+	</func>
+<func name="GetLightType">
+	<ret type="int"></ret>
+	<param type="LightComponent">self</param>
+</func>
+<func name="SetLightType">
+	<param type="LightComponent">self</param>
+	<param type="int">lightType</param>
+</func>
+<func name="GetPosition">
+	<param type="LightComponent">self</param>
+	<param type="out Vector3">outPos</param>
+</func>
+<func name="SetPosition">
+	<param type="LightComponent">self</param>
+	<param type="ref const Vector3">pos</param>
+</func>
+<func name="GetDirection">
+	<param type="LightComponent">self</param>
+	<param type="out Vector3">dir</param>
+</func>
+<func name="SetDirection">
+	<param type="LightComponent">self</param>
+	<param type="ref const Vector3">dir</param>
+</func>
+<func name="GetColorF">
+	<param type="LightComponent">self</param>
+	<param type="out ColorF">color</param>
+</func>
+<func name="SetColorF">
+	<param type="LightComponent">self</param>
+	<param type="ref ColorF">color</param>
+</func>
+<func name="GetIntensity">
+	<ret type="float"></ret>
+	<param type="LightComponent">self</param>
+</func>
+<func name="SetIntensity">
+	<param type="LightComponent">self</param>
+	<param type="float">intensity</param>
+</func>
+<func name="GetConstantAttenuation">
+	<ret type="float"></ret>
+	<param type="LightComponent">self</param>
+</func>
+<func name="SetConstantAttenuation">
+	<param type="LightComponent">self</param>
+	<param type="float">constantAttenuation</param>
+</func>
+<func name="GetLinerAttenuation">
+	<ret type="float"></ret>
+	<param type="LightComponent">self</param>
+</func>
+<func name="SetLinerAttenuation">
+	<param type="LightComponent">self</param>
+	<param type="float">linearAttenuation</param>
+</func>
+<func name="GetQuadraticAttenuation">
+	<ret type="float"></ret>
+	<param type="LightComponent">self</param>
+</func>
+<func name="SetQuadraticAttenuation">
+	<param type="LightComponent">self</param>
+	<param type="float">quadraticAttenuation</param>
+</func>
+<func name="GetSpotExponent">
+	<ret type="float"></ret>
+	<param type="LightComponent">self</param>
+</func>
+<func name="SetSpotExponent">
+	<param type="LightComponent">self</param>
+	<param type="float">spotExponent</param>
+</func>
+<func name="GetRange">
+	<ret type="float"></ret>
+	<param type="LightComponent">self</param>
+</func>
+<func name="SetAttemuations">
+	<param type="LightComponent">self</param>
+	<param type="float">c</param>
+	<param type="float">l</param>
+	<param type="float">q</param>
+</func>
+<func name="GetCosCutOff">
+	<ret type="float"></ret>
+	<param type="LightComponent">self</param>
+</func>
+<func name="SetCosCutOff">
+	<param type="LightComponent">self</param>
+	<param type="float">cosCutOff</param>
+</func>
+</class>
+</root>
+

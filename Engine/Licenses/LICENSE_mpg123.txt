@@ -1,0 +1,35 @@
+mpg123 v1.15.4
+--------------------
+
+Copyright (c) 2013 Michael Hipp http://www.mpg123.de/
+
+Code is copyrighted by Michael Hipp, who made it free software under the terms of the LGPL 2.1.
+
+But that is not all of it.
+mpg123 is licensed under the GNU General Lesser Public License, version 2.1, and in parts under the GNU General Public License, version 2.
+That means that _all_ of mpg123 is licensed under GPL and the major part also under the LGPL.
+
+Actually, the "major part" currently is the whole distributed package of mpg123. There are some files (old alsa output, libao output) that you get from our svn repository and that do not fall under LGPL.
+
+When the copyright marker in a source file says "the mpg123 project" that means that the file contains code copyrighted by contributors to mpg123, the "initially written by" naming the person(s) that created the file and thus may have the largest part of copyrights on it.
+I am explaining this here to emphasize that the copyright always actually lies by the individual member (i.e. contributor to) of the mpg123 project who wrote a specific section of code.
+Usage of a source code management system like Subversion should provide keeping track of individual copyright traces...
+
+Please consider that any code that is contributed to the mpg123 project shall be licensed under LGPL 2.1 .
+If you want to contribute, but don't agree to that (i.e. you want to have your code GPL only) please say so - then, we either you convince is to include your code under GPL, we convince you to make it LGPL instead or, as a last resort, you'll have to do you own GPLed fork.
+But we should try to avoid the last option...
+
+All files in the distribution that don't carry a license note on their own are licensed under the terms of the LGPL 2.1; all files that do carry either a LGPL or GPL note are licensed respectively under the LGPL or GPL as follows:
+
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

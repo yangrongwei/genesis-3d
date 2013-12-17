@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:16
+-keep class com.android.test.cocos2d_android { <init>(...); }
+

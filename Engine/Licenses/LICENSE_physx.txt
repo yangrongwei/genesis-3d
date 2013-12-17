@@ -1,0 +1,14 @@
+PhysX 3.2.4
+--------------------
+
+The NVIDIA binary PC PhysX SDK is 100% Free for both commercial 
+and non-commercial use on Windows PC (Win32/64, Desktop applications). 
+For Linux, OSX and Android platforms the NVIDIA binary PhysX SDK 
+and Tools are FREE for educational and non-commercial use. 
+For commercial use, the binary SDK is FREE for developers who make 
+less than $100K in gross revenue (see PhysX SDK EULA).
+
+The PhysX SDK binary distros for Windows, Linux, OSX and Android, 
+along with the PhysX Visual Debugger installer, are available for 
+immediate download by anyone enrolled in the APEX/PhysX Registered 
+Developer Program (RDP).

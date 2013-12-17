@@ -1,0 +1,53 @@
+2009-09-25  Marek Safar  <marek.safar@gmail.com>
+
+	* CSharpBinaryOperationBinder.cs, CSharpBinder.cs: More dynamic
+	binary expressions.
+
+2009-09-18  Marek Safar <marek.safar@gmail.com>
+
+	* CSharpBinaryOperationBinder.cs, CSharpBinder.cs: Implemented
+	binary AddAssign operator.
+
+2009-09-16  Marek Safar <marek.safar@gmail.com>
+
+	* RuntimeBinderContext.cs, CSharpBinaryOperationBinder.cs,
+	CSharpBinder.cs: Fully implemented binary Add operator.
+
+2009-09-11  Marek Safar <marek.safar@gmail.com>
+
+	* RuntimeBinderContext.cs, CSharpBinaryOperationBinder.cs,
+	ErrorPrinter.cs, Extensions.cs, CSharpBinder.cs: Binary binder.
+
+2009-08-10  Marek Safar <marek.safar@gmail.com>
+
+	* CSharpInvokeBinder.cs, CSharpGetMemberBinder.cs,
+	CSharpInvokeMemberBinder.cs: Defer fallback for now.
+
+2009-08-07  Marek Safar <marek.safar@gmail.com>
+
+	* CSharpInvokeBinder.cs, CSharpGetIndexBinder.cs, Extensions.cs,
+	CSharpArgumentInfo.cs, CSharpInvokeMemberBinder.cs,
+	CSharpSetIndexBinder.cs: Skip overhead arguments.
+
+2009-08-04  Marek Safar <marek.safar@gmail.com>
+
+	* RuntimeBinderInternalCompilerException.cs,
+	RuntimeBinderException.cs: New files.
+
+2009-07-14  Marek Safar <marek.safar@gmail.com>
+
+	* CSharpInvokeBinder.cs, CSharpBinaryOperationBinder.cs,
+	CSharpGetMemberBinder.cs, CSharpGetIndexBinder.cs, Extensions.cs,
+	CSharpIsEventBinder.cs, CSharpUnaryOperationBinder.cs,
+	CSharpConvertBinder.cs, CSharpSetIndexBinder.cs,
+	CSharpInvokeMemberBinder.cs, CSharpSetMemberBinder.cs: New files.
+
+2009-07-02  Marek Safar <marek.safar@gmail.com>
+
+	* CSharpConversionKind.cs, CSharpArgumentInfo.cs, 
+	CSharpInvokeMemberBinder.cs, CSharpCallFlags.cs: New files.
+
+2009-06-29  Marek Safar <marek.safar@gmail.com>
+
+	* ChangeLog: Added
+

@@ -1,0 +1,17 @@
+﻿Build started 2013-1-18 15:20:13.
+     1>Project "D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\GLSL_Optimizer\GLSL_Optimizer.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Android\Debug\GLSL_Optimizer.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         D:\android\android-ndk-r8b\toolchains\arm-linux-androideabi-4.4.3\prebuilt\windows\bin\arm-linux-androideabi-ar.exe rcs D:/WebJet/Engine/tools/mesa/GLSL_Optimizer/Android/Debug/GLSL_Optimizer.a Android/Debug/ast_expr.o Android/Debug/ast_function.o Android/Debug/ast_to_hir.o Android/Debug/ast_type.o Android/Debug/builtin_function.o Android/Debug/glcpp-lex.o Android/Debug/glcpp-parse.o Android/Debug/glsl_lexer.o Android/Debug/glsl_optimizer.o Android/Debug/glsl_parser.o Android/Debug/glsl_parser_extras.o Android/Debug/glsl_symbol_table.o Android/Debug/glsl_types.o Android/Debug/hash_table.o Android/Debug/hir_field_selection.o Android/Debug/ir.o Android/Debug/ir_basic_block.o Android/Debug/ir_clone.o Android/Debug/ir_constant_expression.o Android/Debug/ir_expression_flattening.o Android/Debug/ir_function.o Android/Debug/ir_function_can_inline.o Android/Debug/ir_hierarchical_visitor.o Android/Debug/ir_hv_accept.o Android/Debug/ir_import_prototypes.o Android/Debug/ir_print_glsl_visitor.o Android/Debug/ir_print_visitor.o Android/Debug/ir_reader.o Android/Debug/ir_rvalue_visitor.o Android/Debug/ir_unused_structs.o Android/Debug/ir_validate.o Android/Debug/ir_variable.o Android/Debug/ir_variable_refcount.o Android/Debug/link_functions.o Android/Debug/linker.o Android/Debug/loop_analysis.o Android/Debug/loop_controls.o Android/Debug/loop_unroll.o Android/Debug/lower_discard.o Android/Debug/lower_if_to_cond_assign.o Android/Debug/lower_instructions.o Android/Debug/lower_jumps.o Android/Debug/lower_mat_op_to_vec.o Android/Debug/lower_noise.o Android/Debug/lower_variable_index_to_cond_assign.o Android/Debug/lower_vec_index_to_cond_assign.o Android/Debug/lower_vec_index_to_swizzle.o Android/Debug/lower_vector.o Android/Debug/opt_algebraic.o Android/Debug/opt_constant_folding.o Android/Debug/opt_constant_propagation.o Android/Debug/opt_constant_variable.o Android/Debug/opt_copy_propagation.o Android/Debug/opt_dead_code.o Android/Debug/opt_dead_code_local.o Android/Debug/opt_dead_functions.o Android/Debug/opt_discard_simplification.o Android/Debug/opt_function_inlining.o Android/Debug/opt_if_simplification.o Android/Debug/opt_noop_swizzle.o Android/Debug/opt_redundant_jumps.o Android/Debug/opt_structure_splitting.o Android/Debug/opt_swizzle_swizzle.o Android/Debug/opt_tree_grafting.o Android/Debug/pp.o Android/Debug/s_expression.o Android/Debug/strtod.o Android/Debug/symbol_table.o Android/Debug/talloc.o 
+         GLSL_Optimizer.vcxproj -> D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\Android\Debug\GLSL_Optimizer.a
+       FinalizeBuildStatus:
+         Deleting file "Android\Debug\GLSL_Optimizer.unsuccessfulbuild".
+         Touching "Android\Debug\GLSL_Optimizer.lastbuildstate".
+     1>Done Building Project "D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\GLSL_Optimizer\GLSL_Optimizer.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.25

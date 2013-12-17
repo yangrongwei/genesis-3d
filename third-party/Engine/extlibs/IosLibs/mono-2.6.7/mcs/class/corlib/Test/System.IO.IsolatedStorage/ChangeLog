@@ -1,0 +1,60 @@
+2008-12-23  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileTest.cs: Add test case when null values are used
+	in GetStore. Fix bug #430932
+
+2008-04-18  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileTest.cs: Add test cases for creating sub-
+	directories and to delete them (bug #376188)
+
+2008-03-28  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileTest.cs: Add test cases for creating directory 
+	(bug #372377) and also getting delaing with subdirectories.
+
+2008-01-17  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileTest.cs: Added test case against regression of
+	bug #354539
+
+2007-11-06  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileStreamTest.cs: Test case for rooted paths by Jay
+	Miller (bug #324983).
+
+2005-06-14  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileCas.cs: Added MaximumSize unit tests.
+
+2005-06-05 Gonzalo Paniagua Javier <gonzalo@ximian.com>
+
+	* IsolatedStorageFileStreamTest.cs:
+	* IsolatedStorageFileTest.cs:
+	* IsolatedStorageTest.cs: fixed namespace names and removed NotWorking
+	for a test that now works.
+
+2005-05-18  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileStreamCas.cs: Added tests to test stack 
+	propagation for BeginRead and BeginWrite.
+
+2005-03-24  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileStreamCas.cs: Added reflection-based unit tests 
+	to test LinkDemand on Handle and SafeFileHandle (2.0) properties.
+
+2005-03-15  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileStreamCas.cs: New. CAS unit tests for 
+	IsolatedStorageFileStream.
+	* IsolatedStorageFileCas.cs: New. CAS unit tests for 
+	IsolatedStorageFile.
+
+2005-01-31  Sebastien Pouliot  <sebastien@ximian.com>
+
+	* IsolatedStorageFileStreamTest.cs: New. Unit tests for 
+	IsolatedStorageFileStream.
+	* IsolatedStorageFileTest.cs: New. Unit tests for IsolatedStorageFile.
+	* IsolatedStorageTest.cs: New. Unit tests for IsolatedStorage abstract
+	class.

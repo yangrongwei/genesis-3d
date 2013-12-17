@@ -1,0 +1,8 @@
+toolchain/build.git              6d144f8edfd3879d3c241713331460d9a6e3ee86 Allow --enable-gold co-exists with --enable-ld=default
+toolchain/gmp.git                e6b9669dafc6a5f83c80b4b4176359b78bccdc90 Add gmp-5.0.5.tar.bz2
+toolchain/mpfr.git               bde731396c38c8d5b0bca800aace6a690d0d2978 add mpfr-2.4.2.tar.bz2
+toolchain/mpc.git                a4109ccc6e07f72f41c397a17fdfbed3e5e19c66 Add mpc-0.8.1 package to toolchain source.
+toolchain/expat.git              40172a0ae9d40a068f1e1a48ffcf6a1ccf765ed5 expat package for building gdb-7.3
+toolchain/binutils.git           fa1f1a225fd4598b2fb6edf4bf63591c9e72d13a Support decoding of symbols for plt entries on arm
+toolchain/gcc.git                5f2f4ef69e2f64970aad2c303a529c49789021d8 2012-05-18   Jing Yu  <jingyu@google.com>
+toolchain/gdb.git                b3007e980fad8bf4fc0fca1d3823aff648339798 Patch GDB 6.6 and 7.1.x to understand linux-android

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'hlsl2glslfork' target in the 'hlsl2glslfork' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

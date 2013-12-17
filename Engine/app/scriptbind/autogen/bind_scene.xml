@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" ?>
+<root>
+<class cppclass="Scene" csclass="Scene" csbase="Base">
+<func name="Release">
+	<param type="Scene">self</param>
+</func>
+<func name="GetActorCount">
+	<ret type ="int"></ret>
+	<param type="Scene">self</param>
+</func>
+<func name="GetActor">
+	<ret type="Actor"></ret>
+	<param type="Scene">self</param>
+	<param type="int">index</param>
+</func>
+<func name="FindActorByFastID">
+	<ret type="Actor"></ret>
+	<param type="Scene">self</param>
+	<param type="FastId">fastID</param>
+</func>
+<func name="AddActor">
+	<ret type="bool"></ret>
+	<param type="Scene">self</param>
+	<param type="Actor">pActor</param>
+</func>
+<func name="RemoveActor">
+	<ret type="bool"></ret>
+	<param type="Scene">self</param>
+	<param type="Actor">pActor</param>
+</func>
+<func name="FindActorByGuid">
+	<ret type="Actor"></ret>
+	<param type="Scene">self</param>
+	<param type="Guid">guid</param>
+</func>
+<func name="FindActorByName">
+	<ret type="Actor"></ret>
+	<param type="Scene">self</param>
+	<param type="String">name</param>
+</func>
+</class>
+</root>
+

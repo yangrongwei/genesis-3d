@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" ?>
+<root>
+<class cppclass="SoundChorusFilterComponent" csclass="SoundChorusFilterComponent" csbase="Component">
+<func name="Bind">
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="GetDelay">
+	<ret type ="float"></ret>
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="SetDelay">
+	<param type="SoundChorusFilterComponent">self</param>
+	<param type="float">delay</param>
+</func>
+<func name="GetRate">
+	<ret type="float"></ret>
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="SetRate">
+	<param type="SoundChorusFilterComponent">self</param>
+	<param type="float">rate</param>
+</func>
+<func name="GetDryMix">
+	<ret type="float"></ret>
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="SetDryMix">
+	<param type="SoundChorusFilterComponent">self</param>
+	<param type="float">drymix</param>
+</func>
+<func name="GetDepth">
+	<ret type="float"></ret>
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="SetDepth">
+	<param type="SoundChorusFilterComponent">self</param>
+	<param type="float">depth</param>
+</func>
+<func name="GetFeedback">
+	<ret type="float"></ret>
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="SetFeedback">
+	<param type="SoundChorusFilterComponent">self</param>
+	<param type="float">feedback</param>
+</func>
+<func name="GetWetMix1">
+	<ret type="float"></ret>
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="SetWetMix1">
+	<param type="SoundChorusFilterComponent">self</param>
+	<param type="float">wetmix</param>
+</func>
+<func name="GetWetMix2">
+	<ret type="float"></ret>
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="SetWetMix2">
+	<param type="SoundChorusFilterComponent">self</param>
+	<param type="float">wetmix</param>
+</func>
+<func name="GetWetMix3">
+	<ret type="float"></ret>
+	<param type="SoundChorusFilterComponent">self</param>
+</func>
+<func name="SetWetMix3">
+	<param type="SoundChorusFilterComponent">self</param>
+	<param type="float">wetmix</param>
+</func>
+</class>
+</root>
+

@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<root>
+<class cppclass="SoundSource" csclass="SoundSource" csbase="Component">
+<func name="Play">
+	<param type="SoundSource">self</param>
+</func>
+<func name="Stop">
+	<param type="SoundSource">self</param>
+</func>
+<func name="Pause">
+	<param type="SoundSource">self</param>
+</func>
+<func name="IsPlaying">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="IsPaused">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="GetLoop">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetLoop">
+	<param type="SoundSource">self</param>
+	<param type="bool">bLoop</param>
+</func>
+<func name="GetVolume">
+	<ret type="float"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetVolume">
+	<param type ="SoundSource">self</param>
+	<param type ="float">volume</param>
+</func>
+<func name="GetMute">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetMute">
+	<param type ="SoundSource">self</param>
+	<param type ="bool">mute</param>
+</func>
+<func name="Init">
+	<param type="SoundSource">self</param>
+	<param type="String">pMonoString</param>
+	<param type="bool">is3D</param>
+</func>
+<func name="Is3D">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="Set3D">
+	<param type ="SoundSource">self</param>
+	<param type ="bool">is3D</param>
+</func>	
+<func name="GetLength">
+	<ret type="uint"></ret>
+	<param type="SoundSource">self</param>
+</func>	
+<func name="GetPitch">
+	<ret type="float"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetPitch">
+	<param type ="SoundSource">self</param>
+	<param type ="float">pitch</param>
+</func>	
+<func name="GetIgnoreListenerVolume">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetIgnoreListenerVolume">
+	<param type ="SoundSource">self</param>
+	<param type ="bool">ignore</param>
+</func>	
+<func name="GetDopplerLevel">
+	<ret type="float"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetDopplerLevel">
+	<param type ="SoundSource">self</param>
+	<param type ="float">level</param>
+</func>	
+<func name="GetSpread">
+	<ret type="float"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetSpread">
+	<param type ="SoundSource">self</param>
+	<param type ="float">spread</param>
+</func>	
+<func name="GetPriority">
+	<ret type="int"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetPriority">
+	<param type ="SoundSource">self</param>
+	<param type ="int">priority</param>
+</func>	
+<func name="GetMinDistance">
+	<ret type="float"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetMinDistance">
+	<param type ="SoundSource">self</param>
+	<param type ="float">minDistance</param>
+</func>	
+<func name="GetMaxDistance">
+	<ret type="float"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetMaxDistance">
+	<param type ="SoundSource">self</param>
+	<param type ="float">maxDistance</param>
+</func>	
+<func name="GetPan">
+	<ret type="float"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetPan">
+	<param type ="SoundSource">self</param>
+	<param type ="float">pan</param>
+</func>	
+<func name="GetPosition">
+	<ret type="uint"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetPosition">
+	<param type ="SoundSource">self</param>
+	<param type ="uint">position</param>
+</func>	
+<func name="GetAutoPlay">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetAutoPlay">
+	<param type ="SoundSource">self</param>
+	<param type ="bool">setPlay</param>
+</func>	
+<func name="GetLoadPriority">
+	<ret type="int"></ret>
+	<param type="SoundSource">self</param>
+</func>	
+<func name="GetIgnoreEffect">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetIgnoreEffect">
+	<param type ="SoundSource">self</param>
+	<param type ="bool">IgnoreEffect</param>
+</func>	
+<func name="GetRolloffMode">
+	<ret type="int"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetRolloffMode">
+	<param type ="SoundSource">self</param>
+	<param type ="int">rolloffMode</param>
+</func>	
+<func name="IsAllLoaded">
+	<ret type="bool"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="GetName">
+	<ret type="String"></ret>
+	<param type="SoundSource">self</param>
+</func>
+<func name="SetName">
+	<param type ="SoundSource">self</param>
+	<param type ="String">pMonoString</param>
+	<param type ="int">loadpriority</param>
+</func>
+</class>
+</root>
+

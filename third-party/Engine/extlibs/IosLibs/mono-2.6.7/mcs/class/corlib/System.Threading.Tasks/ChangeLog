@@ -1,0 +1,44 @@
+2009-08-19  Jérémie Laval  <jeremie.laval@gmail.com>
+
+	* Task.cs: Refactor Wait methods.
+
+2009-08-11  Jérémie Laval  <jeremie.laval@gmail.com>
+
+	* Future.cs: Add static to Factory property
+
+2009-08-11  Jérémie Laval  <jeremie.laval@gmail.com>
+
+	* Task.cs: Make WaitAny uses general continuation
+	framework.
+
+2009-08-11  Jérémie Laval  <jeremie.laval@gmail.com>
+
+	* TaskFactory.cs: Fix methods signature.
+
+2009-08-05  Jérémie Laval  <jeremie.laval@gmail.com>
+
+	* Future.cs: Fix for Future, when using TaskCompletionSource
+	don't try to run Wait before returning value
+
+2009-07-31  Jérémie Laval  <jeremie.laval@gmail.com>
+
+        * Task.cs:
+        * Future.cs:
+        * TaskFactory.cs:
+        * TaskCanceledException.cs:
+        * TaskSchedulerException.cs:
+        * Internal/SchedulerProxy.cs: Make System.Threading.Tasks API fully 4.0 b1 compliant.
+
+	* TaskCompletionSource.cs: Add TaskCompletionSource class
+
+2009-07-27  Jérémie Laval  <jeremie.laval@gmail.com>
+
+	* Future.cs:
+	* Task.cs:
+	* TaskCanceledException.cs:
+	* TaskContinuationOptions.cs:
+	* TaskCreationOptions.cs:
+	* TaskFactory.cs:
+	* TaskScheduler.cs:
+	* TaskSchedulerException.cs:
+	* TaskStatus.cs: Added ParallelFx files for System.Threading.Tasks namespace

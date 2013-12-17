@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Mono26Ios' target in the 'Mono26Ios' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

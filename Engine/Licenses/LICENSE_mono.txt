@@ -1,0 +1,23 @@
+mono v2.6.7
+--------------------
+
+We use four open source licenses:
+
+    1.The C# compiler is dual-licensed under the MIT/X11 license and the GNU General Public License (GPL). 
+
+    2.The tools are released under the terms of the GNU General Public License (GPL). 
+
+    3.The runtime libraries are under the GNU Library GPL 2.0 (LGPL 2.0). 
+
+    4.The class libraries are released under the terms of the MIT X11 license. 
+
+    5.ASP.NET MVC, the Managed Extensibility Framework (MEF), the Dynamic Language 
+	Runtime (DLR), System.Data.Services.Client, parts of System.Numerics and ASP.NET 
+	AJAX client software are released by Microsoft under the open source Microsoft 
+	Permissive License, some of them are dual licensed also as Apache2 
+
+Mono is available to be licensed commercially if the LGPL/GPL/X11 combination is not 
+suitable for you. Xamarin offers commercial licensing options to redistribute Mono 
+under non-LGPL terms. If your organization intends to redistribute software which 
+embeds or bundles Mono, but is unable to comply with the terms of GNU LGPL v2, the 
+Ultimate Edition may be right for you. 

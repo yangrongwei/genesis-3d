@@ -1,0 +1,121 @@
+Tlemon
+v5
+r1
+cCheck dependencies
+cCompileC MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.o /Volumes/MacDisk2/thirdlib/mojoshader/misc/lemon.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemon normal x86_64
+cPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Script-C78A5A945E094011AF8A918B.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/assert.h
+c0000000051649C310000000000000F6E
+t1365548081
+s3950
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/ctype.h
+c0000000051649C390000000000002C18
+t1365548089
+s11288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdio.h
+c0000000051649C530000000000004523
+t1365548115
+s17699
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdlib.h
+c0000000051649C530000000000003089
+t1365548115
+s12425
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/string.h
+c0000000051649C530000000000001A3A
+t1365548115
+s6714
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/unistd.h
+c0000000051649C540000000000006762
+t1365548116
+s26466
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/4.2/include/stdarg.h
+c000000005154B08F0000000000000810
+t1364504719
+s2064
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemon
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.LinkFileList
+c0000000051BEB10A0000000000000067
+t1371451658
+s103
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Script-C78A5A945E094011AF8A918B.sh
+c0000000051BEB10A000000000000009A
+t1371451658
+s154
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/misc/lemon.c
+c000000004FA422020000000000024634
+t1336156674
+s149044
+i<stdio.h>
+i<stdarg.h>
+i<string.h>
+i<ctype.h>
+i<stdlib.h>
+i<assert.h>
+i<unistd.h>
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/misc/lemon.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3c4dea8ae86eb741^29e8ee8ae86eb741^---0#1#0#--18"Check dependencies36"CE5F7BF5-DA0D-443F-8A4C-5BDD85868D30-
+
+CCompileC MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.o /Volumes/MacDisk2/thirdlib/mojoshader/misc/lemon.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s393144458.934392
+e393144459.245530
+r1
+xCompileC
+xMojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/misc/lemon.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Volumes/MacDisk2/thirdlib/mojoshader/misc/lemon.cd34cef8ae86eb741^5918428be86eb741^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/misc/lemon.c0000000000000000^1898"CompileC MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.o misc/lemon.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/DerivedSources/x86_64 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/misc/lemon.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.o36"0C642173-4031-4910-AB06-D6B319D97052-
+
+CLd /Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemon normal x86_64
+s393144459.289063
+e393144459.317493
+r1
+xLd
+x/Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemon
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Link /Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemonc51a4a8be86eb741^6b47518be86eb741^---0#0#0#--686"Ld Debug/lemon normal x86_64    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Volumes/MacDisk2/thirdlib/mojoshader/Debug -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -filelist /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Objects-normal/x86_64/lemon.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -o /Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemon36"360B85C4-A7A5-4EB9-9873-3DD7C661A5B9-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Script-C78A5A945E094011AF8A918B.sh
+s393144459.325583
+e393144459.362582
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Script-C78A5A945E094011AF8A918B.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lemon.Debug
+omake[1]: Nothing to be done for `PostBuild.lemon.Debug'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'a1d7538be86eb741^c7d55c8be86eb741^-301"echo "Depend check for xcode"Depend check for xcodecd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lemon.Debugmake[1]: Nothing to be done for `PostBuild.lemon.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393144459#0#30#-0#-----2@23"Depend check for xcode-393144459#30#23#-0#-----2@191"cd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lemon.Debug-393144459#53#191#-0#-----2@57"make[1]: Nothing to be done for `PostBuild.lemon.Debug'.-393144459#244#57#-0#-----0#0#0#--283"PhaseScriptExecution "CMake PostBuild Rules" MojoShader.build/Debug/lemon.build/Script-C78A5A945E094011AF8A918B.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/lemon.build/Script-C78A5A945E094011AF8A918B.sh36"CFF0C0EB-5A2B-4BFA-81E3-D57AF48380F9-
+

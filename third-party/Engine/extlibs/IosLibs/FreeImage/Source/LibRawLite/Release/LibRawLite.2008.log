@@ -1,0 +1,429 @@
+﻿Build started 2012-10-11 21:56:28.
+     1>Project "D:\FreeImage\Source\LibRawLite\LibRawLite.2008.vcxproj" on node 5 (rebuild target(s)).
+     1>PrepareForBuild:
+         Creating directory "D:\FreeImage\Release\".
+       InitializeBuildStatus:
+         Creating "Release\LibRaw.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I./ /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D LIBRAW_NODLL /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS- /fp:precise /Zc:wchar_t /Zc:forScope /openmp- /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt internal\dcraw_common.cpp internal\dcraw_fileio.cpp internal\demosaic_packs.cpp src\libraw_c_api.cpp src\libraw_cxx.cpp src\libraw_datastream.cpp
+         dcraw_common.cpp
+     1>internal\dcraw_common.cpp(119): warning C4996: 'swab': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _swab. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdlib.h(870) : see declaration of 'swab'
+     1>internal\dcraw_common.cpp(191): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(223): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(251): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(571): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(598): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(605): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(863): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>internal\dcraw_common.cpp(957): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1071): warning C4101: 'r' : unreferenced local variable
+     1>internal\dcraw_common.cpp(1115): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(1128): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1175): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1431): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>internal\dcraw_common.cpp(1494): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1520): warning C4101: 'col' : unreferenced local variable
+     1>internal\dcraw_common.cpp(1520): warning C4101: 'row' : unreferenced local variable
+     1>internal\dcraw_common.cpp(1562): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1564): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1565): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(1573): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1581): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(1584): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1589): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(1620): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(1624): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(1628): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(1632): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(1636): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(1656): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(1661): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(1682): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(1698): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(1705): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(1706): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(1715): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(1782): warning C4244: 'return' : conversion from 'UINT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(1788): warning C4244: '=' : conversion from 'UINT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(1828): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(1925): warning C4101: 'row' : unreferenced local variable
+     1>internal\dcraw_common.cpp(2028): warning C4018: '>=' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(2055): warning C4244: '=' : conversion from 'UINT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(2087): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(2400): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(2419): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>internal\dcraw_common.cpp(2690): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(2922): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3039): warning C4101: 'col' : unreferenced local variable
+     1>internal\dcraw_common.cpp(3160): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(3165): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(3269): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(3317): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3322): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3419): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(3419): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(3419): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(3419): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(3419): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(3419): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(3419): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(3419): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(3436): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3442): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3447): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3460): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(3464): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3480): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3482): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3486): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(3642): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3643): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(3680): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3689): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3739): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3739): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3753): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3757): warning C4244: '*=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(3769): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3772): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3772): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(3773): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3776): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(3776): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(3777): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3782): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(3840): warning C4018: '>=' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3840): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3851): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(3926): warning C4309: 'initializing' : truncation of constant value
+     1>internal\dcraw_common.cpp(3927): warning C4309: 'initializing' : truncation of constant value
+     1>internal\dcraw_common.cpp(3934): warning C4309: 'initializing' : truncation of constant value
+     1>internal\dcraw_common.cpp(3934): warning C4309: 'initializing' : truncation of constant value
+     1>internal\dcraw_common.cpp(3940): warning C4309: 'initializing' : truncation of constant value
+     1>internal\dcraw_common.cpp(3941): warning C4309: 'initializing' : truncation of constant value
+     1>internal\dcraw_common.cpp(4227): warning C4244: '=' : conversion from 'float' to 'short', possible loss of data
+     1>internal\dcraw_common.cpp(4228): warning C4244: '=' : conversion from 'float' to 'short', possible loss of data
+     1>internal\dcraw_common.cpp(4229): warning C4244: '=' : conversion from 'float' to 'short', possible loss of data
+     1>internal\dcraw_common.cpp(4352): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4353): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4365): warning C4244: '+=' : conversion from 'const double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4456): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(4456): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(4459): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(4459): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(4467): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(4480): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4488): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4490): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(4511): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4512): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(4512): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(4513): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(4519): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(4526): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4539): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(4543): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4555): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(4562): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(4570): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(4586): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(4657): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(4662): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4670): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(4676): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(4683): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(4697): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(4710): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4712): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4714): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4733): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4734): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4760): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4761): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4762): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4784): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4830): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4875): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4876): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4892): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4901): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4908): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4916): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4917): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4946): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4992): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4993): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4998): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(4999): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5000): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5037): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5037): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5037): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5038): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5038): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5038): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5039): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5039): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5039): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(5044): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5070): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5151): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5159): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5163): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5164): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5172): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5175): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5216): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5311): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5336): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5345): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(5359): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5372): warning C4018: '<=' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(5382): warning C4244: 'argument' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5406): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(5419): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5422): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5425): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5439): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5446): warning C4244: 'argument' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5467): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5475): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5501): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5538): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5579): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(5582): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5583): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5584): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5593): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(5595): warning C4244: '+=' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(5671): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>internal\dcraw_common.cpp(5687): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5694): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(5732): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(5814): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(5817): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(5853): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5872): warning C4244: 'argument' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(5992): warning C4244: '=' : conversion from 'unsigned long' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(6013): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(6016): warning C4244: 'argument' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(6040): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6041): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6042): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6046): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6066): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6080): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6102): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6207): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(6213): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6217): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6269): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(6308): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(6335): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(6424): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6425): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6431): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(6449): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>internal\dcraw_common.cpp(7069): warning C4309: 'initializing' : truncation of constant value
+     1>internal\dcraw_common.cpp(7081): warning C4309: 'initializing' : truncation of constant value
+     1>internal\dcraw_common.cpp(7158): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7169): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7173): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7175): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7175): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7175): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7175): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7176): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7176): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7176): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7176): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7177): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7177): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7177): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7177): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>internal\dcraw_common.cpp(7223): warning C4244: '=' : conversion from 'UINT64' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(7230): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(7370): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(7408): warning C4244: '=' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(7432): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(7460): warning C4244: 'argument' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(7461): warning C4244: 'argument' : conversion from 'INT64' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(7517): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(248) : see declaration of 'strnicmp'
+     1>internal\dcraw_common.cpp(7550): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(248) : see declaration of 'strnicmp'
+     1>internal\dcraw_common.cpp(7944): warning C4305: '*=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(7945): warning C4305: '*=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8007): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8008): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8009): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8037): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8038): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8039): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8069): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(8070): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(8121): warning C4804: '>>' : unsafe use of type 'bool' in operation
+     1>internal\dcraw_common.cpp(8457): warning C4244: '=' : conversion from 'INT64' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(8603): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(248) : see declaration of 'strnicmp'
+     1>internal\dcraw_common.cpp(8656): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8657): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8658): warning C4305: '=' : truncation from 'double' to 'float'
+     1>internal\dcraw_common.cpp(8912): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(8928): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(8930): warning C4018: '<' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(8936): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(8937): warning C4244: '+=' : conversion from 'const double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(8987): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(8988): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(8998): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(8998): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(8999): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>internal\dcraw_common.cpp(8999): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>internal\dcraw_common.cpp(9000): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(9000): warning C4018: '>' : signed/unsigned mismatch
+     1>internal\dcraw_common.cpp(9007): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(9033): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(9037): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(9041): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(9045): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(9049): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(9053): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>internal\dcraw_common.cpp(9133): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(9152): warning C4244: '*=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(9153): warning C4244: '*=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(9154): warning C4244: '*=' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(9201): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(9209): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>internal\dcraw_common.cpp(9238): warning C4996: 'swab': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _swab. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdlib.h(870) : see declaration of 'swab'
+         dcraw_fileio.cpp
+         demosaic_packs.cpp
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(51): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(65): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(85): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(91): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(92): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(110): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(116): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(117): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(135): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(141): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(142): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(161): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(175): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(177): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(203): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(204): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(218): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(219): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(220): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(240): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(260): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(264): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(265): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(266): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(267): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(268): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(269): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(270): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(271): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(277): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(278): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(279): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(280): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(282): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(283): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(284): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(285): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(292): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(293): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(253): warning C4101: 'i' : unreferenced local variable
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(253): warning C4101: 'j' : unreferenced local variable
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(325): warning C4101: 'current' : unreferenced local variable
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(325): warning C4101: 'c' : unreferenced local variable
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(353): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(374): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(365): warning C4101: 'pix' : unreferenced local variable
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(419): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(445): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(448): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(459): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(384): warning C4101: 'tmp' : unreferenced local variable
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(485): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(486): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(487): warning C4244: '=' : conversion from 'double' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(498): warning C4101: 'pix' : unreferenced local variable
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(559): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(560): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(561): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(562): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(564): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(565): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(566): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(567): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(569): warning C4244: '=' : conversion from 'float' to 'ushort', possible loss of data
+     1>d:\freeimage\source\librawlite\internal\./dcb_demosaicing.c(552): warning C4101: 'current' : unreferenced local variable
+         libraw_c_api.cpp
+         libraw_cxx.cpp
+     1>src\libraw_cxx.cpp(157): warning C4244: 'argument' : conversion from 'INT64' to 'const int', possible loss of data
+     1>src\libraw_cxx.cpp(203): warning C4305: '=' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(999): warning C4804: '>>' : unsafe use of type 'bool' in operation
+     1>src\libraw_cxx.cpp(1042): warning C4018: '<' : signed/unsigned mismatch
+     1>src\libraw_cxx.cpp(1472): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>src\libraw_cxx.cpp(1480): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>src\libraw_cxx.cpp(1593): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>src\libraw_cxx.cpp(1653): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>src\libraw_cxx.cpp(1661): warning C4244: '*=' : conversion from 'float' to 'int', possible loss of data
+     1>src\libraw_cxx.cpp(1676): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1676): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1676): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1677): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1677): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1677): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1678): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1678): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1678): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>src\libraw_cxx.cpp(1711): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>src\libraw_cxx.cpp(1719): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>src\libraw_cxx.cpp(1963): warning C4018: '>' : signed/unsigned mismatch
+     1>src\libraw_cxx.cpp(1987): warning C4018: '<' : signed/unsigned mismatch
+     1>src\libraw_cxx.cpp(2004): warning C4018: '<' : signed/unsigned mismatch
+     1>src\libraw_cxx.cpp(1997): warning C4101: 'val' : unreferenced local variable
+         libraw_datastream.cpp
+         Generating Code...
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(D:\FreeImage\Release\LibRaw.lib) does not match the Library's OutputFile property value (D:\FreeImage\Source\LibRawLite\Release\LibRawLite.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(LibRaw) does not match the Library's OutputFile property value (LibRawLite). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\Release\LibRawLite.lib" /NOLOGO /LTCG Release\dcraw_common.obj
+         Release\dcraw_fileio.obj
+         Release\demosaic_packs.obj
+         Release\libraw_c_api.obj
+         Release\libraw_cxx.obj
+         Release\libraw_datastream.obj
+         LibRawLite.2008.vcxproj -> D:\FreeImage\Release\LibRaw.lib
+       FinalizeBuildStatus:
+         Deleting file "Release\LibRaw.unsuccessfulbuild".
+         Touching "Release\LibRaw.lastbuildstate".
+     1>Done Building Project "D:\FreeImage\Source\LibRawLite\LibRawLite.2008.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.48

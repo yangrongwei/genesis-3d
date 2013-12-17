@@ -1,0 +1,65 @@
+﻿Build started 2012-10-11 21:56:19.
+     1>Project "D:\FreeImage\Source\LibOpenJPEG\LibOpenJPEG.2008.vcxproj" on node 4 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Release\LibOpenJPEG.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D OPJ_STATIC /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt bio.c cidx_manager.c cio.c dwt.c event.c image.c j2k.c j2k_lib.c jp2.c jpt.c mct.c mqc.c openjpeg.c phix_manager.c pi.c ppix_manager.c raw.c t1.c t2.c tcd.c tgt.c thix_manager.c tpix_manager.c
+         bio.c
+         cidx_manager.c
+         cio.c
+         dwt.c
+         event.c
+         image.c
+         j2k.c
+         j2k_lib.c
+         jp2.c
+         jpt.c
+         mct.c
+         mqc.c
+         openjpeg.c
+         phix_manager.c
+         pi.c
+         ppix_manager.c
+         raw.c
+         t1.c
+         t2.c
+         tcd.c
+         Generating Code...
+         Compiling...
+         tgt.c
+         thix_manager.c
+         tpix_manager.c
+         Generating Code...
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\Release\LibOpenJPEG.lib" /NOLOGO .\Release/bio.obj
+         .\Release/cidx_manager.obj
+         .\Release/cio.obj
+         .\Release/dwt.obj
+         .\Release/event.obj
+         .\Release/image.obj
+         .\Release/j2k.obj
+         .\Release/j2k_lib.obj
+         .\Release/jp2.obj
+         .\Release/jpt.obj
+         .\Release/mct.obj
+         .\Release/mqc.obj
+         .\Release/openjpeg.obj
+         .\Release/phix_manager.obj
+         .\Release/pi.obj
+         .\Release/ppix_manager.obj
+         .\Release/raw.obj
+         .\Release/t1.obj
+         .\Release/t2.obj
+         .\Release/tcd.obj
+         .\Release/tgt.obj
+         .\Release/thix_manager.obj
+         .\Release/tpix_manager.obj
+         LibOpenJPEG.2008.vcxproj -> D:\FreeImage\Source\LibOpenJPEG\.\Release\LibOpenJPEG.lib
+       FinalizeBuildStatus:
+         Deleting file ".\Release\LibOpenJPEG.unsuccessfulbuild".
+         Touching ".\Release\LibOpenJPEG.lastbuildstate".
+     1>Done Building Project "D:\FreeImage\Source\LibOpenJPEG\LibOpenJPEG.2008.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:39.54

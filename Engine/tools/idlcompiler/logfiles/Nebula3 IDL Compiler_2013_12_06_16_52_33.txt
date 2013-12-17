@@ -1,0 +1,2 @@
+Compiling 'file:///D:/work/webjet/terrain/Engine/app/appframework/appframeworkprotocol.nidl'
+Compiling 'file:///D:/work/webjet/terrain/Engine/app/graphicfeature/graphicsfeatureprotocol.nidl'

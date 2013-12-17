@@ -1,0 +1,46 @@
+TALL_BUILD
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-E20F55EA974C45138783F683.sh
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-5642FA90EE9D486F96257834.sh
+c0000000051BEB29B00000000000000A4
+t1371452059
+s164
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-E20F55EA974C45138783F683.sh
+c0000000051BEC7A600000000000000A4
+t1371457446
+s164
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies1782d4deff6eb741^9a07d8deff6eb741^---0#1#0#--18"Check dependencies36"067FD8AA-55A3-477D-B70B-53F7489566B3-
+
+CPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-5642FA90EE9D486F96257834.sh
+s393144879.979802
+e393144880.009143
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-5642FA90EE9D486F96257834.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'8c49fb2fea6eb741^7b690230ea6eb741^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-393144880#0#8#-0#-----2@26"echo Build\ all\ projects-393144880#9#26#-0#-----2@19"Build all projects-393144880#35#19#-0#-----0#0#0#--281"PhaseScriptExecution "CMake Rules" MojoShader.build/Debug/ALL_BUILD.build/Script-5642FA90EE9D486F96257834.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-5642FA90EE9D486F96257834.sh36"54D7FFDB-4820-416A-93A6-4C6D38A0CC24-
+
+CPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-E20F55EA974C45138783F683.sh
+s393150430.844289
+e393150430.878729
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-E20F55EA974C45138783F683.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'f4bfd8deff6eb741^77f3e0deff6eb741^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-393150430#0#8#-0#-----2@26"echo Build\ all\ projects-393150430#9#26#-0#-----2@19"Build all projects-393150430#35#19#-0#-----0#0#0#--281"PhaseScriptExecution "CMake Rules" MojoShader.build/Debug/ALL_BUILD.build/Script-E20F55EA974C45138783F683.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ALL_BUILD.build/Script-E20F55EA974C45138783F683.sh36"E3E799DB-33BC-48A2-8F0A-18A878BC8B5C-
+

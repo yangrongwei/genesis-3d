@@ -1,0 +1,96 @@
+﻿Build started 2012-10-11 21:56:28.
+     1>Project "D:\FreeImage\Source\LibTIFF4\LibTIFF4.2008.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Release\LibTIFF4.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt tif_aux.c tif_close.c tif_codec.c tif_color.c tif_compress.c tif_dir.c tif_dirinfo.c tif_dirread.c tif_dirwrite.c tif_dumpmode.c tif_error.c tif_extension.c tif_fax3.c tif_fax3sm.c tif_flush.c tif_getimage.c tif_jpeg.c tif_luv.c tif_lzma.c tif_lzw.c tif_next.c tif_ojpeg.c tif_open.c tif_packbits.c tif_pixarlog.c tif_predict.c tif_print.c tif_read.c tif_strip.c tif_swab.c tif_thunder.c tif_tile.c tif_version.c tif_warning.c tif_write.c tif_zip.c
+         tif_aux.c
+         tif_close.c
+         tif_codec.c
+         tif_color.c
+         tif_compress.c
+         tif_dir.c
+         tif_dirinfo.c
+         tif_dirread.c
+         tif_dirwrite.c
+         tif_dumpmode.c
+         tif_error.c
+         tif_extension.c
+         tif_fax3.c
+         tif_fax3sm.c
+         tif_flush.c
+         tif_getimage.c
+         tif_jpeg.c
+         tif_luv.c
+         tif_lzma.c
+         tif_lzw.c
+         Generating Code...
+         Compiling...
+         tif_next.c
+         tif_ojpeg.c
+         tif_open.c
+         tif_packbits.c
+         tif_pixarlog.c
+         tif_predict.c
+         tif_print.c
+         tif_read.c
+     1>tif_read.c(96): warning C4244: 'function' : conversion from 'uint64' to 'size_t', possible loss of data
+     1>tif_read.c(115): warning C4244: '=' : conversion from 'uint64' to 'tmsize_t', possible loss of data
+     1>tif_read.c(120): warning C4244: '=' : conversion from 'uint64' to 'tmsize_t', possible loss of data
+     1>tif_read.c(142): warning C4244: '=' : conversion from 'uint64' to 'tmsize_t', possible loss of data
+     1>tif_read.c(143): warning C4244: '=' : conversion from 'uint64' to 'tmsize_t', possible loss of data
+         tif_strip.c
+         tif_swab.c
+         tif_thunder.c
+         tif_tile.c
+         tif_version.c
+         tif_warning.c
+         tif_write.c
+         tif_zip.c
+         Generating Code...
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\Release\LibTIFF4.lib" /NOLOGO .\Release/tif_aux.obj
+         .\Release/tif_close.obj
+         .\Release/tif_codec.obj
+         .\Release/tif_color.obj
+         .\Release/tif_compress.obj
+         .\Release/tif_dir.obj
+         .\Release/tif_dirinfo.obj
+         .\Release/tif_dirread.obj
+         .\Release/tif_dirwrite.obj
+         .\Release/tif_dumpmode.obj
+         .\Release/tif_error.obj
+         .\Release/tif_extension.obj
+         .\Release/tif_fax3.obj
+         .\Release/tif_fax3sm.obj
+         .\Release/tif_flush.obj
+         .\Release/tif_getimage.obj
+         .\Release/tif_jpeg.obj
+         .\Release/tif_luv.obj
+         .\Release/tif_lzma.obj
+         .\Release/tif_lzw.obj
+         .\Release/tif_next.obj
+         .\Release/tif_ojpeg.obj
+         .\Release/tif_open.obj
+         .\Release/tif_packbits.obj
+         .\Release/tif_pixarlog.obj
+         .\Release/tif_predict.obj
+         .\Release/tif_print.obj
+         .\Release/tif_read.obj
+         .\Release/tif_strip.obj
+         .\Release/tif_swab.obj
+         .\Release/tif_thunder.obj
+         .\Release/tif_tile.obj
+         .\Release/tif_version.obj
+         .\Release/tif_warning.obj
+         .\Release/tif_write.obj
+         .\Release/tif_zip.obj
+         LibTIFF4.2008.vcxproj -> D:\FreeImage\Source\LibTIFF4\.\Release\LibTIFF4.lib
+       FinalizeBuildStatus:
+         Deleting file ".\Release\LibTIFF4.unsuccessfulbuild".
+         Touching ".\Release\LibTIFF4.lastbuildstate".
+     1>Done Building Project "D:\FreeImage\Source\LibTIFF4\LibTIFF4.2008.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.03

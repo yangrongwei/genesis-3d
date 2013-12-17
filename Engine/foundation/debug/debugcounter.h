@@ -1,0 +1,186 @@
+/****************************************************************************
+Copyright (c) 2008, Radon Labs GmbH
+Copyright (c) 2011-2013,WebJet Business Division,CYOU
+ 
+http://www.genesis-3d.com.cn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+****************************************************************************/
+
+#pragma once
+//------------------------------------------------------------------------------
+/**
+    @class Debug::DebugCounter
+  
+    A debug counter for counting events.
+*/
+#include "core/refcounted.h"
+#include "util/stringatom.h"
+#include "util/ringbuffer.h"
+#include "threading/criticalsection.h"
+
+//------------------------------------------------------------------------------
+#if NEBULA3_ENABLE_PROFILING
+#define _declare_counter(counter) GPtr<Debug::DebugCounter> counter;
+#define _setup_counter(counter) counter = Debug::DebugCounter::Create(); counter->Setup(Util::StringAtom(#counter));
+#define _discard_counter(counter) counter->Discard(); counter = 0;
+#define _begin_counter(counter) counter->Begin();
+#define _begin_counter_noreset() counter->Begin(false);
+#define _reset_counter(counter) counter->Reset();
+#define _incr_counter(counter, val) counter->Incr(val);
+#define _decr_counter(counter, val) counter->Decr(val);
+#define _set_counter(counter, val) counter->Set(val);
+#define _end_counter(counter) counter->End();
+#else
+#define _declare_counter(counter)
+#define _setup_counter(counter)
+#define _discard_counter(counter)
+#define _begin_counter(counter)
+#define _begin_counter_noreset()
+#define _reset_counter(counter)
+#define _incr_counter(counter, val)
+#define _decr_counter(counter, val)
+#define _set_counter(counter, val)
+#define _end_counter(counter)
+#endif
+//------------------------------------------------------------------------------
+namespace Debug
+{
+class DebugCounter : public Core::RefCounted
+{
+    __DeclareClass(DebugCounter);
+public:
+    /// constructor
+    DebugCounter();
+    /// destructor
+    virtual ~DebugCounter();
+
+    /// setup the counter
+    void Setup(const Util::StringAtom& name);
+    /// discard the counter
+    void Discard();
+    /// return true if object has been setup
+    bool IsValid() const;
+    
+    /// begin counting, optionally reset the counter
+    void Begin(bool reset=true);
+    /// manually reset the counter to zero
+    void Reset();
+    /// increment the counter by a specific value
+    void Incr(int amount);
+    /// decrement the counter by a specific value
+    void Decr(int amount);
+    /// set the counter directly
+    void Set(int val);
+    /// end counting, write current value to history
+    void End();
+    
+    /// get the counter's name
+    const Util::StringAtom& GetName() const;
+    /// get the most recent sample
+    int GetSample() const;
+    /// get the counter's history
+    Util::Array<int> GetHistory() const;
+
+private:
+    Threading::CriticalSection critSect;
+    Util::StringAtom name;
+    int value;
+    Util::RingBuffer<int> history;
+};
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline bool
+DebugCounter::IsValid() const
+{
+    return this->name.IsValid();
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline void
+DebugCounter::Begin(bool reset)
+{
+    if (reset)
+    {
+        this->value = 0;
+    }
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline void
+DebugCounter::Reset()
+{
+    this->value = 0;
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline void
+DebugCounter::Incr(int amount)
+{
+    this->value += amount;
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline void
+DebugCounter::Decr(int amount)
+{
+    this->value -= amount;
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline void
+DebugCounter::Set(int val)
+{
+    this->value = val;
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline void
+DebugCounter::End()
+{
+    this->critSect.Enter();
+    this->history.Add(this->value);
+    this->critSect.Leave();
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline const Util::StringAtom&
+DebugCounter::GetName() const
+{
+    return this->name;
+}
+
+} // namespace Debug
+//------------------------------------------------------------------------------

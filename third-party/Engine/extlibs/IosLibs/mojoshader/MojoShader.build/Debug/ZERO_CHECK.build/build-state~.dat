@@ -1,0 +1,28 @@
+TZERO_CHECK
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh
+c0000000051BEB10A00000000000000A5
+t1371451658
+s165
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies1895c48ae86eb741^1b66cc8ae86eb741^---0#1#0#--18"Check dependencies36"CE51A5BB-CFD5-4FC3-9B28-70DABCDD2B26-
+
+CPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh
+s393144458.800046
+e393144458.898414
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh
+oecho ""
+o
+omake -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'486acd8ae86eb741^48fde58ae86eb741^-139"echo ""make -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-393144458#0#8#-0#-----2@75"make -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/ReRunCMake.make-393144458#9#75#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-393144458#84#55#-0#-----0#0#0#--283"PhaseScriptExecution "CMake Rules" MojoShader.build/Debug/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/ZERO_CHECK.build/Script-1B7C39CA6B4F40CEB48D05C3.sh36"707C0974-1991-4C38-A7F8-F1DCB5D3B21B-
+

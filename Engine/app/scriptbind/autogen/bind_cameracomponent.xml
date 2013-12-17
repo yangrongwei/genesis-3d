@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" ?>
+<root>
+<class cppclass="CameraComponent" csclass="CameraComponent" csbase="Component">
+<func name="Bind">
+	<param type="CameraComponent">self</param>
+</func>
+<func name="GetFov">
+	<ret type="float"></ret>
+	<param type="CameraComponent">self</param>
+</func>
+	<func name="GetAspect">
+	<ret type="float"></ret>
+	<param type="CameraComponent">self</param>
+</func>
+<func name="GetZNear">
+	<ret type="float"></ret>
+	<param type="CameraComponent">self</param>
+</func>
+<func name="GetZFar">
+	<ret type="float"></ret>
+	<param type="CameraComponent">self</param>
+</func>
+<func name="GetViewType">
+	<ret type="int"></ret>
+	<param type="CameraComponent">self</param>
+</func>
+<func name="SetProj">
+	<ret type="bool"></ret>
+	<param type="CameraComponent">self</param>
+	<param type="float">fovOrHeight</param>
+	<param type="float">zNear</param>
+	<param type="float">zFar</param>
+	<param type="int">viewType</param>
+</func>
+<func name="SetZNear">
+	<param type="CameraComponent">self</param>
+	<param type="float">zNear</param>
+</func>
+<func name="SetZFar">
+	<param type="CameraComponent">self</param>
+	<param type="float">zFar</param>
+</func>
+<func name="GetView">
+	<param type="CameraComponent">self</param>
+	<param type="out Matrix44">view</param>
+</func>
+<func name="GetProj">
+	<param type="CameraComponent">self</param>
+	<param type="out Matrix44">proj</param>
+</func>
+<func name="GetViewProj">
+	<param type="CameraComponent">self</param>
+	<param type="out Matrix44">viewProj</param>
+</func>
+</class>
+</root>
+

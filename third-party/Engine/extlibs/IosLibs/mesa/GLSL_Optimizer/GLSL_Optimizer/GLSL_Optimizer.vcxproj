@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0BBB21B4-A577-4B8A-9AD1-1D60A5DE5D4C}</ProjectGuid>
+    <RootNamespace>GLSL_Optimizer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\include\c99;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\mapi;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\mesa;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\talloc;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\include;D:\WebJet\Engine\tools\hlsl2glslfork\hlslang\MachineIndependent;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\include\c99;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\mapi;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\mesa;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\talloc;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\include;D:\WebJet\Engine\tools\hlsl2glslfork\hlslang\MachineIndependent;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\include\c99;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\mapi;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\mesa;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\talloc;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\include;D:\WebJet\Engine\tools\hlsl2glslfork\hlslang\MachineIndependent;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer;D:\android\android-ndk-r8b\platforms\android-14\arch-x86\usr\include;D:\android\android-ndk-r8b\sources\cxx-stl\stlport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\include\c99;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\mapi;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\mesa;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\src\talloc;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer\include;D:\WebJet\Engine\tools\hlsl2glslfork\hlslang\MachineIndependent;D:\WebJet\Engine\tools\mesa\GLSL_Optimizer;D:\android\android-ndk-r8b\platforms\android-14\arch-x86\usr\include;D:\android\android-ndk-r8b\sources\cxx-stl\stlport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\glsl\ast.h" />
+    <ClInclude Include="..\src\glsl\builtin_types.h" />
+    <ClInclude Include="..\src\glsl\builtin_variables.h" />
+    <ClInclude Include="..\src\glsl\glcpp\glcpp-parse.h" />
+    <ClInclude Include="..\src\glsl\glcpp\glcpp.h" />
+    <ClInclude Include="..\src\glsl\glsl_optimizer.h" />
+    <ClInclude Include="..\src\glsl\glsl_parser.h" />
+    <ClInclude Include="..\src\glsl\glsl_parser_extras.h" />
+    <ClInclude Include="..\src\glsl\glsl_symbol_table.h" />
+    <ClInclude Include="..\src\glsl\glsl_types.h" />
+    <ClInclude Include="..\src\mesa\program\hash_table.h" />
+    <ClInclude Include="..\src\glsl\ir.h" />
+    <ClInclude Include="..\src\glsl\ir_basic_block.h" />
+    <ClInclude Include="..\src\glsl\ir_expression_flattening.h" />
+    <ClInclude Include="..\src\glsl\ir_function_inlining.h" />
+    <ClInclude Include="..\src\glsl\ir_hierarchical_visitor.h" />
+    <ClInclude Include="..\src\glsl\ir_optimization.h" />
+    <ClInclude Include="..\src\glsl\ir_print_glsl_visitor.h" />
+    <ClInclude Include="..\src\glsl\ir_print_visitor.h" />
+    <ClInclude Include="..\src\glsl\ir_reader.h" />
+    <ClInclude Include="..\src\glsl\ir_rvalue_visitor.h" />
+    <ClInclude Include="..\src\glsl\ir_unused_structs.h" />
+    <ClInclude Include="..\src\glsl\ir_variable_refcount.h" />
+    <ClInclude Include="..\src\glsl\ir_visitor.h" />
+    <ClInclude Include="..\src\glsl\linker.h" />
+    <ClInclude Include="..\src\glsl\list.h" />
+    <ClInclude Include="..\src\glsl\loop_analysis.h" />
+    <ClInclude Include="..\src\glsl\program.h" />
+    <ClInclude Include="..\src\glsl\s_expression.h" />
+    <ClInclude Include="..\src\glsl\strtod.h" />
+    <ClInclude Include="..\src\mesa\program\symbol_table.h" />
+    <ClInclude Include="..\src\talloc\talloc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\glsl\ast_expr.cpp" />
+    <ClCompile Include="..\src\glsl\ast_function.cpp" />
+    <ClCompile Include="..\src\glsl\ast_to_hir.cpp" />
+    <ClCompile Include="..\src\glsl\ast_type.cpp" />
+    <ClCompile Include="..\src\glsl\builtin_function.cpp" />
+    <ClCompile Include="..\src\glsl\glcpp\glcpp-lex.c" />
+    <ClCompile Include="..\src\glsl\glcpp\glcpp-parse.c" />
+    <ClCompile Include="..\src\glsl\glsl_lexer.cpp" />
+    <ClCompile Include="..\src\glsl\glsl_optimizer.cpp" />
+    <ClCompile Include="..\src\glsl\glsl_parser.cpp" />
+    <ClCompile Include="..\src\glsl\glsl_parser_extras.cpp" />
+    <ClCompile Include="..\src\glsl\glsl_symbol_table.cpp" />
+    <ClCompile Include="..\src\glsl\glsl_types.cpp" />
+    <ClCompile Include="..\src\mesa\program\hash_table.c" />
+    <ClCompile Include="..\src\glsl\hir_field_selection.cpp" />
+    <ClCompile Include="..\src\glsl\ir.cpp" />
+    <ClCompile Include="..\src\glsl\ir_basic_block.cpp" />
+    <ClCompile Include="..\src\glsl\ir_clone.cpp" />
+    <ClCompile Include="..\src\glsl\ir_constant_expression.cpp" />
+    <ClCompile Include="..\src\glsl\ir_expression_flattening.cpp" />
+    <ClCompile Include="..\src\glsl\ir_function.cpp" />
+    <ClCompile Include="..\src\glsl\ir_function_can_inline.cpp" />
+    <ClCompile Include="..\src\glsl\ir_hierarchical_visitor.cpp" />
+    <ClCompile Include="..\src\glsl\ir_hv_accept.cpp" />
+    <ClCompile Include="..\src\glsl\ir_import_prototypes.cpp" />
+    <ClCompile Include="..\src\glsl\ir_print_glsl_visitor.cpp" />
+    <ClCompile Include="..\src\glsl\ir_print_visitor.cpp" />
+    <ClCompile Include="..\src\glsl\ir_reader.cpp" />
+    <ClCompile Include="..\src\glsl\ir_rvalue_visitor.cpp" />
+    <ClCompile Include="..\src\glsl\ir_unused_structs.cpp" />
+    <ClCompile Include="..\src\glsl\ir_validate.cpp" />
+    <ClCompile Include="..\src\glsl\ir_variable.cpp" />
+    <ClCompile Include="..\src\glsl\ir_variable_refcount.cpp" />
+    <ClCompile Include="..\src\glsl\link_functions.cpp" />
+    <ClCompile Include="..\src\glsl\linker.cpp" />
+    <ClCompile Include="..\src\glsl\loop_analysis.cpp" />
+    <ClCompile Include="..\src\glsl\loop_controls.cpp" />
+    <ClCompile Include="..\src\glsl\loop_unroll.cpp" />
+    <ClCompile Include="..\src\glsl\lower_discard.cpp" />
+    <ClCompile Include="..\src\glsl\lower_if_to_cond_assign.cpp" />
+    <ClCompile Include="..\src\glsl\lower_instructions.cpp" />
+    <ClCompile Include="..\src\glsl\lower_jumps.cpp" />
+    <ClCompile Include="..\src\glsl\lower_mat_op_to_vec.cpp" />
+    <ClCompile Include="..\src\glsl\lower_noise.cpp" />
+    <ClCompile Include="..\src\glsl\lower_variable_index_to_cond_assign.cpp" />
+    <ClCompile Include="..\src\glsl\lower_vec_index_to_cond_assign.cpp" />
+    <ClCompile Include="..\src\glsl\lower_vec_index_to_swizzle.cpp" />
+    <ClCompile Include="..\src\glsl\lower_vector.cpp" />
+    <ClCompile Include="..\src\glsl\opt_algebraic.cpp" />
+    <ClCompile Include="..\src\glsl\opt_constant_folding.cpp" />
+    <ClCompile Include="..\src\glsl\opt_constant_propagation.cpp" />
+    <ClCompile Include="..\src\glsl\opt_constant_variable.cpp" />
+    <ClCompile Include="..\src\glsl\opt_copy_propagation.cpp" />
+    <ClCompile Include="..\src\glsl\opt_dead_code.cpp" />
+    <ClCompile Include="..\src\glsl\opt_dead_code_local.cpp" />
+    <ClCompile Include="..\src\glsl\opt_dead_functions.cpp" />
+    <ClCompile Include="..\src\glsl\opt_discard_simplification.cpp" />
+    <ClCompile Include="..\src\glsl\opt_function_inlining.cpp" />
+    <ClCompile Include="..\src\glsl\opt_if_simplification.cpp" />
+    <ClCompile Include="..\src\glsl\opt_noop_swizzle.cpp" />
+    <ClCompile Include="..\src\glsl\opt_redundant_jumps.cpp" />
+    <ClCompile Include="..\src\glsl\opt_structure_splitting.cpp" />
+    <ClCompile Include="..\src\glsl\opt_swizzle_swizzle.cpp" />
+    <ClCompile Include="..\src\glsl\opt_tree_grafting.cpp" />
+    <ClCompile Include="..\src\glsl\glcpp\pp.c" />
+    <ClCompile Include="..\src\glsl\s_expression.cpp" />
+    <ClCompile Include="..\src\glsl\strtod.c" />
+    <ClCompile Include="..\src\mesa\program\symbol_table.c" />
+    <ClCompile Include="..\src\talloc\talloc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

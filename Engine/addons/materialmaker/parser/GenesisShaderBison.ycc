@@ -1,0 +1,527 @@
+%{
+#include "stdneb.h"
+#include "rendersystem/base/RenderDeviceTypes.h"
+#include "GenesisShaderParser.h"
+#include "../GenesisMaterial.h"
+#include "addons/shadercompiler/Utility/ShaderCompilerUtil.h"
+
+void ResetParserParams();
+int yyerror (const char *s);
+extern int Genesislineno;
+extern char* yytext;
+int yylex ();
+
+using namespace GenesisMaterialMaker;
+using namespace ShaderProgramCompiler;
+
+GenesisMaterial* g_GenesisMaterial;
+static  GenesisMakePass* g_curMakePass = NULL;
+static  GenesisMakeTechnique* g_curGenesisMakeTechnique = NULL;
+static  GenesisMakeMaterial* g_curGenesisMakeMaterial = NULL;
+static  GenesisMakeGPUProgram* g_curGenesisMakeGPUProgram = NULL;
+static  Graphic::ShaderParam* g_curShaderParameter = NULL;
+static  Graphic::MaterialParam* g_curMatParam = NULL;
+static  GPtr<RenderBase::RenderStateDesc> g_rsDesc = 0;
+
+#define ASSIGN(s,d) {s = *d; delete d;}
+#define YYDEBUG 1
+
+%}
+
+%name-prefix "Genesis"
+%union {
+	char* str;
+	float num;
+	Graphic::ShaderParamType spt;
+	bool boolean;
+};
+
+
+%token TSHADER
+%token TTECHNIQUE
+%token TPASS
+%token TSETSHADERCODE
+%token TPARAMETERS
+%token TRENDERQUEUE
+%token TSHADERTYPE
+%token TRENDERDEVICETYPE
+%token TSETPARAM
+%token TRENDERSTATE
+%token TCULLMODE
+%token TFILLMODE
+%token TCOLORMASK
+%token TDEPTHTEST
+%token TDEPTHWRITE
+%token TBLENDCOLOR
+%token TALPHATEST
+%token TSAMPLER
+%token TMATTYPE;
+
+%token <spt> TMATRIX TVECTOR TFLOAT TTEXTURE
+%token <str> TREALSTRING TVAR TOPERATOR
+%token <num> TNUMBER
+%token <boolean> TBOOLEAN
+
+
+%%
+
+shader:	TSHADER TREALSTRING{ //n_printf("init genesisshader\n");
+									  g_GenesisMaterial->SetName($2);
+										delete[] $2;
+									  ResetParserParams();
+									  g_curGenesisMakeMaterial = new GenesisMakeMaterial();
+									}
+			'{'						{ //n_printf("in genesisshader,left\n"); 
+									}
+			PropertySection			{ //n_printf("from PropertySection to genesisshader\n"); 
+									}
+			'}'						{ //n_printf("out genesisshader,right\n");
+										g_GenesisMaterial->AddMaterial(*g_curGenesisMakeMaterial);
+										delete	g_curGenesisMakeMaterial;
+										g_curGenesisMakeMaterial = 0;
+									 }	
+PropertySection:/* empty */			{//n_printf("init PropertySection\n");
+									}
+			| PropertySection TPARAMETERS	'{'		{//n_printf("in ParameterSection,left\n"); 
+														}
+			ParameterSection			{//n_printf("from ParameterSection to PropertySection\n");
+									}
+			'}'						{ //n_printf("out ParameterSection,right\n");
+									}
+			| PropertySection TRENDERQUEUE	TREALSTRING	{	g_curGenesisMakeMaterial->SetRenderQueue(Graphic::RenderQueue::FromString($3));
+															//n_printf("in PropertySection,setrenderqueue:%s\n", Util::String($3).AsCharPtr()); 
+														}
+			| PropertySection TTECHNIQUE '{'		{	//n_printf("in TechniqueSection,left\n");
+														g_curGenesisMakeTechnique = new GenesisMakeTechnique(); 
+													}
+			TechniqueSection			{//n_printf("from TechniqueSection to PropertySection\n");
+									}
+			| PropertySection TTECHNIQUE TREALSTRING '{'		{	//n_printf("in TechniqueSection,left\n");
+														g_curGenesisMakeTechnique = new GenesisMakeTechnique();
+														g_curGenesisMakeTechnique->SetName($3); 
+													}
+			TechniqueSection			{//n_printf("from TechniqueSection to PropertySection\n");
+									}			
+ParameterSection:/* empty */				{//n_printf("init ParameterSection\n");
+										}
+			| ParameterSection TTEXTURE TVAR '=' TREALSTRING { if($2 == Graphic::eShaderParamTexture2D)
+																		{
+																			g_curMatParam = new Graphic::MaterialParamTex2D();
+																		}
+																		else if($2 == Graphic::eShaderParamTextureCUBE)
+																		{
+																			g_curMatParam = new Graphic::MaterialParamTexCube();
+																		}
+																		else if($2 == Graphic::eShaderParamTexture1D)
+																		{
+																			g_curMatParam = new Graphic::MaterialParamTex1D();
+																		}
+																		else if($2 == Graphic::eShaderParamTexture3D)
+																		{
+																			g_curMatParam = new Graphic::MaterialParamTex3D();
+																		}
+																		else
+																		{
+																			n_error("GenesisShader Parser : Invalid Texture Type !");
+																		}
+																		
+																		g_curMatParam->SetName($3);
+																		g_curMatParam->SetDesc($3);
+																		g_curMatParam->SetStringValue($5);
+																		//n_printf("define texture\n");
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+
+                                                                        if ($2 == Graphic::eShaderParamTexture2D)
+                                                                        {
+																		char texOffestScaleValue[] = "0.0,0.0,1.0,1.0";
+																		Util::String texOffestScale;
+																		texOffestScale.Clear();
+																		texOffestScale.Format("%s_UV_OffsetScale",$3);
+
+																		g_curMatParam = new Graphic::MaterialParamVector();
+																		g_curMatParam->SetName(texOffestScale);
+																		g_curMatParam->SetDesc(texOffestScale);
+																		g_curMatParam->SetStringValue(texOffestScaleValue);
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+                                                                        }
+
+																		}
+			| ParameterSection TTEXTURE TVAR TOPERATOR '=' TREALSTRING { if($2 == Graphic::eShaderParamTexture2D)
+																		{
+																			g_curMatParam = new Graphic::MaterialParamTex2D();
+																		}
+																		else if($2 == Graphic::eShaderParamTextureCUBE)
+																		{
+																			g_curMatParam = new Graphic::MaterialParamTexCube();
+																		}
+																		else if($2 == Graphic::eShaderParamTexture1D)
+																		{
+																			g_curMatParam = new Graphic::MaterialParamTex1D();
+																		}
+																		else if($2 == Graphic::eShaderParamTexture3D)
+																		{
+																			g_curMatParam = new Graphic::MaterialParamTex3D();
+																		}
+																		else
+																		{
+																			n_error("GenesisShader Parser : Invalid Texture Type !");
+																		}
+																		
+																		g_curMatParam->SetName($3);
+																		g_curMatParam->SetDesc($4);
+																		g_curMatParam->SetStringValue($6);
+																		//n_printf("define texture\n");
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+
+                                                                        if ($2 == Graphic::eShaderParamTexture2D)
+                                                                        {
+																		char texOffestScaleValue[] = "0.0,0.0,1.0,1.0";
+																		Util::String texOffestScale;
+																		texOffestScale.Clear();
+																		texOffestScale.Format("%s_UV_OffsetScale",$3);
+
+																		g_curMatParam = new Graphic::MaterialParamVector();
+																		g_curMatParam->SetName(texOffestScale);
+																		g_curMatParam->SetDesc(texOffestScale);
+																		g_curMatParam->SetStringValue(texOffestScaleValue);
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+                                                                        }
+
+																		}
+			| ParameterSection TMATRIX TVAR TOPERATOR '=' TREALSTRING { g_curMatParam = new Graphic::MaterialParamMatrix();
+																		g_curMatParam->SetName($3);
+																		g_curMatParam->SetDesc($4);
+																		g_curMatParam->SetStringValue($6);
+																		
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+																		}
+			| ParameterSection TMATRIX TVAR '=' TREALSTRING { g_curMatParam = new Graphic::MaterialParamMatrix();
+																		g_curMatParam->SetName($3);
+																		g_curMatParam->SetDesc($3);
+																		g_curMatParam->SetStringValue($5);
+																		
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+																		}
+			| ParameterSection TVECTOR TVAR TOPERATOR '=' TREALSTRING { g_curMatParam = new Graphic::MaterialParamVector();
+																		g_curMatParam->SetName($3);
+																		g_curMatParam->SetDesc($4);
+																		g_curMatParam->SetStringValue($6);
+																		
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+																		}
+			| ParameterSection TVECTOR TVAR '=' TREALSTRING { g_curMatParam = new Graphic::MaterialParamVector();
+																		g_curMatParam->SetName($3);
+																		g_curMatParam->SetDesc($3);
+																		g_curMatParam->SetStringValue($5);
+																		
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+																		}
+			| ParameterSection TFLOAT TVAR TOPERATOR '=' TREALSTRING	 { g_curMatParam = new Graphic::MaterialParamFloat();
+																		g_curMatParam->SetName($3);
+																		g_curMatParam->SetDesc($4);
+																		g_curMatParam->SetStringValue($6);
+																			
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+																		}	
+			| ParameterSection TFLOAT TVAR '=' TREALSTRING	 { g_curMatParam = new Graphic::MaterialParamFloat();
+																		g_curMatParam->SetName($3);
+																		g_curMatParam->SetDesc($3);
+																		g_curMatParam->SetStringValue($5);
+																			
+																		g_curGenesisMakeMaterial->AddMatParam(g_curMatParam);
+																		g_curMatParam = NULL;
+																		}			
+
+TechniqueSection:						{ //n_printf("init TechniqueSection\n");
+									 }
+			| PassSection				{ //n_printf("from PassSection to TechniqueSection\n"); 
+									}
+			'}'						{ //n_printf("out TechniqueSection,right\n");
+									  g_curGenesisMakeMaterial->AddTechnique(*g_curGenesisMakeTechnique);
+										delete g_curGenesisMakeTechnique;
+										g_curGenesisMakeTechnique = 0; 
+									}	
+	
+PassSection:							{ //n_printf("init PassSection\n");
+									}
+			| PassSection TMATTYPE TREALSTRING { printf("set MatType\n");
+													g_curGenesisMakeTechnique->SetIsMatTemplate($3);
+												}
+			| PassSection TPASS PassType	{ //n_printf("init Pass\n");
+												}
+			'{'						{ //n_printf("in PassSection,left\n");
+									  
+									}
+			codeSection				{ //n_printf("from codeSection to PassSection\n");
+									}
+			'}'						{
+										//n_printf("out PassSection,right\n");
+										g_curGenesisMakeTechnique->AddPass(*g_curMakePass); 
+										delete g_curMakePass;
+										g_curMakePass = 0; 
+									}
+									
+PassType:							{
+											n_printf("in PassSection,left\n");
+											g_curMakePass = new GenesisMakePass(); 
+											g_curMakePass->SetName("NoName");
+										}
+			| PassType TREALSTRING {
+											n_printf("in PassSection,left\n");
+											g_curMakePass = new GenesisMakePass(); 
+											g_curMakePass->SetName($2);
+										}
+
+codeSection :						{ //n_printf("in codeSection\n");
+									}
+			| codeSection StateSection { //n_printf("from shadertype,to StateSection\n"); 
+									}
+			| codeSection shadertype { //n_printf("from shadertype,to shadertype\n"); 
+									}
+			
+StateSection :						{ //n_printf("in StateSection\n");
+									}
+			| StateSection TRENDERSTATE '{'{ 
+												g_rsDesc = RenderBase::RenderStateDesc::Create();
+												g_rsDesc->Setup(); 
+												//n_printf("Create StateSection\n");//n_printf("init StateSection\n");
+											}
+						RenderStateSetup	{ }
+										 '}'{
+												g_curMakePass->SetRenderStateDesc(g_rsDesc);
+												g_rsDesc = 0;
+												//n_printf("from RenderStateSetup,to shadertype\n");
+											}
+
+RenderStateSetup :					{ //n_printf("in RenderStateSetup\n");
+									}
+			| RenderStateSetup TCULLMODE TREALSTRING {   RenderBase::DeviceRasterizerState rrs = g_rsDesc->GetRasterizerState();
+															rrs.m_cullMode = RenderBase::CullModeConverter::FromString($3);	
+															
+															g_rsDesc->SetRasterizerState(rrs);
+														}
+			| RenderStateSetup TFILLMODE TREALSTRING {   RenderBase::DeviceRasterizerState rrs = g_rsDesc->GetRasterizerState();
+															rrs.m_fillMode = RenderBase::FillModeConverter::FromString($3);	
+															
+															g_rsDesc->SetRasterizerState(rrs);
+														}
+			| RenderStateSetup TCOLORMASK TREALSTRING {   RenderBase::DeviceBlendState rbs = g_rsDesc->GetBlendState();
+															rbs.m_colorWriteMask[0] = RenderBase::ColorMaskConverter::FromString($3);	
+															
+															g_rsDesc->SetBlendState(rbs);
+														}
+			|RenderStateSetup DepthTestSetup			{ //n_printf("set depthtest complete \n");
+														}
+			|RenderStateSetup TDEPTHWRITE TBOOLEAN	{   RenderBase::DeviceDepthAndStencilState rdss = g_rsDesc->GetDepthAndStencilState();
+																rdss.m_depthWriteMask = $3;	
+																
+																g_rsDesc->SetDepthAndStencilState(rdss);
+															}
+			|RenderStateSetup BlendSetup 				{  //n_printf("set blendmode complete \n"); 
+														}
+			|RenderStateSetup AlphaTestSetup			{ //n_printf("set alphatest complete \n");
+														}
+			|RenderStateSetup SamplerSetup			{ //n_printf("set samplerstate complete \n");
+														}
+
+SamplerSetup: TSAMPLER TREALSTRING TVAR  { g_curGenesisMakeMaterial->AddTextureSampler($2,RenderBase::TextureAddressModeConverter::FromString($3));
+														 
+														}
+			| TSAMPLER TREALSTRING TVAR TVAR	{
+																	g_curGenesisMakeMaterial->AddTextureSampler($2,RenderBase::TextureAddressModeConverter::FromString($3),RenderBase::TextureFilterOperationConverter::FromString($4));
+																	
+																}																			
+DepthTestSetup: TDEPTHTEST TVAR {   
+															RenderBase::DeviceDepthAndStencilState rdss = g_rsDesc->GetDepthAndStencilState();
+															rdss.m_depthEnable = true;
+															rdss.m_zFunc = RenderBase::CompareFunctionConverter::FromString($2);			
+															
+															g_rsDesc->SetDepthAndStencilState(rdss);
+											}
+			| TDEPTHTEST TBOOLEAN	{
+															RenderBase::DeviceDepthAndStencilState rdss = g_rsDesc->GetDepthAndStencilState();
+															rdss.m_depthEnable = $2;		
+															
+															g_rsDesc->SetDepthAndStencilState(rdss);
+											}
+											
+BlendSetup: TBLENDCOLOR TVAR TREALSTRING TREALSTRING  {
+																	RenderBase::DeviceBlendState rbs = g_rsDesc->GetBlendState();
+																	rbs.m_alphaBlendEnable[0] = true;
+																	rbs.m_blendOP[0] = RenderBase::BlendOperationConverter::FromString($2);
+																	rbs.m_srcBlend[0] = RenderBase::AlphaBlendFactorConverter::FromString($3);
+																	rbs.m_destBlend[0] = RenderBase::AlphaBlendFactorConverter::FromString($4);	
+																	
+																	g_rsDesc->SetBlendState(rbs);		
+																}
+			| TBLENDCOLOR TBOOLEAN						{
+																	RenderBase::DeviceBlendState rbs = g_rsDesc->GetBlendState();
+																	rbs.m_alphaBlendEnable[0] = $2;
+																	
+																	g_rsDesc->SetBlendState(rbs);		
+																}				
+
+AlphaTestSetup: TALPHATEST TVAR TREALSTRING			{
+																	RenderBase::DeviceBlendState rbs = g_rsDesc->GetBlendState();
+																	rbs.m_alphaTestEnable = true;
+																	rbs.m_alphaFunc = RenderBase::CompareFunctionConverter::FromString($2);
+																	const Util::String& valueStr = g_curGenesisMakeMaterial->GetMatParamValueByName($3);
+																	if(!valueStr.IsValidFloat() || valueStr.IsEmpty())
+																	{
+																		n_error("Invalid alpha_to_coverage_ref value!please check your parameter type(float) and name!");
+																	}
+																	else
+																	{
+																		rbs.m_alphaRef = valueStr.AsFloat();
+																	}
+																	
+																	
+																	g_rsDesc->SetBlendState(rbs);
+																}
+			| TALPHATEST TBOOLEAN						{
+																	RenderBase::DeviceBlendState rbs = g_rsDesc->GetBlendState();
+																	rbs.m_alphaTestEnable = $2;
+																	
+																	g_rsDesc->SetBlendState(rbs);
+																}
+			
+shadertype: TSHADERTYPE TREALSTRING	{
+											g_curGenesisMakeGPUProgram = new GenesisMakeGPUProgram();
+											g_curGenesisMakeGPUProgram->SetShaderType($2);
+											//n_printf("in shaderType,SetShaderType\n");
+											delete[] $2;
+										}
+			'{'							{ //n_printf("in shaderType,left\n");
+										}
+				DeviceTypeSetup				{ //n_printf("from DeviceTypeSetup to shaderType\n");
+										}
+			'}'							{ 
+											if(g_curGenesisMakeGPUProgram != NULL)
+											{
+												delete g_curGenesisMakeGPUProgram;
+												g_curGenesisMakeGPUProgram = NULL;
+											}
+											//n_printf("out shaderType,right\n");
+										}	
+			
+DeviceTypeSetup:								{	n_printf("in DeviceTypeSetup\n");}
+	| DeviceTypeSetup TRENDERDEVICETYPE TREALSTRING	{ 
+											g_curGenesisMakeGPUProgram->SetDeviceType($3);
+											//n_printf("in DeviceTypeSetup\n");
+											delete[] $3;
+											}
+			'{'							{ //n_printf("in DeviceTypeSetup,left\n");
+										}
+			CodeBlock					{ //n_printf("from CodeBlock to DeviceTypeSetup\n");
+										}
+			'}'							{ //n_printf("out DeviceTypeSetup,right\n");
+										  g_curMakePass->AddShaderProgram(*g_curGenesisMakeGPUProgram);
+										}
+			
+CodeBlock:								{ //n_printf("in CodeBlock\n");
+										}
+	| CodeBlock TSETSHADERCODE TREALSTRING{ 
+												g_curGenesisMakeGPUProgram->SetShaderCode($3);
+												//n_printf("in CodeBlock,AddGPUProgram\n");
+												delete[] $3;
+											 }
+	| CodeBlock TSETPARAM TNUMBER TVAR TTEXTURE		{ g_curShaderParameter = new Graphic::ShaderParam();
+																		  g_curShaderParameter->SetParamType($5);
+																		  g_curShaderParameter->SetRegister($3);
+																		  g_curShaderParameter->SetName($4);
+																		  g_curGenesisMakeGPUProgram->AddParam(*g_curShaderParameter);
+																		  //n_printf("bind texture\n"); delete[] $4;
+																		  delete g_curShaderParameter;
+																		  g_curShaderParameter = 0;
+																		 }
+	| CodeBlock TSETPARAM TNUMBER TVAR TMATRIX		{	g_curShaderParameter = new Graphic::ShaderParam();
+																			g_curShaderParameter->SetParamType($5);
+																			g_curShaderParameter->SetRegister($3);
+																			g_curShaderParameter->SetName($4);
+																			g_curGenesisMakeGPUProgram->AddParam(*g_curShaderParameter);
+																			//n_printf("setparam matrix register\n"); delete[] $4;
+																			delete g_curShaderParameter;
+																			g_curShaderParameter = 0;
+																		}
+	| CodeBlock TSETPARAM TNUMBER TVAR TVECTOR 		{	g_curShaderParameter = new Graphic::ShaderParam();
+																			g_curShaderParameter->SetParamType($5);
+																			g_curShaderParameter->SetRegister($3);
+																			g_curShaderParameter->SetName($4);
+																			g_curGenesisMakeGPUProgram->AddParam(*g_curShaderParameter);
+																			//n_printf("setparam vector register\n"); delete[] $4;
+																			delete g_curShaderParameter;
+																			g_curShaderParameter = 0;
+																		}
+	| CodeBlock TSETPARAM TNUMBER TVAR TFLOAT 		{	g_curShaderParameter = new Graphic::ShaderParam();
+																			g_curShaderParameter->SetParamType($5);
+																			g_curShaderParameter->SetRegister($3);
+																			g_curShaderParameter->SetName($4);
+																			g_curGenesisMakeGPUProgram->AddParam(*g_curShaderParameter);
+																			//n_printf("setparam float register\n"); delete[] $4;
+																			delete g_curShaderParameter;
+																			g_curShaderParameter = 0;
+																		}
+	;
+	
+%%
+
+int yyerror (const char *s)
+{
+	n_printf("GenesisShader Error: %s At line:%d\n",s,Genesislineno);
+	return 0;
+}
+
+void ResetParserParams()
+{
+
+	if(g_curGenesisMakeGPUProgram != NULL)
+	{
+		delete g_curGenesisMakeGPUProgram;
+		g_curGenesisMakeGPUProgram = NULL;
+	}
+	
+	if(g_curShaderParameter != NULL)
+	{
+		delete g_curShaderParameter;
+		g_curShaderParameter = NULL;
+	}
+	
+	if(g_curMatParam != NULL)
+	{
+		delete g_curMatParam;
+		g_curMatParam = NULL;
+	}
+	
+	if(g_rsDesc.isvalid())
+	{
+		g_rsDesc = 0;
+	}
+	
+	if(g_curMakePass != NULL)
+	{
+		delete g_curMakePass;
+		g_curMakePass = NULL;
+	}
+	
+	if(g_curGenesisMakeTechnique != NULL)
+	{
+		delete g_curGenesisMakeTechnique;
+		g_curGenesisMakeTechnique = NULL;
+	}
+	
+	if(g_curGenesisMakeMaterial != NULL)
+	{
+		delete g_curGenesisMakeMaterial;
+		g_curGenesisMakeMaterial = NULL;
+	}
+
+}

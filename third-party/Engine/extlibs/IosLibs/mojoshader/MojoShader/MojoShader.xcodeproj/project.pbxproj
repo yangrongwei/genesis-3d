@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F526E5CA178C13E9007C89B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F526E5C9178C13E9007C89B2 /* Foundation.framework */; };
+		F526E5E3178C1443007C89B2 /* mojoshader_assembler.c in Sources */ = {isa = PBXBuildFile; fileRef = F526E5D7178C1443007C89B2 /* mojoshader_assembler.c */; };
+		F526E5E4178C1443007C89B2 /* mojoshader_common.c in Sources */ = {isa = PBXBuildFile; fileRef = F526E5D8178C1443007C89B2 /* mojoshader_common.c */; };
+		F526E5E5178C1443007C89B2 /* mojoshader_compiler.c in Sources */ = {isa = PBXBuildFile; fileRef = F526E5D9178C1443007C89B2 /* mojoshader_compiler.c */; };
+		F526E5E6178C1443007C89B2 /* mojoshader_effects.c in Sources */ = {isa = PBXBuildFile; fileRef = F526E5DA178C1443007C89B2 /* mojoshader_effects.c */; };
+		F526E5E7178C1443007C89B2 /* mojoshader_lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = F526E5DC178C1443007C89B2 /* mojoshader_lexer.c */; };
+		F526E5E8178C1443007C89B2 /* mojoshader_opengl.c in Sources */ = {isa = PBXBuildFile; fileRef = F526E5DD178C1443007C89B2 /* mojoshader_opengl.c */; };
+		F526E5E9178C1443007C89B2 /* mojoshader_preprocessor.c in Sources */ = {isa = PBXBuildFile; fileRef = F526E5DF178C1443007C89B2 /* mojoshader_preprocessor.c */; };
+		F526E5EA178C1443007C89B2 /* mojoshader.c in Sources */ = {isa = PBXBuildFile; fileRef = F526E5E1178C1443007C89B2 /* mojoshader.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F526E5C4178C13E9007C89B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F526E5C6178C13E9007C89B2 /* libMojoShader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMojoShader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F526E5C9178C13E9007C89B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F526E5CD178C13E9007C89B2 /* MojoShader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MojoShader-Prefix.pch"; sourceTree = "<group>"; };
+		F526E5D7178C1443007C89B2 /* mojoshader_assembler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mojoshader_assembler.c; path = ../../mojoshader_assembler.c; sourceTree = "<group>"; };
+		F526E5D8178C1443007C89B2 /* mojoshader_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mojoshader_common.c; path = ../../mojoshader_common.c; sourceTree = "<group>"; };
+		F526E5D9178C1443007C89B2 /* mojoshader_compiler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mojoshader_compiler.c; path = ../../mojoshader_compiler.c; sourceTree = "<group>"; };
+		F526E5DA178C1443007C89B2 /* mojoshader_effects.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mojoshader_effects.c; path = ../../mojoshader_effects.c; sourceTree = "<group>"; };
+		F526E5DB178C1443007C89B2 /* mojoshader_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mojoshader_internal.h; path = ../../mojoshader_internal.h; sourceTree = "<group>"; };
+		F526E5DC178C1443007C89B2 /* mojoshader_lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mojoshader_lexer.c; path = ../../mojoshader_lexer.c; sourceTree = "<group>"; };
+		F526E5DD178C1443007C89B2 /* mojoshader_opengl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mojoshader_opengl.c; path = ../../mojoshader_opengl.c; sourceTree = "<group>"; };
+		F526E5DE178C1443007C89B2 /* mojoshader_parser_hlsl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mojoshader_parser_hlsl.h; path = ../../mojoshader_parser_hlsl.h; sourceTree = "<group>"; };
+		F526E5DF178C1443007C89B2 /* mojoshader_preprocessor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mojoshader_preprocessor.c; path = ../../mojoshader_preprocessor.c; sourceTree = "<group>"; };
+		F526E5E0178C1443007C89B2 /* mojoshader_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mojoshader_version.h; path = ../../mojoshader_version.h; sourceTree = "<group>"; };
+		F526E5E1178C1443007C89B2 /* mojoshader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mojoshader.c; path = ../../mojoshader.c; sourceTree = "<group>"; };
+		F526E5E2178C1443007C89B2 /* mojoshader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mojoshader.h; path = ../../mojoshader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F526E5C3178C13E9007C89B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F526E5CA178C13E9007C89B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F526E5BD178C13E9007C89B2 = {
+			isa = PBXGroup;
+			children = (
+				F526E5CB178C13E9007C89B2 /* MojoShader */,
+				F526E5C8178C13E9007C89B2 /* Frameworks */,
+				F526E5C7178C13E9007C89B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F526E5C7178C13E9007C89B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F526E5C6178C13E9007C89B2 /* libMojoShader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F526E5C8178C13E9007C89B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F526E5C9178C13E9007C89B2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F526E5CB178C13E9007C89B2 /* MojoShader */ = {
+			isa = PBXGroup;
+			children = (
+				F526E5D7178C1443007C89B2 /* mojoshader_assembler.c */,
+				F526E5D8178C1443007C89B2 /* mojoshader_common.c */,
+				F526E5D9178C1443007C89B2 /* mojoshader_compiler.c */,
+				F526E5DA178C1443007C89B2 /* mojoshader_effects.c */,
+				F526E5DB178C1443007C89B2 /* mojoshader_internal.h */,
+				F526E5DC178C1443007C89B2 /* mojoshader_lexer.c */,
+				F526E5DD178C1443007C89B2 /* mojoshader_opengl.c */,
+				F526E5DE178C1443007C89B2 /* mojoshader_parser_hlsl.h */,
+				F526E5DF178C1443007C89B2 /* mojoshader_preprocessor.c */,
+				F526E5E0178C1443007C89B2 /* mojoshader_version.h */,
+				F526E5E1178C1443007C89B2 /* mojoshader.c */,
+				F526E5E2178C1443007C89B2 /* mojoshader.h */,
+				F526E5CC178C13E9007C89B2 /* Supporting Files */,
+			);
+			path = MojoShader;
+			sourceTree = "<group>";
+		};
+		F526E5CC178C13E9007C89B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F526E5CD178C13E9007C89B2 /* MojoShader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F526E5C5178C13E9007C89B2 /* MojoShader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F526E5D4178C13E9007C89B2 /* Build configuration list for PBXNativeTarget "MojoShader" */;
+			buildPhases = (
+				F526E5C2178C13E9007C89B2 /* Sources */,
+				F526E5C3178C13E9007C89B2 /* Frameworks */,
+				F526E5C4178C13E9007C89B2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MojoShader;
+			productName = MojoShader;
+			productReference = F526E5C6178C13E9007C89B2 /* libMojoShader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F526E5BE178C13E9007C89B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = webJet;
+			};
+			buildConfigurationList = F526E5C1178C13E9007C89B2 /* Build configuration list for PBXProject "MojoShader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F526E5BD178C13E9007C89B2;
+			productRefGroup = F526E5C7178C13E9007C89B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F526E5C5178C13E9007C89B2 /* MojoShader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F526E5C2178C13E9007C89B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F526E5E3178C1443007C89B2 /* mojoshader_assembler.c in Sources */,
+				F526E5E4178C1443007C89B2 /* mojoshader_common.c in Sources */,
+				F526E5E5178C1443007C89B2 /* mojoshader_compiler.c in Sources */,
+				F526E5E6178C1443007C89B2 /* mojoshader_effects.c in Sources */,
+				F526E5E7178C1443007C89B2 /* mojoshader_lexer.c in Sources */,
+				F526E5E8178C1443007C89B2 /* mojoshader_opengl.c in Sources */,
+				F526E5E9178C1443007C89B2 /* mojoshader_preprocessor.c in Sources */,
+				F526E5EA178C1443007C89B2 /* mojoshader.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F526E5D2178C13E9007C89B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F526E5D3178C13E9007C89B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F526E5D5178C13E9007C89B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/MojoShader.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MojoShader/MojoShader-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F526E5D6178C13E9007C89B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/MojoShader.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MojoShader/MojoShader-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F526E5C1178C13E9007C89B2 /* Build configuration list for PBXProject "MojoShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F526E5D2178C13E9007C89B2 /* Debug */,
+				F526E5D3178C13E9007C89B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F526E5D4178C13E9007C89B2 /* Build configuration list for PBXNativeTarget "MojoShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F526E5D5178C13E9007C89B2 /* Debug */,
+				F526E5D6178C13E9007C89B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F526E5BE178C13E9007C89B2 /* Project object */;
+}

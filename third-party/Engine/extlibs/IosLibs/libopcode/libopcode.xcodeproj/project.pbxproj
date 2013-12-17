@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F501550E18239A0B00E275A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F501550D18239A0B00E275A1 /* Foundation.framework */; };
+		F501569318239ECA00E275A1 /* IceAABB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501566C18239ECA00E275A1 /* IceAABB.cpp */; };
+		F501569418239ECA00E275A1 /* IceContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501567018239ECA00E275A1 /* IceContainer.cpp */; };
+		F501569518239ECA00E275A1 /* IceHPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501567318239ECA00E275A1 /* IceHPoint.cpp */; };
+		F501569618239ECA00E275A1 /* IceIndexedTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501567518239ECA00E275A1 /* IceIndexedTriangle.cpp */; };
+		F501569718239ECA00E275A1 /* IceMatrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501567818239ECA00E275A1 /* IceMatrix3x3.cpp */; };
+		F501569818239ECA00E275A1 /* IceMatrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501567A18239ECA00E275A1 /* IceMatrix4x4.cpp */; };
+		F501569918239ECA00E275A1 /* IceOBB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501567D18239ECA00E275A1 /* IceOBB.cpp */; };
+		F501569A18239ECA00E275A1 /* IcePlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501568018239ECA00E275A1 /* IcePlane.cpp */; };
+		F501569B18239ECA00E275A1 /* IcePoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501568218239ECA00E275A1 /* IcePoint.cpp */; };
+		F501569C18239ECA00E275A1 /* IceRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501568518239ECA00E275A1 /* IceRandom.cpp */; };
+		F501569D18239ECA00E275A1 /* IceRay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501568718239ECA00E275A1 /* IceRay.cpp */; };
+		F501569E18239ECA00E275A1 /* IceRevisitedRadix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501568918239ECA00E275A1 /* IceRevisitedRadix.cpp */; };
+		F501569F18239ECA00E275A1 /* IceSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501568B18239ECA00E275A1 /* IceSegment.cpp */; };
+		F50156A018239ECA00E275A1 /* IceTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501568D18239ECA00E275A1 /* IceTriangle.cpp */; };
+		F50156A118239ECA00E275A1 /* IceUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501569118239ECA00E275A1 /* IceUtils.cpp */; };
+		F501573618239F9600E275A1 /* OPC_AABBCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F50156F718239F9600E275A1 /* OPC_AABBCollider.cpp */; };
+		F501573718239F9600E275A1 /* OPC_AABBTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F50156F918239F9600E275A1 /* OPC_AABBTree.cpp */; };
+		F501573818239F9600E275A1 /* OPC_BaseModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F50156FB18239F9600E275A1 /* OPC_BaseModel.cpp */; };
+		F501573918239F9600E275A1 /* OPC_BoxPruning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F50156FE18239F9600E275A1 /* OPC_BoxPruning.cpp */; };
+		F501573A18239F9600E275A1 /* OPC_Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501570018239F9600E275A1 /* OPC_Collider.cpp */; };
+		F501573B18239F9600E275A1 /* OPC_Common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501570218239F9600E275A1 /* OPC_Common.cpp */; };
+		F501573C18239F9600E275A1 /* OPC_HybridModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501570418239F9600E275A1 /* OPC_HybridModel.cpp */; };
+		F501573D18239F9600E275A1 /* OPC_LSSCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501570818239F9600E275A1 /* OPC_LSSCollider.cpp */; };
+		F501573E18239F9600E275A1 /* OPC_MeshInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501570B18239F9600E275A1 /* OPC_MeshInterface.cpp */; };
+		F501573F18239F9600E275A1 /* OPC_Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501570D18239F9600E275A1 /* OPC_Model.cpp */; };
+		F501574018239F9600E275A1 /* OPC_OBBCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501570F18239F9600E275A1 /* OPC_OBBCollider.cpp */; };
+		F501574118239F9600E275A1 /* OPC_OptimizedTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501571118239F9600E275A1 /* OPC_OptimizedTree.cpp */; };
+		F501574218239F9600E275A1 /* OPC_Picking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501571318239F9600E275A1 /* OPC_Picking.cpp */; };
+		F501574318239F9600E275A1 /* OPC_PlanesCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501571618239F9600E275A1 /* OPC_PlanesCollider.cpp */; };
+		F501574418239F9600E275A1 /* OPC_RayCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501571A18239F9600E275A1 /* OPC_RayCollider.cpp */; };
+		F501574518239F9600E275A1 /* OPC_SphereCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501571F18239F9600E275A1 /* OPC_SphereCollider.cpp */; };
+		F501574618239F9600E275A1 /* OPC_SweepAndPrune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501572218239F9600E275A1 /* OPC_SweepAndPrune.cpp */; };
+		F501574718239F9600E275A1 /* OPC_TreeBuilders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501572418239F9600E275A1 /* OPC_TreeBuilders.cpp */; };
+		F501574818239F9600E275A1 /* OPC_TreeCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501572618239F9600E275A1 /* OPC_TreeCollider.cpp */; };
+		F501574918239F9600E275A1 /* OPC_VolumeCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501572A18239F9600E275A1 /* OPC_VolumeCollider.cpp */; };
+		F501574A18239F9600E275A1 /* Opcode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501572C18239F9600E275A1 /* Opcode.cpp */; };
+		F501574E1823A39100E275A1 /* StdAfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F501574C1823A39000E275A1 /* StdAfx.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F501550818239A0B00E275A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F501550A18239A0B00E275A1 /* liblibopcode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibopcode.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F501550D18239A0B00E275A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F501551118239A0B00E275A1 /* libopcode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libopcode-Prefix.pch"; sourceTree = "<group>"; };
+		F501566C18239ECA00E275A1 /* IceAABB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceAABB.cpp; sourceTree = "<group>"; };
+		F501566D18239ECA00E275A1 /* IceAABB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceAABB.h; sourceTree = "<group>"; };
+		F501566E18239ECA00E275A1 /* IceAxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceAxes.h; sourceTree = "<group>"; };
+		F501566F18239ECA00E275A1 /* IceBoundingSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceBoundingSphere.h; sourceTree = "<group>"; };
+		F501567018239ECA00E275A1 /* IceContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceContainer.cpp; sourceTree = "<group>"; };
+		F501567118239ECA00E275A1 /* IceContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceContainer.h; sourceTree = "<group>"; };
+		F501567218239ECA00E275A1 /* IceFPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceFPU.h; sourceTree = "<group>"; };
+		F501567318239ECA00E275A1 /* IceHPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceHPoint.cpp; sourceTree = "<group>"; };
+		F501567418239ECA00E275A1 /* IceHPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceHPoint.h; sourceTree = "<group>"; };
+		F501567518239ECA00E275A1 /* IceIndexedTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceIndexedTriangle.cpp; sourceTree = "<group>"; };
+		F501567618239ECA00E275A1 /* IceIndexedTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceIndexedTriangle.h; sourceTree = "<group>"; };
+		F501567718239ECA00E275A1 /* IceLSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceLSS.h; sourceTree = "<group>"; };
+		F501567818239ECA00E275A1 /* IceMatrix3x3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceMatrix3x3.cpp; sourceTree = "<group>"; };
+		F501567918239ECA00E275A1 /* IceMatrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceMatrix3x3.h; sourceTree = "<group>"; };
+		F501567A18239ECA00E275A1 /* IceMatrix4x4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceMatrix4x4.cpp; sourceTree = "<group>"; };
+		F501567B18239ECA00E275A1 /* IceMatrix4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceMatrix4x4.h; sourceTree = "<group>"; };
+		F501567C18239ECA00E275A1 /* IceMemoryMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceMemoryMacros.h; sourceTree = "<group>"; };
+		F501567D18239ECA00E275A1 /* IceOBB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceOBB.cpp; sourceTree = "<group>"; };
+		F501567E18239ECA00E275A1 /* IceOBB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceOBB.h; sourceTree = "<group>"; };
+		F501567F18239ECA00E275A1 /* IcePairs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcePairs.h; sourceTree = "<group>"; };
+		F501568018239ECA00E275A1 /* IcePlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IcePlane.cpp; sourceTree = "<group>"; };
+		F501568118239ECA00E275A1 /* IcePlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcePlane.h; sourceTree = "<group>"; };
+		F501568218239ECA00E275A1 /* IcePoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IcePoint.cpp; sourceTree = "<group>"; };
+		F501568318239ECA00E275A1 /* IcePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcePoint.h; sourceTree = "<group>"; };
+		F501568418239ECA00E275A1 /* IcePreprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcePreprocessor.h; sourceTree = "<group>"; };
+		F501568518239ECA00E275A1 /* IceRandom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceRandom.cpp; sourceTree = "<group>"; };
+		F501568618239ECA00E275A1 /* IceRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceRandom.h; sourceTree = "<group>"; };
+		F501568718239ECA00E275A1 /* IceRay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceRay.cpp; sourceTree = "<group>"; };
+		F501568818239ECA00E275A1 /* IceRay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceRay.h; sourceTree = "<group>"; };
+		F501568918239ECA00E275A1 /* IceRevisitedRadix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceRevisitedRadix.cpp; sourceTree = "<group>"; };
+		F501568A18239ECA00E275A1 /* IceRevisitedRadix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceRevisitedRadix.h; sourceTree = "<group>"; };
+		F501568B18239ECA00E275A1 /* IceSegment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceSegment.cpp; sourceTree = "<group>"; };
+		F501568C18239ECA00E275A1 /* IceSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceSegment.h; sourceTree = "<group>"; };
+		F501568D18239ECA00E275A1 /* IceTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceTriangle.cpp; sourceTree = "<group>"; };
+		F501568E18239ECA00E275A1 /* IceTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceTriangle.h; sourceTree = "<group>"; };
+		F501568F18239ECA00E275A1 /* IceTrilist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceTrilist.h; sourceTree = "<group>"; };
+		F501569018239ECA00E275A1 /* IceTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceTypes.h; sourceTree = "<group>"; };
+		F501569118239ECA00E275A1 /* IceUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceUtils.cpp; sourceTree = "<group>"; };
+		F501569218239ECA00E275A1 /* IceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceUtils.h; sourceTree = "<group>"; };
+		F50156F718239F9600E275A1 /* OPC_AABBCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_AABBCollider.cpp; sourceTree = SOURCE_ROOT; };
+		F50156F818239F9600E275A1 /* OPC_AABBCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_AABBCollider.h; sourceTree = SOURCE_ROOT; };
+		F50156F918239F9600E275A1 /* OPC_AABBTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_AABBTree.cpp; sourceTree = SOURCE_ROOT; };
+		F50156FA18239F9600E275A1 /* OPC_AABBTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_AABBTree.h; sourceTree = SOURCE_ROOT; };
+		F50156FB18239F9600E275A1 /* OPC_BaseModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_BaseModel.cpp; sourceTree = SOURCE_ROOT; };
+		F50156FC18239F9600E275A1 /* OPC_BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_BaseModel.h; sourceTree = SOURCE_ROOT; };
+		F50156FD18239F9600E275A1 /* OPC_BoxBoxOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_BoxBoxOverlap.h; sourceTree = SOURCE_ROOT; };
+		F50156FE18239F9600E275A1 /* OPC_BoxPruning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_BoxPruning.cpp; sourceTree = SOURCE_ROOT; };
+		F50156FF18239F9600E275A1 /* OPC_BoxPruning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_BoxPruning.h; sourceTree = SOURCE_ROOT; };
+		F501570018239F9600E275A1 /* OPC_Collider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_Collider.cpp; sourceTree = SOURCE_ROOT; };
+		F501570118239F9600E275A1 /* OPC_Collider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_Collider.h; sourceTree = SOURCE_ROOT; };
+		F501570218239F9600E275A1 /* OPC_Common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_Common.cpp; sourceTree = SOURCE_ROOT; };
+		F501570318239F9600E275A1 /* OPC_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_Common.h; sourceTree = SOURCE_ROOT; };
+		F501570418239F9600E275A1 /* OPC_HybridModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_HybridModel.cpp; sourceTree = SOURCE_ROOT; };
+		F501570518239F9600E275A1 /* OPC_HybridModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_HybridModel.h; sourceTree = SOURCE_ROOT; };
+		F501570618239F9600E275A1 /* OPC_IceHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_IceHook.h; sourceTree = SOURCE_ROOT; };
+		F501570718239F9600E275A1 /* OPC_LSSAABBOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_LSSAABBOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501570818239F9600E275A1 /* OPC_LSSCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_LSSCollider.cpp; sourceTree = SOURCE_ROOT; };
+		F501570918239F9600E275A1 /* OPC_LSSCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_LSSCollider.h; sourceTree = SOURCE_ROOT; };
+		F501570A18239F9600E275A1 /* OPC_LSSTriOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_LSSTriOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501570B18239F9600E275A1 /* OPC_MeshInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_MeshInterface.cpp; sourceTree = SOURCE_ROOT; };
+		F501570C18239F9600E275A1 /* OPC_MeshInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_MeshInterface.h; sourceTree = SOURCE_ROOT; };
+		F501570D18239F9600E275A1 /* OPC_Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_Model.cpp; sourceTree = SOURCE_ROOT; };
+		F501570E18239F9600E275A1 /* OPC_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_Model.h; sourceTree = SOURCE_ROOT; };
+		F501570F18239F9600E275A1 /* OPC_OBBCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_OBBCollider.cpp; sourceTree = SOURCE_ROOT; };
+		F501571018239F9600E275A1 /* OPC_OBBCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_OBBCollider.h; sourceTree = SOURCE_ROOT; };
+		F501571118239F9600E275A1 /* OPC_OptimizedTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_OptimizedTree.cpp; sourceTree = SOURCE_ROOT; };
+		F501571218239F9600E275A1 /* OPC_OptimizedTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_OptimizedTree.h; sourceTree = SOURCE_ROOT; };
+		F501571318239F9600E275A1 /* OPC_Picking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_Picking.cpp; sourceTree = SOURCE_ROOT; };
+		F501571418239F9600E275A1 /* OPC_Picking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_Picking.h; sourceTree = SOURCE_ROOT; };
+		F501571518239F9600E275A1 /* OPC_PlanesAABBOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_PlanesAABBOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501571618239F9600E275A1 /* OPC_PlanesCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_PlanesCollider.cpp; sourceTree = SOURCE_ROOT; };
+		F501571718239F9600E275A1 /* OPC_PlanesCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_PlanesCollider.h; sourceTree = SOURCE_ROOT; };
+		F501571818239F9600E275A1 /* OPC_PlanesTriOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_PlanesTriOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501571918239F9600E275A1 /* OPC_RayAABBOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_RayAABBOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501571A18239F9600E275A1 /* OPC_RayCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_RayCollider.cpp; sourceTree = SOURCE_ROOT; };
+		F501571B18239F9600E275A1 /* OPC_RayCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_RayCollider.h; sourceTree = SOURCE_ROOT; };
+		F501571C18239F9600E275A1 /* OPC_RayTriOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_RayTriOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501571D18239F9600E275A1 /* OPC_Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_Settings.h; sourceTree = SOURCE_ROOT; };
+		F501571E18239F9600E275A1 /* OPC_SphereAABBOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_SphereAABBOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501571F18239F9600E275A1 /* OPC_SphereCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_SphereCollider.cpp; sourceTree = SOURCE_ROOT; };
+		F501572018239F9600E275A1 /* OPC_SphereCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_SphereCollider.h; sourceTree = SOURCE_ROOT; };
+		F501572118239F9600E275A1 /* OPC_SphereTriOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_SphereTriOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501572218239F9600E275A1 /* OPC_SweepAndPrune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_SweepAndPrune.cpp; sourceTree = SOURCE_ROOT; };
+		F501572318239F9600E275A1 /* OPC_SweepAndPrune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_SweepAndPrune.h; sourceTree = SOURCE_ROOT; };
+		F501572418239F9600E275A1 /* OPC_TreeBuilders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_TreeBuilders.cpp; sourceTree = SOURCE_ROOT; };
+		F501572518239F9600E275A1 /* OPC_TreeBuilders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_TreeBuilders.h; sourceTree = SOURCE_ROOT; };
+		F501572618239F9600E275A1 /* OPC_TreeCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_TreeCollider.cpp; sourceTree = SOURCE_ROOT; };
+		F501572718239F9600E275A1 /* OPC_TreeCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_TreeCollider.h; sourceTree = SOURCE_ROOT; };
+		F501572818239F9600E275A1 /* OPC_TriBoxOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_TriBoxOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501572918239F9600E275A1 /* OPC_TriTriOverlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_TriTriOverlap.h; sourceTree = SOURCE_ROOT; };
+		F501572A18239F9600E275A1 /* OPC_VolumeCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPC_VolumeCollider.cpp; sourceTree = SOURCE_ROOT; };
+		F501572B18239F9600E275A1 /* OPC_VolumeCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPC_VolumeCollider.h; sourceTree = SOURCE_ROOT; };
+		F501572C18239F9600E275A1 /* Opcode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Opcode.cpp; sourceTree = SOURCE_ROOT; };
+		F501572D18239F9600E275A1 /* Opcode.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Opcode.dsp; sourceTree = SOURCE_ROOT; };
+		F501572E18239F9600E275A1 /* Opcode.dsw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Opcode.dsw; sourceTree = SOURCE_ROOT; };
+		F501572F18239F9600E275A1 /* Opcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Opcode.h; sourceTree = SOURCE_ROOT; };
+		F501573018239F9600E275A1 /* Opcode.opt */ = {isa = PBXFileReference; lastKnownFileType = file; path = Opcode.opt; sourceTree = SOURCE_ROOT; };
+		F501573118239F9600E275A1 /* Opcode.plg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Opcode.plg; sourceTree = SOURCE_ROOT; };
+		F501573218239F9600E275A1 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = SOURCE_ROOT; };
+		F501573518239F9600E275A1 /* TemporalCoherence.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TemporalCoherence.txt; sourceTree = SOURCE_ROOT; };
+		F501574C1823A39000E275A1 /* StdAfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StdAfx.cpp; sourceTree = SOURCE_ROOT; };
+		F501574D1823A39100E275A1 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F501550718239A0B00E275A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F501550E18239A0B00E275A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F501550118239A0B00E275A1 = {
+			isa = PBXGroup;
+			children = (
+				F501566B18239ECA00E275A1 /* Ice */,
+				F501550F18239A0B00E275A1 /* libopcode */,
+				F501550C18239A0B00E275A1 /* Frameworks */,
+				F501550B18239A0B00E275A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F501550B18239A0B00E275A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F501550A18239A0B00E275A1 /* liblibopcode.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F501550C18239A0B00E275A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F501550D18239A0B00E275A1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F501550F18239A0B00E275A1 /* libopcode */ = {
+			isa = PBXGroup;
+			children = (
+				F501574C1823A39000E275A1 /* StdAfx.cpp */,
+				F501574D1823A39100E275A1 /* StdAfx.h */,
+				F50156F718239F9600E275A1 /* OPC_AABBCollider.cpp */,
+				F50156F818239F9600E275A1 /* OPC_AABBCollider.h */,
+				F50156F918239F9600E275A1 /* OPC_AABBTree.cpp */,
+				F50156FA18239F9600E275A1 /* OPC_AABBTree.h */,
+				F50156FB18239F9600E275A1 /* OPC_BaseModel.cpp */,
+				F50156FC18239F9600E275A1 /* OPC_BaseModel.h */,
+				F50156FD18239F9600E275A1 /* OPC_BoxBoxOverlap.h */,
+				F50156FE18239F9600E275A1 /* OPC_BoxPruning.cpp */,
+				F50156FF18239F9600E275A1 /* OPC_BoxPruning.h */,
+				F501570018239F9600E275A1 /* OPC_Collider.cpp */,
+				F501570118239F9600E275A1 /* OPC_Collider.h */,
+				F501570218239F9600E275A1 /* OPC_Common.cpp */,
+				F501570318239F9600E275A1 /* OPC_Common.h */,
+				F501570418239F9600E275A1 /* OPC_HybridModel.cpp */,
+				F501570518239F9600E275A1 /* OPC_HybridModel.h */,
+				F501570618239F9600E275A1 /* OPC_IceHook.h */,
+				F501570718239F9600E275A1 /* OPC_LSSAABBOverlap.h */,
+				F501570818239F9600E275A1 /* OPC_LSSCollider.cpp */,
+				F501570918239F9600E275A1 /* OPC_LSSCollider.h */,
+				F501570A18239F9600E275A1 /* OPC_LSSTriOverlap.h */,
+				F501570B18239F9600E275A1 /* OPC_MeshInterface.cpp */,
+				F501570C18239F9600E275A1 /* OPC_MeshInterface.h */,
+				F501570D18239F9600E275A1 /* OPC_Model.cpp */,
+				F501570E18239F9600E275A1 /* OPC_Model.h */,
+				F501570F18239F9600E275A1 /* OPC_OBBCollider.cpp */,
+				F501571018239F9600E275A1 /* OPC_OBBCollider.h */,
+				F501571118239F9600E275A1 /* OPC_OptimizedTree.cpp */,
+				F501571218239F9600E275A1 /* OPC_OptimizedTree.h */,
+				F501571318239F9600E275A1 /* OPC_Picking.cpp */,
+				F501571418239F9600E275A1 /* OPC_Picking.h */,
+				F501571518239F9600E275A1 /* OPC_PlanesAABBOverlap.h */,
+				F501571618239F9600E275A1 /* OPC_PlanesCollider.cpp */,
+				F501571718239F9600E275A1 /* OPC_PlanesCollider.h */,
+				F501571818239F9600E275A1 /* OPC_PlanesTriOverlap.h */,
+				F501571918239F9600E275A1 /* OPC_RayAABBOverlap.h */,
+				F501571A18239F9600E275A1 /* OPC_RayCollider.cpp */,
+				F501571B18239F9600E275A1 /* OPC_RayCollider.h */,
+				F501571C18239F9600E275A1 /* OPC_RayTriOverlap.h */,
+				F501571D18239F9600E275A1 /* OPC_Settings.h */,
+				F501571E18239F9600E275A1 /* OPC_SphereAABBOverlap.h */,
+				F501571F18239F9600E275A1 /* OPC_SphereCollider.cpp */,
+				F501572018239F9600E275A1 /* OPC_SphereCollider.h */,
+				F501572118239F9600E275A1 /* OPC_SphereTriOverlap.h */,
+				F501572218239F9600E275A1 /* OPC_SweepAndPrune.cpp */,
+				F501572318239F9600E275A1 /* OPC_SweepAndPrune.h */,
+				F501572418239F9600E275A1 /* OPC_TreeBuilders.cpp */,
+				F501572518239F9600E275A1 /* OPC_TreeBuilders.h */,
+				F501572618239F9600E275A1 /* OPC_TreeCollider.cpp */,
+				F501572718239F9600E275A1 /* OPC_TreeCollider.h */,
+				F501572818239F9600E275A1 /* OPC_TriBoxOverlap.h */,
+				F501572918239F9600E275A1 /* OPC_TriTriOverlap.h */,
+				F501572A18239F9600E275A1 /* OPC_VolumeCollider.cpp */,
+				F501572B18239F9600E275A1 /* OPC_VolumeCollider.h */,
+				F501572C18239F9600E275A1 /* Opcode.cpp */,
+				F501572D18239F9600E275A1 /* Opcode.dsp */,
+				F501572E18239F9600E275A1 /* Opcode.dsw */,
+				F501572F18239F9600E275A1 /* Opcode.h */,
+				F501573018239F9600E275A1 /* Opcode.opt */,
+				F501573118239F9600E275A1 /* Opcode.plg */,
+				F501573218239F9600E275A1 /* ReadMe.txt */,
+				F501573518239F9600E275A1 /* TemporalCoherence.txt */,
+				F501551018239A0B00E275A1 /* Supporting Files */,
+			);
+			path = libopcode;
+			sourceTree = "<group>";
+		};
+		F501551018239A0B00E275A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F501551118239A0B00E275A1 /* libopcode-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F501566B18239ECA00E275A1 /* Ice */ = {
+			isa = PBXGroup;
+			children = (
+				F501566C18239ECA00E275A1 /* IceAABB.cpp */,
+				F501566D18239ECA00E275A1 /* IceAABB.h */,
+				F501566E18239ECA00E275A1 /* IceAxes.h */,
+				F501566F18239ECA00E275A1 /* IceBoundingSphere.h */,
+				F501567018239ECA00E275A1 /* IceContainer.cpp */,
+				F501567118239ECA00E275A1 /* IceContainer.h */,
+				F501567218239ECA00E275A1 /* IceFPU.h */,
+				F501567318239ECA00E275A1 /* IceHPoint.cpp */,
+				F501567418239ECA00E275A1 /* IceHPoint.h */,
+				F501567518239ECA00E275A1 /* IceIndexedTriangle.cpp */,
+				F501567618239ECA00E275A1 /* IceIndexedTriangle.h */,
+				F501567718239ECA00E275A1 /* IceLSS.h */,
+				F501567818239ECA00E275A1 /* IceMatrix3x3.cpp */,
+				F501567918239ECA00E275A1 /* IceMatrix3x3.h */,
+				F501567A18239ECA00E275A1 /* IceMatrix4x4.cpp */,
+				F501567B18239ECA00E275A1 /* IceMatrix4x4.h */,
+				F501567C18239ECA00E275A1 /* IceMemoryMacros.h */,
+				F501567D18239ECA00E275A1 /* IceOBB.cpp */,
+				F501567E18239ECA00E275A1 /* IceOBB.h */,
+				F501567F18239ECA00E275A1 /* IcePairs.h */,
+				F501568018239ECA00E275A1 /* IcePlane.cpp */,
+				F501568118239ECA00E275A1 /* IcePlane.h */,
+				F501568218239ECA00E275A1 /* IcePoint.cpp */,
+				F501568318239ECA00E275A1 /* IcePoint.h */,
+				F501568418239ECA00E275A1 /* IcePreprocessor.h */,
+				F501568518239ECA00E275A1 /* IceRandom.cpp */,
+				F501568618239ECA00E275A1 /* IceRandom.h */,
+				F501568718239ECA00E275A1 /* IceRay.cpp */,
+				F501568818239ECA00E275A1 /* IceRay.h */,
+				F501568918239ECA00E275A1 /* IceRevisitedRadix.cpp */,
+				F501568A18239ECA00E275A1 /* IceRevisitedRadix.h */,
+				F501568B18239ECA00E275A1 /* IceSegment.cpp */,
+				F501568C18239ECA00E275A1 /* IceSegment.h */,
+				F501568D18239ECA00E275A1 /* IceTriangle.cpp */,
+				F501568E18239ECA00E275A1 /* IceTriangle.h */,
+				F501568F18239ECA00E275A1 /* IceTrilist.h */,
+				F501569018239ECA00E275A1 /* IceTypes.h */,
+				F501569118239ECA00E275A1 /* IceUtils.cpp */,
+				F501569218239ECA00E275A1 /* IceUtils.h */,
+			);
+			path = Ice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F501550918239A0B00E275A1 /* libopcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F501551818239A0B00E275A1 /* Build configuration list for PBXNativeTarget "libopcode" */;
+			buildPhases = (
+				F501550618239A0B00E275A1 /* Sources */,
+				F501550718239A0B00E275A1 /* Frameworks */,
+				F501550818239A0B00E275A1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libopcode;
+			productName = libopcode;
+			productReference = F501550A18239A0B00E275A1 /* liblibopcode.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F501550218239A0B00E275A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = webJet;
+			};
+			buildConfigurationList = F501550518239A0B00E275A1 /* Build configuration list for PBXProject "libopcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F501550118239A0B00E275A1;
+			productRefGroup = F501550B18239A0B00E275A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F501550918239A0B00E275A1 /* libopcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F501550618239A0B00E275A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F501569318239ECA00E275A1 /* IceAABB.cpp in Sources */,
+				F501569418239ECA00E275A1 /* IceContainer.cpp in Sources */,
+				F501569518239ECA00E275A1 /* IceHPoint.cpp in Sources */,
+				F501569618239ECA00E275A1 /* IceIndexedTriangle.cpp in Sources */,
+				F501569718239ECA00E275A1 /* IceMatrix3x3.cpp in Sources */,
+				F501569818239ECA00E275A1 /* IceMatrix4x4.cpp in Sources */,
+				F501569918239ECA00E275A1 /* IceOBB.cpp in Sources */,
+				F501569A18239ECA00E275A1 /* IcePlane.cpp in Sources */,
+				F501569B18239ECA00E275A1 /* IcePoint.cpp in Sources */,
+				F501569C18239ECA00E275A1 /* IceRandom.cpp in Sources */,
+				F501569D18239ECA00E275A1 /* IceRay.cpp in Sources */,
+				F501569E18239ECA00E275A1 /* IceRevisitedRadix.cpp in Sources */,
+				F501569F18239ECA00E275A1 /* IceSegment.cpp in Sources */,
+				F50156A018239ECA00E275A1 /* IceTriangle.cpp in Sources */,
+				F50156A118239ECA00E275A1 /* IceUtils.cpp in Sources */,
+				F501573618239F9600E275A1 /* OPC_AABBCollider.cpp in Sources */,
+				F501573718239F9600E275A1 /* OPC_AABBTree.cpp in Sources */,
+				F501573818239F9600E275A1 /* OPC_BaseModel.cpp in Sources */,
+				F501573918239F9600E275A1 /* OPC_BoxPruning.cpp in Sources */,
+				F501573A18239F9600E275A1 /* OPC_Collider.cpp in Sources */,
+				F501573B18239F9600E275A1 /* OPC_Common.cpp in Sources */,
+				F501573C18239F9600E275A1 /* OPC_HybridModel.cpp in Sources */,
+				F501573D18239F9600E275A1 /* OPC_LSSCollider.cpp in Sources */,
+				F501573E18239F9600E275A1 /* OPC_MeshInterface.cpp in Sources */,
+				F501573F18239F9600E275A1 /* OPC_Model.cpp in Sources */,
+				F501574018239F9600E275A1 /* OPC_OBBCollider.cpp in Sources */,
+				F501574118239F9600E275A1 /* OPC_OptimizedTree.cpp in Sources */,
+				F501574218239F9600E275A1 /* OPC_Picking.cpp in Sources */,
+				F501574318239F9600E275A1 /* OPC_PlanesCollider.cpp in Sources */,
+				F501574418239F9600E275A1 /* OPC_RayCollider.cpp in Sources */,
+				F501574518239F9600E275A1 /* OPC_SphereCollider.cpp in Sources */,
+				F501574618239F9600E275A1 /* OPC_SweepAndPrune.cpp in Sources */,
+				F501574718239F9600E275A1 /* OPC_TreeBuilders.cpp in Sources */,
+				F501574818239F9600E275A1 /* OPC_TreeCollider.cpp in Sources */,
+				F501574918239F9600E275A1 /* OPC_VolumeCollider.cpp in Sources */,
+				F501574A18239F9600E275A1 /* Opcode.cpp in Sources */,
+				F501574E1823A39100E275A1 /* StdAfx.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F501551618239A0B00E275A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "";
+			};
+			name = Debug;
+		};
+		F501551718239A0B00E275A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F501551918239A0B00E275A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libopcode.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libopcode/libopcode-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F501551A18239A0B00E275A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libopcode.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libopcode/libopcode-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F501550518239A0B00E275A1 /* Build configuration list for PBXProject "libopcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F501551618239A0B00E275A1 /* Debug */,
+				F501551718239A0B00E275A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F501551818239A0B00E275A1 /* Build configuration list for PBXNativeTarget "libopcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F501551918239A0B00E275A1 /* Debug */,
+				F501551A18239A0B00E275A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F501550218239A0B00E275A1 /* Project object */;
+}

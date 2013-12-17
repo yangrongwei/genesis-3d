@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E38885B3-9B11-4284-B5E2-44AF76636EE2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScriptGUI</RootNamespace>
+    <AssemblyName>ScriptGUILibrary</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Button.cs" />
+    <Compile Include="Canvas.cs" />
+    <Compile Include="ComboBox.cs" />
+    <Compile Include="DDContainer.cs" />
+    <Compile Include="EditBox.cs" />
+    <Compile Include="GUIEvent.cs" />
+    <Compile Include="GUILayout.cs" />
+    <Compile Include="GUIWidget.cs" />
+    <Compile Include="ImageBox.cs" />
+    <Compile Include="ItemBox.cs" />
+    <Compile Include="LayoutCollection.cs" />
+    <Compile Include="ListBox.cs" />
+    <Compile Include="RenderTarget.cs" />
+    <Compile Include="ScrollBar.cs" />
+    <Compile Include="TextBox.cs" />
+    <Compile Include="Types\Align.cs" />
+    <Compile Include="Types\Colour.cs" />
+    <Compile Include="Types\DDItemInfo.cs" />
+    <Compile Include="Types\DDItemState.cs" />
+    <Compile Include="Types\DDWidgetState.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Types\EventArg.cs" />
+    <Compile Include="Types\EventControl.cs" />
+    <Compile Include="Types\EventType.cs" />
+    <Compile Include="Types\ExecuteResult.cs" />
+    <Compile Include="FString.cs" />
+    <Compile Include="GUICommon.cs" />
+    <Compile Include="Instance.cs" />
+    <Compile Include="GUIRoot.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\FloatCoord.cs" />
+    <Compile Include="Types\FloatPoint.cs" />
+    <Compile Include="Types\FloatRect.cs" />
+    <Compile Include="Types\FloatSize.cs" />
+    <Compile Include="Types\FlowDirection.cs" />
+    <Compile Include="Types\IBDrawItemInfo.cs" />
+    <Compile Include="Types\IBNotifyItemData.cs" />
+    <Compile Include="Types\IntCoord.cs" />
+    <Compile Include="Types\IntPoint.cs" />
+    <Compile Include="Types\IntRect.cs" />
+    <Compile Include="Types\IntSize.cs" />
+    <Compile Include="Types\KeyCode.cs" />
+    <Compile Include="Types\MenuItemType.cs" />
+    <Compile Include="Types\MouseButton.cs" />
+    <Compile Include="Types\PixelFormat.cs" />
+    <Compile Include="Types\ResizingPolicy.cs" />
+    <Compile Include="Types\TextureUsage.cs" />
+    <Compile Include="Types\ToolTipInfo.cs" />
+    <Compile Include="Types\WidgetStyle.cs" />
+    <Compile Include="Types\WidgetType.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Widget.cs" />
+    <Compile Include="Layout.cs" />
+    <Compile Include="WidgetCollection.cs" />
+    <Compile Include="WidgetInput.cs" />
+    <Compile Include="Window.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\frameworklibrary\ScriptFrameworkLibrary.csproj">
+      <Project>{99DD39A6-A80A-4AB8-BC89-66078A69389F}</Project>
+      <Name>ScriptFrameworkLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\runtimelibrary\ScriptRuntimeLibrary.csproj">
+      <Project>{B3DDB5BC-CCEF-4D55-B18F-4EAA3231F6A1}</Project>
+      <Name>ScriptRuntimeLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(TargetPath) $(ProjectDir)..\..\..\bin\win32\DefaultAssets\Script /q /y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

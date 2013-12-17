@@ -1,0 +1,2 @@
+Compiling 'file:///D:/work/webjet/genesis-1.2/Engine/app/appframework/appframeworkprotocol.nidl'
+Compiling 'file:///D:/work/webjet/genesis-1.2/Engine/app/graphicfeature/graphicsfeatureprotocol.nidl'

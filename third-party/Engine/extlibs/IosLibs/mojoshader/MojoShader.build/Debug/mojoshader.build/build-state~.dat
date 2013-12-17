@@ -1,0 +1,389 @@
+Tmojoshader
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Script-1D7C5AF6DF4C4A1490D33E2F.sh
+cCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_common.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_effects.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_compiler.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/Debug/libmojoshader.a
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.LinkFileList
+c0000000051BEB10B00000000000003C4
+t1371451659
+s964
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_assembler.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_common.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_compiler.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_effects.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_lexer.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_opengl.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_preprocessor.o
+t2
+s0
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Script-1D7C5AF6DF4C4A1490D33E2F.sh
+c0000000051BEB10B00000000000000A5
+t1371451659
+s165
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Script-BC5C526169A84C8D880C41E2.sh
+c0000000051BEB10B000000000000009F
+t1371451659
+s159
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c
+c000000004FA422060000000000045F27
+t1336156678
+s286503
+i"mojoshader_internal.h"
+i"mojoshader_internal.h"
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c
+c000000004FA42206000000000000CC2F
+t1336156678
+s52271
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c
+c000000004FA422020000000000006430
+t1336156674
+s25648
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c
+c000000005109DBE0000000000003B08E
+t1359600608
+s241806
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c
+c000000004FA42206000000000000585B
+t1336156678
+s22619
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_internal.h
+c000000005109DAA40000000000005A7B
+t1359600292
+s23163
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c
+c000000004FA42206000000000000728F
+t1336156678
+s29327
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c
+c000000004FA4220200000000000142EE
+t1336156674
+s82670
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c
+c000000004FA4220200000000000109CF
+t1336156674
+s68047
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c
+r0
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies44fb608be86eb741^71aa618be86eb741^---0#1#0#--18"Check dependencies36"649388BA-CE6D-4234-926C-CA1026D48DC1-
+
+CCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s393144459.553164
+e393144459.818828
+r0
+xCompileC
+xMojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:799:50: error: use of undeclared identifier 'uint'
+o        snprintf(regnum_str, regnum_size, "%u", (uint) regnum);
+o                                                 ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1055:11: error: unknown type name 'uint'
+o    const uint major = (uint) ctx->major_ver;
+o          ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1055:25: error: use of undeclared identifier 'uint'
+o    const uint major = (uint) ctx->major_ver;
+o                        ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1056:11: error: unknown type name 'uint'
+o    const uint minor = (uint) ctx->minor_ver;
+o          ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1056:25: error: use of undeclared identifier 'uint'
+o    const uint minor = (uint) ctx->minor_ver;
+o                        ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1066:56: error: use of undeclared identifier 'uint'
+o        snprintf(minor_str, sizeof (minor_str), "%u", (uint) minor);
+o                                                       ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1437:60: error: use of undeclared identifier 'uint'
+o            snprintf(index_str, sizeof (index_str), "%u", (uint) index);
+o                                                           ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2096:16: error: use of undeclared identifier 'uint'
+o              (uint) ctx->shader_type);
+o               ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2366:56: error: use of undeclared identifier 'uint'
+o        snprintf(index_str, sizeof (index_str), "%u", (uint) index);
+o                                                       ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2445:68: error: use of undeclared identifier 'uint'
+o                    snprintf(index_str, sizeof (index_str), "%u", (uint) index);
+o                                                                   ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2491:64: error: use of undeclared identifier 'uint'
+o                snprintf(index_str, sizeof (index_str), "%u", (uint) regnum);
+o                                                               ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2506:64: error: use of undeclared identifier 'uint'
+o                snprintf(index_str, sizeof (index_str), "%u", (uint) index);
+o                                                               ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:3038:11: error: unknown type name 'uint'
+o    const uint rep = (uint) ctx->reps;
+o          ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:3038:23: error: use of undeclared identifier 'uint'
+o    const uint rep = (uint) ctx->reps;
+o                      ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:3970:16: error: use of undeclared identifier 'uint'
+o              (uint) ctx->shader_type);
+o               ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:4229:56: error: use of undeclared identifier 'uint'
+o        snprintf(index_str, sizeof (index_str), "%u", (uint) index);
+o                                                       ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:4310:68: error: use of undeclared identifier 'uint'
+o                    snprintf(index_str, sizeof (index_str), "%u", (uint) index);
+o                                                                   ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:4367:64: error: use of undeclared identifier 'uint'
+o                snprintf(index_str, sizeof (index_str), "%u", (uint) regnum);
+o                                                               ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:4384:64: error: use of undeclared identifier 'uint'
+o                snprintf(index_str, sizeof (index_str), "%u", (uint) index);
+o                                                               ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'
+o  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+o                                                             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:5475:24: warning: comparison of unsigned enum expression < 0 is always false [-Wtautological-compare]
+o    if ((info->regtype < 0) || (info->regtype > REG_TYPE_MAX))
+o         ~~~~~~~~~~~~~ ^ ~
+ofatal error: too many errors emitted, stopping now [-ferror-limit=]
+o1 warning and 20 errors generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.ccec78d8be86eb741^efa8d18be86eb741^-7642"/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:799:50: error: use of undeclared identifier 'uint'        snprintf(regnum_str, regnum_size, "%u", (uint) regnum);                                                 ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1055:11: error: unknown type name 'uint'    const uint major = (uint) ctx->major_ver;          ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1055:25: error: use of undeclared identifier 'uint'    const uint major = (uint) ctx->major_ver;                        ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1056:11: error: unknown type name 'uint'    const uint minor = (uint) ctx->minor_ver;          ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1056:25: error: use of undeclared identifier 'uint'    const uint minor = (uint) ctx->minor_ver;                        ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1066:56: error: use of undeclared identifier 'uint'        snprintf(minor_str, sizeof (minor_str), "%u", (uint) minor);                                                       ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:1437:60: error: use of undeclared identifier 'uint'            snprintf(index_str, sizeof (index_str), "%u", (uint) index);                                                           ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2096:16: error: use of undeclared identifier 'uint'              (uint) ctx->shader_type);               ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2366:56: error: use of undeclared identifier 'uint'        snprintf(index_str, sizeof (index_str), "%u", (uint) index);                                                       ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2445:68: error: use of undeclared identifier 'uint'                    snprintf(index_str, sizeof (index_str), "%u", (uint) index);                                                                   ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2491:64: error: use of undeclared identifier 'uint'                snprintf(index_str, sizeof (index_str), "%u", (uint) regnum);                                                               ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:2506:64: error: use of undeclared identifier 'uint'                snprintf(index_str, sizeof (index_str), "%u", (uint) index);                                                               ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:3038:11: error: unknown type name 'uint'    const uint rep = (uint) ctx->reps;          ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:3038:23: error: use of undeclared identifier 'uint'    const uint rep = (uint) ctx->reps;                      ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:3970:16: error: use of undeclared identifier 'uint'              (uint) ctx->shader_type);               ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:4229:56: error: use of undeclared identifier 'uint'        snprintf(index_str, sizeof (index_str), "%u", (uint) index);                                                       ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:4310:68: error: use of undeclared identifier 'uint'                    snprintf(index_str, sizeof (index_str), "%u", (uint) index);                                                                   ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:4367:64: error: use of undeclared identifier 'uint'                snprintf(index_str, sizeof (index_str), "%u", (uint) regnum);                                                               ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:4384:64: error: use of undeclared identifier 'uint'                snprintf(index_str, sizeof (index_str), "%u", (uint) index);                                                               ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h:56:62: note: expanded from macro 'snprintf'  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)                                                             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c:5475:24: warning: comparison of unsigned enum expression < 0 is always false [-Wtautological-compare]    if ((info->regtype < 0) || (info->regtype > REG_TYPE_MAX))         ~~~~~~~~~~~~~ ^ ~fatal error: too many errors emitted, stopping now [-ferror-limit=]1 warning and 20 errors generated.21(36%IDEClangDiagnosticActivityLogMessage2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^798#49#798#49#7#0#14"Semantic Issue--2@24"Unknown type name 'uint'-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^1054#10#1054#10#31200#0#11"Parse Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^1054#24#1054#24#31214#0#14"Semantic Issue--2@24"Unknown type name 'uint'-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^1055#10#1055#10#31246#0#11"Parse Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^1055#24#1055#24#31260#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^1065#55#1065#55#7#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^1436#59#1436#59#7#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^2095#15#2095#15#65227#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^2365#55#2365#55#7#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^2444#67#2444#67#7#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^2490#63#2490#63#7#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^2505#63#2505#63#7#0#14"Semantic Issue--2@24"Unknown type name 'uint'-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^3037#10#3037#10#100062#0#11"Parse Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^3037#22#3037#22#100074#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^3969#15#3969#15#133204#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^4228#55#4228#55#7#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^4309#67#4309#67#7#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^4366#63#4366#63#7#0#14"Semantic Issue--2@35"Use of undeclared identifier 'uint'-393144459#18446744073709551615#0#1(2@30"Expanded from macro 'snprintf'-393144459#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@142"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/secure/_stdio.h0000000000000000^55#61#55#61#1765#0#30"Apple LLVM compiler 4.2 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^4383#63#4383#63#7#0#14"Semantic Issue--2@58"Comparison of unsigned enum expression < 0 is always false-393144459#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^5474#23#5474#23#187075#0#14"Semantic Issue2(3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^5474#9#5474#22#187061#6#3@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^5474#25#5474#26#187077#0#-2@37"Too many errors emitted, stopping now-393144459#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic-29"Apple LLVM compiler 4.2 Error--0#0#0#-19%DVTDocumentLocation4@66"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c0000000000000000^1948"CompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.o mojoshader.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/DerivedSources/x86_64 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader.o36"88A79AB3-0D59-4F8D-AF5C-6D575E4D7FCB-
+
+CCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_assembler.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_assembler.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_common.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s393144459.553676
+e393144459.638957
+r1
+xCompileC
+xMojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_common.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c76df8d8be86eb741^f791a38be86eb741^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c0000000000000000^1990"CompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_common.o mojoshader_common.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/DerivedSources/x86_64 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_common.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_common.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_common.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_common.o36"BB7B2739-7B33-4F28-A4F7-855FE5B791A0-
+
+CCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_compiler.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s393144459.721617
+e393144460.425666
+r1
+xCompileC
+xMojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_compiler.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3437:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '!'): return TOKEN_HLSL_EXCLAMATION;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3436:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '%'): return TOKEN_HLSL_PERCENT;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3423:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '&'): return TOKEN_HLSL_AND;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3444:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '('): return TOKEN_HLSL_LPAREN;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3445:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ')'): return TOKEN_HLSL_RPAREN;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3434:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '*'): return TOKEN_HLSL_STAR;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3432:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '+'): return TOKEN_HLSL_PLUS;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3406:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ','): return TOKEN_HLSL_COMMA;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3433:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '-'): return TOKEN_HLSL_MINUS;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3441:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '.'): return TOKEN_HLSL_DOT;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3435:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '/'): return TOKEN_HLSL_SLASH;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3449:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ':'): return TOKEN_HLSL_COLON;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3450:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ';'): return TOKEN_HLSL_SEMICOLON;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3426:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '<'): return TOKEN_HLSL_LT;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3407:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '='): return TOKEN_HLSL_ASSIGN;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3428:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '>'): return TOKEN_HLSL_GT;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3418:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '?'): return TOKEN_HLSL_QUESTION;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3442:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '['): return TOKEN_HLSL_LBRACKET;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3443:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) ']'): return TOKEN_HLSL_RBRACKET;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3422:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '^'): return TOKEN_HLSL_XOR;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3451:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '{'): return TOKEN_HLSL_LBRACE;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3421:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '|'): return TOKEN_HLSL_OR;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3452:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '}'): return TOKEN_HLSL_RBRACE;
+o             ^
+o/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3438:14: warning: case value not in enumerated type 'Token' [-Wswitch]
+o        case ((Token) '~'): return TOKEN_HLSL_COMPLEMENT;
+o             ^
+o24 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.cfad5b88be86eb741^1e176d8ce86eb741^-4813"/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3437:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '!'): return TOKEN_HLSL_EXCLAMATION;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3436:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '%'): return TOKEN_HLSL_PERCENT;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3423:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '&'): return TOKEN_HLSL_AND;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3444:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '('): return TOKEN_HLSL_LPAREN;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3445:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ')'): return TOKEN_HLSL_RPAREN;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3434:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '*'): return TOKEN_HLSL_STAR;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3432:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '+'): return TOKEN_HLSL_PLUS;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3406:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ','): return TOKEN_HLSL_COMMA;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3433:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '-'): return TOKEN_HLSL_MINUS;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3441:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '.'): return TOKEN_HLSL_DOT;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3435:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '/'): return TOKEN_HLSL_SLASH;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3449:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ':'): return TOKEN_HLSL_COLON;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3450:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ';'): return TOKEN_HLSL_SEMICOLON;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3426:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '<'): return TOKEN_HLSL_LT;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3407:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '='): return TOKEN_HLSL_ASSIGN;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3428:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '>'): return TOKEN_HLSL_GT;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3418:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '?'): return TOKEN_HLSL_QUESTION;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3442:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '['): return TOKEN_HLSL_LBRACKET;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3443:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) ']'): return TOKEN_HLSL_RBRACKET;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3422:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '^'): return TOKEN_HLSL_XOR;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3451:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '{'): return TOKEN_HLSL_LBRACE;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3421:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '|'): return TOKEN_HLSL_OR;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3452:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '}'): return TOKEN_HLSL_RBRACE;             ^/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c:3438:14: warning: case value not in enumerated type 'Token' [-Wswitch]        case ((Token) '~'): return TOKEN_HLSL_COMPLEMENT;             ^24 warnings generated.-0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c0000000000000000^2002"CompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_compiler.o mojoshader_compiler.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/DerivedSources/x86_64 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_compiler.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_compiler.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_compiler.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_compiler.o36"25E885F6-6C32-464C-95C9-3929B5B74D2B-
+
+CCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_effects.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s393144459.640221
+e393144459.720317
+r1
+xCompileC
+xMojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_effects.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c3bfea38be86eb741^1b62b88be86eb741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c0000000000000000^1996"CompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_effects.o mojoshader_effects.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/DerivedSources/x86_64 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_effects.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_effects.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_effects.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_effects.o36"4A17A6C7-31BB-44BA-AB4C-F94BEAF40D1C-
+
+CCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_lexer.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_lexer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_opengl.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_opengl.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC MojoShader.build/Debug/mojoshader.build/Objects-normal/x86_64/mojoshader_preprocessor.o /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_preprocessor.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CLibtool /Volumes/MacDisk2/thirdlib/mojoshader/Debug/libmojoshader.a normal x86_64
+r0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Script-BC5C526169A84C8D880C41E2.sh
+r0
+
+CPhaseScriptExecution "CMake Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Script-1D7C5AF6DF4C4A1490D33E2F.sh
+s393144459.384148
+e393144459.544891
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Script-1D7C5AF6DF4C4A1490D33E2F.sh
+o/Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemon -q -T/Volumes/MacDisk2/thirdlib/mojoshader/misc/lempar.c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_parser_hlsl.lemon
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'73d7628be86eb741^21908b8be86eb741^-174"/Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemon -q -T/Volumes/MacDisk2/thirdlib/mojoshader/misc/lempar.c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_parser_hlsl.lemon1(21%IDEActivityLogMessage2@174"/Volumes/MacDisk2/thirdlib/mojoshader/Debug/lemon -q -T/Volumes/MacDisk2/thirdlib/mojoshader/misc/lempar.c /Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_parser_hlsl.lemon-393144459#0#174#-0#-----0#0#0#--283"PhaseScriptExecution "CMake Rules" MojoShader.build/Debug/mojoshader.build/Script-1D7C5AF6DF4C4A1490D33E2F.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/mojoshader.build/Script-1D7C5AF6DF4C4A1490D33E2F.sh36"2BDBCFF2-224F-42BF-BC97-651FF139DB13-
+

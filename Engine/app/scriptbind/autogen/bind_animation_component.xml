@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<root>
+<class cppclass="AnimationComponent" csclass="AnimationComponent" csbase="Component">
+<func name="SetAnimationID">
+	<param type="AnimationComponent">self</param>
+	<param type="String">id</param>
+</func>
+<func name="CrossFading">
+	<param type="AnimationComponent">self</param>
+	<param type="String">name</param>
+	<param type="int">type</param>
+	<param type="float">time</param>
+</func>
+<func name="PlayAnimation">
+	<param type="AnimationComponent">self</param>
+	<param type="String">name</param>
+</func>
+<func name="SetAnimationSpeed">
+	<param type="AnimationComponent">self</param>
+	<param type="String">name</param>
+	<param type="float">speed</param>
+</func>
+<func name="SetAnimationWrapMode">
+	<param type="AnimationComponent">self</param>
+	<param type="String">name</param>
+	<param type="int">wrapMode</param>
+</func>
+<func name="IsAnimationPlaying">
+	<ret type="bool"></ret>
+	<param type="AnimationComponent">self</param>
+	<param type="String">name</param>
+</func>
+</class>
+</root>

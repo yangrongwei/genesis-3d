@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<root>
+<class cppclass="Application" csclass="Application">
+<func name="OpenScene">
+	<ret type="bool"></ret>
+	<param type="String">sceneResID</param>
+</func>
+<func name="CloseScene">
+	<ret type="bool"></ret>
+	<param type="String">sceneResID</param>
+</func>
+<func name="Quit">
+</func>
+<func name="GetCurrentScene">
+	<ret type="Scene"></ret>
+</func>
+</class>
+</root>

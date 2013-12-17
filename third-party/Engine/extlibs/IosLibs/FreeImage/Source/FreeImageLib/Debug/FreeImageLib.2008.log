@@ -1,0 +1,398 @@
+﻿Build started 2012-10-11 21:49:02.
+     1>Project "D:\FreeImage\Source\FreeImageLib\FreeImageLib.2008.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\FreeImageLib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\ /I..\ZLib /I..\DeprecationManager /I..\OpenEXR\Half /I..\OpenEXR\Iex /I..\OpenEXR\IlmImf /I..\OpenEXR\Imath /I..\OpenEXR\IlmThread /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D OPJ_STATIC /D FREEIMAGE_LIB /D _CRT_SECURE_NO_DEPRECATE /D LIBRAW_NODLL /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\FreeImage\BitmapAccess.cpp ..\FreeImage\ColorLookup.cpp ..\FreeImage\FreeImage.cpp ..\FreeImage\FreeImageIO.cpp ..\FreeImage\GetType.cpp ..\FreeImage\MemoryIO.cpp ..\FreeImage\PixelAccess.cpp ..\FreeImage\NNQuantizer.cpp ..\FreeImage\WuQuantizer.cpp ..\FreeImage\Conversion.cpp ..\FreeImage\Conversion16_555.cpp ..\FreeImage\Conversion16_565.cpp ..\FreeImage\Conversion24.cpp ..\FreeImage\Conversion32.cpp ..\FreeImage\Conversion4.cpp ..\FreeImage\Conversion8.cpp ..\FreeImage\ConversionFloat.cpp ..\FreeImage\ConversionRGB16.cpp ..\FreeImage\ConversionRGBF.cpp ..\FreeImage\ConversionType.cpp ..\FreeImage\ConversionUINT16.cpp ..\FreeImage\Halftoning.cpp ..\FreeImage\tmoColorConvert.cpp ..\FreeImage\tmoDrago03.cpp ..\FreeImage\tmoFattal02.cpp ..\FreeImage\tmoReinhard05.cpp ..\FreeImage\ToneMapping.cpp ..\FreeImage\J2KHelper.cpp ..\FreeImage\MNGHelper.cpp ..\FreeImage\Plugin.cpp ..\FreeImage\PluginBMP.cpp ..\FreeImage\PluginCUT.cpp ..\FreeImage\PluginDDS.cpp ..\FreeImage\PluginEXR.cpp ..\FreeImage\PluginG3.cpp ..\FreeImage\PluginGIF.cpp ..\FreeImage\PluginHDR.cpp ..\FreeImage\PluginICO.cpp ..\FreeImage\PluginIFF.cpp ..\FreeImage\PluginJ2K.cpp ..\FreeImage\PluginJNG.cpp ..\FreeImage\PluginJP2.cpp ..\FreeImage\PluginJPEG.cpp ..\FreeImage\PluginKOALA.cpp ..\FreeImage\PluginMNG.cpp ..\FreeImage\PluginPCD.cpp ..\FreeImage\PluginPCX.cpp ..\FreeImage\PluginPFM.cpp ..\FreeImage\PluginPICT.cpp ..\FreeImage\PluginPNG.cpp ..\FreeImage\PluginPNM.cpp ..\FreeImage\PluginPSD.cpp ..\FreeImage\PluginRAS.cpp ..\FreeImage\PluginRAW.cpp ..\FreeImage\PluginSGI.cpp ..\FreeImage\PluginTARGA.cpp ..\FreeImage\PluginTIFF.cpp ..\FreeImage\PluginWBMP.cpp ..\FreeImage\PluginXBM.cpp ..\FreeImage\PluginXPM.cpp ..\FreeImage\PSDParser.cpp ..\FreeImage\TIFFLogLuv.cpp ..\DeprecationManager\Deprecated.cpp ..\DeprecationManager\DeprecationMgr.cpp ..\FreeImage\CacheFile.cpp ..\FreeImage\MultiPage.cpp ..\FreeImage\ZLibInterface.cpp ..\Metadata\Exif.cpp ..\Metadata\FIRational.cpp ..\Metadata\FreeImageTag.cpp ..\Metadata\IPTC.cpp ..\Metadata\TagConversion.cpp ..\Metadata\TagLib.cpp ..\Metadata\XTIFF.cpp ..\FreeImageToolkit\Background.cpp ..\FreeImageToolkit\BSplineRotate.cpp ..\FreeImageToolkit\Channels.cpp ..\FreeImageToolkit\ClassicRotate.cpp ..\FreeImageToolkit\Colors.cpp ..\FreeImageToolkit\CopyPaste.cpp ..\FreeImageToolkit\Display.cpp ..\FreeImageToolkit\Flip.cpp ..\FreeImageToolkit\JPEGTransform.cpp ..\FreeImageToolkit\MultigridPoissonSolver.cpp ..\FreeImageToolkit\Rescale.cpp ..\FreeImageToolkit\Resize.cpp
+         BitmapAccess.cpp
+     1>d:\freeimage\source\freeimage\bitmapaccess.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         ColorLookup.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         FreeImage.cpp
+     1>d:\freeimage\source\freeimage\freeimage.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         FreeImageIO.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         GetType.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         MemoryIO.cpp
+     1>d:\freeimage\source\freeimage\memoryio.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PixelAccess.cpp
+     1>d:\freeimage\source\freeimage\pixelaccess.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         NNQuantizer.cpp
+     1>d:\freeimage\source\freeimage\nnquantizer.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\quantizers.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         WuQuantizer.cpp
+     1>d:\freeimage\source\freeimage\wuquantizer.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\quantizers.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Conversion.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\quantizers.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Conversion16_555.cpp
+     1>d:\freeimage\source\freeimage\conversion16_555.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Conversion16_565.cpp
+     1>d:\freeimage\source\freeimage\conversion16_565.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Conversion24.cpp
+     1>d:\freeimage\source\freeimage\conversion24.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Conversion32.cpp
+     1>d:\freeimage\source\freeimage\conversion32.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Conversion4.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Conversion8.cpp
+     1>d:\freeimage\source\freeimage\conversion8.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         ConversionFloat.cpp
+     1>d:\freeimage\source\freeimage\conversionfloat.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         ConversionRGB16.cpp
+     1>d:\freeimage\source\freeimage\conversionrgb16.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         ConversionRGBF.cpp
+     1>d:\freeimage\source\freeimage\conversionrgbf.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         ConversionType.cpp
+     1>d:\freeimage\source\freeimage\conversiontype.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Generating Code...
+         Compiling...
+         ConversionUINT16.cpp
+     1>d:\freeimage\source\freeimage\conversionuint16.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Halftoning.cpp
+     1>d:\freeimage\source\freeimage\halftoning.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         tmoColorConvert.cpp
+     1>d:\freeimage\source\freeimage\tmocolorconvert.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\tonemapping.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         tmoDrago03.cpp
+     1>d:\freeimage\source\freeimage\tmodrago03.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\tonemapping.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         tmoFattal02.cpp
+     1>d:\freeimage\source\freeimage\tmofattal02.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\tonemapping.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         tmoReinhard05.cpp
+     1>d:\freeimage\source\freeimage\tmoreinhard05.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\tonemapping.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         ToneMapping.cpp
+     1>d:\freeimage\source\freeimage\tonemapping.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         J2KHelper.cpp
+     1>d:\freeimage\source\freeimage\j2khelper.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         MNGHelper.cpp
+     1>d:\freeimage\source\freeimage\mnghelper.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Plugin.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginBMP.cpp
+     1>d:\freeimage\source\freeimage\pluginbmp.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginCUT.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginDDS.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginEXR.cpp
+     1>d:\freeimage\source\freeimage\pluginexr.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginG3.cpp
+     1>d:\freeimage\source\freeimage\pluging3.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginGIF.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginHDR.cpp
+     1>d:\freeimage\source\freeimage\pluginhdr.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginICO.cpp
+     1>d:\freeimage\source\freeimage\pluginico.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginIFF.cpp
+     1>d:\freeimage\source\freeimage\pluginiff.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginJ2K.cpp
+     1>d:\freeimage\source\freeimage\pluginj2k.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Generating Code...
+         Compiling...
+         PluginJNG.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginJP2.cpp
+     1>d:\freeimage\source\freeimage\pluginjp2.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginJPEG.cpp
+     1>d:\freeimage\source\freeimage\pluginjpeg.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage\pluginjpeg.cpp(933): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginKOALA.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginMNG.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginPCD.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginPCX.cpp
+     1>d:\freeimage\source\freeimage\pluginpcx.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginPFM.cpp
+     1>d:\freeimage\source\freeimage\pluginpfm.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginPICT.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginPNG.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginPNM.cpp
+     1>d:\freeimage\source\freeimage\pluginpnm.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginPSD.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginRAS.cpp
+     1>d:\freeimage\source\freeimage\pluginras.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginRAW.cpp
+     1>d:\freeimage\source\freeimage\pluginraw.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginSGI.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginTARGA.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginTIFF.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage\plugintiff.cpp(156): warning C4244: 'argument' : conversion from 'toff_t' to 'long', possible loss of data
+         PluginWBMP.cpp
+     1>d:\freeimage\source\freeimage\pluginwbmp.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginXBM.cpp
+     1>d:\freeimage\source\freeimage\pluginxbm.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         PluginXPM.cpp
+     1>d:\freeimage\source\freeimage\pluginxpm.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Generating Code...
+         Compiling...
+         PSDParser.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         TIFFLogLuv.cpp
+     1>d:\freeimage\source\freeimage\tifflogluv.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Deprecated.cpp
+     1>d:\freeimage\source\deprecationmanager\deprecated.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         DeprecationMgr.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         CacheFile.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         MultiPage.cpp
+     1>d:\freeimage\source\freeimage\multipage.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         ZLibInterface.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Exif.cpp
+     1>d:\freeimage\source\metadata\exif.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         FIRational.cpp
+     1>d:\freeimage\source\metadata\firational.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\firational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         FreeImageTag.cpp
+     1>d:\freeimage\source\metadata\freeimagetag.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         IPTC.cpp
+     1>d:\freeimage\source\metadata\iptc.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         TagConversion.cpp
+     1>d:\freeimage\source\metadata\tagconversion.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\firational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         TagLib.cpp
+     1>d:\freeimage\source\metadata\taglib.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         XTIFF.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\freeimagetag.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\metadata\firational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Background.cpp
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         BSplineRotate.cpp
+     1>d:\freeimage\source\freeimagetoolkit\bsplinerotate.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Channels.cpp
+     1>d:\freeimage\source\freeimagetoolkit\channels.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         ClassicRotate.cpp
+     1>d:\freeimage\source\freeimagetoolkit\classicrotate.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Colors.cpp
+     1>d:\freeimage\source\freeimagetoolkit\colors.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         CopyPaste.cpp
+     1>d:\freeimage\source\freeimagetoolkit\copypaste.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Generating Code...
+         Compiling...
+         Display.cpp
+     1>d:\freeimage\source\freeimagetoolkit\display.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Flip.cpp
+     1>d:\freeimage\source\freeimagetoolkit\flip.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         JPEGTransform.cpp
+     1>d:\freeimage\source\freeimagetoolkit\jpegtransform.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         MultigridPoissonSolver.cpp
+     1>d:\freeimage\source\freeimagetoolkit\multigridpoissonsolver.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\tonemapping.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Rescale.cpp
+     1>d:\freeimage\source\freeimagetoolkit\rescale.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimagetoolkit\resize.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimagetoolkit\filters.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Resize.cpp
+     1>d:\freeimage\source\freeimagetoolkit\resize.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimagetoolkit\resize.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\freeimage\source\freeimagetoolkit\filters.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         Generating Code...
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(D:\FreeImage\Source\FreeImageLib\.\Debug\FreeImageLib.lib) does not match the Library's OutputFile property value (D:\FreeImage\Source\FreeImageLib\Debug\FreeImaged.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(FreeImageLib) does not match the Library's OutputFile property value (FreeImaged). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"Debug\FreeImaged.lib" /NOLOGO .\Debug/BitmapAccess.obj
+         .\Debug/ColorLookup.obj
+         .\Debug/FreeImage.obj
+         .\Debug/FreeImageIO.obj
+         .\Debug/GetType.obj
+         .\Debug/MemoryIO.obj
+         .\Debug/PixelAccess.obj
+         .\Debug/NNQuantizer.obj
+         .\Debug/WuQuantizer.obj
+         .\Debug/Conversion.obj
+         .\Debug/Conversion16_555.obj
+         .\Debug/Conversion16_565.obj
+         .\Debug/Conversion24.obj
+         .\Debug/Conversion32.obj
+         .\Debug/Conversion4.obj
+         .\Debug/Conversion8.obj
+         .\Debug/ConversionFloat.obj
+         .\Debug/ConversionRGB16.obj
+         .\Debug/ConversionRGBF.obj
+         .\Debug/ConversionType.obj
+         .\Debug/ConversionUINT16.obj
+         .\Debug/Halftoning.obj
+         .\Debug/tmoColorConvert.obj
+         .\Debug/tmoDrago03.obj
+         .\Debug/tmoFattal02.obj
+         .\Debug/tmoReinhard05.obj
+         .\Debug/ToneMapping.obj
+         .\Debug/J2KHelper.obj
+         .\Debug/MNGHelper.obj
+         .\Debug/Plugin.obj
+         .\Debug/PluginBMP.obj
+         .\Debug/PluginCUT.obj
+         .\Debug/PluginDDS.obj
+         .\Debug/PluginEXR.obj
+         .\Debug/PluginG3.obj
+         .\Debug/PluginGIF.obj
+         .\Debug/PluginHDR.obj
+         .\Debug/PluginICO.obj
+         .\Debug/PluginIFF.obj
+         .\Debug/PluginJ2K.obj
+         .\Debug/PluginJNG.obj
+         .\Debug/PluginJP2.obj
+         .\Debug/PluginJPEG.obj
+         .\Debug/PluginKOALA.obj
+         .\Debug/PluginMNG.obj
+         .\Debug/PluginPCD.obj
+         .\Debug/PluginPCX.obj
+         .\Debug/PluginPFM.obj
+         .\Debug/PluginPICT.obj
+         .\Debug/PluginPNG.obj
+         .\Debug/PluginPNM.obj
+         .\Debug/PluginPSD.obj
+         .\Debug/PluginRAS.obj
+         .\Debug/PluginRAW.obj
+         .\Debug/PluginSGI.obj
+         .\Debug/PluginTARGA.obj
+         .\Debug/PluginTIFF.obj
+         .\Debug/PluginWBMP.obj
+         .\Debug/PluginXBM.obj
+         .\Debug/PluginXPM.obj
+         .\Debug/PSDParser.obj
+         .\Debug/TIFFLogLuv.obj
+         .\Debug/Deprecated.obj
+         .\Debug/DeprecationMgr.obj
+         .\Debug/CacheFile.obj
+         .\Debug/MultiPage.obj
+         .\Debug/ZLibInterface.obj
+         .\Debug/Exif.obj
+         .\Debug/FIRational.obj
+         .\Debug/FreeImageTag.obj
+         .\Debug/IPTC.obj
+         .\Debug/TagConversion.obj
+         .\Debug/TagLib.obj
+         .\Debug/XTIFF.obj
+         .\Debug/Background.obj
+         .\Debug/BSplineRotate.obj
+         .\Debug/Channels.obj
+         .\Debug/ClassicRotate.obj
+         .\Debug/Colors.obj
+         .\Debug/CopyPaste.obj
+         .\Debug/Display.obj
+         .\Debug/Flip.obj
+         .\Debug/JPEGTransform.obj
+         .\Debug/MultigridPoissonSolver.obj
+         .\Debug/Rescale.obj
+         .\Debug/Resize.obj
+         D:\FreeImage\Source\LibJPEG\Debug\LibJPEG.lib
+         D:\FreeImage\Source\LibOpenJPEG\Debug\LibOpenJPEG.lib
+         D:\FreeImage\Source\LibPNG\Debug\LibPNG.lib
+         D:\FreeImage\Source\LibRawLite\Debug\LibRawLite.lib
+         D:\FreeImage\Source\LibTIFF4\Debug\LibTIFF4.lib
+         D:\FreeImage\Source\OpenEXR\Debug\OpenEXR.lib
+         D:\FreeImage\Source\ZLib\Debug\ZLib.lib
+     1>OpenEXR.lib(ImathBox.obj) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>OpenEXR.lib(ImathShear.obj) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         FreeImageLib.2008.vcxproj -> D:\FreeImage\Source\FreeImageLib\.\Debug\FreeImageLib.lib
+       PostBuildEvent:
+         copy Debug\FreeImaged.lib ..\..\Dist
+         copy ..\FreeImage.h ..\..\Dist
+         
+         :VCEnd
+         已复制         1 个文件。
+         已复制         1 个文件。
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\FreeImageLib.unsuccessfulbuild".
+         Touching ".\Debug\FreeImageLib.lastbuildstate".
+     1>Done Building Project "D:\FreeImage\Source\FreeImageLib\FreeImageLib.2008.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:42

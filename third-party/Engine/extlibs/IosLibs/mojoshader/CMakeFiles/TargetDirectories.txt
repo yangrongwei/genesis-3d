@@ -1,0 +1,9 @@
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/ALL_BUILD.dir
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/ZERO_CHECK.dir
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/finderrors.dir
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/lemon.dir
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/mojoshader.dir
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/mojoshader-compiler.dir
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/test.dir
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/testoutput.dir
+/Volumes/MacDisk2/thirdlib/mojoshader/CMakeFiles/testparse.dir

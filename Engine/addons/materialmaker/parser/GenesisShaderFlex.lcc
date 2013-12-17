@@ -1,0 +1,169 @@
+%{
+#include "stdneb.h"
+#include "GenesisShaderParser.h"
+#include "../GenesisMaterial.h"
+#include "../graphicsystem/Material/ShaderParam.h"
+#include "GenesisShaderBison.h"
+#define yylval Genesislval
+
+static inline char* GetString (const char *p)
+{
+	int length = strlen(p);
+	char* buf = new char[length-1];
+	memcpy( buf, p + 1, length-2 );
+	buf[length-2] = 0;
+	return buf;
+}
+
+static int yyinput (void);
+
+using namespace GenesisMaterialMaker;
+%}
+
+%option noyywrap
+%option caseless
+%option never-interactive
+%option prefix="Genesis"
+
+PARAM		[#_a-z][#_a-z0-9]*
+NUMERIC		[0-9]
+OP			[^\<\>]*
+
+
+
+
+%x _SETPARAM _DEFINEPARAM _SETRENDERSTATE _SETSHADERCODE
+
+
+%%
+
+shader						{ return TSHADER; };
+parameters					{ BEGIN(_DEFINEPARAM);return TPARAMETERS; };
+renderqueue					{ BEGIN(INITIAL);return TRENDERQUEUE; };
+technique					{ return TTECHNIQUE; };
+pass						{ return TPASS; };
+materialtype				{ return TMATTYPE; };
+shadertype					{ return TSHADERTYPE; };
+renderapi					{ return TRENDERDEVICETYPE; };
+renderstate					{ BEGIN(_SETRENDERSTATE);return TRENDERSTATE;};
+setshadercode               { BEGIN(_SETSHADERCODE);return TSETSHADERCODE;};
+
+\{							{ return '{';};
+\}                          { return '}';};
+\"[^\"]*\"					{
+	yylval.str = GetString (yytext);
+	const char* p = yylval.str;
+	while (*p) {
+		char c = *p;
+		if (c == '\n')
+			++Genesislineno;
+		++p;
+	}
+	return TREALSTRING;
+	};
+
+<_SETRENDERSTATE>
+{
+\{							{ return '{';}
+fillmode					{ BEGIN(_SETRENDERSTATE); return TFILLMODE;}
+polygonmode					{ BEGIN(_SETRENDERSTATE); return TFILLMODE;}
+cullmode					{ BEGIN(_SETRENDERSTATE); return TCULLMODE;}
+ztest						{ BEGIN(_SETRENDERSTATE); return TDEPTHTEST;}
+zwrite						{ BEGIN(_SETRENDERSTATE); return TDEPTHWRITE;}
+blendmode					{ BEGIN(_SETRENDERSTATE); return TBLENDCOLOR;}
+alphatest					{ BEGIN(_SETRENDERSTATE); return TALPHATEST;}
+samplerstate				{ BEGIN(_SETRENDERSTATE); return TSAMPLER;}
+colormask					{ BEGIN(_SETRENDERSTATE); return TCOLORMASK;}
+on							{ yylval.boolean = true;BEGIN(_SETRENDERSTATE); return TBOOLEAN;}
+off							{ yylval.boolean = false;BEGIN(_SETRENDERSTATE); return TBOOLEAN;}
+true						{ yylval.boolean = true;BEGIN(_SETRENDERSTATE); return TBOOLEAN;}
+false						{ yylval.boolean = false;BEGIN(_SETRENDERSTATE); return TBOOLEAN;}
+\[{PARAM}\]					{ yylval.str = GetString (yytext); BEGIN(_SETRENDERSTATE); return TVAR; }
+\"[^\"]*\"					{
+	yylval.str = GetString (yytext);
+	const char* p = yylval.str;
+	while (*p) {
+		char c = *p++;
+		if (c == '\n')
+			Genesislineno++;
+	}
+	return TREALSTRING;
+	};
+\n							{ BEGIN(_SETRENDERSTATE); }
+\}                          { BEGIN(INITIAL); return '}';};
+}
+
+<_DEFINEPARAM>
+{
+\{							{ BEGIN(_DEFINEPARAM); return '{';}
+\[{PARAM}\]					{ yylval.str = GetString (yytext); BEGIN(_DEFINEPARAM); return TVAR; }
+\<{OP}\>				    { yylval.str = GetString (yytext); BEGIN(_DEFINEPARAM); return TOPERATOR; }
+Float						{ yylval.spt = Graphic::eShaderParamFloat; BEGIN(_DEFINEPARAM); return TFLOAT;}
+Vector						{ yylval.spt = Graphic::eShaderParamVector; BEGIN(_DEFINEPARAM); return TVECTOR;}
+Matrix						{ yylval.spt = Graphic::eShaderParamMatrix; BEGIN(_DEFINEPARAM); return TMATRIX;}
+sampler1D					{ yylval.spt = Graphic::eShaderParamTexture1D; BEGIN(_DEFINEPARAM); return TTEXTURE; }
+sampler2D					{ yylval.spt = Graphic::eShaderParamTexture2D; BEGIN(_DEFINEPARAM); return TTEXTURE; }
+sampler3D					{ yylval.spt = Graphic::eShaderParamTexture3D; BEGIN(_DEFINEPARAM); return TTEXTURE; }
+samplerCUBE					{ yylval.spt = Graphic::eShaderParamTextureCUBE; BEGIN(_DEFINEPARAM); return TTEXTURE; }
+\=							{ BEGIN(_DEFINEPARAM); return '=';}
+\"[^\"]*\"					{
+	yylval.str = GetString (yytext);
+	const char* p = yylval.str;
+	while (*p) {
+		char c = *p++;
+		if (c == '\n')
+			Genesislineno++;
+	}
+	return TREALSTRING;
+	};
+\n							{ BEGIN(_DEFINEPARAM); }
+\}                          { BEGIN(INITIAL); return '}';};
+}
+
+bindtexture					{ BEGIN(_SETPARAM);return TSETPARAM;};
+setparam					{ BEGIN(_SETPARAM);return TSETPARAM;};
+<_SETPARAM>{
+-?{NUMERIC}+("."({NUMERIC}*))?	{ yylval.num = atof(yytext); BEGIN(_SETPARAM); return TNUMBER;}
+\[{PARAM}\]					{ yylval.str = GetString (yytext); BEGIN(_SETPARAM); return TVAR; }
+Float						{ yylval.spt = Graphic::eShaderParamFloat; BEGIN(_SETPARAM); return TFLOAT;}
+Vector						{ yylval.spt = Graphic::eShaderParamVector; BEGIN(_SETPARAM); return TVECTOR;}
+Matrix						{ yylval.spt = Graphic::eShaderParamMatrix; BEGIN(_SETPARAM); return TMATRIX;}
+1D							{ yylval.spt = Graphic::eShaderParamTexture1D; BEGIN(_SETPARAM); return TTEXTURE; }
+2D							{ yylval.spt = Graphic::eShaderParamTexture2D; BEGIN(_SETPARAM); return TTEXTURE; }
+3D							{ yylval.spt = Graphic::eShaderParamTexture3D; BEGIN(_SETPARAM); return TTEXTURE; }
+CUBE						{ yylval.spt = Graphic::eShaderParamTextureCUBE; BEGIN(_SETPARAM); return TTEXTURE; }
+\n							{ BEGIN(INITIAL); }
+}
+
+<_SETSHADERCODE>{
+\"[^\"]*\"					{
+	yylval.str = GetString (yytext);
+	const char* p = yylval.str;
+	while (*p) {
+		char c = *p++;
+		if (c == '\n')
+			Genesislineno++;
+	}
+	BEGIN(INITIAL);
+	return TREALSTRING;
+	};
+}
+%%
+YY_BUFFER_STATE b;
+
+void InitLexer(const char *c, size_t length);
+void EndLexer();
+
+
+void InitLexer(const char *c, size_t length)
+{
+	b = yy_scan_bytes(c, length);
+	yy_switch_to_buffer(b);
+	Genesislineno = 1;
+	BEGIN (INITIAL);
+}
+
+void EndLexer()
+{
+	yy_delete_buffer( YY_CURRENT_BUFFER );
+}

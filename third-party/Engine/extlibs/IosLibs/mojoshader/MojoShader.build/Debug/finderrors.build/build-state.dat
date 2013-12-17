@@ -1,0 +1,153 @@
+Tfinderrors
+v5
+r1
+cCheck dependencies
+cCompileC MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.o /Volumes/MacDisk2/thirdlib/mojoshader/utils/finderrors.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/MacDisk2/thirdlib/mojoshader/Debug/finderrors normal x86_64
+cPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-BBF22A551AB947069C8E97C6.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/dirent.h
+c0000000051649C3A00000000000019B8
+t1365548090
+s6584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/errno.h
+c0000000051649C3B00000000000003EB
+t1365548091
+s1003
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdio.h
+c0000000051649C530000000000004523
+t1365548115
+s17699
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdlib.h
+c0000000051649C530000000000003089
+t1365548115
+s12425
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/string.h
+c0000000051649C530000000000001A3A
+t1365548115
+s6714
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/sys/types.h
+c0000000051BEB2450000000000002795
+t1371451973
+s10133
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/4.2/include/stdarg.h
+c000000005154B08F0000000000000810
+t1364504719
+s2064
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/Debug/finderrors
+t1371457446
+s363068
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.LinkFileList
+c0000000051BEB29A0000000000000071
+t1371452058
+s113
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.o
+t1371457445
+s18532
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-7719284EE57C41FFAF5B80BD.sh
+c0000000051BEB29A000000000000009F
+t1371452058
+s159
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-BBF22A551AB947069C8E97C6.sh
+c0000000051BEC7A5000000000000009F
+t1371457445
+s159
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader.h
+c000000004FA42202000000000001C42F
+t1336156674
+s115759
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/mojoshader_version.h
+c0000000051BEC06300000000000000C1
+t1371455587
+s193
+
+N/Volumes/MacDisk2/thirdlib/mojoshader/utils/finderrors.c
+c000000004FA422020000000000001794
+t1336156674
+s6036
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<stdarg.h>
+i<sys/types.h>
+i<errno.h>
+i"mojoshader.h"
+i"SDL.h"
+i<windows.h>
+i<malloc.h>
+i<dirent.h>
+
+CBuild AST from /Volumes/MacDisk2/thirdlib/mojoshader/utils/finderrors.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese4a296deff6eb741^94db96deff6eb741^---0#1#0#--18"Check dependencies36"865F2DCB-DEBA-4044-9BF0-CE3B7277CA06-
+
+CCompileC MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.o /Volumes/MacDisk2/thirdlib/mojoshader/utils/finderrors.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s393150245.680213
+e393150245.830313
+r1
+xCompileC
+xMojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.o
+x/Volumes/MacDisk2/thirdlib/mojoshader/utils/finderrors.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Volumes/MacDisk2/thirdlib/mojoshader/utils/finderrors.c8141ae25ff6eb741^5e9cd425ff6eb741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Volumes/MacDisk2/thirdlib/mojoshader/utils/finderrors.c0000000000000000^1960"CompileC MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.o utils/finderrors.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Volumes/MacDisk2/thirdlib/mojoshader/Debug/include -I/Volumes/MacDisk2/thirdlib/mojoshader -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/DerivedSources/x86_64 -I/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -Wall -ggdb3 -MMD -MT dependencies -MF /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.d --serialize-diagnostics /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.dia -c /Volumes/MacDisk2/thirdlib/mojoshader/utils/finderrors.c -o /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.o36"79DCB91D-E667-49F6-BE81-5B75A80608D9-
+
+CLd /Volumes/MacDisk2/thirdlib/mojoshader/Debug/finderrors normal x86_64
+s393150245.836610
+e393150246.132253
+r1
+xLd
+x/Volumes/MacDisk2/thirdlib/mojoshader/Debug/finderrors
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Link /Volumes/MacDisk2/thirdlib/mojoshader/Debug/finderrors1095d625ff6eb741^2dec2126ff6eb741^---0#0#0#--770"Ld Debug/finderrors normal x86_64    cd /Volumes/MacDisk2/thirdlib/mojoshader    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Volumes/MacDisk2/thirdlib/mojoshader/Debug -F/Volumes/MacDisk2/thirdlib/mojoshader/Debug -filelist /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Objects-normal/x86_64/finderrors.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Volumes/MacDisk2/thirdlib/mojoshader/Debug/libmojoshader.a -lm -o /Volumes/MacDisk2/thirdlib/mojoshader/Debug/finderrors36"FE0D8556-17BF-4770-83CD-B1852B0AE2B3-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-7719284EE57C41FFAF5B80BD.sh
+s393147438.029933
+e393147438.095971
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-7719284EE57C41FFAF5B80BD.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.finderrors.Debug
+omake[1]: Nothing to be done for `PostBuild.finderrors.Debug'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'cc60082ef46eb741^aad7192ef46eb741^-311"echo "Depend check for xcode"Depend check for xcodecd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.finderrors.Debugmake[1]: Nothing to be done for `PostBuild.finderrors.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393147438#0#30#-0#-----2@23"Depend check for xcode-393147438#30#23#-0#-----2@196"cd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.finderrors.Debug-393147438#53#196#-0#-----2@62"make[1]: Nothing to be done for `PostBuild.finderrors.Debug'.-393147438#249#62#-0#-----0#0#0#--293"PhaseScriptExecution "CMake PostBuild Rules" MojoShader.build/Debug/finderrors.build/Script-7719284EE57C41FFAF5B80BD.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-7719284EE57C41FFAF5B80BD.sh36"A1D1DBA6-B435-4868-A42C-1157044D37E9-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-BBF22A551AB947069C8E97C6.sh
+s393150430.606478
+e393150430.661199
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-BBF22A551AB947069C8E97C6.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.finderrors.Debug
+omake[1]: Nothing to be done for `PostBuild.finderrors.Debug'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'67d19bdeff6eb741^b5c3abdeff6eb741^-311"echo "Depend check for xcode"Depend check for xcodecd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.finderrors.Debugmake[1]: Nothing to be done for `PostBuild.finderrors.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393150430#0#30#-0#-----2@23"Depend check for xcode-393150430#30#23#-0#-----2@196"cd /Volumes/MacDisk2/thirdlib/mojoshader && make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.finderrors.Debug-393150430#53#196#-0#-----2@62"make[1]: Nothing to be done for `PostBuild.finderrors.Debug'.-393150430#249#62#-0#-----0#0#0#--293"PhaseScriptExecution "CMake PostBuild Rules" MojoShader.build/Debug/finderrors.build/Script-BBF22A551AB947069C8E97C6.sh    cd /Volumes/MacDisk2/thirdlib/mojoshader    /bin/sh -c /Volumes/MacDisk2/thirdlib/mojoshader/MojoShader.build/Debug/finderrors.build/Script-BBF22A551AB947069C8E97C6.sh36"163A1530-F8C2-467C-B349-B4415752DD15-
+

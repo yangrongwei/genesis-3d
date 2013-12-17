@@ -1,0 +1,2 @@
+Compiling 'file:///D:/work/webjet/terrain/Engine/foundation/http/httpprotocol.nidl'
+Compiling 'file:///D:/work/webjet/terrain/Engine/foundation/io/iointerfaceprotocol.nidl'

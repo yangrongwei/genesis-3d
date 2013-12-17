@@ -1,0 +1,10 @@
+Opcode v1.3
+--------------------
+
+Copyright (c) 2003 Pierre Terdiman http://www.codercorner.com/Opcode.htm
+
+The library is free. No GPL or LGPL, you can do whatever you want with the code. the author
+would appreciate it if you write somewhere in your product that you're using OPCODE, but
+that's not mandatory. the author would also appreciate a notification by mail, just to know how people
+are using the lib.
+

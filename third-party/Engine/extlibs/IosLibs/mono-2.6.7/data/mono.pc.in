@@ -1,0 +1,14 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${pcfiledir}/../..
+libdir=${prefix}/@reloc_libdir@
+includedir=${prefix}/include/mono-@API_VER@
+sysconfdir=@sysconfdir@
+
+Name: Mono
+Description: Mono Runtime
+Version: @VERSION@
+## Commented out because SLE hides devel files in the SLE SDK,
+## which not all customers will have.
+#Requires: glib-2.0 gthread-2.0
+Libs: -L${libdir} @export_ldflags@ -lmono @libmono_ldflags@
+Cflags: -I${includedir} @libmono_cflags@

@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<root>
+<class cppclass="SoundReverbZone" csclass="SoundReverbZone" csbase="Component">
+<func name="Bind">
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="GetMinDistance">
+	<ret type ="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetMinDistance">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">minDistance</param>
+</func>
+<func name="GetMaxDistance">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetMaxDistance">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">maxDistance</param>
+</func>
+<func name="GetReverbPreset">
+	<ret type="int"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetReverbPreset">
+	<param type="SoundReverbZone">self</param>
+	<param type="int">preset</param>
+</func>
+<func name="GetRoom">
+	<ret type="int"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetRoom">
+	<param type="SoundReverbZone">self</param>
+	<param type="int">room</param>
+</func>
+<func name="GetRoomHF">
+	<ret type="int"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetRoomHF">
+	<param type="SoundReverbZone">self</param>
+	<param type="int">roomHF</param>
+</func>
+<func name="GetDecayTime">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetDecayTime">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">decayTime</param>
+</func>
+<func name="GetDecayHFRatio">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetDecayHFRatio">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">decayHFRatio</param>
+</func>
+<func name="GetReflectionsDelay">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetReflectionsDelay">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">reflectionsDelay</param>
+</func>
+<func name="GetReflections">
+	<ret type="int"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetReflections">
+	<param type="SoundReverbZone">self</param>
+	<param type="int">reflections</param>
+</func>
+<func name="GetReverb">
+	<ret type="int"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetReverb">
+	<param type="SoundReverbZone">self</param>
+	<param type="int">reverb</param>
+</func>
+<func name="GetReverbDelay">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetReverbDelay">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">reverbDelay</param>
+</func>
+<func name="GetHFReference">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetHFReference">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">hfReference</param>
+</func>
+<func name="GetDiffusion">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetDiffusion">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">diffusion</param>
+</func>
+<func name="GetDensity">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetDensity">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">density</param>
+</func>
+<func name="GetRoomLF">
+	<ret type="int"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetRoomLF">
+	<param type="SoundReverbZone">self</param>
+	<param type="int">roomLF</param>
+</func>
+<func name="GetLFReference">
+	<ret type="float"></ret>
+	<param type="SoundReverbZone">self</param>
+</func>
+<func name="SetLFReference">
+	<param type="SoundReverbZone">self</param>
+	<param type="float">lfReference</param>
+</func>
+<func name="CopyValueFromPreset">
+	<param type="SoundReverbZone">self</param>
+	<param type="int">preset</param>
+</func>
+</class>
+</root>
+

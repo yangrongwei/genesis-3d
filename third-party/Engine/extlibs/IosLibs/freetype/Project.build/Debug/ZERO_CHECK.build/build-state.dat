@@ -1,0 +1,28 @@
+TZERO_CHECK
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/ZERO_CHECK.build/Script-31063FA4F79744E7B6855CF8.sh
+
+N/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/ZERO_CHECK.build/Script-31063FA4F79744E7B6855CF8.sh
+c0000000051F8C5BB00000000000000E5
+t1375258043
+s229
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2d43ac8dfda8b741^f854ae8dfda8b741^---0#1#0#--18"Check dependencies36"33DD9075-9D69-4B5A-9410-D1DE3270C368-
+
+CPhaseScriptExecution "CMake Rules" /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/ZERO_CHECK.build/Script-31063FA4F79744E7B6855CF8.sh
+s396950925.682130
+e396950925.746351
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/ZERO_CHECK.build/Script-31063FA4F79744E7B6855CF8.sh
+oecho ""
+o
+omake -f /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'b4e7b28dfda8b741^c619bf8dfda8b741^-171"echo ""make -f /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-396950925#0#8#-0#-----2@107"make -f /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/CMakeScripts/ReRunCMake.make-396950925#9#107#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-396950925#116#55#-0#-----0#0#0#--341"PhaseScriptExecution "CMake Rules" Project.build/Debug/ZERO_CHECK.build/Script-31063FA4F79744E7B6855CF8.sh    cd /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype    /bin/sh -c /Users/songqi/Documents/SVN/MyDevelop/Engine/extlibs/IosLibs/freetype/Project.build/Debug/ZERO_CHECK.build/Script-31063FA4F79744E7B6855CF8.sh36"37EBE2CD-775A-4041-AB5E-045C3929D5D3-
+

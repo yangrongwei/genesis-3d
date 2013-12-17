@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<root>
+<class cppclass="ActorManager" csclass="ActorManager">
+<func name="CreateFromTemplate">
+	<ret type="Actor"></ret>
+	<param type="String">name</param>
+</func>
+<func name="GetActiveActor">
+	<ret type="Actor"></ret>
+	<param type="IndexT">index</param>
+</func>
+<func name="GetActiveActorCount">
+	<ret type="SizeT"></ret>
+</func>
+<func name="FindActiveActorByFastID">
+	<ret type="Actor"></ret>
+	<param type="FastId">fastID</param>
+</func>
+<func name="FindActiveActorByGuid">
+	<ret type="Actor"></ret>
+	<param type="Guid">guid</param>
+</func>
+<func name="FindActiveActorByName">
+	<ret type="Actor"></ret>
+	<param type="String">name</param>
+</func>
+<func name="GetMainCameraActor">
+	<ret type="Actor"></ret>
+</func>
+</class>
+</root>

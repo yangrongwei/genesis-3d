@@ -1,0 +1,2051 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		71800D4477E443288BCF1064 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1B0A69D71F114B4A9612D9F0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				6B0BE57DFAFF4DB9B5CDE5C9 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		93685DDC40924BADBA48772D /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB9DC6356CE64360BF342C17 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E20F55EA974C45138783F683 /* CMake Rules */,
+			);
+			dependencies = (
+				C80B94A304574593955FFEA5 /* PBXTargetDependency */,
+				EE83D2C8A8114374AAF89BC3 /* PBXTargetDependency */,
+				6B0E7AAC061C470999E5B8EF /* PBXTargetDependency */,
+				3A9B86F4806342C3A263586E /* PBXTargetDependency */,
+				95318E971F364DB0BF2D2FDD /* PBXTargetDependency */,
+				BB228BE2E852442A8371EBE1 /* PBXTargetDependency */,
+				E9180C0A1FDB4BE1B6C45C6E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		EF1A1E542CF945B4B77AD975 /* test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8508B709906042BD8263F936 /* Build configuration list for PBXAggregateTarget "test" */;
+			buildPhases = (
+				2CB131BF01C740099B1E2162 /* CMake Rules */,
+			);
+			dependencies = (
+				C80B94A304574593955FFEA5 /* PBXTargetDependency */,
+				3A9B86F4806342C3A263586E /* PBXTargetDependency */,
+			);
+			name = test;
+			productName = test;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0FC5B1EEBD9B458AA64DB258 /* testparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 76D0288C60DD4895B48AF641 /* testparse.c */; settings = {COMPILER_FLAGS = ""; }; };
+		201F09217F1A473489E7B1EA /* mojoshader_preprocessor.c in Sources */ = {isa = PBXBuildFile; fileRef = 71D60E013FBE47478E25432C /* mojoshader_preprocessor.c */; settings = {COMPILER_FLAGS = ""; }; };
+		3F4E4A09E6FF4F5ABE898532 /* finderrors.c in Sources */ = {isa = PBXBuildFile; fileRef = 295B8520013E4630843CEA9D /* finderrors.c */; settings = {COMPILER_FLAGS = ""; }; };
+		611EDDCAAF3540B9A629222A /* mojoshader_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FA79D277D954F1FA5CE32F3 /* mojoshader_common.c */; settings = {COMPILER_FLAGS = ""; }; };
+		7512928A3F0A4CA28B61F967 /* mojoshader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BD2D4F2BC61484B9115584B /* mojoshader.c */; settings = {COMPILER_FLAGS = ""; }; };
+		8601DCAE1CAF4C6F82EDA7A8 /* mojoshader-compiler.c in Sources */ = {isa = PBXBuildFile; fileRef = B290B2CA7D064103B4C9A92B /* mojoshader-compiler.c */; settings = {COMPILER_FLAGS = ""; }; };
+		8C5A86707CCF4988B4B710C1 /* mojoshader_assembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C6169E00999455C989C3A39 /* mojoshader_assembler.c */; settings = {COMPILER_FLAGS = ""; }; };
+		9316EAAA0C254282BE87D608 /* lemon.c in Sources */ = {isa = PBXBuildFile; fileRef = 79C515A9085D44FBAE7B3AC7 /* lemon.c */; settings = {COMPILER_FLAGS = ""; }; };
+		C208AC55F476401685DA409B /* mojoshader_opengl.c in Sources */ = {isa = PBXBuildFile; fileRef = 63EC4ADAF32147AABFD1F2D8 /* mojoshader_opengl.c */; settings = {COMPILER_FLAGS = ""; }; };
+		C4CDE7A980594D989CE308A0 /* mojoshader_compiler.c in Sources */ = {isa = PBXBuildFile; fileRef = E3FA47236AA544659998A827 /* mojoshader_compiler.c */; settings = {COMPILER_FLAGS = ""; }; };
+		C6A98910E843410FA893832B /* mojoshader_effects.c in Sources */ = {isa = PBXBuildFile; fileRef = 69101FEE19A643B3AEC901E6 /* mojoshader_effects.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F567B729EBE2458E904D0BA5 /* mojoshader_lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 738E07DF92FB403C82AC561E /* mojoshader_lexer.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F912A31D77054375977F0D5F /* testoutput.c in Sources */ = {isa = PBXBuildFile; fileRef = D43564FF046F4721A059DA42 /* testoutput.c */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		020F58F9908746B0B132EB7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2FA46FA18C4244AE97E86B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74017C03F9C1414090CCD7F1;
+			remoteInfo = finderrors;
+		};
+		12E9D5C7C74A4A87AB81E362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2FA46FA18C4244AE97E86B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E9603756CB45FE9C075FB8;
+			remoteInfo = testoutput;
+		};
+		3003CCC0EABC479B80BC6681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2FA46FA18C4244AE97E86B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DB581C7CFC24A1981B080AD;
+			remoteInfo = lemon;
+		};
+		3B398968A85343C989FB7432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2FA46FA18C4244AE97E86B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74A002C9E9F6403EA509ABC4;
+			remoteInfo = "mojoshader-compiler";
+		};
+		63FABF291EE9420D9E191148 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2FA46FA18C4244AE97E86B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A88E4C6C88054E1BB0343654;
+			remoteInfo = mojoshader;
+		};
+		772496F1348346A68BB8C21E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2FA46FA18C4244AE97E86B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71800D4477E443288BCF1064;
+			remoteInfo = ZERO_CHECK;
+		};
+		C0C75F66807F4FB79269F26F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2FA46FA18C4244AE97E86B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2F9A40059E94AFC98F5FE5E;
+			remoteInfo = testparse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		295B8520013E4630843CEA9D /* finderrors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = finderrors.c; path = utils/finderrors.c; sourceTree = SOURCE_ROOT; };
+		341C7AE114AA43C985B90BC6 /* finderrors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = finderrors; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EC4ADAF32147AABFD1F2D8 /* mojoshader_opengl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mojoshader_opengl.c; sourceTree = SOURCE_ROOT; };
+		64DB04ABDE4B4E06AEDDCD07 /* lemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = lemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D77AAE61FC4BACBCDECD48 /* libmojoshader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libmojoshader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		69101FEE19A643B3AEC901E6 /* mojoshader_effects.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mojoshader_effects.c; sourceTree = SOURCE_ROOT; };
+		70B85E515EED4508AB586278 /* mojoshader-compiler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "mojoshader-compiler"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D60E013FBE47478E25432C /* mojoshader_preprocessor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mojoshader_preprocessor.c; sourceTree = SOURCE_ROOT; };
+		738E07DF92FB403C82AC561E /* mojoshader_lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mojoshader_lexer.c; sourceTree = SOURCE_ROOT; };
+		76D0288C60DD4895B48AF641 /* testparse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = testparse.c; path = utils/testparse.c; sourceTree = SOURCE_ROOT; };
+		79C515A9085D44FBAE7B3AC7 /* lemon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lemon.c; path = misc/lemon.c; sourceTree = SOURCE_ROOT; };
+		9BD2D4F2BC61484B9115584B /* mojoshader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mojoshader.c; sourceTree = SOURCE_ROOT; };
+		9C6169E00999455C989C3A39 /* mojoshader_assembler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mojoshader_assembler.c; sourceTree = SOURCE_ROOT; };
+		9FA79D277D954F1FA5CE32F3 /* mojoshader_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mojoshader_common.c; sourceTree = SOURCE_ROOT; };
+		B290B2CA7D064103B4C9A92B /* mojoshader-compiler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "mojoshader-compiler.c"; path = "utils/mojoshader-compiler.c"; sourceTree = SOURCE_ROOT; };
+		CBA3826E266644F897A62EC7 /* mojoshader_parser_hlsl.lemon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; path = mojoshader_parser_hlsl.lemon; sourceTree = SOURCE_ROOT; };
+		D43564FF046F4721A059DA42 /* testoutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = testoutput.c; path = utils/testoutput.c; sourceTree = SOURCE_ROOT; };
+		D53ADD59A4DC4FB5B5F69A12 /* testoutput */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = testoutput; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FA47236AA544659998A827 /* mojoshader_compiler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mojoshader_compiler.c; sourceTree = SOURCE_ROOT; };
+		EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F95BD6B0D1A74FD4BF8876A0 /* testparse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = testparse; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0AAC2044271B48B9B442B79F /* mojoshader-compiler */ = {
+			isa = PBXGroup;
+			children = (
+				D53F0BC7949E451C96921456 /* Source Files */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+			);
+			name = "mojoshader-compiler";
+			sourceTree = "<group>";
+		};
+		0F50676368CE4FA8BEB619FA /* mojoshader */ = {
+			isa = PBXGroup;
+			children = (
+				176128540694443FB4FAEA23 /* Source Files */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+				CBA3826E266644F897A62EC7 /* mojoshader_parser_hlsl.lemon */,
+			);
+			name = mojoshader;
+			sourceTree = "<group>";
+		};
+		0FC383FCCAF04D73B6D1FEDC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				295B8520013E4630843CEA9D /* finderrors.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		12407FDBA1ED4C7D809E3F18 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				FB730C5E867C4E378DDB7112 /* CMake Rules */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		13EB773FE6A14AECBCF4E191 /* finderrors */ = {
+			isa = PBXGroup;
+			children = (
+				0FC383FCCAF04D73B6D1FEDC /* Source Files */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+			);
+			name = finderrors;
+			sourceTree = "<group>";
+		};
+		176128540694443FB4FAEA23 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BD2D4F2BC61484B9115584B /* mojoshader.c */,
+				9FA79D277D954F1FA5CE32F3 /* mojoshader_common.c */,
+				69101FEE19A643B3AEC901E6 /* mojoshader_effects.c */,
+				E3FA47236AA544659998A827 /* mojoshader_compiler.c */,
+				71D60E013FBE47478E25432C /* mojoshader_preprocessor.c */,
+				738E07DF92FB403C82AC561E /* mojoshader_lexer.c */,
+				9C6169E00999455C989C3A39 /* mojoshader_assembler.c */,
+				63EC4ADAF32147AABFD1F2D8 /* mojoshader_opengl.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1A9145E0F6184C1FAF5571C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				341C7AE114AA43C985B90BC6 /* finderrors */,
+				64DB04ABDE4B4E06AEDDCD07 /* lemon */,
+				65D77AAE61FC4BACBCDECD48 /* libmojoshader.a */,
+				70B85E515EED4508AB586278 /* mojoshader-compiler */,
+				D53ADD59A4DC4FB5B5F69A12 /* testoutput */,
+				F95BD6B0D1A74FD4BF8876A0 /* testparse */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C2AE781627F4949871227B6 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2D0A15D9B93042F6877B54B5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				12407FDBA1ED4C7D809E3F18 /* ALL_BUILD */,
+				FB246C45C6B540B1B9D027DC /* ZERO_CHECK */,
+				13EB773FE6A14AECBCF4E191 /* finderrors */,
+				CF315588D31E40AC9E553897 /* lemon */,
+				0F50676368CE4FA8BEB619FA /* mojoshader */,
+				0AAC2044271B48B9B442B79F /* mojoshader-compiler */,
+				7DD47502092B4F26BC6D92BD /* test */,
+				CA0D0C29EA394465861BF8DB /* testoutput */,
+				51058C6B8E3B4A9EB6EFBA25 /* testparse */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		46E42ED8C3E749D9BE3EE454 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4ED3F9F7899C4FEC8D4DE9EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		51058C6B8E3B4A9EB6EFBA25 /* testparse */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9CDD21BA946AA9159221F /* Source Files */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+			);
+			name = testparse;
+			sourceTree = "<group>";
+		};
+		55CC7DC0E8F1436B9817CC17 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				79C515A9085D44FBAE7B3AC7 /* lemon.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7DD47502092B4F26BC6D92BD /* test */ = {
+			isa = PBXGroup;
+			children = (
+				46E42ED8C3E749D9BE3EE454 /* CMake Rules */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		9171E6E4BFDE432083CE33FC = {
+			isa = PBXGroup;
+			children = (
+				2D0A15D9B93042F6877B54B5 /* Sources */,
+				4ED3F9F7899C4FEC8D4DE9EC /* Resources */,
+				1A9145E0F6184C1FAF5571C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA0D0C29EA394465861BF8DB /* testoutput */ = {
+			isa = PBXGroup;
+			children = (
+				DF508D0F4B5D432FA9286403 /* Source Files */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+			);
+			name = testoutput;
+			sourceTree = "<group>";
+		};
+		CF315588D31E40AC9E553897 /* lemon */ = {
+			isa = PBXGroup;
+			children = (
+				55CC7DC0E8F1436B9817CC17 /* Source Files */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+			);
+			name = lemon;
+			sourceTree = "<group>";
+		};
+		D53F0BC7949E451C96921456 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B290B2CA7D064103B4C9A92B /* mojoshader-compiler.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DF508D0F4B5D432FA9286403 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D43564FF046F4721A059DA42 /* testoutput.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		FB246C45C6B540B1B9D027DC /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				1C2AE781627F4949871227B6 /* CMake Rules */,
+				EFC0CBF64DCE4DA0A8FDE989 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		FB730C5E867C4E378DDB7112 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		FEF9CDD21BA946AA9159221F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				76D0288C60DD4895B48AF641 /* testparse.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71E9603756CB45FE9C075FB8 /* testoutput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51B668D5928E4D4BAD084B94 /* Build configuration list for PBXNativeTarget "testoutput" */;
+			buildPhases = (
+				376726A45EF24BF59DEFDA16 /* Sources */,
+				F4119DEEEC12469FACC806F4 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C80B94A304574593955FFEA5 /* PBXTargetDependency */,
+				EE83D2C8A8114374AAF89BC3 /* PBXTargetDependency */,
+			);
+			name = testoutput;
+			productName = testoutput;
+			productReference = D53ADD59A4DC4FB5B5F69A12 /* testoutput */;
+			productType = "com.apple.product-type.tool";
+		};
+		74017C03F9C1414090CCD7F1 /* finderrors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD214CC6EB5E4A968CEE2221 /* Build configuration list for PBXNativeTarget "finderrors" */;
+			buildPhases = (
+				EF85DF48342D4F3DBAC1B7A4 /* Sources */,
+				BBF22A551AB947069C8E97C6 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C80B94A304574593955FFEA5 /* PBXTargetDependency */,
+				EE83D2C8A8114374AAF89BC3 /* PBXTargetDependency */,
+			);
+			name = finderrors;
+			productName = finderrors;
+			productReference = 341C7AE114AA43C985B90BC6 /* finderrors */;
+			productType = "com.apple.product-type.tool";
+		};
+		74A002C9E9F6403EA509ABC4 /* mojoshader-compiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0924B25749D04D29B01CD801 /* Build configuration list for PBXNativeTarget "mojoshader-compiler" */;
+			buildPhases = (
+				29D76FF123E04FD483EF9F10 /* Sources */,
+				63A15F3DCA3B459BB8E9C673 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C80B94A304574593955FFEA5 /* PBXTargetDependency */,
+				EE83D2C8A8114374AAF89BC3 /* PBXTargetDependency */,
+			);
+			name = "mojoshader-compiler";
+			productName = "mojoshader-compiler";
+			productReference = 70B85E515EED4508AB586278 /* mojoshader-compiler */;
+			productType = "com.apple.product-type.tool";
+		};
+		9DB581C7CFC24A1981B080AD /* lemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE715DED77904E7280F81410 /* Build configuration list for PBXNativeTarget "lemon" */;
+			buildPhases = (
+				9F27659FABC744CB86DDD7C5 /* Sources */,
+				69461F913F4A4E5EB797B4A3 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C80B94A304574593955FFEA5 /* PBXTargetDependency */,
+			);
+			name = lemon;
+			productName = lemon;
+			productReference = 64DB04ABDE4B4E06AEDDCD07 /* lemon */;
+			productType = "com.apple.product-type.tool";
+		};
+		A88E4C6C88054E1BB0343654 /* mojoshader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BF9B4618F24746BC36AB5A /* Build configuration list for PBXNativeTarget "mojoshader" */;
+			buildPhases = (
+				FCF09AF85EFC40B489AE5674 /* CMake Rules */,
+				1DD2D3A53AAB46FA8BD38AD0 /* Sources */,
+				3F7A5C2FDA474C47AFC95554 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C80B94A304574593955FFEA5 /* PBXTargetDependency */,
+				6B0E7AAC061C470999E5B8EF /* PBXTargetDependency */,
+			);
+			name = mojoshader;
+			productName = mojoshader;
+			productReference = 65D77AAE61FC4BACBCDECD48 /* libmojoshader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B2F9A40059E94AFC98F5FE5E /* testparse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6EAF39B888A4BD1BE2498CA /* Build configuration list for PBXNativeTarget "testparse" */;
+			buildPhases = (
+				125FE0A933A34A51AF2E1F33 /* Sources */,
+				434B7900107F49E3802BB623 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C80B94A304574593955FFEA5 /* PBXTargetDependency */,
+				EE83D2C8A8114374AAF89BC3 /* PBXTargetDependency */,
+			);
+			name = testparse;
+			productName = testparse;
+			productReference = F95BD6B0D1A74FD4BF8876A0 /* testparse */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F2FA46FA18C4244AE97E86B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = E682B7959E0E4D5F9F947159 /* Build configuration list for PBXProject "MojoShader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9171E6E4BFDE432083CE33FC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93685DDC40924BADBA48772D /* ALL_BUILD */,
+				71800D4477E443288BCF1064 /* ZERO_CHECK */,
+				74017C03F9C1414090CCD7F1 /* finderrors */,
+				9DB581C7CFC24A1981B080AD /* lemon */,
+				A88E4C6C88054E1BB0343654 /* mojoshader */,
+				74A002C9E9F6403EA509ABC4 /* mojoshader-compiler */,
+				EF1A1E542CF945B4B77AD975 /* test */,
+				71E9603756CB45FE9C075FB8 /* testoutput */,
+				B2F9A40059E94AFC98F5FE5E /* testparse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CB131BF01C740099B1E2162 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/test_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3F7A5C2FDA474C47AFC95554 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/mojoshader_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		434B7900107F49E3802BB623 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/testparse_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		63A15F3DCA3B459BB8E9C673 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/mojoshader-compiler_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		69461F913F4A4E5EB797B4A3 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/lemon_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6B0BE57DFAFF4DB9B5CDE5C9 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		BBF22A551AB947069C8E97C6 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/finderrors_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E20F55EA974C45138783F683 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F4119DEEEC12469FACC806F4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/testoutput_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		FCF09AF85EFC40B489AE5674 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Volumes/MacDisk2/thirdlib/mojoshader -f /Volumes/MacDisk2/thirdlib/mojoshader/CMakeScripts/mojoshader_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		125FE0A933A34A51AF2E1F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FC5B1EEBD9B458AA64DB258 /* testparse.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD2D3A53AAB46FA8BD38AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7512928A3F0A4CA28B61F967 /* mojoshader.c in Sources */,
+				611EDDCAAF3540B9A629222A /* mojoshader_common.c in Sources */,
+				C6A98910E843410FA893832B /* mojoshader_effects.c in Sources */,
+				C4CDE7A980594D989CE308A0 /* mojoshader_compiler.c in Sources */,
+				201F09217F1A473489E7B1EA /* mojoshader_preprocessor.c in Sources */,
+				F567B729EBE2458E904D0BA5 /* mojoshader_lexer.c in Sources */,
+				8C5A86707CCF4988B4B710C1 /* mojoshader_assembler.c in Sources */,
+				C208AC55F476401685DA409B /* mojoshader_opengl.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29D76FF123E04FD483EF9F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8601DCAE1CAF4C6F82EDA7A8 /* mojoshader-compiler.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376726A45EF24BF59DEFDA16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F912A31D77054375977F0D5F /* testoutput.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F27659FABC744CB86DDD7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9316EAAA0C254282BE87D608 /* lemon.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF85DF48342D4F3DBAC1B7A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4E4A09E6FF4F5ABE898532 /* finderrors.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A9B86F4806342C3A263586E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74A002C9E9F6403EA509ABC4 /* mojoshader-compiler */;
+			targetProxy = 3B398968A85343C989FB7432 /* PBXContainerItemProxy */;
+		};
+		6B0E7AAC061C470999E5B8EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DB581C7CFC24A1981B080AD /* lemon */;
+			targetProxy = 3003CCC0EABC479B80BC6681 /* PBXContainerItemProxy */;
+		};
+		95318E971F364DB0BF2D2FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74017C03F9C1414090CCD7F1 /* finderrors */;
+			targetProxy = 020F58F9908746B0B132EB7B /* PBXContainerItemProxy */;
+		};
+		BB228BE2E852442A8371EBE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71E9603756CB45FE9C075FB8 /* testoutput */;
+			targetProxy = 12E9D5C7C74A4A87AB81E362 /* PBXContainerItemProxy */;
+		};
+		C80B94A304574593955FFEA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71800D4477E443288BCF1064 /* ZERO_CHECK */;
+			targetProxy = 772496F1348346A68BB8C21E /* PBXContainerItemProxy */;
+		};
+		E9180C0A1FDB4BE1B6C45C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2F9A40059E94AFC98F5FE5E /* testparse */;
+			targetProxy = C0C75F66807F4FB79269F26F /* PBXContainerItemProxy */;
+		};
+		EE83D2C8A8114374AAF89BC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A88E4C6C88054E1BB0343654 /* mojoshader */;
+			targetProxy = 63FABF291EE9420D9E191148 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CF57D18E796486589588DB5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.1;
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader/build;
+			};
+			name = MinSizeRel;
+		};
+		1DE3325686224D14B20880DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/Release/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = finderrors;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		20D04E55426C4C1FBD8D9F14 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/RelWithDebInfo/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testparse;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		2644162E7D654E92B6F2B767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = lemon;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		37A6EE62782F4F01B3CA7E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/Debug/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testoutput;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		399109404BED475A95C1D13B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.1;
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader/build;
+			};
+			name = RelWithDebInfo;
+		};
+		48D0D3AC32964EA09D8E0AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/Debug/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testparse;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		4CBE6B5B570C413690E1303B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/RelWithDebInfo/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testoutput;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		616CD37022BF444C8B3258B0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/RelWithDebInfo/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = finderrors;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		697FD618B8D64D7EA2F4A432 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6F18EB4F8013494F8A526763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.1;
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader/build;
+			};
+			name = Debug;
+		};
+		750F896030A74CB696AEEC1B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		751B305C4F2C4DC781850061 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		86E577CA8AB140EAA5C5BB82 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/RelWithDebInfo/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "mojoshader-compiler";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8767AC6E7BCF4D3EA2A8C150 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8E65D49A0276437083D85EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		999DCE1F631E4839AD49198E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9C06C926E9A941EFBB338B85 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = lemon;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		A5FFD00E7A5840E096A7DF52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mojoshader;
+				SDKROOT = iphoneos6.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		B3ACDC0A760446B3A8788DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = lemon;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		B45A4D793E9E463DBBCE1F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mojoshader;
+				SDKROOT = iphoneos6.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		B861FBB600D84B908554D35E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/MinSizeRel/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testparse;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		BB484A45D05F4D05A29120F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/Release/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "mojoshader-compiler";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		BFAB3291B60C4B7794943D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/Debug/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "mojoshader-compiler";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C1D63B198B1642F4B70E5EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		C474472F32ED4580B0C3BB5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/Debug/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = finderrors;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C59D8D9BAD1A4A20BCE4B966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.1;
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader/build;
+			};
+			name = Release;
+		};
+		CC5816306E1044D18EE1BACD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/MinSizeRel/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "mojoshader-compiler";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		CE1D5BBD81CF4B2E944ACD7C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mojoshader;
+				SDKROOT = iphoneos6.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		D6152C8BEB944C51A9639EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		D8EA05237B80499EA7E3AC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/Release/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testparse;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		DB31C5F366D54C3298A02BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		DC4725F9D09940F0BB8A3A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		E21C9769BCE342DBA4131F25 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mojoshader;
+				SDKROOT = iphoneos6.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E78CB1B22092495AA1835412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/Release/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testoutput;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		E80B33B5AA0E4F3F9648862A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		E9CDF071A4E54E8D886847B9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/MinSizeRel/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testoutput;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F9DD2F9589F540B697A1CDF7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = lemon;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		FE4CCE7EE85A46C39CF929FA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Volumes/MacDisk2/thirdlib/mojoshader/MinSizeRel/libmojoshader.a,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = finderrors;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		FF887776B9414FB4B9306624 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Volumes/MacDisk2/thirdlib/mojoshader/.;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-ggdb3",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Volumes/MacDisk2/thirdlib/mojoshader;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0924B25749D04D29B01CD801 /* Build configuration list for PBXNativeTarget "mojoshader-compiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFAB3291B60C4B7794943D50 /* Debug */,
+				BB484A45D05F4D05A29120F6 /* Release */,
+				CC5816306E1044D18EE1BACD /* MinSizeRel */,
+				86E577CA8AB140EAA5C5BB82 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1B0A69D71F114B4A9612D9F0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80B33B5AA0E4F3F9648862A /* Debug */,
+				DC4725F9D09940F0BB8A3A37 /* Release */,
+				750F896030A74CB696AEEC1B /* MinSizeRel */,
+				FF887776B9414FB4B9306624 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		51B668D5928E4D4BAD084B94 /* Build configuration list for PBXNativeTarget "testoutput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37A6EE62782F4F01B3CA7E8E /* Debug */,
+				E78CB1B22092495AA1835412 /* Release */,
+				E9CDF071A4E54E8D886847B9 /* MinSizeRel */,
+				4CBE6B5B570C413690E1303B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83BF9B4618F24746BC36AB5A /* Build configuration list for PBXNativeTarget "mojoshader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FFD00E7A5840E096A7DF52 /* Debug */,
+				B45A4D793E9E463DBBCE1F67 /* Release */,
+				CE1D5BBD81CF4B2E944ACD7C /* MinSizeRel */,
+				E21C9769BCE342DBA4131F25 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8508B709906042BD8263F936 /* Build configuration list for PBXAggregateTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E65D49A0276437083D85EAF /* Debug */,
+				C1D63B198B1642F4B70E5EFD /* Release */,
+				999DCE1F631E4839AD49198E /* MinSizeRel */,
+				751B305C4F2C4DC781850061 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B6EAF39B888A4BD1BE2498CA /* Build configuration list for PBXNativeTarget "testparse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48D0D3AC32964EA09D8E0AB1 /* Debug */,
+				D8EA05237B80499EA7E3AC1B /* Release */,
+				B861FBB600D84B908554D35E /* MinSizeRel */,
+				20D04E55426C4C1FBD8D9F14 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD214CC6EB5E4A968CEE2221 /* Build configuration list for PBXNativeTarget "finderrors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C474472F32ED4580B0C3BB5E /* Debug */,
+				1DE3325686224D14B20880DD /* Release */,
+				FE4CCE7EE85A46C39CF929FA /* MinSizeRel */,
+				616CD37022BF444C8B3258B0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E682B7959E0E4D5F9F947159 /* Build configuration list for PBXProject "MojoShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F18EB4F8013494F8A526763 /* Debug */,
+				C59D8D9BAD1A4A20BCE4B966 /* Release */,
+				1CF57D18E796486589588DB5 /* MinSizeRel */,
+				399109404BED475A95C1D13B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EE715DED77904E7280F81410 /* Build configuration list for PBXNativeTarget "lemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3ACDC0A760446B3A8788DF7 /* Debug */,
+				2644162E7D654E92B6F2B767 /* Release */,
+				9C06C926E9A941EFBB338B85 /* MinSizeRel */,
+				F9DD2F9589F540B697A1CDF7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB9DC6356CE64360BF342C17 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6152C8BEB944C51A9639EEA /* Debug */,
+				DB31C5F366D54C3298A02BFE /* Release */,
+				8767AC6E7BCF4D3EA2A8C150 /* MinSizeRel */,
+				697FD618B8D64D7EA2F4A432 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F2FA46FA18C4244AE97E86B /* Project object */;
+}
